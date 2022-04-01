@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Error if the end date is set in the past or occurs before the start date.&#13;
+Checks for other scheduled events at the selected location when changing the date</description>
+        <field>date_to</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages>End date cannot be prior to the current date or start date&#13;
+The location you have chosen already has one or more events during your specified time. Please select a different date/time</messages>
+        <name>Ensure End Date is after Start Date</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    var dt = new Date(newValue);
+
+    var startDt = new Date(g_form.getValue('date_from'));
+
+    if (dt < new Date() || dt < startDt) {
+        var strDateError = getMessage('End date cannot be prior to the current date or start date');
+        g_form.setValue('date_to', '');
+        g_form.showFieldMsg('date_to', strDateError, 'error');
+    }
+    //Check location availability when updating date
+    var ga = new GlideAjax('EventRegistrationAjax');
+    ga.addParam('sysparm_name', 'getLocationData');
+    ga.addParam('sysparm_location_id', g_form.getValue('location'));
+    ga.addParam('sysparm_sys_id', g_form.getUniqueValue());
+    ga.addParam('sysparm_start', g_form.getValue('date_from'));
+    ga.addParam('sysparm_end', g_form.getValue('date_to'));
+    ga.getXML(checkEventLocationConflict);
+
+    function checkEventLocationConflict(response) {
+        var answer = response.responseXML.documentElement.getAttribute("answer");
+        if (answer && answer.length) {
+            var startDate = g_form.getValue('date_from');
+            var locInfo = JSON.parse(answer);
+            if (startDate) {
+                if (locInfo.other_events && parseInt(locInfo.other_events) > 0) {
+                    var strErrorMessage = getMessage('The location you have chosen already has one or more events during your specified time. Please select a different date/time');
+                    g_form.addErrorMessage(strErrorMessage);
+                    g_form.setValue('date_from', '');
+                    g_form.setValue('date_to', '');
+                    return;
+                }
+            }
+        }
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5c52b0b133a24510876d79e266194d9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ensure End Date is after Start Date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_script_client_5c52b0b133a24510876d79e266194d9b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:51</sys_updated_on>
+        <table>x_snc_tree4meeting_event</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

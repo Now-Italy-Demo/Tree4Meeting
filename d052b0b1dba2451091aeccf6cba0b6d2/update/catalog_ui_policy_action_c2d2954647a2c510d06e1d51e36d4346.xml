@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Calcola il tuo carbon footprint">f88fa806472e8510d06e1d51e36d43d2</catalog_item>
+        <catalog_variable>IO:9f22950647a2c510d06e1d51e36d436b</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-31 13:29:51</sys_created_on>
+        <sys_id>c2d2954647a2c510d06e1d51e36d4346</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>durata_viaggio</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_c2d2954647a2c510d06e1d51e36d4346</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-31 13:29:51</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Make 'durata_viaggio' mandatory &amp; visible depending on 'mezzo_di_trasporto'">43b2d14647a2c510d06e1d51e36d43cd</ui_policy>
+        <variable>durata_viaggio</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

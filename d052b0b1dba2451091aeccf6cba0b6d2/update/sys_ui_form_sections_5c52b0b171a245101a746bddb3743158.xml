@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="5c52b0b171a245101a746bddb3743158" sys_domain="global" table="x_snc_tree4meeting_event" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-30 16:29:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d852b0b1d0a245103f09858502687b58</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_tree4meeting_event" name="x_snc_tree4meeting_event" sys_domain="global" view="a3ce253f21163010c0a0a40cdfd1e476">5c52b0b171a245101a746bddb3743158</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_tree4meeting_event" sys_domain="global" view="a3ce253f21163010c0a0a40cdfd1e476">9c52b0b1a3a24510e6099b370156da58</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-30 16:29:25</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-30 16:29:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9852b0b107a245103ee3c19fd70ff858</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_tree4meeting_event" name="x_snc_tree4meeting_event" sys_domain="global" view="a3ce253f21163010c0a0a40cdfd1e476">5c52b0b171a245101a746bddb3743158</sys_ui_form>
+            <sys_ui_section caption="Location details" display_value="Location details" name="x_snc_tree4meeting_event" sys_domain="global" view="a3ce253f21163010c0a0a40cdfd1e476">dc52b0b175a245100abb7b6b459ac358</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-30 16:29:25</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-30 16:29:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5852b0b1b0a245109d979129f4d6d858</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_tree4meeting_event" name="x_snc_tree4meeting_event" sys_domain="global" view="a3ce253f21163010c0a0a40cdfd1e476">5c52b0b171a245101a746bddb3743158</sys_ui_form>
+            <sys_ui_section caption="Comments and Work Notes" display_value="Comments and Work Notes" name="x_snc_tree4meeting_event" sys_domain="global" view="a3ce253f21163010c0a0a40cdfd1e476">1852b0b15da245101702e58770f83558</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-30 16:29:25</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_snc_tree4meeting_event</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-30 16:29:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5c52b0b171a245101a746bddb3743158</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_tree4meeting_event</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+            <sys_update_name>sys_ui_form_sections_5c52b0b171a245101a746bddb3743158</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-30 16:29:25</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace" name="workspace">a3ce253f21163010c0a0a40cdfd1e476</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

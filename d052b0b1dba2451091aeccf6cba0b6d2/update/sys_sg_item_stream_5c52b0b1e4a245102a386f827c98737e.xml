@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream">
+    <sys_sg_item_stream action="INSERT_OR_UPDATE">
+        <data_item display_value="Events Created by Me Data Item">1c52b0b12da2451042dd1ac00f2fba87</data_item>
+        <interleaved_field/>
+        <name>My Events Item Stream</name>
+        <sys_class_name>sys_sg_item_stream</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:57</sys_created_on>
+        <sys_id>5c52b0b1e4a245102a386f827c98737e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Events Item Stream</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_sg_item_stream_5c52b0b1e4a245102a386f827c98737e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:57</sys_updated_on>
+        <table>x_snc_tree4meeting_event</table>
+    </sys_sg_item_stream>
+</record_update>

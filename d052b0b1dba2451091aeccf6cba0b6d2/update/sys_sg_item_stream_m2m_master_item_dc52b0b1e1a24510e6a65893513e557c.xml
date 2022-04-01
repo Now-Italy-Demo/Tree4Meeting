@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream_m2m_master_item">
+    <sys_sg_item_stream_m2m_master_item action="INSERT_OR_UPDATE">
+        <item_stream display_value="My Attendees Item Stream">d052b0b15fa24510bf57ebf68689927f</item_stream>
+        <master_item display_value="My Attendees Master Item">d852b0b12ea245104c8d16bb3bbcfe7c</master_item>
+        <sys_class_name>sys_sg_item_stream_m2m_master_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:37</sys_created_on>
+        <sys_id>dc52b0b1e1a24510e6a65893513e557c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_sg_item_stream_m2m_master_item_dc52b0b1e1a24510e6a65893513e557c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:37</sys_updated_on>
+    </sys_sg_item_stream_m2m_master_item>
+</record_update>

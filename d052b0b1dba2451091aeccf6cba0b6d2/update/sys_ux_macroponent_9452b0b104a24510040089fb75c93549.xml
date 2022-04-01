@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "workspace_global_search_tab",
+  "elementLabel" : "Workspace global search tab",
+  "propertyValues" : {
+    "term" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "searchTerm" ],
+        "category" : "props"
+      }
+    },
+    "globalSearchViewConfigId" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "globalSearchViewConfigId" ],
+        "category" : "props"
+      }
+    },
+    "globalSearchDataConfigId" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "globalSearchDataConfigId" ],
+        "category" : "app"
+      }
+    },
+    "hideSearchResultsCount" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    }
+  },
+  "eventMappings" : [ {
+    "eventMappingId" : "ckdtebbvwcaaaaaafddhhhcciaagggjqkf",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_ui_globalsearch.SN_COMPONENT_WORKSPACE_GLOBAL_SEARCH_TAB#RECORD_CLICKED",
+    "sourceEventDefinition" : {
+      "apiName" : "sn_ui_globalsearch.SN_COMPONENT_WORKSPACE_GLOBAL_SEARCH_TAB#RECORD_CLICKED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "ea0c5acf49cd6410f877897af72b72f7"
+      },
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "ckfccrzuliiaaaabblddghhacrcdaauddy",
+      "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "d852b0b179a24510d0f908d6753db220"
+      },
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "ckiufffahkaaaaaaeddffhhwesddoklzm",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  }, {
+    "eventMappingId" : "ckdteaahhlhhaaaaaadddhhhccsbbccoozhhii",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_ui_globalsearch.SN_COMPONENT_WORKSPACE_GLOBAL_SEARCH_TAB#SEARCH_SUCCEEDED",
+    "sourceEventDefinition" : {
+      "apiName" : "sn_ui_globalsearch.SN_COMPONENT_WORKSPACE_GLOBAL_SEARCH_TAB#SEARCH_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "2e0c5acf49cd6410f877897af72b72fc"
+      },
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "ckdteaacijjaaaaaaeddhhhcchffodjwggf",
+      "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "5452b0b1e5a2451030c8407f567ccc49"
+      },
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "ckiuggoeedaaaabbffddffhhwdggggrccahhe",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
+  "slot" : "default-slot",
+  "definition" : {
+    "id" : "2e3733f64f72717ba78f867f31ef5491",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
+  }
+} ]</composition>
+        <da_relay_models/>
+        <data>[ {
+  "definition" : {
+    "id" : "367f89e30b102010a8b1c96237673a85",
+    "type" : "COMPOSITE"
+  },
+  "elementId" : "dynamic_routing_search_result",
+  "elementLabel" : "Dynamic Routing Search Result",
+  "eventMappings" : [ ],
+  "inputValues" : {
+    "routeConfigId" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "routeConfigId" ],
+        "category" : "app"
+      }
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+} ]</data>
+        <dispatched_events>83e447ee0b621010a8b1c96237673a8d,0fe447ee0b621010a8b1c96237673a92,5fe447ee0b621010a8b1c96237673ab6</dispatched_events>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{ }</internal_event_mappings>
+        <layout>{
+  "default" : {
+    "children" : null,
+    "items" : [{"slotName":"default-slot","styles":{"display":"flex"}}],
+    "root" : null,
+    "rules" : {"flex-direction":"column"},
+    "styles" : null,
+    "templateId" : null,
+    "type" : "flex"
+  }
+}</layout>
+        <macroponent_dependencies/>
+        <name>Search results</name>
+        <props>[ {
+  "name" : "searchTerm",
+  "label" : "searchTerm",
+  "fieldType" : null,
+  "typeMetadata" : null,
+  "valueType" : null,
+  "mandatory" : true,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : false,
+  "selectable" : false
+}, {
+  "name" : "globalSearchViewConfigId",
+  "label" : "globalSearchViewConfigId",
+  "fieldType" : null,
+  "typeMetadata" : null,
+  "valueType" : null,
+  "mandatory" : true,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : false,
+  "selectable" : false
+} ]</props>
+        <required_translations>[]</required_translations>
+        <root_component/>
+        <root_component_config>{
+  "bare" : true
+}</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_properties>[ ]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:30:00</sys_created_on>
+        <sys_id>9452b0b104a24510040089fb75c93549</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Search results</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_ux_macroponent_9452b0b104a24510040089fb75c93549</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:30:00</sys_updated_on>
+    </sys_ux_macroponent>
+</record_update>

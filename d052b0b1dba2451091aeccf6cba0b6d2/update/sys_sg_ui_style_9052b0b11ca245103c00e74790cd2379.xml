@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_ui_style">
+    <sys_sg_ui_style action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_tree4meeting_event">state=-5^EQ<item display_value="Draft" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="-5"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <field>state</field>
+        <item_vew display_value="My Events Item View">d452b0b183a24510a69f5313945fff79</item_vew>
+        <item_view_element/>
+        <name>State is Draft</name>
+        <style>{"background_color":"#D1D6D8","font_color":"#293E40"}</style>
+        <sys_class_name>sys_sg_ui_style</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:33</sys_created_on>
+        <sys_id>9052b0b11ca245103c00e74790cd2379</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>State is Draft</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_sg_ui_style_9052b0b11ca245103c00e74790cd2379</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:33</sys_updated_on>
+        <table>x_snc_tree4meeting_event</table>
+        <use_item_view_elements>false</use_item_view_elements>
+    </sys_sg_ui_style>
+</record_update>

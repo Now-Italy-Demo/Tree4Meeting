@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_write_back_action_item">
+    <sys_sg_write_back_action_item action="INSERT_OR_UPDATE">
+        <description/>
+        <execution_script><![CDATA[(function WriteBackAction(input) {
+	//Type appropriate comment here, and begin script below
+	//gs.info("input waitlist "+JSON.stringify(input));
+	var eventSysId = '';
+	var eventTable = new GlideRecord('x_snc_tree4meeting_event');
+	if(eventTable.get(input.sys_id)){
+		eventSysId = input.sys_id;
+	}else{
+		var attendeeGr1 = new GlideRecord('x_snc_tree4meeting_attendee');
+		if(attendeeGr1.get(input.sys_id)){
+			eventSysId = attendeeGr1.event_name.sys_id;
+		}
+	}
+	if(eventSysId){
+		var gr_attendee = new GlideRecord("x_snc_tree4meeting_attendee");
+		gr_attendee.newRecord();
+		gr_attendee.attendee_name = gs.getUserID();
+		gr_attendee.event_name = eventSysId;
+		gr_attendee.insert();
+	}
+
+})(input);]]></execution_script>
+        <name>Join the waitlist</name>
+        <parameter_screen/>
+        <query_condition/>
+        <sys_class_name>sys_sg_write_back_action_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:25</sys_created_on>
+        <sys_id>9852b0b164a245102caff5337ac5ab89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Join the waitlist</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_sg_write_back_action_item_9852b0b164a245102caff5337ac5ab89</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:25</sys_updated_on>
+        <table>x_snc_tree4meeting_event</table>
+        <template/>
+        <type>script</type>
+        <use_current_record_as_condition>true</use_current_record_as_condition>
+        <use_fields_for_ref_lookup>false</use_fields_for_ref_lookup>
+    </sys_sg_write_back_action_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=9852b0b164a245102caff5337ac5ab89"/>
+</record_update>

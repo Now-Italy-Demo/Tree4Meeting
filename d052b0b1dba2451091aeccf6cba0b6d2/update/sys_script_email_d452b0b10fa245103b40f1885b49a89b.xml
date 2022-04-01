@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>x_snc_tree4meeting.getCompanyName</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript( /* GlideRecord */ current, /* TemplatePrinter */ template,
+    /* Optional EmailOutbound */
+    email, /* Optional GlideRecord */ email_action, /* Optional GlideRecord */ event) {
+
+    // Return the name of the primary company
+	var companyName = '';
+	var primaryCompany = new GlideRecord('core_company');
+	primaryCompany.addQuery('primary', true);
+	primaryCompany.query();
+	if(primaryCompany.next()){
+		companyName = primaryCompany.name;
+	}
+	template.print(companyName);
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:45</sys_created_on>
+        <sys_id>d452b0b10fa245103b40f1885b49a89b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_tree4meeting.getCompanyName</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_script_email_d452b0b10fa245103b40f1885b49a89b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:45</sys_updated_on>
+    </sys_script_email>
+</record_update>

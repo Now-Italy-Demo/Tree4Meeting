@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_graphql">
+    <sys_ux_data_broker_graphql action="INSERT_OR_UPDATE">
+        <api_name>x_snc_tree4meeting.Capacity Events GraphQL</api_name>
+        <description>Gets the four published or rescheduled events starting today or later which have the highest capacity</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Capacity Events GraphQL</name>
+        <output_schema/>
+        <private>false</private>
+        <props/>
+        <query>{&#13;
+  GlideRecord_Query {&#13;
+    x_snc_tree4meeting_event(queryConditions: "stateIN1,2^date_from&gt;=javascript:gs.beginningOfToday()^ORDERBYDESCpercent_full", pagination:{limit:4}) {&#13;
+      _results {&#13;
+        sys_id {&#13;
+          value&#13;
+        }&#13;
+        event_name{&#13;
+          value&#13;
+        }&#13;
+        attendees {&#13;
+          value&#13;
+        }&#13;
+        date_from {&#13;
+          value&#13;
+          displayValue&#13;
+        }&#13;
+location {&#13;
+          value&#13;
+          displayValue&#13;
+        }&#13;
+       percent_full{&#13;
+          value&#13;
+        }&#13;
+       spaces_left{&#13;
+          value&#13;
+        }&#13;
+ sys_class_name{&#13;
+          value&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+  }&#13;
+}</query>
+        <required_translations>[]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[(function buildQuery(query, inputs) { 
+         var qb = new GraphQLQueryBuilder(query, inputs);
+   // return appropriate query here
+    return qb; 
+   })(query, inputs);]]></script>
+        <sys_class_name>sys_ux_data_broker_graphql</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:34</sys_created_on>
+        <sys_id>9c52b0b147a24510d06e1d51e36d4317</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Capacity Events GraphQL</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_ux_data_broker_graphql_9c52b0b147a24510d06e1d51e36d4317</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:34</sys_updated_on>
+        <type>query</type>
+        <use_record_domain>false</use_record_domain>
+    </sys_ux_data_broker_graphql>
+    <sys_translated_text action="delete_multiple" query="documentkey=9c52b0b147a24510d06e1d51e36d4317"/>
+</record_update>

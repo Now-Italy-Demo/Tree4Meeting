@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="worknotes" label="Work Notes" language="en" table="x_snc_tree4meeting_event_location">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>worknotes</element>
+            <help/>
+            <hint/>
+            <label>Work Notes</label>
+            <language>en</language>
+            <name>x_snc_tree4meeting_event_location</name>
+            <plural>Work Notes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by/>
+            <sys_created_on/>
+            <sys_id>a452b0b147a24510d06e1d51e36d43e6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Work Notes</sys_name>
+            <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_tree4meeting_event_location_worknotes_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

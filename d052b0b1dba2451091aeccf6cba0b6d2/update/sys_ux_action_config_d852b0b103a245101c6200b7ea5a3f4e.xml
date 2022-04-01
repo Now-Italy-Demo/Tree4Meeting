@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_action_config">
+    <sys_ux_action_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Used for the Event Registration Workspace</description>
+        <name>Event Registration Action Config</name>
+        <sys_class_name>sys_ux_action_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:33</sys_created_on>
+        <sys_id>d852b0b103a245101c6200b7ea5a3f4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Registration Action Config</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_ux_action_config_d852b0b103a245101c6200b7ea5a3f4e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:33</sys_updated_on>
+    </sys_ux_action_config>
+</record_update>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_template">
+    <sys_sg_view_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <name>Event Registration App Template</name>
+        <preview_image/>
+        <root_view_attrs_json/>
+        <sys_class_name>sys_sg_view_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:23</sys_created_on>
+        <sys_id>d052b0b1c2a245105234e47a78e47870</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Registration App Template</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_sg_view_template_d052b0b1c2a245105234e47a78e47870</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:23</sys_updated_on>
+        <template_json>{"Type":"ViewGroup","Id":"view_group_01","Orientation":"Vertical","Alignment":"Stretch","Distribution":"Auto","Margin":{"Top":16,"Bottom":16},"Children":[{"Type":"ViewGroup","Id":"view_group_02","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Margin":{"Bottom":8},"Children":[{"Type":"ViewGroup","Id":"view_group_03","Orientation":"Vertical","Alignment":"Left","Distribution":"Equal","Children":[{"Type":"ViewGroup","Id":"view_group_04","Orientation":"Horizontal","Alignment":"Center","Distribution":"Auto","BackgroundColor":"#ffffff","CornerRadius":2,"Height":20,"Children":[{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":10},"MaxLines":1,"textStyle":"custom","Margin":{"Left":4},"CellId":"text_26","Id":"text_26"},{"Type":"Text","TextColor":"#333E3F","Font":{"Weight":"bold","Size":14},"MaxLines":1,"textStyle":"custom","Margin":{"Top":2,"Right":4,"Bottom":2,"Left":4},"TextAlignment":"Center","CellId":"text_18","Id":"text_18"}]}]},{"Type":"ViewGroup","Id":"view_group_05","Orientation":"Vertical","Alignment":"Right","Distribution":"Equal","Children":[{"Type":"Text","TextColor":"#637274","Font":{"Weight":"regular","Size":14},"MaxLines":1,"textStyle":"custom","TextAlignment":"Right","CellId":"text_19","Id":"text_19"}]}]},{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Id":"viewgroup_01","Children":[{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Id":"viewgroup_02","Children":[{"Type":"Image","Scaling":"fill","CellId":"image_04","Id":"image_04","CornerRadius":40,"Height":80,"Width":80,"Margin":{"Top":15,"Right":10}},{"Type":"ViewGroup","Orientation":"Vertical","Alignment":"Stretch","Distribution":"Auto","Id":"viewgroup_03","Children":[{"Type":"ViewGroup","Orientation":"Vertical","Alignment":"Stretch","Distribution":"Auto","Id":"viewgroup_04","Children":[{"Type":"Text","TextColor":"#333e3f","Font":{"Weight":"bold","Size":16},"MaxLines":2,"textStyle":"custom","CellId":"text_20","Id":"text_20"},{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Id":"viewgroup_01","Children":[{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"textStyle":"default","CellId":"text_21","Id":"text_21"},{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"textStyle":"default","CellId":"text_22","Id":"text_22","TextAlignment":"Right"}]},{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Id":"viewgroup_02","Children":[{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"textStyle":"default","CellId":"text_23","Id":"text_23"},{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"textStyle":"default","CellId":"text_24","Id":"text_24","TextAlignment":"Left"},{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"textStyle":"default","Margin":{"Left":5},"CellId":"text_25","Id":"text_25"}]}]}]}]}]}]}</template_json>
+    </sys_sg_view_template>
+    <sys_translated_text action="delete_multiple" query="documentkey=d052b0b1c2a245105234e47a78e47870"/>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config_element">
+    <sys_sg_view_config_element action="INSERT_OR_UPDATE">
+        <name>text_02_element</name>
+        <sys_class_name>sys_sg_view_config_element</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:57</sys_created_on>
+        <sys_id>dc52b0b1b7a245103a2e04bf1c8c5766</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>text_02_element</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_sg_view_config_element_dc52b0b1b7a245103a2e04bf1c8c5766</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:57</sys_updated_on>
+        <view_config display_value="Waitlist View Config">5c52b0b1b9a24510677dd814516bd56f</view_config>
+        <view_template_slot display_value="">85acb21841e71010f877183fc9b8be96</view_template_slot>
+    </sys_sg_view_config_element>
+</record_update>

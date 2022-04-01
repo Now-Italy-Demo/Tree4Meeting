@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config">
+    <sys_sg_view_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <name>Upcoming Events View Config</name>
+        <sys_class_name>sys_sg_view_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:52</sys_created_on>
+        <sys_id>1852b0b1baa245108b47a8dc026c4a78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Upcoming Events View Config</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_sg_view_config_1852b0b1baa245108b47a8dc026c4a78</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:52</sys_updated_on>
+        <table>x_snc_tree4meeting_event</table>
+        <template display_value="Upcoming Events Template">9052b0b1d0a2451032b85aa0e2bbb570</template>
+    </sys_sg_view_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=1852b0b1baa245108b47a8dc026c4a78"/>
+</record_update>

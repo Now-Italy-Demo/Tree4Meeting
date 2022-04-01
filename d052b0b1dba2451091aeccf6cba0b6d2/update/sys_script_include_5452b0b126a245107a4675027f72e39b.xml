@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_tree4meeting.EventRegistrationDTformat</api_name>
+        <caller_access>1</caller_access>
+        <client_callable>false</client_callable>
+        <description>Used in both the event registration workspace and portal to format a date/time string to a user friendly format</description>
+        <name>EventRegistrationDTformat</name>
+        <script><![CDATA[var EventRegistrationDTformat = Class.create();
+EventRegistrationDTformat.prototype = {
+    initialize: function() {},
+	//Pass in the date/time string to the function
+    formatDateTime: function(DatetimeValue) {
+		//Use GlideDateTime to separate the values to be formatted
+        var dt = new GlideDateTime(DatetimeValue);
+		
+		// Get the translated friendly date
+		var date = dt.getDate();
+		var dateFormated = date.date.getDisplayValue();
+		
+		// Get the friendly time format
+        var time = dt.getTime();
+        var timeFormated = (time.getUserFormattedLocalTime());
+		
+		//Build the user friendly format to be returned
+		var msgArr = [dateFormated, timeFormated];
+		var results = gs.getMessage('{0} at {1}', msgArr);
+		return results;
+
+    },
+
+    type: 'EventRegistrationDTformat'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:44</sys_created_on>
+        <sys_id>5452b0b126a245107a4675027f72e39b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EventRegistrationDTformat</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_script_include_5452b0b126a245107a4675027f72e39b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:44</sys_updated_on>
+    </sys_script_include>
+</record_update>

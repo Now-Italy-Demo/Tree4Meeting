@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>x_snc_tree4meeting.getEventLinkFromAtten</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript( /* GlideRecord */ current, /* TemplatePrinter */ template,
+    /* Optional EmailOutbound */
+    email, /* Optional GlideRecord */ email_action, /* Optional GlideRecord */ event) {
+
+    // Return proper link to Event Registration portal page
+	var baseURL = gs.getProperty('glide.servlet.uri');
+	template.print(baseURL + 'now/' + 'x_snc_tree4meeting-event_registration/event_details/x_snc_tree4meeting_event/' + current.event_name.sys_id);
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:34</sys_created_on>
+        <sys_id>9452b0b100a2451020fa153e1f82739b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_tree4meeting.getEventLinkFromAtten</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_script_email_9452b0b100a2451020fa153e1f82739b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:34</sys_updated_on>
+    </sys_script_email>
+</record_update>

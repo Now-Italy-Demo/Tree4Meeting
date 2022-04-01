@@ -1,0 +1,1223 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-sandiego-12-22-2021__patch1-03-02-2022_03-17-2022_1811.zip</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Generate Bearer token for future usage</description>
+        <ih_action>true</ih_action>
+        <internal_name>cfc_authenticate</internal_name>
+        <label_cache>[{"name":"{{step[9303a2f1-eb9a-454d-ac78-3a4de41ad883].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9303a2f1-eb9a-454d-ac78-3a4de41ad883].data}}","label":"step➛Script step➛data","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a0107e1c-a2cd-4bf3-b1b1-469c914bfb9f].payload}}","label":"step➛Payload Builder step➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0985188c-ac41-4b7c-badc-0924628b9896].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}}]</label_cache>
+        <master_snapshot>1ccc8c06972685104204fe7fe153aff2</master_snapshot>
+        <name>CFC Authenticate</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-30 20:53:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7cee2df1976645104204fe7fe153af9a</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>CFC Authenticate</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_7cee2df1976645104204fe7fe153af9a</sys_update_name>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=7cee2df1976645104204fe7fe153af9a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=7cee2df1976645104204fe7fe153af9a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>7cee2df1976645104204fe7fe153af9a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-30 21:03:37</sys_created_on>
+        <sys_id>93113539976645104204fe7fe153af89</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:05:49</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD53113539fe664510f43ab8f68240e85d":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD53113539fe664510f43ab8f68240e85d.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"ffed602a-0f75-420f-b4b5-89a54de28cc7\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD53113539fe664510f43ab8f68240e85d\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">93113539976645104204fe7fe153af60</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>7cee2df1976645104204fe7fe153af9a</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-30 21:03:37</sys_created_on>
+        <sys_id>df113539976645104204fe7fe153af88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:03:37</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">53113539976645104204fe7fe153af66</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7cee2df1976645104204fe7fe153af9a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>token</field>
+        <id>7cee2df1976645104204fe7fe153af9a</id>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:18:48</sys_created_on>
+        <sys_id>fdabcc82972685104204fe7fe153afee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:18:48</sys_updated_on>
+        <table>var__m_sys_hub_action_output_7cee2df1976645104204fe7fe153af9a</table>
+        <value>{{step[0985188c-ac41-4b7c-badc-0924628b9896].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>7cee2df1976645104204fe7fe153af9a</id>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-30 21:03:37</sys_created_on>
+        <sys_id>5f113539976645104204fe7fe153af88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:03:37</sys_updated_on>
+        <table>var__m_sys_hub_action_output_7cee2df1976645104204fe7fe153af9a</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>7cee2df1976645104204fe7fe153af9a</id>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-30 21:03:37</sys_created_on>
+        <sys_id>9b113539976645104204fe7fe153af88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:03:37</sys_updated_on>
+        <table>var__m_sys_hub_action_output_7cee2df1976645104204fe7fe153af9a</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=7cee2df1976645104204fe7fe153af9a^sys_idNOT INe9abcc82972685104204fe7fe153afa8"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="CFC Authenticate">7cee2df1976645104204fe7fe153af9a</action>
+        <cid>0985188c-ac41-4b7c-badc-0924628b9896</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:18:47</sys_created_on>
+        <sys_id>e9abcc82972685104204fe7fe153afa8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:03</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e9abcc82972685104204fe7fe153afa8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e9abcc82972685104204fe7fe153afa8</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:18:47</sys_created_on>
+        <sys_id>25abcc82972685104204fe7fe153afcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:18:47</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e9abcc82972685104204fe7fe153afa8</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:18:47</sys_created_on>
+        <sys_id>61abcc82972685104204fe7fe153afcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:18:47</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e9abcc82972685104204fe7fe153afa8</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:18:47</sys_created_on>
+        <sys_id>6dabcc82972685104204fe7fe153afcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:18:47</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e9abcc82972685104204fe7fe153afa8</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:18:47</sys_created_on>
+        <sys_id>a9abcc82972685104204fe7fe153afcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:18:47</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e9abcc82972685104204fe7fe153afa8</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:18:47</sys_created_on>
+        <sys_id>adabcc82972685104204fe7fe153afca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:18:47</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e9abcc82972685104204fe7fe153afa8</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:03</sys_created_on>
+        <sys_id>c0ac4806972685104204fe7fe153af79</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:03</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e9abcc82972685104204fe7fe153afa8</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:03</sys_created_on>
+        <sys_id>c8ac4806972685104204fe7fe153af78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:03</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e9abcc82972685104204fe7fe153afa8</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:18:47</sys_created_on>
+        <sys_id>e5abcc82972685104204fe7fe153afcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:18:47</sys_updated_on>
+        <value>https://shockbuzz.azurewebsites.net/cfc/authenticate</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129^id=e9abcc82972685104204fe7fe153afa8"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=e9abcc82972685104204fe7fe153afa8"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=e9abcc82972685104204fe7fe153afa8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e9abcc82972685104204fe7fe153afa8"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_e9abcc82972685104204fe7fe153afa8"/>
+    <sys_hub_action_input action="delete_multiple" query="model=7cee2df1976645104204fe7fe153af9a"/>
+    <sys_hub_action_output action="delete_multiple" query="model=7cee2df1976645104204fe7fe153af9a^sys_idNOT IN53113539976645104204fe7fe153af66,7dabcc82972685104204fe7fe153afe2,93113539976645104204fe7fe153af60"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=1f4f9f4c-927c-499c-b057-12e1575cf491,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="CFC Authenticate">7cee2df1976645104204fe7fe153af9a</model>
+        <model_id>7cee2df1976645104204fe7fe153af9a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_7cee2df1976645104204fe7fe153af9a</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-30 21:03:37</sys_created_on>
+        <sys_id>53113539976645104204fe7fe153af66</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:03:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=53113539976645104204fe7fe153af66"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=53113539976645104204fe7fe153af66"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=bb8e5778-04d1-4817-899b-54f4494b5970</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>token</element>
+        <element_prototype display_value="Response Body" element="response_body" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">a804c77347622200b4fad7527c9a7119</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>token</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="CFC Authenticate">7cee2df1976645104204fe7fe153af9a</model>
+        <model_id>7cee2df1976645104204fe7fe153af9a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_7cee2df1976645104204fe7fe153af9a</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:18:48</sys_created_on>
+        <sys_id>7dabcc82972685104204fe7fe153afe2</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7dabcc82972685104204fe7fe153afe2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7dabcc82972685104204fe7fe153afe2^sys_idNOT IN35abcc82972685104204fe7fe153afee"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>token</input_name>
+        <instance>7dabcc82972685104204fe7fe153afe2</instance>
+        <referenced_table>sys_hub_action_output</referenced_table>
+        <script>{"token":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nreturn JSON.parse(fd_data._1__rest_step.response_body).token;"}}</script>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:18:48</sys_created_on>
+        <sys_id>35abcc82972685104204fe7fe153afee</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:03</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FD53113539fe664510f43ab8f68240e85d,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=ffed602a-0f75-420f-b4b5-89a54de28cc7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="CFC Authenticate">7cee2df1976645104204fe7fe153af9a</model>
+        <model_id>7cee2df1976645104204fe7fe153af9a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_7cee2df1976645104204fe7fe153af9a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-30 21:03:36</sys_created_on>
+        <sys_id>93113539976645104204fe7fe153af60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:03:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=93113539976645104204fe7fe153af60"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=93113539976645104204fe7fe153af60"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=7cee2df1976645104204fe7fe153af9a"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=7cee2df1976645104204fe7fe153af9a^sys_idNOT IN8911f139976645104204fe7fe153af66"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="CFC Authenticate">7cee2df1976645104204fe7fe153af9a</action_type_id>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-30 21:03:27</sys_created_on>
+        <sys_id>8911f139976645104204fe7fe153af66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:03:27</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=8911f139976645104204fe7fe153af66"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_7cee2df1976645104204fe7fe153af9a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_7cee2df1976645104204fe7fe153af9a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_7cee2df1976645104204fe7fe153af9a^sys_idNOT IN75abcc82972685104204fe7fe153afe7,93113539976645104204fe7fe153af65,9f113539976645104204fe7fe153af6c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>token</element>
+        <help/>
+        <hint/>
+        <label>token</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_7cee2df1976645104204fe7fe153af9a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:18:48</sys_created_on>
+        <sys_id>75abcc82972685104204fe7fe153afe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:18:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_7cee2df1976645104204fe7fe153af9a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-30 21:03:37</sys_created_on>
+        <sys_id>93113539976645104204fe7fe153af65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:03:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_7cee2df1976645104204fe7fe153af9a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-30 21:03:37</sys_created_on>
+        <sys_id>9f113539976645104204fe7fe153af6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:03:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_7cee2df1976645104204fe7fe153af9a"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=7cee2df1976645104204fe7fe153af9a^sys_idNOT IN7ccccc06972685104204fe7fe153afbf"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="CFC Authenticate">7cee2df1976645104204fe7fe153af9a</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"7ccccc06972685104204fe7fe153afbf","name":"plan","plan_signature":null}}</plan>
+        <snapshot>d0cccc06972685104204fe7fe153af4a</snapshot>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7ccccc06972685104204fe7fe153afbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:38</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Generate Bearer token for future usage</description>
+        <internal_name>cfc_authenticate</internal_name>
+        <label_cache>[{"name":"{{step[9303a2f1-eb9a-454d-ac78-3a4de41ad883].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9303a2f1-eb9a-454d-ac78-3a4de41ad883].data}}","label":"step➛Script step➛data","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a0107e1c-a2cd-4bf3-b1b1-469c914bfb9f].payload}}","label":"step➛Payload Builder step➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0985188c-ac41-4b7c-badc-0924628b9896].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}}]</label_cache>
+        <master>true</master>
+        <name>CFC Authenticate</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="CFC Authenticate">7cee2df1976645104204fe7fe153af9a</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1ccc8c06972685104204fe7fe153aff2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=1ccc8c06972685104204fe7fe153aff2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1ccc8c06972685104204fe7fe153aff2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>1ccc8c06972685104204fe7fe153aff2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:37</sys_created_on>
+        <sys_id>9ccccc06972685104204fe7fe153af47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD90cccc06a22685108ea253b5472d652e":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD90cccc06a22685108ea253b5472d652e.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"ffed602a-0f75-420f-b4b5-89a54de28cc7\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD90cccc06a22685108ea253b5472d652e\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">d4cccc06972685104204fe7fe153af30</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>1ccc8c06972685104204fe7fe153aff2</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:37</sys_created_on>
+        <sys_id>d8cccc06972685104204fe7fe153af47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">9ccccc06972685104204fe7fe153af35</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=1ccc8c06972685104204fe7fe153aff2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>token</field>
+        <id>1ccc8c06972685104204fe7fe153aff2</id>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:37</sys_created_on>
+        <sys_id>58cccc06972685104204fe7fe153af47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1ccc8c06972685104204fe7fe153aff2</table>
+        <value>{{step[0985188c-ac41-4b7c-badc-0924628b9896].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>1ccc8c06972685104204fe7fe153aff2</id>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:37</sys_created_on>
+        <sys_id>94cccc06972685104204fe7fe153af47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1ccc8c06972685104204fe7fe153aff2</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>1ccc8c06972685104204fe7fe153aff2</id>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:37</sys_created_on>
+        <sys_id>d0cccc06972685104204fe7fe153af47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+        <table>var__m_sys_hub_action_output_1ccc8c06972685104204fe7fe153aff2</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=1ccc8c06972685104204fe7fe153aff2^sys_idNOT IN94cc8c06972685104204fe7fe153aff6"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="CFC Authenticate">1ccc8c06972685104204fe7fe153aff2</action>
+        <cid>0985188c-ac41-4b7c-badc-0924628b9896</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:37</sys_created_on>
+        <sys_id>94cc8c06972685104204fe7fe153aff6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=94cc8c06972685104204fe7fe153aff6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>94cc8c06972685104204fe7fe153aff6</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:37</sys_created_on>
+        <sys_id>10cccc06972685104204fe7fe153af2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>94cc8c06972685104204fe7fe153aff6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:37</sys_created_on>
+        <sys_id>1ccccc06972685104204fe7fe153af2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>94cc8c06972685104204fe7fe153aff6</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:37</sys_created_on>
+        <sys_id>58cccc06972685104204fe7fe153af2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>94cc8c06972685104204fe7fe153aff6</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:37</sys_created_on>
+        <sys_id>5ccccc06972685104204fe7fe153af29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>94cc8c06972685104204fe7fe153aff6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:37</sys_created_on>
+        <sys_id>90cccc06972685104204fe7fe153af04</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>94cc8c06972685104204fe7fe153aff6</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:37</sys_created_on>
+        <sys_id>94cccc06972685104204fe7fe153af2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>94cc8c06972685104204fe7fe153aff6</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:37</sys_created_on>
+        <sys_id>98cccc06972685104204fe7fe153af29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>94cc8c06972685104204fe7fe153aff6</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:37</sys_created_on>
+        <sys_id>d0cccc06972685104204fe7fe153af2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+        <value>https://shockbuzz.azurewebsites.net/cfc/authenticate</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129^id=94cc8c06972685104204fe7fe153aff6"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=94cc8c06972685104204fe7fe153aff6"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=94cc8c06972685104204fe7fe153aff6"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=94cc8c06972685104204fe7fe153aff6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_94cc8c06972685104204fe7fe153aff6"/>
+    <sys_hub_action_input action="delete_multiple" query="model=1ccc8c06972685104204fe7fe153aff2"/>
+    <sys_hub_action_output action="delete_multiple" query="model=1ccc8c06972685104204fe7fe153aff2^sys_idNOT IN5ccccc06972685104204fe7fe153af3c,9ccccc06972685104204fe7fe153af35,d4cccc06972685104204fe7fe153af30"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=bb8e5778-04d1-4817-899b-54f4494b5970</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>token</element>
+        <element_prototype display_value="Response Body" element="response_body" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">a804c77347622200b4fad7527c9a7119</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>token</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="CFC Authenticate">1ccc8c06972685104204fe7fe153aff2</model>
+        <model_id>1ccc8c06972685104204fe7fe153aff2</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_1ccc8c06972685104204fe7fe153aff2</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:37</sys_created_on>
+        <sys_id>5ccccc06972685104204fe7fe153af3c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5ccccc06972685104204fe7fe153af3c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5ccccc06972685104204fe7fe153af3c^sys_idNOT IN98cccc06972685104204fe7fe153af46"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>token</input_name>
+        <instance>5ccccc06972685104204fe7fe153af3c</instance>
+        <referenced_table>sys_hub_action_output</referenced_table>
+        <script>{"token":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nreturn JSON.parse(fd_data._1__rest_step.response_body).token;"}}</script>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:37</sys_created_on>
+        <sys_id>98cccc06972685104204fe7fe153af46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=1f4f9f4c-927c-499c-b057-12e1575cf491,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="CFC Authenticate">1ccc8c06972685104204fe7fe153aff2</model>
+        <model_id>1ccc8c06972685104204fe7fe153aff2</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_1ccc8c06972685104204fe7fe153aff2</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:37</sys_created_on>
+        <sys_id>9ccccc06972685104204fe7fe153af35</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9ccccc06972685104204fe7fe153af35"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9ccccc06972685104204fe7fe153af35"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FD90cccc06a22685108ea253b5472d652e,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=ffed602a-0f75-420f-b4b5-89a54de28cc7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="CFC Authenticate">1ccc8c06972685104204fe7fe153aff2</model>
+        <model_id>1ccc8c06972685104204fe7fe153aff2</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_1ccc8c06972685104204fe7fe153aff2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:37</sys_created_on>
+        <sys_id>d4cccc06972685104204fe7fe153af30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d4cccc06972685104204fe7fe153af30"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d4cccc06972685104204fe7fe153af30"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=1ccc8c06972685104204fe7fe153aff2"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=1ccc8c06972685104204fe7fe153aff2^sys_idNOT INdccccc06972685104204fe7fe153af49"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="CFC Authenticate">1ccc8c06972685104204fe7fe153aff2</action_type_id>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:37</sys_created_on>
+        <sys_id>dccccc06972685104204fe7fe153af49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=dccccc06972685104204fe7fe153af49"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_1ccc8c06972685104204fe7fe153aff2"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_1ccc8c06972685104204fe7fe153aff2"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_1ccc8c06972685104204fe7fe153aff2^sys_idNOT IN18cccc06972685104204fe7fe153af40,9ccccc06972685104204fe7fe153af3b,dccccc06972685104204fe7fe153af34"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>token</element>
+        <help/>
+        <hint/>
+        <label>token</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1ccc8c06972685104204fe7fe153aff2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:37</sys_created_on>
+        <sys_id>18cccc06972685104204fe7fe153af40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1ccc8c06972685104204fe7fe153aff2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:37</sys_created_on>
+        <sys_id>9ccccc06972685104204fe7fe153af3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_1ccc8c06972685104204fe7fe153aff2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 08:23:37</sys_created_on>
+        <sys_id>dccccc06972685104204fe7fe153af34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 08:23:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_1ccc8c06972685104204fe7fe153aff2"/>
+    <sys_hub_action_type_definition action="update">
+        <sys_id>7cee2df1976645104204fe7fe153af9a</sys_id>
+        <latest_snapshot>1ccc8c06972685104204fe7fe153aff2</latest_snapshot>
+    </sys_hub_action_type_definition>
+</record_update>

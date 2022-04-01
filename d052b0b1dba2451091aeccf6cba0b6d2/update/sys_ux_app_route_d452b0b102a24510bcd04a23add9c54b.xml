@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="Agent app config">6b3293e80f0210107d20409dc4767e91</app_config>
+        <description/>
+        <fields>table</fields>
+        <icon/>
+        <name>List Modal Page</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="List">5452b0b129a2451054b5ecbb13cd244e</parent_macroponent>
+        <parent_macroponent_composition_element_id>modalContainerViewport</parent_macroponent_composition_element_id>
+        <route_type>list_modal_page</route_type>
+        <screen_type display_value="List Modal Page">617f55d10f1310107d20409dc4767eb2</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:33</sys_created_on>
+        <sys_id>d452b0b102a24510bcd04a23add9c54b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>List Modal Page</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_ux_app_route_d452b0b102a24510bcd04a23add9c54b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:33</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=d452b0b102a24510bcd04a23add9c54b"/>
+</record_update>

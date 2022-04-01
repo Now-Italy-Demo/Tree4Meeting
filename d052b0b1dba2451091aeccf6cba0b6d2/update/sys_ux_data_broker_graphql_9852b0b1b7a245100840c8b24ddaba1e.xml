@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_graphql">
+    <sys_ux_data_broker_graphql action="INSERT_OR_UPDATE">
+        <api_name>x_snc_tree4meeting.Event Registration Portal</api_name>
+        <description>Event Registration Attendee portal core data</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Event Registration Portal</name>
+        <output_schema/>
+        <private>false</private>
+        <props/>
+        <query>{&#13;
+  GlideRecord_Query {&#13;
+   x_snc_tree4meeting_attendee(queryConditions: "attendee_name=javascript:gs.getUserID()", pagination:{limit:3}) {&#13;
+      _results {&#13;
+        sys_id {&#13;
+          value&#13;
+        }&#13;
+        attendee_name{&#13;
+           value&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+  }&#13;
+&#13;
+  GlideRecord_Query {&#13;
+   sys_user(queryConditions: "sys_id=javascript:gs.getUserID()", pagination:{limit:3}) {&#13;
+      _results {&#13;
+        sys_id {&#13;
+          value&#13;
+        }&#13;
+        first_name{&#13;
+          value&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+  }&#13;
+}</query>
+        <required_translations>[]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[(function buildQuery(query, inputs) { 
+         var qb = new GraphQLQueryBuilder(query, inputs);
+   // return appropriate query here
+    return qb; 
+   })(query, inputs);]]></script>
+        <sys_class_name>sys_ux_data_broker_graphql</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:47</sys_created_on>
+        <sys_id>9852b0b1b7a245100840c8b24ddaba1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Registration Portal</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_ux_data_broker_graphql_9852b0b1b7a245100840c8b24ddaba1e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:47</sys_updated_on>
+        <type>query</type>
+        <use_record_domain>false</use_record_domain>
+    </sys_ux_data_broker_graphql>
+    <sys_translated_text action="delete_multiple" query="documentkey=9852b0b1b7a245100840c8b24ddaba1e"/>
+</record_update>

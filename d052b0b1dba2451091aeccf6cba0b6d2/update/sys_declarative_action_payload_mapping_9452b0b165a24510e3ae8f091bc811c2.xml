@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_declarative_action_payload_mapping">
+    <sys_declarative_action_payload_mapping action="INSERT_OR_UPDATE">
+        <action_payload_definition display_value="Create New Event Record">d452b0b122a24510705fdb2e0cd320c3</action_payload_definition>
+        <label>Create New Event Record List</label>
+        <model display_value="List">c3547169534723003eddddeeff7b126c</model>
+        <payload_map>route=record^fields@table={{table}}^parent_table={{parentTable}}^params@query={{query}}^fields@sysId=-1^additional_data@query={{query}}^EQ</payload_map>
+        <sys_class_name>sys_declarative_action_payload_mapping</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:46</sys_created_on>
+        <sys_id>9452b0b165a24510e3ae8f091bc811c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create New Event Record List</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_declarative_action_payload_mapping_9452b0b165a24510e3ae8f091bc811c2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:46</sys_updated_on>
+    </sys_declarative_action_payload_mapping>
+</record_update>

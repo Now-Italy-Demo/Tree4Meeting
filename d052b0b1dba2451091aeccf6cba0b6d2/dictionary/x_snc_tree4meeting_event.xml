@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="hasLabels=true" audit="true" label="Incontro" max_length="40" name="x_snc_tree4meeting_event" sizeclass="1" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="0" label="Partecipanti" max_length="40" name="attendees" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Capacità" mandatory="true" max_length="40" name="capacity" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" calculation="(function calculatedFieldValue(current) {&#10;&#10;    if (parseInt(current.percent_full) &gt;= 100) {&#10;        return 'full';&#10;    } else {&#10;        return 'seats_avail';&#10;    }&#10;&#10;})(current);" choice="3" default="seats_avail" label="Disponibilità posti" max_length="40" name="capacity_status" read_only="true" type="choice" virtual="true">
+            <choice>
+                <element inactive_on_update="false" label="Posti disponibili" sequence="1" value="posti_disponibili"/>
+                <element inactive_on_update="false" label="Pieno" sequence="2" value="pieno"/>
+            </choice>
+        </element>
+        <element label="Commenti" max_length="4000" name="comments" type="journal_input"/>
+        <element label="Inizio" mandatory="true" max_length="40" name="date_from" type="glide_date_time"/>
+        <element label="Fine" mandatory="true" max_length="40" name="date_to" type="glide_date_time"/>
+        <element label="Durata" max_length="40" name="durata" type="glide_time"/>
+        <element display="true" label="Nome incontro" mandatory="true" max_length="40" name="event_name" type="string"/>
+        <element label="Foto incontro" max_length="40" name="event_photo" type="file_attachment"/>
+        <element attributes="edge_encryption_enabled=true" label="Data reminder incontro" max_length="40" name="event_reminder_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Icona" max_length="100" name="icon" type="icon"/>
+        <element attributes="edge_encryption_enabled=true,pdf_cell_type=image" label="Immagine" max_length="40" name="image" type="user_image"/>
+        <element attributes="edge_encryption_enabled=true" calculation="(function calculatedFieldValue(current) {&#10;if (parseInt(current.percent_full) &gt;= 100) {&#10;        return 'true';&#10;    } else {&#10;        return 'false';&#10;    }&#10;})(current);" label="Pieno" max_length="40" name="is_full" read_only="true" type="boolean" virtual="true"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Città" mandatory="true" max_length="32" name="location" reference="x_snc_tree4meeting_event_location" reference_qual="status=available^EQ" reference_qual_condition="status=available^EQ" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" mandatory="true" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" default="javascript:gs.getUserID()" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Organizzatore" mandatory="true" max_length="32" name="organizer" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true" calculation="(function calculatedFieldValue(current) {&#10;&#10;    var percent = 100;&#10;    // Calculate percent full&#10;    if (current.capacity &gt; 0) {&#10;        percent = parseInt((current.attendees / current.capacity) * 100);&#10;        return percent;&#10;    } else {&#10;        return percent;&#10;    }&#10;&#10;})(current);" label="Percentuale capacità" max_length="40" name="percent_full" read_only="true" type="integer" virtual="true"/>
+        <element attributes="edge_encryption_enabled=true" label="Pubblicato" max_length="40" name="published" type="glide_date_time"/>
+        <element label="Scopo dell'incontro" mandatory="true" max_length="4000" name="purpose" type="string"/>
+        <element attributes="edge_encryption_enabled=true" calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;// Add your code here&#10;&#9;var spacesLeft = current.capacity - current.attendees;&#10;&#9;return spacesLeft;  // return the calculated value&#10;&#10;})(current);" label="Spazio rimanente" max_length="40" name="spaces_left" read_only="true" type="integer" virtual="true"/>
+        <element label="Stanza" max_length="40" name="stanza" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="-5" label="Stato" mandatory="true" max_length="40" name="state" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="10" value="-5"/>
+                <element inactive_on_update="false" label="Published" sequence="20" value="1"/>
+                <element inactive_on_update="false" label="Rescheduled" sequence="30" value="2"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="40" value="10"/>
+                <element inactive_on_update="false" label="Expired" sequence="50" value="20"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true" default="0" label="Waitlisted" max_length="40" name="waitlisted" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Lista d'attesa" mandatory="true" max_length="40" name="waitlist_size" type="integer"/>
+        <element label="Note" max_length="4000" name="work_notes" type="journal_input"/>
+        <index name="index">
+            <element name="organizer"/>
+        </index>
+        <index name="index2">
+            <element name="location"/>
+        </index>
+        <index name="index3">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

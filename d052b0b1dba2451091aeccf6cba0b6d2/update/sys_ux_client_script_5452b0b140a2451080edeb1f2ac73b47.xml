@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="event_details">d052b0b136a24510e78fd7b98c6a0847</macroponent>
+        <name>Set Client States</name>
+        <required_translations>[ {
+  "message" : "If there are still seats left, you can register again later.",
+  "comment" : ""
+}, {
+  "message" : "you are no longer registered for this event.",
+  "comment" : ""
+}, {
+  "message" : "If you leave the waitlist, you will lose your place in line.",
+  "comment" : ""
+}, {
+  "message" : "You are no longer on the waitlist for this event.",
+  "comment" : ""
+}, {
+  "message" : "You will receive confirmation of your registration or waitlist status to your registered email.",
+  "comment" : ""
+}, {
+  "message" : "Are you sure you want to leave the waitlist?",
+  "comment" : ""
+}, {
+  "message" : "Are you sure you want to cancel your registration?",
+  "comment" : ""
+}, {
+  "message" : "You will receive status updates to your registered email.",
+  "comment" : ""
+} ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    // Read our data broker values
+    const eventRecordData = api.data.event_record_transform_1.output;
+    if (eventRecordData.sys_id) {
+        const hideRSVP = eventRecordData.hideRSVP;
+        const hideCancelRSVP = eventRecordData.hideCancelRSVP;
+        const hideJoinWaitlist = eventRecordData.hideJoinWaitlist;
+        const hideLeaveWaitlist = eventRecordData.hideLeaveWaitlist;
+        const cancelRSVPModalContent = eventRecordData.cancelRSVPModalContent;
+        const rSVPConfirmHeaderMsg = eventRecordData.event_name;
+
+        
+        // Set our Client States
+        api.setState('hideRSVPButton', hideRSVP);
+        api.setState('hideRSVPCancelButton', hideCancelRSVP);
+        api.setState('hideWaitlistButton', hideJoinWaitlist);
+        api.setState('hideWaitlistCancelButton', hideLeaveWaitlist);
+        api.setState('hideRecordHeader', false);
+        helpers.translate('Thank you for registering for '+rSVPConfirmHeaderMsg+'!')
+        .then((val) => {
+            api.setState('RSVPConfirmHeaderMsg', val);
+        });
+        helpers.translate('Capacity and waitlist is full for '+rSVPConfirmHeaderMsg+'.')
+        .then((val) => {
+            api.setState('noSeatsAlert', val);
+        });
+        if (cancelRSVPModalContent == 'Attending') {
+            helpers.translate('If there are still seats left, you can register again later.')
+                .then((val) => {
+                    api.setState('cancelRSVPModalContentMsg', val);
+                });
+        } else {
+            helpers.translate('If there are still seats left, you can register again later.')
+                .then((val) => {
+                    api.setState('cancelRSVPModalContentMsg', val);
+                });
+        }
+    }
+
+    if (eventRecordData.noButtons == false) {
+        api.setState('hideNobuttonsAlert', false);
+    }
+
+
+    // Perform translations
+    helpers.translate('You are no longer on the waitlist for this event.')
+        .then((val) => {
+            api.setState('waitlistCancelMessage', val);
+        });
+    helpers.translate('you are no longer registered for this event.')
+        .then((val) => {
+            api.setState('rsvpCancelMessage', val);
+        });
+    helpers.translate('You will receive status updates to your registered email.')
+        .then((val) => {
+            api.setState('waitlistConfirmMessage', val);
+        });
+    helpers.translate('You will receive confirmation of your registration or waitlist status to your registered email.')
+        .then((val) => {
+            api.setState('rsvpConfirmMessage', val);
+        });
+    helpers.translate('Are you sure you want to cancel your registration?')
+        .then((val) => {
+            api.setState('cancelRSVPModalHeaderMsg', val);
+        });
+    helpers.translate('If there are still seats left, you can register again later.')
+        .then((val) => {
+            api.setState('cancelRSVPModalContentMsg', val);
+        });
+    helpers.translate('Are you sure you want to leave the waitlist?')
+        .then((val) => {
+            api.setState('cancelWaitlistModalHeaderMsg', val);
+        });
+    helpers.translate('If you leave the waitlist, you will lose your place in line.')
+        .then((val) => {
+            api.setState('cancelWaitlistModalContentMsg', val);
+        });
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:24</sys_created_on>
+        <sys_id>5452b0b140a2451080edeb1f2ac73b47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set Client States</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_ux_client_script_5452b0b140a2451080edeb1f2ac73b47</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:24</sys_updated_on>
+        <type/>
+    </sys_ux_client_script>
+</record_update>

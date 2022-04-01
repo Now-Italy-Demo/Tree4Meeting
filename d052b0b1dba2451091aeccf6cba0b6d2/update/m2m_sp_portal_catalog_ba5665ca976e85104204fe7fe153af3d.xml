@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_catalog">
+    <m2m_sp_portal_catalog action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <order>100</order>
+        <sc_catalog display_value="Human Resources Catalog">7b0370019f22120047a2d126c42e7075</sc_catalog>
+        <sp_portal display_value="Tree4Meeting Portal">9408598e97ea85104204fe7fe153afa8</sp_portal>
+        <sys_class_name>m2m_sp_portal_catalog</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 14:55:05</sys_created_on>
+        <sys_id>ba5665ca976e85104204fe7fe153af3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Human Resources Catalog.Tree4Meeting Portal</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>m2m_sp_portal_catalog_ba5665ca976e85104204fe7fe153af3d</sys_update_name>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 14:55:05</sys_updated_on>
+    </m2m_sp_portal_catalog>
+</record_update>

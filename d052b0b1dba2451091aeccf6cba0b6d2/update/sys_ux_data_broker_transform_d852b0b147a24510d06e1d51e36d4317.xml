@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_snc_tree4meeting.Event Reg Breadcrumb broker</api_name>
+        <description>Used to populate the breadcrumbs component of portal</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Event Reg Breadcrumb broker</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+    "name": "displayValue",&#13;
+    "label": "Display value",&#13;
+    "fieldType": "string",&#13;
+    "valueType": "object",&#13;
+    "readOnly": false,&#13;
+    "mandatory": true,&#13;
+    "description": "Breadcrumb default value"&#13;
+  }&#13;
+]</props>
+        <required_translations>[{"message":"Breadcrumb default value","comment":""},{"message":"Display value","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+	var homeMsg = gs.getMessage('Home');
+	var homeItem = {"label":homeMsg,"icon":"","hideLabel":false};
+    var itemValue = input.displayValue || "";
+    return [homeItem , {"label":itemValue}];
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:47</sys_created_on>
+        <sys_id>d852b0b147a24510d06e1d51e36d4317</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Reg Breadcrumb broker</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_d852b0b147a24510d06e1d51e36d4317</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:47</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=d852b0b147a24510d06e1d51e36d4317"/>
+</record_update>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>chrome_header</name>
+        <page display_value="x_snc_tree4meeting Portal">9c52b0b1cba245105e2b0350b0225f1a</page>
+        <required_translations>[{"message":"Logout","comment":""},{"message":"UserMenu","comment":""}]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>5852b0b1efa24510495067f030b5811a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_header</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_ux_page_property_5852b0b1efa24510495067f030b5811a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:36</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_snc_tree4meeting.9c52b0b1cba245105e2b0350b0225f1a.root.chrome_header</unique_name>
+        <value>{&#13;
+    "privatePage":{&#13;
+      "searchEnabled": false,&#13;
+       "userPrefsEnabled":true,&#13;
+       "currentScreenLinkConfiguration": {&#13;
+            "roles": ["admin"],&#13;
+            "position": 250&#13;
+        },&#13;
+       "globalTools":{&#13;
+          "collapsingMenuId":0,&#13;
+          "primaryItems":[&#13;
+             {&#13;
+                "label":"UserMenu",&#13;
+                "icon":"user",&#13;
+                "type":"menu",&#13;
+                "primaryDisplay":"icon",&#13;
+                "value":{&#13;
+                   "children":[&#13;
+                    {&#13;
+                         "label": {&#13;
+                            "translatable": true,&#13;
+                            "message":"Logout"&#13;
+                          },&#13;
+         "type":  "navigation",            &#13;
+        "position":500,&#13;
+         "value":{&#13;
+         "type": "AUTH_ROUTE_BINDING",&#13;
+	"binding": {&#13;
+	"address": ["logout"],&#13;
+	"params": {"reload": true},&#13;
+	"default": "/logout.do"&#13;
+}&#13;
+                        }&#13;
+                      }&#13;
+                   ]&#13;
+                }&#13;
+             }&#13;
+          ],&#13;
+          "secondaryItems":[]&#13;
+       }&#13;
+    },&#13;
+    "publicPage":{&#13;
+      "menuEnabled": true,&#13;
+      "logoRoute": {&#13;
+        "type": "route",&#13;
+        "value": {&#13;
+          "route": "home",&#13;
+          "fields":{}&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+ }</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=5852b0b1efa24510495067f030b5811a"/>
+</record_update>

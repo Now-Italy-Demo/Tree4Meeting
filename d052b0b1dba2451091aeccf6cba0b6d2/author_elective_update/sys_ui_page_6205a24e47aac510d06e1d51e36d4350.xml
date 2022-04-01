@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="DELETE">
+        <category>general</category>
+        <client_script><![CDATA[document.location.href = "https://digitalex.service-now.com/dhapp";]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_snc_tree4meeting_redir.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+</j:jelly>]]></html>
+        <name>redir</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-31 19:30:09</sys_created_on>
+        <sys_id>6205a24e47aac510d06e1d51e36d4350</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>redir</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_ui_page_6205a24e47aac510d06e1d51e36d4350</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-31 19:45:52</sys_updated_on>
+    </sys_ui_page>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</application>
+        <file_path/>
+        <instance_id>c9d8446ddbc245500ae3ac44d49619bc</instance_id>
+        <instance_name>digitalex</instance_name>
+        <name>sys_ui_page_6205a24e47aac510d06e1d51e36d4350</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_page"&gt;&lt;sys_ui_page action="INSERT_OR_UPDATE"&gt;&lt;category&gt;general&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[document.location.href = "https://digitalex.service-now.com/dhapp";]]&gt;&lt;/client_script&gt;&lt;description/&gt;&lt;direct&gt;false&lt;/direct&gt;&lt;endpoint&gt;x_snc_tree4meeting_redir.do&lt;/endpoint&gt;&lt;html&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+
+&lt;/j:jelly&gt;]]&gt;&lt;/html&gt;&lt;name&gt;redir&lt;/name&gt;&lt;processing_script/&gt;&lt;sys_class_name&gt;sys_ui_page&lt;/sys_class_name&gt;&lt;sys_created_by&gt;antonio&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-31 19:30:09&lt;/sys_created_on&gt;&lt;sys_id&gt;6205a24e47aac510d06e1d51e36d4350&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;redir&lt;/sys_name&gt;&lt;sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting"&gt;d052b0b1dba2451091aeccf6cba0b6d2&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Tree4Meeting"&gt;d052b0b1dba2451091aeccf6cba0b6d2&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_page_6205a24e47aac510d06e1d51e36d4350&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;antonio&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-31 19:45:52&lt;/sys_updated_on&gt;&lt;/sys_ui_page&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1958897350</payload_hash>
+        <record_name>redir</record_name>
+        <reverted_from/>
+        <source>ae52b4b147a24510d06e1d51e36d4389</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-31 19:45:52</sys_created_on>
+        <sys_id>5ae8ee8247eac510d06e1d51e36d43ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17fe1834d350000001</sys_recorded_at>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-31 19:45:52</sys_updated_on>
+        <type>UI Page</type>
+        <update_guid>12e8ee8291eac510cc97ed9f46216cac</update_guid>
+        <update_guid_history>12e8ee8291eac510cc97ed9f46216cac:1958897350,21a8a282eeeac510f8d6277f31df876c:153743654,a9382242cdeac510a32600d835277128:1854157633,a1366e4e8aaac510b64b4bf83db8b60c:1683324078,585522ca34aac51060e90b8a847a90a7:-1058283177</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-31 20:40:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_page">sys_ui_page</sys_db_object>
+        <sys_id>0a21a22a447f4c12816889bc23365209</sys_id>
+        <sys_metadata>6205a24e47aac510d06e1d51e36d4350</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>redir</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_scope_delete display_value="">54abed2950fa4d7e91db49e53ca19f84</sys_scope_delete>
+        <sys_update_name>sys_ui_page_6205a24e47aac510d06e1d51e36d4350</sys_update_name>
+        <sys_update_version display_value="sys_ui_page_6205a24e47aac510d06e1d51e36d4350">5ae8ee8247eac510d06e1d51e36d43ac</sys_update_version>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-31 20:40:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

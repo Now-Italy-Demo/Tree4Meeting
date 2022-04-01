@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_snc_tree4meeting.Event Registration EVAM all event Card</api_name>
+        <description>Transform to map values from evam to the All Events tab in the ER portal.</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Event Registration EVAM all event Card</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[{&#13;
+  "name": "evamData",&#13;
+  "label": "Event EVAM Data",&#13;
+  "description": "",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "object",&#13;
+  "mandatory": true,&#13;
+  "defaultValue": {}&#13;
+}]</props>
+        <required_translations>[{"message":"Event EVAM Data","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+    input.evamData.items = input.evamData.items.map(function(item) {
+
+        item.propValues.subtitle = gs.getMessage('Organized by {0}', item.propValues.model.organizer);
+
+        if (item.propValues.model.spaces_left == 0) {
+            item.propValues.textHeaderLabel = gs.getMessage("Capacity Reached");
+        } else {
+            item.propValues.textHeaderLabel = gs.getMessage('{0} Seats Remaining', item.propValues.model.spaces_left);
+        }
+
+        var status = new GlideRecord('x_snc_tree4meeting_attendee');
+        status.addQuery('event_name', item.propValues.model.sys_id);
+        status.addQuery('attendee_name', gs.getUserID());
+        status.query();
+
+        if (status.next()) {
+            if (status.attendee_status == 'confirmed') {
+                item.propValues.highlightedHeaderIcon = "check-outline";
+                item.propValues.highlightedHeaderBkgColor = 'positive';
+                item.propValues.highlightedHeaderLabel = gs.getMessage('Attending');
+            } else if (status.attendee_status == 'waitlisted') {
+                item.propValues.highlightedHeaderIcon = "clock-outline";
+                item.propValues.highlightedHeaderBkgColor = 'warning';
+                item.propValues.highlightedHeaderLabel = gs.getMessage('On waitlist');
+            }
+        }
+        var dtFormat = new EventRegistrationDTformat().formatDateTime(item.propValues.model.date_from);
+        item.propValues.detailValueOne = dtFormat;
+        return item;
+    });
+    return input.evamData;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:47</sys_created_on>
+        <sys_id>dc52b0b147a24510d06e1d51e36d4317</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Registration EVAM all event Card</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_dc52b0b147a24510d06e1d51e36d4317</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:47</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=dc52b0b147a24510d06e1d51e36d4317"/>
+</record_update>

@@ -1,0 +1,1351 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "container_1",
+  "elementLabel" : "Container 1",
+  "propertyValues" : { },
+  "eventMappings" : [ ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "container_4",
+      "elementLabel" : "Container 4",
+      "propertyValues" : { },
+      "eventMappings" : [ ],
+      "slot" : "Main",
+      "definition" : {
+        "id" : "d356d14b6e293a3020a244b63d278d8f",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "composition" : [ {
+          "elementId" : "image_1",
+          "elementLabel" : "Image 1",
+          "propertyValues" : {
+            "alt" : {
+              "type" : "JSON_LITERAL",
+              "value" : ""
+            },
+            "src" : {
+              "type" : "JSON_LITERAL",
+              "value" : "/x_snc_tree4meeting.event_reg_home_page.png"
+            },
+            "fit" : {
+              "type" : "JSON_LITERAL",
+              "value" : "cover"
+            },
+            "position" : {
+              "type" : "JSON_LITERAL",
+              "value" : "center center"
+            },
+            "height" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Column 2",
+          "definition" : {
+            "id" : "15fe506403f8a98575b6df59008ea8f1",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : { }
+        }, {
+          "elementId" : "container_7",
+          "elementLabel" : "Container 7",
+          "propertyValues" : { },
+          "eventMappings" : [ ],
+          "slot" : "Column 1",
+          "definition" : {
+            "id" : "d356d14b6e293a3020a244b63d278d8f",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : {
+            "composition" : [ {
+              "elementId" : "search_input_1",
+              "elementLabel" : "Search input 1",
+              "propertyValues" : {
+                "searchTerm" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                },
+                "searchContextConfigId" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                },
+                "placeholder" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Search",
+                    "comment" : ""
+                  }
+                },
+                "placement" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "body"
+                },
+                "disableAutocomplete" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "lg"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Row 2",
+              "definition" : {
+                "id" : "ce26d6793802478648556dc1f88fe020",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : { }
+            } ],
+            "layout" : {
+              "default" : {
+                "children" : null,
+                "items" : [{"slotName":"Row 1","rules":{"grid-area":"row1"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Row 2","rules":{"grid-area":"row2"},"styles":{"display":"flex","flex-direction":"column"}}],
+                "root" : null,
+                "rules" : {"grid-template-rows":"1fr 1fr","grid-template-columns":"100%","grid-template-areas":"\"row1\" \"row2\"","grid-gap":"1rem","height":"100%"},
+                "styles" : null,
+                "templateId" : "f348f94153071010e6bcddeeff7b12dd",
+                "type" : "grid"
+              }
+            }
+          },
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : {
+            "width" : "100%"
+          }
+        } ],
+        "layout" : {
+          "default" : {
+            "children" : null,
+            "items" : [{"slotName":"Column 1","rules":{"grid-area":"column1"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"grid-area":"column2"},"styles":{"display":"flex","flex-direction":"column"}}],
+            "root" : null,
+            "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr 1fr","grid-template-areas":"\"column1 column2\"","grid-gap":"1rem","height":"100%"},
+            "styles" : null,
+            "templateId" : "a653f1cd53c31010e6bcddeeff7b128c",
+            "type" : "grid"
+          }
+        }
+      },
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : {
+        "width" : "100%"
+      }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column"}}],
+        "root" : null,
+        "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+        "styles" : null,
+        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+        "type" : "grid"
+      }
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
+  }
+}, {
+  "elementId" : "container_5",
+  "elementLabel" : "Container 5",
+  "propertyValues" : { },
+  "eventMappings" : [ ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column"}}],
+        "root" : null,
+        "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+        "styles" : null,
+        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+        "type" : "grid"
+      }
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
+  }
+}, {
+  "elementId" : "container_2",
+  "elementLabel" : "Container 2",
+  "propertyValues" : { },
+  "eventMappings" : [ ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "container_6",
+      "elementLabel" : "Container 6",
+      "propertyValues" : { },
+      "eventMappings" : [ ],
+      "slot" : "Main",
+      "definition" : {
+        "id" : "d356d14b6e293a3020a244b63d278d8f",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "composition" : [ {
+          "elementId" : "template_card_6",
+          "elementLabel" : "Template card 6",
+          "propertyValues" : {
+            "tagline" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Tagline",
+                    "comment" : ""
+                  }
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "tree-view-long-outline"
+                }
+              }
+            },
+            "actions" : {
+              "type" : "LIST_CONTAINER",
+              "container" : [ {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "id" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "action1"
+                  },
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "message" : "Dropdown Item 1",
+                      "comment" : ""
+                    }
+                  }
+                }
+              }, {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "id" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "action2"
+                  },
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "message" : "Dropdown Item 2",
+                      "comment" : ""
+                    }
+                  }
+                }
+              } ]
+            },
+            "heading" : {
+              "type" : "DATA_OUTPUT_BINDING",
+              "binding" : {
+                "address" : [ "upcoming_events_graphql_1", "output", "data", "GlideRecord_Query", "x_snc_tree4meeting_event", "_results", "0" ]
+              }
+            },
+            "content" : {
+              "type" : "LIST_CONTAINER",
+              "container" : [ {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "message" : "Content Label1",
+                      "comment" : ""
+                    }
+                  },
+                  "value" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "message" : "Content Value1",
+                      "comment" : ""
+                    }
+                  }
+                }
+              }, {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "message" : "Content Label2",
+                      "comment" : ""
+                    }
+                  },
+                  "value" : {
+                    "type" : "MAP_CONTAINER",
+                    "container" : {
+                      "type" : {
+                        "type" : "JSON_LITERAL",
+                        "value" : "string"
+                      },
+                      "value" : {
+                        "type" : "TRANSLATION_LITERAL",
+                        "value" : {
+                          "message" : "Content Value2",
+                          "comment" : ""
+                        }
+                      }
+                    }
+                  }
+                }
+              } ]
+            },
+            "footerContent" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Footer Label",
+                    "comment" : ""
+                  }
+                },
+                "value" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Footer Value",
+                    "comment" : ""
+                  }
+                },
+                "reversed" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                }
+              }
+            },
+            "selected" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "contentItemMinWidth" : {
+              "type" : "JSON_LITERAL",
+              "value" : "300"
+            },
+            "configAria" : {
+              "type" : "MAP_CONTAINER",
+              "container" : { }
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Column 1",
+          "definition" : {
+            "id" : "ead7761b3f6e70a4e0ec9faaa2a05168",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : { }
+        }, {
+          "elementId" : "template_card_7",
+          "elementLabel" : "Template card 7",
+          "propertyValues" : {
+            "tagline" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Tagline",
+                    "comment" : ""
+                  }
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "tree-view-long-outline"
+                }
+              }
+            },
+            "actions" : {
+              "type" : "LIST_CONTAINER",
+              "container" : [ {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "id" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "action1"
+                  },
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "message" : "Dropdown Item 1",
+                      "comment" : ""
+                    }
+                  }
+                }
+              }, {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "id" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "action2"
+                  },
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "message" : "Dropdown Item 2",
+                      "comment" : ""
+                    }
+                  }
+                }
+              } ]
+            },
+            "heading" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Card Heading",
+                    "comment" : ""
+                  }
+                },
+                "level" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : 3
+                }
+              }
+            },
+            "content" : {
+              "type" : "LIST_CONTAINER",
+              "container" : [ {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "message" : "Content Label1",
+                      "comment" : ""
+                    }
+                  },
+                  "value" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "message" : "Content Value1",
+                      "comment" : ""
+                    }
+                  }
+                }
+              }, {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "message" : "Content Label2",
+                      "comment" : ""
+                    }
+                  },
+                  "value" : {
+                    "type" : "MAP_CONTAINER",
+                    "container" : {
+                      "type" : {
+                        "type" : "JSON_LITERAL",
+                        "value" : "string"
+                      },
+                      "value" : {
+                        "type" : "TRANSLATION_LITERAL",
+                        "value" : {
+                          "message" : "Content Value2",
+                          "comment" : ""
+                        }
+                      }
+                    }
+                  }
+                }
+              } ]
+            },
+            "footerContent" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Footer Label",
+                    "comment" : ""
+                  }
+                },
+                "value" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Footer Value",
+                    "comment" : ""
+                  }
+                },
+                "reversed" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                }
+              }
+            },
+            "selected" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "contentItemMinWidth" : {
+              "type" : "JSON_LITERAL",
+              "value" : "300"
+            },
+            "configAria" : {
+              "type" : "MAP_CONTAINER",
+              "container" : { }
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Column 2",
+          "definition" : {
+            "id" : "ead7761b3f6e70a4e0ec9faaa2a05168",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : { }
+        }, {
+          "elementId" : "template_card_8",
+          "elementLabel" : "Template card 8",
+          "propertyValues" : {
+            "tagline" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Tagline",
+                    "comment" : ""
+                  }
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "tree-view-long-outline"
+                }
+              }
+            },
+            "actions" : {
+              "type" : "LIST_CONTAINER",
+              "container" : [ {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "id" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "action1"
+                  },
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "message" : "Dropdown Item 1",
+                      "comment" : ""
+                    }
+                  }
+                }
+              }, {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "id" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "action2"
+                  },
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "message" : "Dropdown Item 2",
+                      "comment" : ""
+                    }
+                  }
+                }
+              } ]
+            },
+            "heading" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Card Heading",
+                    "comment" : ""
+                  }
+                },
+                "level" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : 3
+                }
+              }
+            },
+            "content" : {
+              "type" : "LIST_CONTAINER",
+              "container" : [ {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "message" : "Content Label1",
+                      "comment" : ""
+                    }
+                  },
+                  "value" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "message" : "Content Value1",
+                      "comment" : ""
+                    }
+                  }
+                }
+              }, {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "message" : "Content Label2",
+                      "comment" : ""
+                    }
+                  },
+                  "value" : {
+                    "type" : "MAP_CONTAINER",
+                    "container" : {
+                      "type" : {
+                        "type" : "JSON_LITERAL",
+                        "value" : "string"
+                      },
+                      "value" : {
+                        "type" : "TRANSLATION_LITERAL",
+                        "value" : {
+                          "message" : "Content Value2",
+                          "comment" : ""
+                        }
+                      }
+                    }
+                  }
+                }
+              } ]
+            },
+            "footerContent" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Footer Label",
+                    "comment" : ""
+                  }
+                },
+                "value" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Footer Value",
+                    "comment" : ""
+                  }
+                },
+                "reversed" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                }
+              }
+            },
+            "selected" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "contentItemMinWidth" : {
+              "type" : "JSON_LITERAL",
+              "value" : "300"
+            },
+            "configAria" : {
+              "type" : "MAP_CONTAINER",
+              "container" : { }
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Column 3",
+          "definition" : {
+            "id" : "ead7761b3f6e70a4e0ec9faaa2a05168",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : { }
+        }, {
+          "elementId" : "template_card_9",
+          "elementLabel" : "Template card 9",
+          "propertyValues" : {
+            "tagline" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Tagline",
+                    "comment" : ""
+                  }
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "tree-view-long-outline"
+                }
+              }
+            },
+            "actions" : {
+              "type" : "LIST_CONTAINER",
+              "container" : [ {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "id" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "action1"
+                  },
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "message" : "Dropdown Item 1",
+                      "comment" : ""
+                    }
+                  }
+                }
+              }, {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "id" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "action2"
+                  },
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "message" : "Dropdown Item 2",
+                      "comment" : ""
+                    }
+                  }
+                }
+              } ]
+            },
+            "heading" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Card Heading",
+                    "comment" : ""
+                  }
+                },
+                "level" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : 3
+                }
+              }
+            },
+            "content" : {
+              "type" : "LIST_CONTAINER",
+              "container" : [ {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "message" : "Content Label1",
+                      "comment" : ""
+                    }
+                  },
+                  "value" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "message" : "Content Value1",
+                      "comment" : ""
+                    }
+                  }
+                }
+              }, {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "label" : {
+                    "type" : "TRANSLATION_LITERAL",
+                    "value" : {
+                      "message" : "Content Label2",
+                      "comment" : ""
+                    }
+                  },
+                  "value" : {
+                    "type" : "MAP_CONTAINER",
+                    "container" : {
+                      "type" : {
+                        "type" : "JSON_LITERAL",
+                        "value" : "string"
+                      },
+                      "value" : {
+                        "type" : "TRANSLATION_LITERAL",
+                        "value" : {
+                          "message" : "Content Value2",
+                          "comment" : ""
+                        }
+                      }
+                    }
+                  }
+                }
+              } ]
+            },
+            "footerContent" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Footer Label",
+                    "comment" : ""
+                  }
+                },
+                "value" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Footer Value",
+                    "comment" : ""
+                  }
+                },
+                "reversed" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                }
+              }
+            },
+            "selected" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "contentItemMinWidth" : {
+              "type" : "JSON_LITERAL",
+              "value" : "300"
+            },
+            "configAria" : {
+              "type" : "MAP_CONTAINER",
+              "container" : { }
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Column 4",
+          "definition" : {
+            "id" : "ead7761b3f6e70a4e0ec9faaa2a05168",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : { }
+        } ],
+        "layout" : {
+          "default" : {
+            "children" : null,
+            "items" : [{"slotName":"Column 1","rules":{"grid-area":"column1"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"grid-area":"column2"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 3","rules":{"grid-area":"column3"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 4","rules":{"grid-area":"column4"},"styles":{"display":"flex","flex-direction":"column"}}],
+            "root" : null,
+            "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr 1fr 1fr 1fr","grid-template-areas":"\"column1 column2 column3 column4\"","grid-gap":"1rem","height":"100%"},
+            "styles" : null,
+            "templateId" : "2de5350153071010e6bcddeeff7b12b0",
+            "type" : "grid"
+          }
+        }
+      },
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : {
+        "width" : "100%"
+      }
+    }, {
+      "elementId" : "link_set_1",
+      "elementLabel" : "Link set 1",
+      "propertyValues" : {
+        "heading" : {
+          "type" : "MAP_CONTAINER",
+          "container" : {
+            "type" : {
+              "type" : "JSON_LITERAL",
+              "value" : "link"
+            },
+            "hasIcon" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
+            },
+            "icon" : {
+              "type" : "JSON_LITERAL",
+              "value" : {
+                "name" : "bundle-outline",
+                "placement" : "inline",
+                "alignment" : "left"
+              }
+            },
+            "label" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "",
+                "comment" : ""
+              }
+            },
+            "link" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "New Events",
+                    "comment" : ""
+                  }
+                },
+                "type" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "route"
+                },
+                "value" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : {
+                    "route" : "it_support",
+                    "fields" : { }
+                  }
+                },
+                "opensWindow" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "configAria" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : { }
+                },
+                "download" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                }
+              }
+            }
+          }
+        },
+        "links" : {
+          "type" : "LIST_CONTAINER",
+          "container" : [ {
+            "type" : "MAP_CONTAINER",
+            "container" : {
+              "label" : {
+                "type" : "TRANSLATION_LITERAL",
+                "value" : {
+                  "message" : "Software",
+                  "comment" : ""
+                }
+              },
+              "value" : {
+                "type" : "JSON_LITERAL",
+                "value" : {
+                  "route" : "it_support",
+                  "fields" : { }
+                }
+              },
+              "type" : {
+                "type" : "JSON_LITERAL",
+                "value" : "route"
+              },
+              "startsWith" : {
+                "type" : "JSON_LITERAL",
+                "value" : {
+                  "icon" : "headset-outline",
+                  "align" : "center"
+                }
+              },
+              "endsWith" : {
+                "type" : "JSON_LITERAL",
+                "value" : {
+                  "type" : "icon",
+                  "value" : "clipboard-outline",
+                  "additionalAttrs" : null
+                }
+              },
+              "opensWindow" : {
+                "type" : "JSON_LITERAL",
+                "value" : false
+              },
+              "configAria" : {
+                "type" : "JSON_LITERAL",
+                "value" : { }
+              },
+              "download" : {
+                "type" : "JSON_LITERAL",
+                "value" : false
+              }
+            }
+          }, {
+            "type" : "MAP_CONTAINER",
+            "container" : {
+              "label" : {
+                "type" : "TRANSLATION_LITERAL",
+                "value" : {
+                  "message" : "Hardware",
+                  "comment" : ""
+                }
+              },
+              "value" : {
+                "type" : "JSON_LITERAL",
+                "value" : {
+                  "route" : "it_support",
+                  "fields" : { }
+                }
+              },
+              "type" : {
+                "type" : "JSON_LITERAL",
+                "value" : "route"
+              },
+              "startsWith" : {
+                "type" : "JSON_LITERAL",
+                "value" : {
+                  "icon" : "headset-outline",
+                  "align" : "center"
+                }
+              },
+              "endsWith" : {
+                "type" : "JSON_LITERAL",
+                "value" : {
+                  "type" : "icon",
+                  "value" : "clipboard-outline",
+                  "additionalAttrs" : null
+                }
+              },
+              "opensWindow" : {
+                "type" : "JSON_LITERAL",
+                "value" : false
+              },
+              "configAria" : {
+                "type" : "JSON_LITERAL",
+                "value" : { }
+              },
+              "download" : {
+                "type" : "JSON_LITERAL",
+                "value" : false
+              }
+            }
+          }, {
+            "type" : "MAP_CONTAINER",
+            "container" : {
+              "label" : {
+                "type" : "TRANSLATION_LITERAL",
+                "value" : {
+                  "message" : "Wifi and remote access",
+                  "comment" : ""
+                }
+              },
+              "value" : {
+                "type" : "JSON_LITERAL",
+                "value" : {
+                  "route" : "it_support",
+                  "fields" : { }
+                }
+              },
+              "type" : {
+                "type" : "JSON_LITERAL",
+                "value" : "route"
+              },
+              "startsWith" : {
+                "type" : "JSON_LITERAL",
+                "value" : {
+                  "icon" : "headset-outline",
+                  "align" : "center"
+                }
+              },
+              "endsWith" : {
+                "type" : "JSON_LITERAL",
+                "value" : {
+                  "type" : "icon",
+                  "value" : "clipboard-outline",
+                  "additionalAttrs" : null
+                }
+              },
+              "opensWindow" : {
+                "type" : "JSON_LITERAL",
+                "value" : false
+              },
+              "configAria" : {
+                "type" : "JSON_LITERAL",
+                "value" : { }
+              },
+              "download" : {
+                "type" : "JSON_LITERAL",
+                "value" : false
+              }
+            }
+          }, {
+            "type" : "MAP_CONTAINER",
+            "container" : {
+              "label" : {
+                "type" : "TRANSLATION_LITERAL",
+                "value" : {
+                  "message" : "Security",
+                  "comment" : ""
+                }
+              },
+              "value" : {
+                "type" : "JSON_LITERAL",
+                "value" : {
+                  "route" : "it_support",
+                  "fields" : { }
+                }
+              },
+              "type" : {
+                "type" : "JSON_LITERAL",
+                "value" : "route"
+              },
+              "startsWith" : {
+                "type" : "JSON_LITERAL",
+                "value" : {
+                  "icon" : "headset-outline",
+                  "align" : "center"
+                }
+              },
+              "endsWith" : {
+                "type" : "JSON_LITERAL",
+                "value" : {
+                  "type" : "icon",
+                  "value" : "clipboard-outline",
+                  "additionalAttrs" : null
+                }
+              },
+              "opensWindow" : {
+                "type" : "JSON_LITERAL",
+                "value" : false
+              },
+              "configAria" : {
+                "type" : "JSON_LITERAL",
+                "value" : { }
+              },
+              "download" : {
+                "type" : "JSON_LITERAL",
+                "value" : false
+              }
+            }
+          } ]
+        },
+        "indentLinks" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "browseLink" : {
+          "type" : "MAP_CONTAINER",
+          "container" : {
+            "type" : {
+              "type" : "JSON_LITERAL",
+              "value" : "link"
+            },
+            "label" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "",
+                "comment" : ""
+              }
+            },
+            "icon" : {
+              "type" : "JSON_LITERAL",
+              "value" : "chevron-right-outline"
+            },
+            "link" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "type" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "route"
+                },
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Browse all",
+                    "comment" : ""
+                  }
+                },
+                "value" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : {
+                    "route" : "it_support",
+                    "fields" : { }
+                  }
+                },
+                "opensWindow" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "configAria" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : { }
+                },
+                "download" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                }
+              }
+            }
+          }
+        },
+        "minWidth" : {
+          "type" : "JSON_LITERAL",
+          "value" : 150
+        },
+        "width" : {
+          "type" : "JSON_LITERAL",
+          "value" : 300
+        },
+        "size" : {
+          "type" : "JSON_LITERAL",
+          "value" : "lg"
+        },
+        "variant" : {
+          "type" : "JSON_LITERAL",
+          "value" : "default"
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "Sidebar 1",
+      "definition" : {
+        "id" : "b83fb1af6e8e84e024d4057df053038b",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : [{"slotName":"Sidebar 1","rules":{"grid-area":"sidebar1"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column"}}],
+        "root" : null,
+        "rules" : {"grid-template-rows":"auto","grid-template-columns":"4fr 8fr","grid-template-areas":"\"sidebar1 main\"","grid-gap":"1rem","height":"100%"},
+        "styles" : null,
+        "templateId" : "7579b58153071010e6bcddeeff7b1290",
+        "type" : "grid"
+      }
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
+  }
+} ]</composition>
+        <da_relay_models/>
+        <data>[ {
+  "definition" : {
+    "id" : "d852b0b188a24510cfba81d2d20a561e",
+    "type" : "GRAPHQL"
+  },
+  "elementId" : "upcoming_events_graphql_1",
+  "elementLabel" : "Upcoming Events GraphQL 1",
+  "eventMappings" : [ ],
+  "inputValues" : { },
+  "readEvaluationMode" : "EAGER"
+} ]</data>
+        <dispatched_events/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{ }</internal_event_mappings>
+        <layout>{
+  "default" : {
+    "children" : null,
+    "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column"}}],
+    "root" : null,
+    "rules" : {"grid-template-rows":"minmax(400px,auto)","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+    "styles" : null,
+    "templateId" : "28bde4cd53431010e6bcddeeff7b12cc",
+    "type" : "grid"
+  }
+}</layout>
+        <macroponent_dependencies/>
+        <name>event_list</name>
+        <props>[ ]</props>
+        <required_translations>[{"message":"Tagline","comment":""},{"message":"Footer Label","comment":""},{"message":"Browse all","comment":""},{"message":"Content Value2","comment":""},{"message":"Card Heading","comment":""},{"message":"Content Value1","comment":""},{"message":"Dropdown Item 1","comment":""},{"message":"Dropdown Item 2","comment":""},{"message":"Footer Value","comment":""},{"message":"Security","comment":""},{"message":"Hardware","comment":""},{"message":"Search","comment":""},{"message":"New Events","comment":""},{"message":"Wifi and remote access","comment":""},{"message":"Content Label1","comment":""},{"message":"Software","comment":""},{"message":"Content Label2","comment":""}]</required_translations>
+        <root_component/>
+        <root_component_config>{ }</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_properties>[ ]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:56</sys_created_on>
+        <sys_id>1852b0b1dea24510602f4373864c151b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>event_list</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_ux_macroponent_1852b0b1dea24510602f4373864c151b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:56</sys_updated_on>
+    </sys_ux_macroponent>
+</record_update>

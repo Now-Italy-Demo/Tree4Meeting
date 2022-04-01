@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_tree4meeting.EventRegistrationAjax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Called from client script (Get location info/Ensure End Date is after Start Date/Start date can't be in past)&#13;
+Used to verify that an event is not already scheduled at the selected location. </description>
+        <name>EventRegistrationAjax</name>
+        <script><![CDATA[var EventRegistrationAjax = Class.create();
+EventRegistrationAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getLocationData: function() {
+        //Call the utils script include and pass in the parameters below
+        var util = new x_snc_tree4meeting.EventRegistrationUtils();
+        var locationId = this.getParameter('sysparm_location_id');
+        var sysId = this.getParameter('sysparm_sys_id');
+        var start = this.getParameter('sysparm_start');
+        var end = this.getParameter('sysparm_end');
+
+		//Convert the display value of the start field which is in the user's timezone
+		//into a glide date time object in GMT, then pass the display of that to the script include
+		var gdtStart = new GlideDateTime(start);
+        var startTime = gdtStart.getTime(); //GMT time
+        var startTimeFormated = (startTime.getByFormat('hh:mm:ss'));
+		var startDate = gdtStart.getDate();
+        var generatedStartDate = gs.dateGenerate(startDate, startTimeFormated);
+		
+		//Convert the display value of the end field which is in the user's timezone
+		//into a glide date time object in GMT, then pass the display of that to the script include
+		var gdtEnd = new GlideDateTime(end);
+        var endTime = gdtEnd.getTime(); // GMT time
+        var endTimeFormated = (endTime.getByFormat('hh:mm:ss'));
+		var endDate = gdtEnd.getDate();
+        var generatedEndDate = gs.dateGenerate(endDate, endTimeFormated);
+		
+        return JSON.stringify(util.getLocationData(locationId, sysId, generatedStartDate, generatedEndDate));
+    },
+	
+	getLocationCapacity: function(){
+		//Call the utils script include and pass in the parameters below
+        var util = new x_snc_tree4meeting.EventRegistrationUtils();
+		var locationId = this.getParameter('sysparm_location_id');
+		return JSON.stringify(util.getLocationCapacity(locationId));
+	},
+
+    type: 'EventRegistrationAjax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:47</sys_created_on>
+        <sys_id>9052b0b1cea245106a58ea8b2f4aeb9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EventRegistrationAjax</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_script_include_9052b0b1cea245106a58ea8b2f4aeb9b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:47</sys_updated_on>
+    </sys_script_include>
+</record_update>

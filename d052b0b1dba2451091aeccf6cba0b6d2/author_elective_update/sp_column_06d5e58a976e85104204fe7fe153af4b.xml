@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
+    <sp_column action="DELETE">
+        <class_name/>
+        <order>1</order>
+        <size>12</size>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="1">8ed5214a976e85104204fe7fe153afbd</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 14:52:51</sys_created_on>
+        <sys_id>06d5e58a976e85104204fe7fe153af4b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sp_column_06d5e58a976e85104204fe7fe153af4b</sys_update_name>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 14:52:51</sys_updated_on>
+    </sp_column>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</application>
+        <file_path/>
+        <instance_id>c9d8446ddbc245500ae3ac44d49619bc</instance_id>
+        <instance_name>digitalex</instance_name>
+        <name>sp_column_06d5e58a976e85104204fe7fe153af4b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">8ed5214a976e85104204fe7fe153afbd</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>francesco</sys_created_by><sys_created_on>2022-03-31 14:52:51</sys_created_on><sys_id>06d5e58a976e85104204fe7fe153af4b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package><sys_policy/><sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope><sys_update_name>sp_column_06d5e58a976e85104204fe7fe153af4b</sys_update_name><sys_updated_by>francesco</sys_updated_by><sys_updated_on>2022-03-31 14:52:51</sys_updated_on></sp_column></record_update>]]></payload>
+        <payload_hash>-427853547</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>ae52b4b147a24510d06e1d51e36d4389</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 14:52:51</sys_created_on>
+        <sys_id>82d5e58a976e85104204fe7fe153af4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17fe07706f50000001</sys_recorded_at>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 14:52:51</sys_updated_on>
+        <type>Column</type>
+        <update_guid>8ad5e58acc6e851094faf669cedac54c</update_guid>
+        <update_guid_history>8ad5e58acc6e851094faf669cedac54c:-427853547</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="1">85658d9297e209104204fe7fe153af49</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-04-01 07:09:33</sys_created_on>
+        <sys_db_object display_value="" name="sp_column">sp_column</sys_db_object>
+        <sys_id>3e4dbdb7ced24dcd9c03803cf0843b31</sys_id>
+        <sys_metadata>06d5e58a976e85104204fe7fe153af4b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_scope_delete display_value="">54abed2950fa4d7e91db49e53ca19f84</sys_scope_delete>
+        <sys_update_name>sp_column_06d5e58a976e85104204fe7fe153af4b</sys_update_name>
+        <sys_update_version display_value="sp_column_06d5e58a976e85104204fe7fe153af4b">82d5e58a976e85104204fe7fe153af4d</sys_update_version>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-04-01 07:09:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

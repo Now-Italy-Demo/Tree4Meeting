@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_button_instance">
+    <sys_sg_button_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <button display_value="Cancel Event">5052b0b1cea24510650e88125ab3208a</button>
+        <color_theme>destructive</color_theme>
+        <description/>
+        <disable_offline>false</disable_offline>
+        <field_name/>
+        <icon/>
+        <label>Cancel Event</label>
+        <location>footer</location>
+        <name>Cancel Event</name>
+        <order>20</order>
+        <parent>5052b0b118a24510ed7514d07d8b5889</parent>
+        <parent_table>sys_sg_screen</parent_table>
+        <sys_class_name>sys_sg_button_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:57</sys_created_on>
+        <sys_id>9c52b0b187a245102ddf40c343a88688</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cancel Event</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_sg_button_instance_9c52b0b187a245102ddf40c343a88688</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:57</sys_updated_on>
+        <table>x_snc_tree4meeting_event</table>
+    </sys_sg_button_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=9c52b0b187a245102ddf40c343a88688"/>
+</record_update>

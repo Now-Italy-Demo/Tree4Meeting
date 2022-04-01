@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream_m2m_segment">
+    <sys_sg_item_stream_m2m_segment action="INSERT_OR_UPDATE">
+        <item_stream display_value="Test activity Item Stream">1052b0b1f7a24510e10b77ef6d37ef7f</item_stream>
+        <segment display_value="Item Stream Segment">1c52b0b1c2a24510c9ee9d1cf6bd0079</segment>
+        <sys_class_name>sys_sg_item_stream_m2m_segment</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:46</sys_created_on>
+        <sys_id>9052b0b17ca245105ed20c9b6164a57a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_sg_item_stream_m2m_segment_9052b0b17ca245105ed20c9b6164a57a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:46</sys_updated_on>
+    </sys_sg_item_stream_m2m_segment>
+</record_update>

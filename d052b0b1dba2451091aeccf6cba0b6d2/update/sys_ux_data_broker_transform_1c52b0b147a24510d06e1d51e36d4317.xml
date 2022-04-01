@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_snc_tree4meeting.Event Record Transform</api_name>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Event Record Transform</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+  "name": "table",&#13;
+  "label": "Table",&#13;
+  "description": "Table to look up",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "table_name",&#13;
+  "mandatory": true&#13;
+},&#13;
+{&#13;
+  "name": "recordId",&#13;
+  "label": "Record",&#13;
+  "description": "Record to look up",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "reference",&#13;
+  "mandatory": true,&#13;
+  "defaultValue": "",&#13;
+  "typeMetadata": {"reference": "@table"}&#13;
+}&#13;
+]</props>
+        <required_translations>[{"message":"Table","comment":""},{"message":"Table to look up","comment":""},{"message":"Record to look up","comment":""},{"message":"Record","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+    var recordSysId = input.recordId || '';
+    var table = input.table || '';
+    if (recordSysId !== '' && table !== '') {
+        var recordGr = new GlideRecord(table);
+        if (recordGr.get(recordSysId)) {
+            var isFull = recordGr.getValue('is_full');
+            var currentUserId = gs.getUserID();
+            var attendeeTable = 'x_snc_tree4meeting_attendee';
+            var isAttending = false;
+            var isWaitlisted = false;
+            var isPending = false;
+            var isHold = false;
+            var noButtons = false;
+			var cancelRSVPModalContent ='Attending';
+            var isWaitlistFull = !gs.nil(recordGr.waitlist_size) && recordGr.waitlist_size <= recordGr.waitlisted;
+            var attendeeGr = new GlideRecord(attendeeTable);
+            attendeeGr.addEncodedQuery('event_name=' + recordSysId + '^attendee_name=' + currentUserId + '^attendee_statusINconfirmed,waitlisted,pending_registration,on_hold');
+            attendeeGr.query();
+            while (attendeeGr.next()) {
+                if (attendeeGr.attendee_status == 'confirmed') {
+                    isAttending = true;
+                }
+                if (attendeeGr.attendee_status == 'waitlisted') {
+                    isWaitlisted = true;
+                }
+                if (attendeeGr.attendee_status == 'pending_registration') {
+                    isPending = true;
+                }
+                if (attendeeGr.attendee_status == 'on_hold') {
+                    isHold = true;
+					cancelRSVPModalContent = 'Hold';
+                }
+            }
+            // Determine Form Button Logic. We determine when to show the buttons, then return the opposite value
+            // in our object to control our visibility of the buttons
+            var showRSVP = (isAttending == false && isFull == false && isPending == false && isHold == false && (recordGr.state == '1' || recordGr.state == '2'));
+            var showCancelRSVP = (isAttending == true || isHold == true);
+            var showJoinWaitlist = (isAttending == false && isFull == true && isWaitlistFull == false && isWaitlisted == false && isPending == false && isHold == false && (recordGr.state == '1' || recordGr.state == '2'));
+            var showLeaveWaitlist = isWaitlisted == true;
+            // Get our reformatted values for the start and end date/time of the event
+            var dateFromCleansed = new EventRegistrationDTformat().formatDateTime(recordGr.date_from.getDisplayValue());
+            var dateToCleansed = new EventRegistrationDTformat().formatDateTime(recordGr.date_to.getDisplayValue());
+
+            var imageObj = {};
+            var imageValue = recordGr.image.getDisplayValue();
+            if (imageValue != undefined) {
+                imageObj.headerImage = imageValue;
+                imageObj.fieldLabel = "Event image";
+            }
+            // Build array of objects for Event Details section
+            var detailsArray = [{
+                    "label": gs.getMessage('Location'),
+                    "value": {
+                        "type": "string",
+                        "value": recordGr.location.getDisplayValue()
+                    }
+                },
+                {
+                    "label": gs.getMessage('Scheduled start'),
+                    "value": {
+                        "type": "string",
+                        "value": dateFromCleansed
+                    }
+                },
+                {
+                    "label": gs.getMessage('Scheduled end'),
+                    "value": {
+                        "type": "string",
+                        "value": dateToCleansed
+                    }
+                },
+                {
+                    "label": gs.getMessage('Capacity'),
+                    "value": {
+                        "type": "string",
+                        "value": gs.getMessage('{0} seats remaining', recordGr.getValue('spaces_left'))
+                    }
+                }
+            ];
+            if (isFull && isWaitlistFull) {
+                noButtons = true;
+            }
+			
+            return {
+                "sys_id": recordGr.getUniqueValue(),
+                "event_name": recordGr.getValue('event_name'),
+                "organizer": recordGr.organizer.getDisplayValue(),
+                "recordHeaderOrganizer": gs.getMessage('Organized by {0}', recordGr.organizer.getDisplayValue()),
+                "purpose": recordGr.purpose.getDisplayValue(),
+                "location": recordGr.location.getDisplayValue(),
+                "date_from": dateFromCleansed,
+                "date_to": dateToCleansed,
+                "spaces_left": gs.getMessage('{0} seats remaining', recordGr.getValue('spaces_left')),
+                "image": imageObj,
+                "hideRSVP": !showRSVP,
+                "isPending": isPending,
+                "isHold": isHold,
+                "isWaitlisted": isWaitlisted,
+                "isAttending": isAttending,
+				"noButtons":!noButtons,
+                "hideCancelRSVP": !showCancelRSVP ,
+                "hideJoinWaitlist": !showJoinWaitlist,
+                "hideLeaveWaitlist": !showLeaveWaitlist,
+                "details": detailsArray,
+				"cancelRSVPModalContent":cancelRSVPModalContent
+            };
+        }
+    }
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:46</sys_created_on>
+        <sys_id>1c52b0b147a24510d06e1d51e36d4317</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Record Transform</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_1c52b0b147a24510d06e1d51e36d4317</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:46</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=1c52b0b147a24510d06e1d51e36d4317"/>
+</record_update>

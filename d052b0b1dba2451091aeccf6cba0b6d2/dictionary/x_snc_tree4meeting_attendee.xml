@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Partecipante" max_length="40" name="x_snc_tree4meeting_attendee" sizeclass="15" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" default="javascript: gs.getUserID();" label="Nome partecipante" mandatory="true" max_length="32" name="attendee_name" reference="sys_user" type="reference"/>
+        <element label="Note partecipante" max_length="4000" name="attendee_notes" type="journal_input"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="pending_registration" label="Stato partecipante" mandatory="true" max_length="40" name="attendee_status" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Processing Request" sequence="0" value="pending_registration"/>
+                <element inactive_on_update="false" label="Registration Confirmed" sequence="1" value="confirmed"/>
+                <element inactive_on_update="false" label="On Waitlist" sequence="2" value="waitlisted"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="3" value="cancelled"/>
+                <element inactive_on_update="false" label="Cancelled Waitlist" sequence="4" value="cancelled_waitlist"/>
+                <element inactive_on_update="false" label="Event ended" sequence="5" value="event_ended"/>
+                <element inactive_on_update="false" label="On hold" sequence="7" value="on_hold"/>
+                <element inactive_on_update="false" label="Event Cancelled" sequence="8" value="event_cancelled"/>
+                <element inactive_on_update="false" label="Not submitted" sequence="8" value="not_submitted"/>
+            </choice>
+        </element>
+        <element label="Azienda" max_length="32" name="azienda" reference="core_company" type="reference"/>
+        <element default="0" label="Impatto Costruzioni" max_length="20" name="calc_impatto_costruzioni" type="decimal"/>
+        <element default="0" label="Impatto Energia" max_length="20" name="calc_impatto_energia" type="decimal"/>
+        <element default="0" label="Impatto Foresta" max_length="20" name="calc_impatto_foresta" type="decimal"/>
+        <element default="0" label="Impatto Servizi" max_length="20" name="calc_impatto_servizi" type="decimal"/>
+        <element default="0" label="Impatto Trasporti" max_length="20" name="calc_impatto_trasporti" type="decimal"/>
+        <element default="0" label="Percentuale co2" max_length="20" name="calc_percentuale_co2" type="decimal"/>
+        <element default="0" label="Pianeti necessari" max_length="20" name="calc_pianeti_necessari" type="decimal"/>
+        <element default="0" label="Totale CO2" max_length="20" name="calc_totale_co2" type="decimal"/>
+        <element default="0" label="Consumo (CO2/anno)" max_length="40" name="consumo_co2_anno" type="decimal"/>
+        <element default="javascript:new GlideDateTime().getDisplayValue()" label="Data registrazione" mandatory="true" max_length="40" name="date_submitted" read_only="true" type="glide_date_time"/>
+        <element choice="3" label="Distanza percorsa" max_length="40" name="distanza_percorsa" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="5km" sequence="10" value="km"/>
+                <element inactive_on_update="false" label="10km" sequence="20" value="km"/>
+                <element inactive_on_update="false" label="30km" sequence="30" value="km"/>
+                <element inactive_on_update="false" label="50km" sequence="40" value="km"/>
+                <element inactive_on_update="false" label="100km" sequence="50" value="km"/>
+                <element inactive_on_update="false" label="200km" sequence="60" value="km"/>
+                <element inactive_on_update="false" label="Oltre 200km" sequence="70" value="oltre_200km"/>
+            </choice>
+        </element>
+        <element choice="3" label="Durata viaggio" max_length="40" name="durata_viaggio" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="meno di un'ora" sequence="10" value="meno_di_un_ora"/>
+                <element inactive_on_update="false" label="entro le 2 ore" sequence="20" value="entro_le_2_ore"/>
+                <element inactive_on_update="false" label="entro le 5 ore" sequence="30" value="entro_le_5_ore"/>
+                <element inactive_on_update="false" label="più di 5 ore" sequence="40" value="pi_di_5_ore"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Nome incontro" mandatory="true" max_length="32" name="event_name" reference="x_snc_tree4meeting_event" type="reference"/>
+        <element choice="3" label="Mezzo di trasporto" max_length="40" name="mezzo_di_trasporto" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Treno/Metro" sequence="10" value="treno_metro"/>
+                <element inactive_on_update="false" label="Aereo" sequence="20" value="aereo"/>
+                <element inactive_on_update="false" label="Veicolo elettrico" sequence="30" value="veicolo_elettrico"/>
+                <element inactive_on_update="false" label="Bicicletta" sequence="40" value="bicicletta"/>
+                <element inactive_on_update="false" label="Veicolo a combustione" sequence="50" value="veicolo_a_combustione"/>
+                <element inactive_on_update="false" label="Piedi" sequence="60" value="piedi"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Note organizzatore" max_length="4000" name="organizer_notes" type="journal_input"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <index name="index">
+            <element name="azienda"/>
+        </index>
+        <index name="index2">
+            <element name="attendee_name"/>
+        </index>
+        <index name="index3">
+            <element name="event_name"/>
+        </index>
+        <index name="index4">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

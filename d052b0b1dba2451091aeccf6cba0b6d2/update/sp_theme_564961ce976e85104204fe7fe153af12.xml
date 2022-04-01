@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme">
+    <sp_theme action="INSERT_OR_UPDATE">
+        <css_variables>// Define NavBar&#13;
+$sp-navbar-height: 		5rem !default;&#13;
+$sp-navbar-divider-color: #476459 !default;&#13;
+$sp-navbar-inverse-bg:	#293D40 !default;&#13;
+$navbar-inverse-bg: 	#293D40 !default;&#13;
+$navbar-inverse-link-color: #D9D9D9 !default;&#13;
+$navbar-inverse-link-hover-color: #FFFFFF !default;&#13;
+$sp-logo-margin-x: 		0.6rem !default;&#13;
+$sp-logo-margin-y:		0.7rem !default;&#13;
+$sp-tagline-color:		$text-color !default;&#13;
+&#13;
+// Define Body&#13;
+$sp-body-bg:			#ffffff !default;&#13;
+$body-bg: 				#ffffff !default;&#13;
+$table-hover: #E8F2F1;&#13;
+&#13;
+// Define SN Brand Colors&#13;
+$gray-base: #000000;&#13;
+$gray-dark: lighten($gray-base, 18.04%);&#13;
+$gray-darker: lighten($gray-base, 8.24%);&#13;
+$gray-light: lighten($gray-base, 40%);&#13;
+$gray-light-e: #EDF1F2;                                   //Defining color explicitly for when derived constant does not work&#13;
+$gray-lighter: lighten($gray-base, 94.51%);&#13;
+$gray: lighten($gray-base, 29.02%);&#13;
+$text-muted: $gray-light;&#13;
+$primary: $brand-primary !default;&#13;
+$warning: $brand-warning !default;&#13;
+$success: $brand-success !default;&#13;
+$info: $brand-info !default;&#13;
+$danger: $brand-danger !default;&#13;
+$error: $danger !default;&#13;
+$brand-danger: #C83C36 !default;&#13;
+$brand-info: #6ABECF !default;&#13;
+$brand-primary: #1F8476 !default;&#13;
+$brand-primary-dark: #1F8476 !default;&#13;
+$brand-primary-darker: #165C53 !default;&#13;
+$brand-success: #1F8476 !default;&#13;
+$brand-warning: #DFD139 !default;&#13;
+$btn-success-bg: $brand-success !default;&#13;
+$btn-success-border: darken($btn-success-bg, 5%) !default;&#13;
+$btn-success-color: darken(desaturate(adjust-hue($brand-success, 3), 15.64%), 34.31) !default;&#13;
+$input-border-focus: #1F8476;&#13;
+$color-darkest: #2E2E2E !default;&#13;
+$color-darker: #4A4A4A !default;&#13;
+$color-dark: #666666 !default;&#13;
+$color-disabled: #a9a9a9 !default;&#13;
+$color-light: #CBCBCB !default;&#13;
+$color-lighter: #E6E8EB !default;&#13;
+$color-lightest: #FFFFFF !default;&#13;
+$color-accent: #1F8476;&#13;
+$color-accent-light: #5FBAA4;&#13;
+$color-accent-lightest: #EEF8F8;&#13;
+$color-blue-lightest: #dee5e7;&#13;
+$border: #e6e8ea;&#13;
+$panel-primary: $border;&#13;
+$overdue: #F95050;&#13;
+$due-today: #FCC742;&#13;
+$due-later: #52DBA7;&#13;
+$complete: $border;&#13;
+$in-progress: $primary;&#13;
+$color-blue-light: #7FB0D8;&#13;
+$color-blue-dark: #285E8E;&#13;
+$color-grey: #CCCCCC;&#13;
+$color-green-dark: #10463f;&#13;
+$progress-bar: #62DAC9;&#13;
+$color-form-control-border: #939393;&#13;
+$state-danger-border: #C83C36;&#13;
+&#13;
+//define La Jolla variable that is used by Service Portal and ESC&#13;
+$brand-primary-lightest: #EEF8F8 !default;&#13;
+&#13;
+//Define Standard Ticket Header&#13;
+$component-active-bg: #f5f5f5;&#13;
+$component-active-color: $gray;&#13;
+$sp-b-border-color: #dee5e7;&#13;
+&#13;
+//define service portal preview outline highlighting&#13;
+$preview-outline: #005B9D;&#13;
+$preview-outline-text-color: #ffffff;&#13;
+&#13;
+//define La Jolla variable that is used for KB Star colors&#13;
+$fav-star-color: darken($brand-warning, 20%);&#13;
+$fav-star-color-off: #ffffff;&#13;
+$fav-star-outline-color: #6b611f;&#13;
+$fav-star-outline: -1px 0 $fav-star-outline-color, 0 1px $fav-star-outline-color, 1px 0$fav-star-outline-color, 0 -1px $fav-star-outline-color;&#13;
+&#13;
+$color-black-dark: #161B1C;&#13;
+$color-black-light: #1d2223;&#13;
+$color-gray-dark: #d3dad7;&#13;
+$color-gray-light: #E9ECEB;&#13;
+&#13;
+// Do not add CSS selectors here. Use esc-theme-includes.css</css_variables>
+        <footer/>
+        <footer_fixed>false</footer_fixed>
+        <header/>
+        <name>Tree4Meeting ESC Theme</name>
+        <navbar_fixed>false</navbar_fixed>
+        <sys_class_name>sp_theme</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 15:07:54</sys_created_on>
+        <sys_id>564961ce976e85104204fe7fe153af12</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Tree4Meeting ESC Theme</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sp_theme_564961ce976e85104204fe7fe153af12</sys_update_name>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 15:08:20</sys_updated_on>
+    </sp_theme>
+</record_update>

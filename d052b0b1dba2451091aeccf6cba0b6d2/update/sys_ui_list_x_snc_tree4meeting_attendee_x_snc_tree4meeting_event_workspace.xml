@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="x_snc_tree4meeting_event" relationship="" sys_domain="global" table="x_snc_tree4meeting_attendee" version="2" view="workspace">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>attendee_status</element>
+            <list_id display_value="x_snc_tree4meeting_attendee" element="NULL" name="x_snc_tree4meeting_attendee" parent="x_snc_tree4meeting_event" relationship="NULL" sys_domain="global" view="a3ce253f21163010c0a0a40cdfd1e476">5052b0b1bda24510122376d6aa0f2e55</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-30 16:29:46</sys_created_on>
+            <sys_id>9052b0b186a2451036c69671d738c055</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-30 16:29:46</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>attendee_name</element>
+            <list_id display_value="x_snc_tree4meeting_attendee" element="NULL" name="x_snc_tree4meeting_attendee" parent="x_snc_tree4meeting_event" relationship="NULL" sys_domain="global" view="a3ce253f21163010c0a0a40cdfd1e476">5052b0b1bda24510122376d6aa0f2e55</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-30 16:29:46</sys_created_on>
+            <sys_id>1052b0b1d2a245106f1dba0f521bc355</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-30 16:29:46</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>attendee_name.title</element>
+            <list_id display_value="x_snc_tree4meeting_attendee" element="NULL" name="x_snc_tree4meeting_attendee" parent="x_snc_tree4meeting_event" relationship="NULL" sys_domain="global" view="a3ce253f21163010c0a0a40cdfd1e476">5052b0b1bda24510122376d6aa0f2e55</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-30 16:29:46</sys_created_on>
+            <sys_id>9c52b0b14aa24510d2881ddc7aeb5454</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-30 16:29:46</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>attendee_name.email</element>
+            <list_id display_value="x_snc_tree4meeting_attendee" element="NULL" name="x_snc_tree4meeting_attendee" parent="x_snc_tree4meeting_event" relationship="NULL" sys_domain="global" view="a3ce253f21163010c0a0a40cdfd1e476">5052b0b1bda24510122376d6aa0f2e55</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-30 16:29:46</sys_created_on>
+            <sys_id>1c52b0b10da24510d6da4730c6608254</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-30 16:29:46</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_snc_tree4meeting_attendee</name>
+            <parent>x_snc_tree4meeting_event</parent>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-30 16:29:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5052b0b1bda24510122376d6aa0f2e55</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_tree4meeting_attendee</sys_name>
+            <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+            <sys_update_name>sys_ui_list_x_snc_tree4meeting_attendee_x_snc_tree4meeting_event_workspace</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-30 16:29:46</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace" name="workspace">a3ce253f21163010c0a0a40cdfd1e476</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

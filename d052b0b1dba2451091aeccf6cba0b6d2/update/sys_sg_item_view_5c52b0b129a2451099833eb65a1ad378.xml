@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_view">
+    <sys_sg_item_view action="INSERT_OR_UPDATE">
+        <data_item/>
+        <dependency_fields>attendee_name.avatar-42257,attendee_name.name-45538,attendee_name.title-45539,event_name-45540</dependency_fields>
+        <item_view_json>{"Type":"ViewGroup","Margin":{"Top":14,"Bottom":16},"Orientation":"Horizontal","Alignment":"Center","Distribution":"Auto","Children":[{"Type":"Image","Margin":{"Right":16},"studio_template_field_id":"E1","CornerRadius":24,"Height":48,"Width":48,"Scaling":"Fill","CellId":"attendee_name.avatar","Id":42257},{"Type":"ViewGroup","Margin":{},"Orientation":"Vertical","Alignment":"Left","Distribution":"Auto","Children":[{"Type":"Text","studio_template_field_id":"E2","TextColor":"#333e3f","TextAlignment":"Left","MaxLines":1,"Font":{"Weight":"regular","Size":18},"CellId":"attendee_name.name","Id":45538},{"Type":"Text","Margin":{"Top":4},"studio_template_field_id":"E3","TextColor":"#333e3f","TextAlignment":"Left","MaxLines":1,"Font":{"Weight":"regular","Size":14},"CellId":"attendee_name.title","Id":45539},{"Type":"Text","Margin":{"Top":4},"studio_template_field_id":"E4","TextColor":"#7d8a8c","TextAlignment":"Left","MaxLines":1,"Font":{"Weight":"regular","Size":13},"CellId":"event_name","Id":45540}],"Id":12260}],"studio_card_id":"6a08b23023052300a8ed7f4fc7bf6558","Id":28090}</item_view_json>
+        <name>My Attendees Item View</name>
+        <short_description/>
+        <sys_class_name>sys_sg_item_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:21</sys_created_on>
+        <sys_id>5c52b0b129a2451099833eb65a1ad378</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Attendees Item View</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_sg_item_view_5c52b0b129a2451099833eb65a1ad378</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:21</sys_updated_on>
+        <table>x_snc_tree4meeting_attendee</table>
+        <ui_styles/>
+    </sys_sg_item_view>
+    <sys_translated_text action="delete_multiple" query="documentkey=5c52b0b129a2451099833eb65a1ad378"/>
+</record_update>

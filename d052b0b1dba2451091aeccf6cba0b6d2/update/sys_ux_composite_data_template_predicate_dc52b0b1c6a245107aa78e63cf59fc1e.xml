@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_template_predicate">
+    <sys_ux_composite_data_template_predicate action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="v_search_genius_result">model=805f142c24bd2010f8773f9d33adf391^EQ<item endquery="false" field="model" goto="false" newquery="false" operator="=" or="false" value="805f142c24bd2010f8773f9d33adf391"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <custom_condition/>
+        <custom_field_list/>
+        <field_list>columns.var__m_sys_search_genius_result_field_805f142c24bd2010f8773f9d33adf391.event_name,columns.var__m_sys_search_genius_result_field_805f142c24bd2010f8773f9d33adf391.spaces_left,columns.var__m_sys_search_genius_result_field_805f142c24bd2010f8773f9d33adf391.organizer,columns.var__m_sys_search_genius_result_field_805f142c24bd2010f8773f9d33adf391.location,columns.var__m_sys_search_genius_result_field_805f142c24bd2010f8773f9d33adf391.image,columns.var__m_sys_search_genius_result_field_805f142c24bd2010f8773f9d33adf391.table,columns.var__m_sys_search_genius_result_field_805f142c24bd2010f8773f9d33adf391.sys_id,columns.var__m_sys_search_genius_result_field_805f142c24bd2010f8773f9d33adf391.date_from</field_list>
+        <name>Event Reg Genius Config</name>
+        <order>100</order>
+        <predicate_bundle display_value="Event Registration Search Bundle">1852b0b1c9a24510dad12c561994061f</predicate_bundle>
+        <required_roles/>
+        <sys_class_name>sys_ux_composite_data_template_predicate</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:23</sys_created_on>
+        <sys_id>dc52b0b1c6a245107aa78e63cf59fc1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Reg Genius Config</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_ux_composite_data_template_predicate_dc52b0b1c6a245107aa78e63cf59fc1e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:23</sys_updated_on>
+        <table>v_search_genius_result</table>
+        <ux_template display_value="Event Reg Genius Result Template">9052b0b1fca245101daf82895c64961f</ux_template>
+    </sys_ux_composite_data_template_predicate>
+</record_update>

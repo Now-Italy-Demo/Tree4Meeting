@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Event Location" max_length="40" name="x_snc_tree4meeting_event_location" sizeclass="1" text_index="true" type="collection">
+        <element label="Location Address" max_length="4000" name="address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Location Capacity" max_length="40" name="capacity" type="integer"/>
+        <element label="Comments" max_length="4000" name="comments" type="journal_input"/>
+        <element label="Description" max_length="4000" name="description" type="string"/>
+        <element label="Event Location Name" mandatory="true" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Location Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Available" sequence="0" value="available"/>
+                <element inactive_on_update="false" label="Temporarily Unavailable" sequence="1" value="temp_unavailable"/>
+                <element inactive_on_update="false" label="Closed" sequence="2" value="closed"/>
+            </choice>
+        </element>
+        <element label="Work Notes" max_length="4000" name="worknotes" type="journal_input"/>
+    </element>
+</database>

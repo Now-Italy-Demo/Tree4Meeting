@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>300</order>
+        <published_ref display_value="Entro le 5 ore">8ab2914647a2c510d06e1d51e36d43ac</published_ref>
+        <question display_value="Quanto è durato il viaggio?">77172d0e976e85104204fe7fe153afd7</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 14:58:26</sys_created_on>
+        <sys_id>3b172d0e976e85104204fe7fe153afe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Entro le 5 ore</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>question_choice_3b172d0e976e85104204fe7fe153afe8</sys_update_name>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 14:58:26</sys_updated_on>
+        <text>Entro le 5 ore</text>
+        <value>entro_le_5_ore</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=3b172d0e976e85104204fe7fe153afe8"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</application>
+        <file_path/>
+        <instance_id>c9d8446ddbc245500ae3ac44d49619bc</instance_id>
+        <instance_name>digitalex</instance_name>
+        <name>question_choice_3b172d0e976e85104204fe7fe153afe8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><order>300</order><published_ref display_value="Entro le 5 ore">8ab2914647a2c510d06e1d51e36d43ac</published_ref><question display_value="Quanto è durato il viaggio?">77172d0e976e85104204fe7fe153afd7</question><sys_class_name>question_choice</sys_class_name><sys_created_by>francesco</sys_created_by><sys_created_on>2022-03-31 14:58:26</sys_created_on><sys_id>3b172d0e976e85104204fe7fe153afe8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Entro le 5 ore</sys_name><sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package><sys_policy/><sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope><sys_update_name>question_choice_3b172d0e976e85104204fe7fe153afe8</sys_update_name><sys_updated_by>francesco</sys_updated_by><sys_updated_on>2022-03-31 14:58:26</sys_updated_on><text>Entro le 5 ore</text><value>entro_le_5_ore</value></question_choice><fx_price action="delete_multiple" query="id=3b172d0e976e85104204fe7fe153afe8"/></record_update>]]></payload>
+        <payload_hash>-491416542</payload_hash>
+        <record_name>Entro le 5 ore</record_name>
+        <reverted_from/>
+        <source>ae52b4b147a24510d06e1d51e36d4389</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 14:58:27</sys_created_on>
+        <sys_id>cc272d0e976e85104204fe7fe153afea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17fe07c263d0000001</sys_recorded_at>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 14:58:27</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>04272d0ed66e8510539fac109d3ab1ea</update_guid>
+        <update_guid_history>04272d0ed66e8510539fac109d3ab1ea:-491416542</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Entro le 5 ore">c0f821ca4726c510d06e1d51e36d43b5</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2022-03-31 15:06:22</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>0889d68971a8435c80a44b050e85ea90</sys_id>
+        <sys_metadata>3b172d0e976e85104204fe7fe153afe8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Entro le 5 ore</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_scope_delete display_value="">54abed2950fa4d7e91db49e53ca19f84</sys_scope_delete>
+        <sys_update_name>question_choice_3b172d0e976e85104204fe7fe153afe8</sys_update_name>
+        <sys_update_version display_value="question_choice_3b172d0e976e85104204fe7fe153afe8">cc272d0e976e85104204fe7fe153afea</sys_update_version>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2022-03-31 15:06:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

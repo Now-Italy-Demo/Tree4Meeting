@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_snc_tree4meeting.Event Registration Portal New Events Transform</api_name>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Event Registration Portal New Events Transform</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+{&#13;
+"name":"graphqlData",&#13;
+"label":"GraphQL Data",&#13;
+"description":"",&#13;
+"readOnly":false,&#13;
+"fieldType":"object",&#13;
+"mandatory":false,&#13;
+"defaultValue":""&#13;
+}&#13;
+]</props>
+        <required_translations>[{"message":"GraphQL Data","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input){
+	var results = [];
+	
+/* Input Object that determines the data broker and JSON data to display */
+	input
+	.graphqlData
+	.data
+	.GlideRecord_Query
+	.x_snc_tree4meeting_event
+	._results
+	.forEach(function (item) {
+		results.push(item);
+	});
+
+/* Creates the array and objects returned in JSON format to display in a Related Content component */
+	var returnVals = [];	
+	results.forEach(function (item){
+		var objRecord = {};
+		var objTitle = {};
+		var arrFields = [];
+		var objFields1 = {};
+		var objFields2 = {};
+
+		objTitle['label'] = item.event_name.value;
+		objTitle['variant'] = "primary";
+		objTitle['href'] = "/now/x_snc_tree4meeting-event_registration/event_details/x_snc_tree4meeting_event/"+item.sys_id.value;
+		objTitle['opensWindow'] = "false";
+		
+		objFields1['text'] = item.location.displayValue;
+		objFields1['type'] = "string";
+		objFields1['tooltip'] = "Where the event will take place";
+		objFields1['icon'] = "building-outline";
+		
+		objFields2['text'] = new EventRegistrationDTformat().formatDateTime(item.date_from.displayValue);
+		objFields2['type'] = "string";
+		objFields2['tooltip'] = "Start time of the event";
+		objFields2['icon'] = "clock-outline";
+		
+		arrFields.push(objFields1);
+		arrFields.push(objFields2);
+		
+		objRecord['title'] = objTitle;
+		objRecord['text'] = item.purpose;
+		objRecord['icon'] = "star-outline";
+		objRecord['fields'] = arrFields;
+		
+		returnVals.push(objRecord);
+	});
+	
+	return returnVals;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:45</sys_created_on>
+        <sys_id>d052b0b147a24510d06e1d51e36d4317</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Registration Portal New Events Transform</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_d052b0b147a24510d06e1d51e36d4317</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:45</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=d052b0b147a24510d06e1d51e36d4317"/>
+</record_update>

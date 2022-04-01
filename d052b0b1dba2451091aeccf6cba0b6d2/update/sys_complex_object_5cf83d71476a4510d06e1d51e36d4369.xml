@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD98f83d71956a451038e1883317292869</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>d052b0b1dba2451091aeccf6cba0b6d2</scope_name>
+        <serialized_content>{"FlowDesigner:FD98f83d71956a451038e1883317292869":{"root_array":[{"$2_root_array":{"reforestationCompanyName_en":"String","reforestationCompanyName_en.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"reforestationCompanyName_en\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"f4ebad72-d44f-453a-a105-1a4da779b388\"}"},"reforestationProjectWebsite_en":"String","reforestationProjectWebsite_en.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"reforestationProjectWebsite_en\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"63ba6232-c4bb-44a3-b07e-1a6a76d33db8\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"8b647631-6c4d-4321-8266-7499bbcabf3c\"}"},"reforestationProjectState_en":"String","reforestationProjectState_en.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"reforestationProjectState_en\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"727bdc40-e90b-44f2-9512-55d310906a7a\"}"},"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"id\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"b1c9ca5c-fd56-47bb-aa69-8b0ae3756da3\"}"},"reforestationProjectCountry_en":"String","reforestationProjectCountry_en.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"reforestationProjectCountry_en\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"9b25acbf-5b78-498e-b09b-e3de1dd115b4\"}"},"reforestationProjectDescription_en":"String","reforestationProjectDescription_en.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"reforestationProjectDescription_en\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"23d93925-84f5-4f23-9c12-de42ffeddd47\"}"}}}],"root_array.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"root_array\",\"mandatory\":\"false\",\"child_name\":\"root_array_object\",\"uiUniqueId\":\"3e0c3403-9c1d-4be9-a8b0-ea9cc24c9619\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"root_array_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"57fc773b-9a28-41fb-b6f4-9bd3de64367b\"}"}},"FlowDesigner:FD98f83d71956a451038e1883317292869.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"87d492cb-9718-4642-bed4-123a689a6725\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD98f83d71956a451038e1883317292869\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"0\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:37:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5cf83d71476a4510d06e1d51e36d4369</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD98f83d71956a451038e1883317292869</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_complex_object_5cf83d71476a4510d06e1d51e36d4369</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:37:48</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

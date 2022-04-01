@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_tree4meeting.EventRegistrationUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Includes multiple functions for checking location availability, attendee status, event capacity and waitlist capcity</description>
+        <name>EventRegistrationUtils</name>
+        <script><![CDATA[var EventRegistrationUtils = Class.create();
+EventRegistrationUtils.prototype = {
+    _EVENT_TABLE: 'x_snc_tree4meeting_event',
+    _ATTENDEE_TABLE: 'x_snc_tree4meeting_attendee',
+    _LOCATION_TABLE: 'x_snc_tree4meeting_event_location',
+    initialize: function() {},
+
+    getLocationData: function(location_id, sys_id, start, end) {
+		var result = {};
+        var locGr = new GlideRecord(this._LOCATION_TABLE);
+        if (locGr.get(location_id)) {
+            result.name = locGr.getValue('name');
+            result.status = locGr.getValue('status');
+
+            if (start && end) {
+                // look for other events in the same location between the times
+                var locEventGr = new GlideAggregate(this._EVENT_TABLE);
+				locEventGr.addEncodedQuery('location=' + location_id + '^sys_id!=' + sys_id + '^stateIN1,2^date_from<' + start + '^date_to>' + start +'^NQlocation=' + location_id + '^sys_id!=' + sys_id + '^stateIN1,2^date_from<' + end + '^date_to>' + end+'^NQlocation=' + location_id + '^sys_id!=' + sys_id + '^stateIN1,2^date_from>' + start + '^date_to>' + start + '^date_from<' + end + '^date_to<' + end);
+                locEventGr.addAggregate('COUNT');
+                locEventGr.query();
+				var eventCount = 0;
+                if (locEventGr.next()) {
+					eventCount = locEventGr.getAggregate('COUNT');
+					result.other_events = eventCount;
+                }
+            }
+        }
+
+        return result;
+    },
+	
+	getLocationCapacity: function(location_id){
+		var result = {};
+        var locGr = new GlideRecord(this._LOCATION_TABLE);
+        if (locGr.get(location_id)) {
+            result.name = locGr.getValue('name');
+            result.capacity = locGr.getValue('capacity');
+            result.status = locGr.getValue('status');
+		}
+		return result;
+	},
+
+    // Expected to be called from a BR on the Attendee record
+    // must be called in a Before BR as we don't update the attendee record
+    // The purpose of this function is to properly set the state of the attendee record
+    calculateEventFullness: function(currentAttendee) {
+        var event_id = currentAttendee.getValue('event_name');
+        var current_status = currentAttendee.getValue('attendee_status');
+        // lookup the event
+        var eventGr = new GlideRecord(this._EVENT_TABLE);
+        if (eventGr.get(event_id)) {
+            var capacity = this._intOrZero(eventGr.getValue('capacity'));
+            var currentPercent = this._intOrZero(eventGr.getValue('percent_full'));
+
+            var addedNewAttendee = false;
+
+            // is the attendee new or cancelling?
+            if (current_status == 'not_submitted') {
+                if (currentPercent < 100) {
+                    // event isn't full, so confirm
+                    currentAttendee.setValue('attendee_status', 'confirmed');
+                    addedNewAttendee = true;
+                } else {
+                    // check if we have a waitlist
+                    // if it's blank, it's unlimited
+                    var waitlistSize = eventGr.getValue('waitlist_size');
+                    //if (!waitlistSize || waitlistSize.length === 0) {
+                    if (gs.nil(waitlistSize)) {
+                        // at this point, waitlistSize is a string, so it's blank if the length is 0
+                        // means we can add the user to the waitlist
+                        currentAttendee.setValue('attendee_status', 'waitlisted');
+                        gs.addInfoMessage(gs.getMessage('Attendee added to waitlist'));
+                    } else {
+                        // event full, so check if there's room on the waitlist
+                        waitlistSize = this._intOrZero(waitlistSize);
+                        var currentWaitlisted = this._intOrZero(eventGr.getValue('waitlisted'));
+                        if (currentWaitlisted < waitlistSize) {
+                            // there's room on the waitlist, so we can add
+                            currentAttendee.setValue('attendee_status', 'waitlisted');
+                        } else {
+                            gs.addErrorMessage(gs.getMessage('Attendee not added; waitlist is full'));
+                        }
+                    }
+                }
+            } else if (current_status == 'cancelled') {
+                // if we cancel, confirm the next person on the waitlist
+                var firstWaitlistAttendeeGr = new GlideRecord(this._ATTENDEE_TABLE);
+                firstWaitlistAttendeeGr.addQuery('event_name', event_id);
+                firstWaitlistAttendeeGr.addQuery('attendee_status', 'waitlisted');
+                firstWaitlistAttendeeGr.orderBy('date_submitted');
+                firstWaitlistAttendeeGr.setLimit(1);
+                firstWaitlistAttendeeGr.query();
+                if (firstWaitlistAttendeeGr.next()) {
+                    firstWaitlistAttendeeGr.setValue('attendee_status', 'confirmed');
+                    firstWaitlistAttendeeGr.update();
+                }
+            }
+        }
+    },
+
+    _intOrZero: function(strValue) {
+        var result = parseInt(strValue);
+        if (isNaN(result)) {
+            result = 0;
+        }
+        return result;
+    },
+
+    firstTimeRegisterEvent: function(event) {
+        var result = false;
+
+        //Checks if user already registered current event
+//         var grAttendee = new GlideRecord("x_snc_tree4meeting_attendee");
+//         grAttendee.addQuery('attendee_name', gs.getUserID());
+//         grAttendee.addQuery('event_name', event);
+//         grAttendee.query();
+
+//         if (grAttendee.next()) {
+//             if (grAttendee.attendee_status == 'pending_registration' || grAttendee.attendee_status == 'confirmed' || grAttendee.attendee_status == 'waitlisted')
+//                 result = false;
+//         }
+//         return result;
+		var recordGr = new GlideRecord('x_snc_tree4meeting_event');
+        if (recordGr.get(event)) {
+            var isFull = recordGr.getValue('is_full');
+            var currentUserId = gs.getUserID();
+            var attendeeTable = 'x_snc_tree4meeting_attendee';
+            var isAttending = false;
+            var isPending = false;
+            var isHold = false;
+            var attendeeGr = new GlideRecord(attendeeTable);
+            attendeeGr.addEncodedQuery('event_name=' + event + '^attendee_name=' + currentUserId + '^attendee_statusINconfirmed,pending_registration,on_hold');
+			attendeeGr.orderByDesc('date_submitted');
+			attendeeGr.setLimit(1);
+            attendeeGr.query();
+            if (attendeeGr.next()) {
+                if (attendeeGr.attendee_status == 'confirmed') {
+                    isAttending = true;
+                }
+                if (attendeeGr.attendee_status == 'pending_registration') {
+                    isPending = true;
+                }
+                if (attendeeGr.attendee_status == 'on_hold') {
+                    isHold = true;
+                }
+            }
+            // Determine Form Button Logic. We determine when to show the buttons, then return the opposite value
+            // in our object to control our visibility of the buttons
+            result = (isAttending == false && isFull == false && isPending == false && isHold == false && (recordGr.state == '1' || recordGr.state == '2'));
+		}
+		return result;
+    },
+	/*_________________________________________________________________
+   * Description:
+   * Parameters:
+   * Returns:
+   ________________________________________________________________*/
+	cancelRegistraion : function(event) {
+		var result = false;
+		//Checks if user already registered current event
+// 		var grAttendee = new GlideRecord("x_snc_tree4meeting_attendee");
+// 		grAttendee.addQuery('attendee_name', gs.getUserID());
+// 		grAttendee.addQuery('event_name', event);
+// 		grAttendee.addQuery('attendee_status', 'confirmed');
+// 		grAttendee.query();
+
+// 		if (grAttendee.next()) {
+// 				result = true;
+// 		}
+// 		return result;
+            var currentUserId = gs.getUserID();
+            var attendeeTable = 'x_snc_tree4meeting_attendee';
+            var isAttending = false;
+            var isHold = false;
+            var attendeeGr = new GlideRecord(attendeeTable);
+            attendeeGr.addEncodedQuery('event_name=' + event + '^attendee_name=' + currentUserId + '^attendee_statusINconfirmed,on_hold');
+            attendeeGr.query();
+            while (attendeeGr.next()) {
+                if (attendeeGr.attendee_status == 'confirmed') {
+                    isAttending = true;
+                }
+                if (attendeeGr.attendee_status == 'on_hold') {
+                    isHold = true;
+                }
+            }
+		result = (isAttending == true || isHold == true);
+		return result;
+
+	},
+	/*_________________________________________________________________
+   * Description:
+   * Parameters:
+   * Returns:
+   ________________________________________________________________*/
+	showEventButton: function(event, tableName) {
+		
+		if(tableName == 'x_snc_tree4meeting_attendee'){
+			var attendeeGr1 = new GlideRecord('x_snc_tree4meeting_attendee');
+			if(attendeeGr1.get(event)){
+				event = attendeeGr1.event_name.sys_id;
+			}
+		}
+		gs.info('event sysid '+event+'  table name '+tableName);
+		var recordGr = new GlideRecord('x_snc_tree4meeting_event');
+		if (recordGr.get(event)) {
+            var isFull = recordGr.getValue('is_full');
+            var currentUserId = gs.getUserID();
+            var attendeeTable = 'x_snc_tree4meeting_attendee';
+            var isAttending = false;
+            var isWaitlisted = false;
+            var isPending = false;
+            var isHold = false;
+            var noButtons = false;
+			var cancelRSVPModalContent ='Attending';
+            var isWaitlistFull = !gs.nil(recordGr.waitlist_size) && recordGr.waitlist_size <= recordGr.waitlisted;
+            var attendeeGr = new GlideRecord(attendeeTable);
+            attendeeGr.addEncodedQuery('event_name=' + event + '^attendee_name=' + currentUserId + '^attendee_statusINconfirmed,waitlisted,pending_registration,on_hold');
+            attendeeGr.query();
+            while (attendeeGr.next()) {
+                if (attendeeGr.attendee_status == 'confirmed') {
+                    isAttending = true;
+                }
+                if (attendeeGr.attendee_status == 'waitlisted') {
+                    isWaitlisted = true;
+                }
+                if (attendeeGr.attendee_status == 'pending_registration') {
+                    isPending = true;
+                }
+                if (attendeeGr.attendee_status == 'on_hold') {
+                    isHold = true;
+					cancelRSVPModalContent = 'Hold';
+                }
+            }
+            // Determine Form Button Logic. We determine when to show the buttons, then return the opposite value
+            // in our object to control our visibility of the buttons
+            var showRSVP = (isAttending == false && isFull == false && isPending == false && isHold == false && (recordGr.state == '1' || recordGr.state == '2'));
+            var showCancelRSVP = (isAttending == true || isHold == true);
+            var showJoinWaitlist = (isAttending == false && isFull == true && isWaitlistFull == false && isWaitlisted == false && isPending == false && isHold == false && (recordGr.state == '1' || recordGr.state == '2'));
+            var showLeaveWaitlist = isWaitlisted == true;
+            // Get our reformatted values for the start and end date/time of the event
+            var dateFromCleansed = new EventRegistrationDTformat().formatDateTime(recordGr.date_from.getDisplayValue());
+            var dateToCleansed = new EventRegistrationDTformat().formatDateTime(recordGr.date_to.getDisplayValue());
+
+            var imageObj = {};
+            var imageValue = recordGr.image.getDisplayValue();
+            if (imageValue != undefined) {
+                imageObj.headerImage = imageValue;
+                imageObj.fieldLabel = "Event image";
+            }
+            // Build array of objects for Event Details section
+            var detailsArray = [{
+                    "label": gs.getMessage('Location'),
+                    "value": {
+                        "type": "string",
+                        "value": recordGr.location.getDisplayValue()
+                    }
+                },
+                {
+                    "label": gs.getMessage('Scheduled start'),
+                    "value": {
+                        "type": "string",
+                        "value": dateFromCleansed
+                    }
+                },
+                {
+                    "label": gs.getMessage('Scheduled end'),
+                    "value": {
+                        "type": "string",
+                        "value": dateToCleansed
+                    }
+                },
+                {
+                    "label": gs.getMessage('Capacity'),
+                    "value": {
+                        "type": "string",
+                        "value": gs.getMessage('{0} seats remaining', recordGr.getValue('spaces_left'))
+                    }
+                }
+            ];
+            if (!showRSVP && !showJoinWaitlist && !showCancelRSVP && !showLeaveWaitlist && !isPending && !isHold ) {
+                noButtons = true;
+            }
+			
+            return {
+                "sys_id": recordGr.getUniqueValue(),
+                "event_name": recordGr.getValue('event_name'),
+                "organizer": recordGr.organizer.getDisplayValue(),
+                "recordHeaderOrganizer": "Organized by " + recordGr.organizer.getDisplayValue(),
+                "purpose": recordGr.purpose.getDisplayValue(),
+                "location": recordGr.location.getDisplayValue(),
+                "date_from": dateFromCleansed,
+                "date_to": dateToCleansed,
+                "spaces_left": gs.getMessage('{0} seats remaining', recordGr.getValue('spaces_left')),
+                "image": imageObj,
+                "hideRSVP": !showRSVP,
+                "isPending": isPending,
+                "isHold": isHold,
+                "isWaitlisted": isWaitlisted,
+                "isAttending": isAttending,
+				"noButtons":!noButtons,
+                "hideCancelRSVP": !showCancelRSVP ,
+                "hideJoinWaitlist": !showJoinWaitlist,
+                "hideLeaveWaitlist": !showLeaveWaitlist,
+                "details": detailsArray,
+				"cancelRSVPModalContent":cancelRSVPModalContent
+            };
+        }
+   },
+
+	
+
+
+    //Takes as parms the sys_id of an event record and the sys_id of a user
+    //Returns boolean true if the user is currently RSVP'd to the event or is on the waitlist
+    //Returns boolean false if the user is not attending or on the waitlist of the event
+    checkWaitlistOrConfirmed: function(eventId, userId) {
+        var returnValue = false; //Default is to assume no access
+        
+		//Check if current user is attending the event or on the waitlist
+        var attendeeGr = new GlideRecord('x_snc_tree4meeting_attendee');
+        attendeeGr.addEncodedQuery('event_name=' + eventId + '^attendee_name=' + userId + '^attendee_statusINconfirmed,waitlisted');
+        attendeeGr.query();
+        if (attendeeGr.hasNext()) {
+            //User is an attendee or on waitlist, so return true
+            returnValue = true;
+        }
+        return returnValue;
+    },
+
+    type: 'EventRegistrationUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:30:00</sys_created_on>
+        <sys_id>d052b0b105a24510135861b0a2266d9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EventRegistrationUtils</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_script_include_d052b0b105a24510135861b0a2266d9b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:30:00</sys_updated_on>
+    </sys_script_include>
+</record_update>

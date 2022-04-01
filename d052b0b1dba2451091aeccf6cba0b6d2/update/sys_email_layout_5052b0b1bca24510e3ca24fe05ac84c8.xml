@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_email_layout">
+    <sys_email_layout action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <advanced_layout/>
+        <description>Layout for Event Registration Email Notifications</description>
+        <layout><![CDATA[<p><br /></p>
+<table style="border: 0px solid gray; width: 608px; position: relative;">
+<tbody>
+<tr>
+<td style="background-color: #333333; color: #fafafa; padding-top: 15px; padding-bottom: 15px; border-top-right-radius: 5px; border-top-left-radius: 5px; width: 600px; text-align: center;">
+<h3 style="padding-left: 20px; font-size: 16pt; color: #fafafa; text-align: center;"><span style="font-family: arial, helvetica, sans-serif;">${mail_script:x_snc_tree4meeting.getCompanyName}</span></h3>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px; padding-right: 5px; padding-top: 20px; width: 592px;">
+<p class="p1" style="font-family: arial, helvetica, 'sans serif'; font-size: 16pt; color: #637274; text-align: center;"><span style="color: #637274; font-family: 'trebuchet ms', geneva;">${notification:body}</span></p>
+</td>
+</tr>
+<tr>
+<td style="background-color: #dddcf6; padding-top: 20px; width: 600px;">
+<p><span dddcf6="" font-family:="" trebuchet="" ms="" geneva=""><img style="align: middle;" title="" src="x_snc_tree4meeting.02_Event_Registration.svg" alt="" width="600" height="312" align="middle" border="" hspace="" vspace="" /></span></p>
+</td>
+</tr>
+<tr>
+<td style="height: 50px; background-color: #ffffff; padding-left: 30px; padding-top: 20px; width: 571px;">
+<p style="text-align: center; font-family: arial, helvetica, sans-serif; font-size: 12px; color: #425051;"><span style="font-family: arial, helvetica, sans-serif; color: #425051;">${mail_script:x_snc_tree4meeting.getEventRegFooter}</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br /></p>]]></layout>
+        <name>Event Registration</name>
+        <sys_class_name>sys_email_layout</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:27</sys_created_on>
+        <sys_id>5052b0b1bca24510e3ca24fe05ac84c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Registration</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_email_layout_5052b0b1bca24510e3ca24fe05ac84c8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:27</sys_updated_on>
+    </sys_email_layout>
+</record_update>

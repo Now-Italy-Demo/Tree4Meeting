@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_item">
+    <sys_sg_master_item action="INSERT_OR_UPDATE">
+        <condition_order/>
+        <datasource_table>x_snc_tree4meeting_attendee</datasource_table>
+        <datasource_table_condition/>
+        <embedded_screen display_value="Upcoming Events">d452b0b1fea24510ddb175e09d492e85</embedded_screen>
+        <item_view/>
+        <name>Upcoming Events Main Item</name>
+        <sys_class_name>sys_sg_master_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:58</sys_created_on>
+        <sys_id>1852b0b176a24510f14eca728db9607e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Upcoming Events Main Item</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_sg_master_item_1852b0b176a24510f14eca728db9607e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:58</sys_updated_on>
+        <use_view_config>true</use_view_config>
+        <view_config display_value="My Events View Config (Attendee)">9c52b0b1cda245102e34a0b40b585385</view_config>
+    </sys_sg_master_item>
+</record_update>

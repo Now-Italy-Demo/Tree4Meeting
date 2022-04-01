@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>true</action_insert>
+        <action_update>true</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="x_snc_tree4meeting.Tree4Meeting" name="x_snc_tree4meeting.Tree4Meeting">d452b0b16ea24510c830f49331a1d6c8</category>
+        <collection>x_snc_tree4meeting_attendee</collection>
+        <condition table="x_snc_tree4meeting_attendee">attendee_statusCHANGESTOconfirmed^EQ<item display_value="Registration Confirmed" endquery="false" field="attendee_status" goto="false" newquery="false" operator="CHANGESTO" or="false" value="confirmed"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <content_type>text/html</content_type>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p><br /></p>
+<hr />
+<p><br /></p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <event_name>alm_transfer_order_line_subtask.escalati</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>triggered</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p><br /></p>
+<table style="width: 48px; border-collapse: collapse; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 40px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><img style="align: baseline;" src="x_snc_tree4meeting.circle-check-blue.png" alt="info icon" width="40" height="40" align="baseline" /></span></td>
+<td style="width: 0px;"><br /></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;"><span style="color: #425051; font-size: 32px; font-family: arial, helvetica, sans-serif;"><strong>Your event, ${event_name.event_name} is approaching</strong></span></p>
+<p style="text-align: center;"><span style="color: #637274; font-size: 16px; font-family: arial, helvetica, sans-serif;">Click below to view details for ${event_name.event_name}</span></p>
+<p style="text-align: center;"><br /></p>
+<table style="height: 50px; width: 250px; border-collapse: collapse; margin-left: auto; margin-right: auto;" border="0" cellpadding="0">
+<tbody>
+<tr style="border-collapse: collapse;">
+<td class="es-m-txt-c" style="mso-height-rule: exactly; padding: 0; margin: 0; padding-top: 5px; padding-left: 20px; padding-right: 15px;" align="center">
+<div><a style="background-color: #ffffff; border: 1.5px solid #5351d2; border-radius: 20px; color: #5351d2; display: inline-block; font-family: arial, helvetica, sans-serif; font-size: 19px; font-weight: bold; line-height: 40px; text-align: center; text-decoration: none; width: 200px; -webkit-text-size-adjust: none; mso-hide: all;" href="${mail_script:x_snc_tree4meeting.getEventLinkFromAtten}">View Event</a></div>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br /></p>
+<p><br /></p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Event Reminder - Confirmed attendees</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>attendee_name</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>Event Reminder: ${event_name.event_name} is approaching</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5452b0b14aa24510ef5d8e1bd9140ac8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Reminder - Confirmed attendees</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sysevent_email_action_5452b0b14aa24510ef5d8e1bd9140ac8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:56</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Event Registration - Confirmed">5852b0b174a245104763b0af135e76c8</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

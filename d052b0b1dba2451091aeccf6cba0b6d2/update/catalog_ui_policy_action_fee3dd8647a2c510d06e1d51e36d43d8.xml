@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Calcola il tuo carbon footprint">f88fa806472e8510d06e1d51e36d43d2</catalog_item>
+        <catalog_variable>IO:1de291c247a2c510d06e1d51e36d4319</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-31 13:34:32</sys_created_on>
+        <sys_id>fee3dd8647a2c510d06e1d51e36d43d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>distanza_percorsa</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_fee3dd8647a2c510d06e1d51e36d43d8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-31 13:34:32</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Make 'distanza_percorsa' mandatory &amp; visible depending on 'mezzo_di_trasporto'">d6a3998647a2c510d06e1d51e36d43b8</ui_policy>
+        <variable>distanza_percorsa</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

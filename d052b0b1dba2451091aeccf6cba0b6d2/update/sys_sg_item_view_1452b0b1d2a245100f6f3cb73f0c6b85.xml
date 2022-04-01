@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_view">
+    <sys_sg_item_view action="INSERT_OR_UPDATE">
+        <data_item/>
+        <dependency_fields>attendee_name.avatar-35102,attendee_name.name-22124,attendee_name.title-22125,attendee_name.email-22126</dependency_fields>
+        <item_view_json>{"Type":"ViewGroup","Margin":{"Top":26,"Bottom":26},"Orientation":"Vertical","Alignment":"Center","Distribution":"Auto","Children":[{"Type":"ViewGroup","Margin":{},"CornerRadius":41,"Orientation":"Horizontal","Alignment":"Center","Distribution":"Auto","Children":[{"Type":"Image","Margin":{"Top":3,"Left":3,"Right":3,"Bottom":3},"Width":76,"studio_template_field_id":"E1","CornerRadius":38,"BackgroundColor":"#ffffff","Height":76,"Scaling":"Fit","CellId":"attendee_name.avatar","Id":35102}],"BackgroundColor":"#165c53","Id":12259},{"Type":"Text","Margin":{"Top":9},"TextColor":"#165c53","TextAlignment":"Left","MaxLines":1,"Font":{"Weight":"regular","Size":22},"studio_template_field_id":"E2","CellId":"attendee_name.name","Id":22124},{"Type":"Text","Margin":{"Top":5},"Text":"","studio_template_field_id":"E3","TextColor":"#333e3f","TextAlignment":"Left","MaxLines":1,"Font":{"Weight":"regular","Size":16},"CellId":"attendee_name.title","Id":22125},{"Type":"Text","Margin":{"Top":5},"Text":"","studio_template_field_id":"E4","TextColor":"#333e3f","TextAlignment":"Left","MaxLines":1,"Font":{"Weight":"regular","Size":13},"CellId":"attendee_name.email","Id":22126}],"BackgroundColor":"#ffffff","studio_card_id":"8358f23023052300a8ed7f4fc7bf65b2","Id":28090}</item_view_json>
+        <name>My Attendees Header Item View</name>
+        <short_description/>
+        <sys_class_name>sys_sg_item_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:40</sys_created_on>
+        <sys_id>1452b0b1d2a245100f6f3cb73f0c6b85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Attendees Header Item View</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_sg_item_view_1452b0b1d2a245100f6f3cb73f0c6b85</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:40</sys_updated_on>
+        <table/>
+        <ui_styles/>
+    </sys_sg_item_view>
+    <sys_translated_text action="delete_multiple" query="documentkey=1452b0b1d2a245100f6f3cb73f0c6b85"/>
+</record_update>

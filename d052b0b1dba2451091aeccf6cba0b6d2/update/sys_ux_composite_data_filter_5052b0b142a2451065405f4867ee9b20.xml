@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_filter">
+    <sys_ux_composite_data_filter action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <dataset display_value="Event Registration all event card">1852b0b1caa24510b60fe84bbb221e20</dataset>
+        <label>Date</label>
+        <order>100</order>
+        <sys_class_name>sys_ux_composite_data_filter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:30</sys_created_on>
+        <sys_id>5052b0b142a2451065405f4867ee9b20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Date</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_ux_composite_data_filter_5052b0b142a2451065405f4867ee9b20</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:30</sys_updated_on>
+    </sys_ux_composite_data_filter>
+</record_update>

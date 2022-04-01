@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Calcola il tuo carbon footprint">f88fa806472e8510d06e1d51e36d43d2</sc_cat_item>
+        <sc_catalog display_value="Human Resources Catalog">7b0370019f22120047a2d126c42e7075</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-31 10:59:02</sys_created_on>
+        <sys_id>cd50bc0e472e8510d06e1d51e36d43a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Human Resources Catalog.Calcola il tuo carbon footprint</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_cd50bc0e472e8510d06e1d51e36d43a7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-31 10:59:02</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</application>
+        <file_path/>
+        <instance_id>c9d8446ddbc245500ae3ac44d49619bc</instance_id>
+        <instance_name>digitalex</instance_name>
+        <name>sc_cat_item_catalog_cd50bc0e472e8510d06e1d51e36d43a7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Calcola il tuo carbon footprint">f88fa806472e8510d06e1d51e36d43d2</sc_cat_item><sc_catalog display_value="Human Resources Catalog">7b0370019f22120047a2d126c42e7075</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-03-31 10:59:02</sys_created_on><sys_id>cd50bc0e472e8510d06e1d51e36d43a7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Human Resources Catalog.Calcola il tuo carbon footprint</sys_name><sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package><sys_policy/><sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope><sys_update_name>sc_cat_item_catalog_cd50bc0e472e8510d06e1d51e36d43a7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-03-31 10:59:02</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>-902983029</payload_hash>
+        <record_name>Human Resources Catalog.Calcola il tuo carbon footprint</record_name>
+        <reverted_from/>
+        <source>ae52b4b147a24510d06e1d51e36d4389</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-31 10:59:02</sys_created_on>
+        <sys_id>c550bc0e472e8510d06e1d51e36d43ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17fdfa0f8200000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-31 10:59:02</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>0d50bc0e8e2e851096a0d11283aa31ad</update_guid>
+        <update_guid_history>0d50bc0e8e2e851096a0d11283aa31ad:-902983029</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Human Resources Catalog.Calcola il tuo carbon footprint">0c223cce476e8510d06e1d51e36d4385</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-31 11:06:54</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>06682083b6ee4c788dda69f78f318840</sys_id>
+        <sys_metadata>cd50bc0e472e8510d06e1d51e36d43a7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Human Resources Catalog.Calcola il tuo carbon footprint</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_parent display_value="Calcola il tuo carbon footprint">f88fa806472e8510d06e1d51e36d43d2</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_scope_delete display_value="">54abed2950fa4d7e91db49e53ca19f84</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_cd50bc0e472e8510d06e1d51e36d43a7</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_cd50bc0e472e8510d06e1d51e36d43a7">c550bc0e472e8510d06e1d51e36d43ae</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-31 11:06:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

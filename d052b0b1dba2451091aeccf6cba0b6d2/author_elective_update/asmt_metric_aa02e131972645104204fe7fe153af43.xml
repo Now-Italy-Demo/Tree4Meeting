@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric">
+    <asmt_metric action="DELETE">
+        <active>true</active>
+        <add_info_label>Additional Information</add_info_label>
+        <allow_add_info>false</allow_add_info>
+        <allow_not_applicable>false</allow_not_applicable>
+        <allow_sentiment_analysis>false</allow_sentiment_analysis>
+        <auto_gen>false</auto_gen>
+        <category display_value="Tree4Meeting">2602ad3d97e245104204fe7fe153af17</category>
+        <cond_question>always</cond_question>
+        <condition/>
+        <context/>
+        <correct_answer/>
+        <correct_answer_checkbox>1</correct_answer_checkbox>
+        <correct_answer_choice/>
+        <correct_answer_template/>
+        <correct_answer_yesno>1</correct_answer_yesno>
+        <custom_metric/>
+        <datatype>choice</datatype>
+        <default_value_field/>
+        <depends_on/>
+        <description/>
+        <details/>
+        <displayed_when>e602e131972645104204fe7fe153af41</displayed_when>
+        <displayed_when_checkbox>1</displayed_when_checkbox>
+        <displayed_when_template/>
+        <displayed_when_yesno>1</displayed_when_yesno>
+        <duration/>
+        <field_validation/>
+        <is_default>false</is_default>
+        <mandatory>false</mandatory>
+        <max>10</max>
+        <max_weight/>
+        <maximum_normalization_input>false</maximum_normalization_input>
+        <method>assessment</method>
+        <metric_type display_value="Tree4Meeting">6202ad3d97e245104204fe7fe153af16</metric_type>
+        <min>0</min>
+        <name>transportation_my_car</name>
+        <order>300</order>
+        <plugin/>
+        <question>Che carburante utilizza l'auto con cui sei venuto all'evento?</question>
+        <randomize_answers>false</randomize_answers>
+        <read_only>false</read_only>
+        <reference_table/>
+        <scale>high</scale>
+        <scored>false</scored>
+        <script><![CDATA[// The following variables are available:  // - primary: contains the sys_id of the assessable object to be evaluated  // - string_result: the script sets the display string value for this metric to this variable  // - actual_result: the script sets the actual value for this metric to this variable  // - scaled_result: the script sets the scaled value (used in calculations) for this metric to this variable  //  // For example: // var gr = new GlideRecord('cmdb_ci'); // gr.addQuery('manufacturer', primary); // gr.query(); // actual_result = gr.getRowCount(); // string_result = actual_result + ''; // if (actual_result &gt; 100) scaled_result = 5; // else scaled_result = 1;]]></script>
+        <sn_lp_rating_option>star</sn_lp_rating_option>
+        <sn_sig_asmt_track_progress_in_portal>true</sn_sig_asmt_track_progress_in_portal>
+        <source_field/>
+        <string_option>wide</string_option>
+        <sys_class_name>asmt_metric</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-30 19:57:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>aa02e131972645104204fe7fe153af43</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>transportation_my_car</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>asmt_metric_aa02e131972645104204fe7fe153af43</sys_update_name>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-30 19:57:45</sys_updated_on>
+        <template/>
+        <value_parameters/>
+        <weight>10</weight>
+    </asmt_metric>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</application>
+        <file_path/>
+        <instance_id>c9d8446ddbc245500ae3ac44d49619bc</instance_id>
+        <instance_name>digitalex</instance_name>
+        <name>asmt_metric_aa02e131972645104204fe7fe153af43</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="asmt_metric"&gt;&lt;asmt_metric action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_info_label&gt;Additional Information&lt;/add_info_label&gt;&lt;allow_add_info&gt;false&lt;/allow_add_info&gt;&lt;allow_not_applicable&gt;false&lt;/allow_not_applicable&gt;&lt;allow_sentiment_analysis&gt;false&lt;/allow_sentiment_analysis&gt;&lt;auto_gen&gt;false&lt;/auto_gen&gt;&lt;category display_value="Tree4Meeting"&gt;2602ad3d97e245104204fe7fe153af17&lt;/category&gt;&lt;cond_question&gt;always&lt;/cond_question&gt;&lt;condition/&gt;&lt;context/&gt;&lt;correct_answer/&gt;&lt;correct_answer_checkbox&gt;1&lt;/correct_answer_checkbox&gt;&lt;correct_answer_choice/&gt;&lt;correct_answer_template/&gt;&lt;correct_answer_yesno&gt;1&lt;/correct_answer_yesno&gt;&lt;custom_metric/&gt;&lt;datatype&gt;choice&lt;/datatype&gt;&lt;default_value_field/&gt;&lt;depends_on/&gt;&lt;description/&gt;&lt;details/&gt;&lt;displayed_when&gt;e602e131972645104204fe7fe153af41&lt;/displayed_when&gt;&lt;displayed_when_checkbox&gt;1&lt;/displayed_when_checkbox&gt;&lt;displayed_when_template/&gt;&lt;displayed_when_yesno&gt;1&lt;/displayed_when_yesno&gt;&lt;duration/&gt;&lt;field_validation/&gt;&lt;is_default&gt;false&lt;/is_default&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max&gt;10&lt;/max&gt;&lt;max_weight/&gt;&lt;maximum_normalization_input&gt;false&lt;/maximum_normalization_input&gt;&lt;method&gt;assessment&lt;/method&gt;&lt;metric_type display_value="Tree4Meeting"&gt;6202ad3d97e245104204fe7fe153af16&lt;/metric_type&gt;&lt;min&gt;0&lt;/min&gt;&lt;name&gt;transportation_my_car&lt;/name&gt;&lt;order&gt;300&lt;/order&gt;&lt;plugin/&gt;&lt;question&gt;Che carburante utilizza l'auto con cui sei venuto all'evento?&lt;/question&gt;&lt;randomize_answers&gt;false&lt;/randomize_answers&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;reference_table/&gt;&lt;scale&gt;high&lt;/scale&gt;&lt;scored&gt;false&lt;/scored&gt;&lt;script&gt;&lt;![CDATA[// The following variables are available:  // - primary: contains the sys_id of the assessable object to be evaluated  // - string_result: the script sets the display string value for this metric to this variable  // - actual_result: the script sets the actual value for this metric to this variable  // - scaled_result: the script sets the scaled value (used in calculations) for this metric to this variable  //  // For example: // var gr = new GlideRecord('cmdb_ci'); // gr.addQuery('manufacturer', primary); // gr.query(); // actual_result = gr.getRowCount(); // string_result = actual_result + ''; // if (actual_result &amp;gt; 100) scaled_result = 5; // else scaled_result = 1;]]&gt;&lt;/script&gt;&lt;sn_lp_rating_option&gt;star&lt;/sn_lp_rating_option&gt;&lt;sn_sig_asmt_track_progress_in_portal&gt;true&lt;/sn_sig_asmt_track_progress_in_portal&gt;&lt;source_field/&gt;&lt;string_option&gt;wide&lt;/string_option&gt;&lt;sys_class_name&gt;asmt_metric&lt;/sys_class_name&gt;&lt;sys_created_by&gt;francesco&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-30 19:57:45&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;aa02e131972645104204fe7fe153af43&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;transportation_my_car&lt;/sys_name&gt;&lt;sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting"&gt;d052b0b1dba2451091aeccf6cba0b6d2&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Tree4Meeting"&gt;d052b0b1dba2451091aeccf6cba0b6d2&lt;/sys_scope&gt;&lt;sys_update_name&gt;asmt_metric_aa02e131972645104204fe7fe153af43&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;francesco&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-30 19:57:45&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;value_parameters/&gt;&lt;weight&gt;10&lt;/weight&gt;&lt;/asmt_metric&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2053955119</payload_hash>
+        <record_name>transportation_my_car</record_name>
+        <reverted_from/>
+        <source>3e3de041972201104204fe7fe153af94</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>current</state>
+        <sys_created_by/>
+        <sys_created_on>2022-03-28 08:11:35</sys_created_on>
+        <sys_id>cf02e131972645104204fe7fe153afc4</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>17fcf9492d80000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Assessment Metric</type>
+        <update_guid>8f02e131802645102bccfaa1ac598bc4</update_guid>
+        <update_guid_history>8f02e131802645102bccfaa1ac598bc4:2053955119</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="transportation_my_car">df02e131972645104204fe7fe153afeb</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-30 19:57:47</sys_created_on>
+        <sys_db_object display_value="" name="asmt_metric">asmt_metric</sys_db_object>
+        <sys_id>b2d2d08683064800880c3650cf6ec400</sys_id>
+        <sys_metadata>aa02e131972645104204fe7fe153af43</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>transportation_my_car</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_scope_delete display_value="">54abed2950fa4d7e91db49e53ca19f84</sys_scope_delete>
+        <sys_update_name>asmt_metric_aa02e131972645104204fe7fe153af43</sys_update_name>
+        <sys_update_version display_value="asmt_metric_aa02e131972645104204fe7fe153af43">cf02e131972645104204fe7fe153afc4</sys_update_version>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-30 19:57:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

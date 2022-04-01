@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <css>.container1{&#13;
+	min-height:25rem;&#13;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 90%) 0%, rgba(0, 0, 0, 25%) 75%);&#13;
+}</css>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <id>tree4meeting_manager_center</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>false</public>
+        <roles/>
+        <seo_script/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-04-01 09:56:03</sys_created_on>
+        <sys_id>808be91297e609104204fe7fe153afa6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>tree4meeting_manager_center</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sp_page_808be91297e609104204fe7fe153afa6</sys_update_name>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-04-01 09:56:26</sys_updated_on>
+        <title>Tree4Meeting Manager Center</title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=808be91297e609104204fe7fe153afa6"/>
+</record_update>

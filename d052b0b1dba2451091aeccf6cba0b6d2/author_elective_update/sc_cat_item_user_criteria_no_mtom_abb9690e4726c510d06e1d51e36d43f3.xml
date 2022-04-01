@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
+    <sc_cat_item_user_criteria_no_mtom action="DELETE">
+        <sc_cat_item display_value="Calcola il tuo carbon footprint">f88fa806472e8510d06e1d51e36d43d2</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2022-03-31 15:09:53</sys_created_on>
+        <sys_id>abb9690e4726c510d06e1d51e36d43f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Calcola il tuo carbon footprint.SNC External</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_abb9690e4726c510d06e1d51e36d43f3</sys_update_name>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2022-03-31 15:09:53</sys_updated_on>
+        <user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria>
+    </sc_cat_item_user_criteria_no_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</application>
+        <file_path/>
+        <instance_id>c9d8446ddbc245500ae3ac44d49619bc</instance_id>
+        <instance_name>digitalex</instance_name>
+        <name>sc_cat_item_user_criteria_no_mtom_abb9690e4726c510d06e1d51e36d43f3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom"><sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Calcola il tuo carbon footprint">f88fa806472e8510d06e1d51e36d43d2</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name><sys_created_by>manuel</sys_created_by><sys_created_on>2022-03-31 15:09:53</sys_created_on><sys_id>abb9690e4726c510d06e1d51e36d43f3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Calcola il tuo carbon footprint.SNC External</sys_name><sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package><sys_policy/><sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope><sys_update_name>sc_cat_item_user_criteria_no_mtom_abb9690e4726c510d06e1d51e36d43f3</sys_update_name><sys_updated_by>manuel</sys_updated_by><sys_updated_on>2022-03-31 15:09:53</sys_updated_on><user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria></sc_cat_item_user_criteria_no_mtom></record_update>]]></payload>
+        <payload_hash>671738545</payload_hash>
+        <record_name>Calcola il tuo carbon footprint.SNC External</record_name>
+        <reverted_from/>
+        <source>3e3de041972201104204fe7fe153af94</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2022-03-28 08:11:35</sys_created_on>
+        <sys_id>996ce94697ae85104204fe7fe153afcb</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>17fcf9492d80000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Catalog Item Not Available for</type>
+        <update_guid>596ce9460fae8510bbaadf838425d9cb</update_guid>
+        <update_guid_history>596ce9460fae8510bbaadf838425d9cb:671738545</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Calcola il tuo carbon footprint.SNC External">556ce94697ae85104204fe7fe153afce</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-03-31 15:21:29</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_no_mtom">sc_cat_item_user_criteria_no_mtom</sys_db_object>
+        <sys_id>39a02a1d8db045aa8d44b56121362719</sys_id>
+        <sys_metadata>abb9690e4726c510d06e1d51e36d43f3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Calcola il tuo carbon footprint.SNC External</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_scope_delete display_value="">54abed2950fa4d7e91db49e53ca19f84</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_abb9690e4726c510d06e1d51e36d43f3</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_no_mtom_abb9690e4726c510d06e1d51e36d43f3">996ce94697ae85104204fe7fe153afcb</sys_update_version>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-03-31 15:21:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

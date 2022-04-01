@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme">
+    <sys_ux_theme action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Admin and Organizer workspace theme</description>
+        <name>Event Registration Workspace</name>
+        <parent/>
+        <sys_class_name>sys_ux_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1852b0b18ca245109926302f829816cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Registration Workspace</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_ux_theme_1852b0b18ca245109926302f829816cc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:27</sys_updated_on>
+        <theme>{  &#13;
+   &#13;
+  "--now-canvas-toolbar-button--color--focus": "83,81,210",  &#13;
+  "--now-text-link--primary--color": "83,81,210", &#13;
+  "canvas-toolbar-button--color-is-selected" : "83,81,210",&#13;
+  "--now-color_focus-ring":"0,0,0,opacity:0.9",&#13;
+  "--now-color--neutral-1": "246,247,247",  &#13;
+  "--now-color--focus-1": "221,220,246", &#13;
+  "--now-line-height-crop--before": "-0.2125em",&#13;
+  "--now-line-height-crop--after": "-0.275em",&#13;
+  "--now-font-family": "Roboto, sans-serif",&#13;
+  "--now-color--primary-0": "221,220,246",&#13;
+  "--now-color--primary-1": "221,220,246",&#13;
+  "--now-color--primary-2": "83,81,210",&#13;
+  "--now-color--primary-3": "42,41,105",&#13;
+  "--now-color--secondary-0": "221,220,246",&#13;
+  "--now-color--secondary-1": "83,81,210",&#13;
+  "--now-color--secondary-2": "62,61,158",&#13;
+  "--now-color--secondary-3": "42,41,105",&#13;
+  "--now-color--neutral-15": "126,139,141",&#13;
+  "--now-color--link-1": "1,119,142",&#13;
+  "--now-button--border-radius": "100px",&#13;
+  "--now-button--border-width": "1px",&#13;
+  "--now-button--font-weight": "500",&#13;
+  "--now-button--height-scale": "1",&#13;
+  "--now-button--primary--color": "83,81,210",  &#13;
+  "--now-button--primary--color--hover": "69,67,174",&#13;
+  "--now-button--primary--color--active": "83,81,210",&#13;
+  "--now-button--primary--background-color": "0,0,0,0",&#13;
+  "--now-button--primary--background-color--hover": "221,220,246",&#13;
+  "--now-button--primary--background-color--active": "0,0,0,0",&#13;
+  "--now-button--primary--border-color": "83,81,210",&#13;
+  "--now-button--primary--border-color--hover": "69,67,174",&#13;
+  "--now-button--primary--border-color--active": "83,81,210",&#13;
+  "--now-button--secondary--color": "22,27,28",&#13;
+  "--now-button--secondary--color--hover": "22,27,28",&#13;
+  "--now-button--secondary--color--active": "22,27,28",&#13;
+  "--now-button--secondary--background-color": "221,220,246",&#13;
+  "--now-button--secondary--background-color--hover": "188,187,210",&#13;
+  "--now-button--secondary--background-color--active": "221,220,246",&#13;
+  "--now-button--secondary--border-color": "0,0,0,0",&#13;
+  "--now-button--secondary--border-color--hover": "0,0,0,0",&#13;
+  "--now-button--secondary--border-color--active": "0,0,0,0",&#13;
+  "--now-button--tertiary--color": "83,81,210",&#13;
+  "--now-button--tertiary--color--hover": "69,67,174",&#13;
+  "--now-button--tertiary--color--active": "0,0,0",&#13;
+  "--now-button--tertiary--background-color": "0,0,0,0",&#13;
+  "--now-button--tertiary--background-color--active": "0,0,0,0",&#13;
+  "--now-button--tertiary--background-color--hover": "0,0,0,0",&#13;
+  "--now-button--tertiary--border-color": "0,0,0,0",&#13;
+  "--now-button--tertiary--border-color--hover": "0,0,0,0",&#13;
+  "--now-button--tertiary--border-color--active": "0,0,0,0",&#13;
+  "--now-checkbox--border-radius": "4px",&#13;
+  "--now-checkbox_icon--color": "1,119,142",&#13;
+  "--now-heading--header-primary--font-weight": "500",  &#13;
+  "--now-heading--header-secondary--font-weight": "500",&#13;
+  "--now-heading--header-tertiary--font-weight": "500",&#13;
+  "--now-radio-buttons--background-color--active": "255,255,255",&#13;
+  "--now-radio-buttons_radio--background-color": "1,119,142",&#13;
+  "--now-tabs--font-style": "normal",&#13;
+  "--now-tabs--font-weight": "500",&#13;
+  "--now-tabs--text-transform": "none",&#13;
+  "--now-tabs--border-color": "83,81,210",&#13;
+  "--now-tabs--color": "22,27,28",&#13;
+  "--now-tabs--color--hover": "69,67,174",&#13;
+  "--now-tabs--color--selected": "83,81,210",&#13;
+  "--now-tabs--border-color--hover": "69,67,174",  &#13;
+  "--now-tabs--background-color": "255,255,255",&#13;
+  "--now-tabs--background-color-alpha": "0",&#13;
+  "--now-tabs--background-color--hover": "0,0,0,0",&#13;
+  "--now-tabs--background-color--selected": "0,0,0,0",&#13;
+  "--now-toggle_handle--border-radius": "100px",&#13;
+  "--now-toggle_track--border-color": "99,114,116",&#13;
+  "--now-toggle_track--background-color": "172,180,181",&#13;
+  "--now-toggle_track--background-color--checked": "1,119,142",&#13;
+  "--now-toggle_track--border-color--checked": "1,119,142",&#13;
+  "--now-toggle_track--border-radius": "100px"&#13;
+  &#13;
+}</theme>
+    </sys_ux_theme>
+</record_update>

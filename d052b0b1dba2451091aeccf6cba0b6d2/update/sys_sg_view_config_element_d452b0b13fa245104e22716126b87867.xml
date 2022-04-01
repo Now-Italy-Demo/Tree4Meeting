@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config_element">
+    <sys_sg_view_config_element action="INSERT_OR_UPDATE">
+        <name>All Events Copy Embedded Form View Config Element</name>
+        <sys_class_name>sys_sg_view_config_element</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:28</sys_created_on>
+        <sys_id>d452b0b13fa245104e22716126b87867</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All Events Copy Embedded Form View Config Element</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_sg_view_config_element_d452b0b13fa245104e22716126b87867</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:28</sys_updated_on>
+        <view_config display_value="All Events Copy Embedded Form View Config">1052b0b1aea24510819d4e333e59d485</view_config>
+        <view_template_slot display_value="text_18">1852b0b145a245106d61d79a5103af6d</view_template_slot>
+    </sys_sg_view_config_element>
+</record_update>

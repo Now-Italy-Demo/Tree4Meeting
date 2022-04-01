@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_list_screen">
+    <sys_sg_list_screen action="INSERT_OR_UPDATE">
+        <available_offline>false</available_offline>
+        <description/>
+        <dynamic_prefetch_count/>
+        <empty_state/>
+        <fetch_type>on_demand</fetch_type>
+        <filter/>
+        <hide_filters>false</hide_filters>
+        <hide_screen_name>false</hide_screen_name>
+        <icon display_value="All Events Copy List Screen Icon">9452b0b199a245101ee20d8a3cebac81</icon>
+        <name>All Events</name>
+        <roles_override>x_snc_tree4meeting.event_reg.admin,x_snc_tree4meeting.event_reg.attendee,x_snc_tree4meeting.event_reg.organizer</roles_override>
+        <sys_class_name>sys_sg_list_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:57</sys_created_on>
+        <sys_id>9452b0b198a24510fd29417234f27180</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All Events</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_sg_list_screen_9452b0b198a24510fd29417234f27180</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:57</sys_updated_on>
+    </sys_sg_list_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=9452b0b198a24510fd29417234f27180"/>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="event_record" label="Event record" language="en" table="var__m_sys_hub_flow_input_ae337b3e3c032010f877f65c5aad33bf">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>event_record</element>
+            <help/>
+            <hint/>
+            <label>Event record</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_ae337b3e3c032010f877f65c5aad33bf</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-30 16:29:23</sys_created_on>
+            <sys_id>d852b0b101a24510c6dffdf9718e85bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Event record</sys_name>
+            <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_ae337b3e3c032010f877f65c5aad33bf_event_record_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-30 16:29:23</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_m2m_workspace_header_ux_header_config">
+    <sys_ux_m2m_workspace_header_ux_header_config action="INSERT_OR_UPDATE">
+        <header_config display_value="Event Registration">1852b0b1c6a2451007f5c8ea64eaf61c</header_config>
+        <sys_class_name>sys_ux_m2m_workspace_header_ux_header_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:45</sys_created_on>
+        <sys_id>dc52b0b17ea2451028cf81ebfc178e1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_ux_m2m_workspace_header_ux_header_config_dc52b0b17ea2451028cf81ebfc178e1b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:45</sys_updated_on>
+        <workspace_form_header display_value="x_snc_tree4meeting_event">d052b0b11ca2451025193aa8d56bddc7</workspace_form_header>
+    </sys_ux_m2m_workspace_header_ux_header_config>
+</record_update>

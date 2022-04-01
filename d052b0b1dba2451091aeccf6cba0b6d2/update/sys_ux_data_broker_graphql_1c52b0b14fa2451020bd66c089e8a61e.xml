@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_graphql">
+    <sys_ux_data_broker_graphql action="INSERT_OR_UPDATE">
+        <api_name>x_snc_tree4meeting.Fetch Event Comments</api_name>
+        <description>Fetches all the event comments based on the event record id.</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Fetch Event Comments</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+    "name": "id",&#13;
+    "label": "Event Record",&#13;
+    "description": "Event Record",&#13;
+    "fieldType": "string",&#13;
+    "mandatory": true&#13;
+  },&#13;
+  {&#13;
+    "name": "getRootComments",&#13;
+    "label": "Get Root Comments",&#13;
+    "description": "Get Root Comments",&#13;
+    "fieldType": "string",&#13;
+    "mandatory": true&#13;
+  }&#13;
+]</props>
+        <query>query ($id: String!, $getRootComments: Boolean!) {&#13;
+  AppEvent_Query {&#13;
+    getComments(id: $id, getRootComments: $getRootComments) {&#13;
+      id&#13;
+      created: createdOn&#13;
+      text&#13;
+      parent&#13;
+      user {&#13;
+        name&#13;
+        id&#13;
+        avatar&#13;
+      }&#13;
+      reactionCount: likesCount&#13;
+      isReacted: isLiked&#13;
+    }&#13;
+  }&#13;
+}</query>
+        <required_translations>[{"message":"Get Root Comments","comment":""},{"message":"Event Record","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[(function buildQuery(query, inputs) { 
+         var qb = new GraphQLQueryBuilder(query, inputs);
+   // return appropriate query here
+    return qb; 
+   })(query, inputs);]]></script>
+        <sys_class_name>sys_ux_data_broker_graphql</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:22</sys_created_on>
+        <sys_id>1c52b0b14fa2451020bd66c089e8a61e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Fetch Event Comments</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_ux_data_broker_graphql_1c52b0b14fa2451020bd66c089e8a61e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:22</sys_updated_on>
+        <type>query</type>
+        <use_record_domain>false</use_record_domain>
+    </sys_ux_data_broker_graphql>
+    <sys_translated_text action="delete_multiple" query="documentkey=1c52b0b14fa2451020bd66c089e8a61e"/>
+</record_update>

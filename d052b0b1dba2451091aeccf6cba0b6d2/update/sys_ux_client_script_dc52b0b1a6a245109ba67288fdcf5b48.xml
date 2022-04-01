@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Search">1052b0b100a245105b2a5a9c6d0efd49</macroponent>
+        <name>Search Handler</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function({
+    api,
+    event,
+    helpers
+}) {
+    const fields = {
+        searchContextConfigId: api.context.props.searchContextConfigId
+    };
+    const params = {
+        searchFilters: api.context.props.searchFilters,
+        searchTerm: api.context.props.searchTerm
+    };
+    if (event.name === 'SN_SEARCH_RESULTS_CONTAINER#SEARCH_EXECUTED') {
+        params.disableSpellCheck = true;
+        params.searchTerm = fields.searchTerm;
+    } else if (event.name === 'SN_SEARCH_COMBOBOX#SEARCH_EXECUTED') {
+        params.disableSpellCheck = false;
+        const searchTerm = event.payload.searchTerm;
+        params.searchTerm = searchTerm;
+        api.setState('loading', true);
+        api.setState('searchTerm', searchTerm);
+    }
+    helpers.navigate.to('search', fields, params);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:52</sys_created_on>
+        <sys_id>dc52b0b1a6a245109ba67288fdcf5b48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Search Handler</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_ux_client_script_dc52b0b1a6a245109ba67288fdcf5b48</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:52</sys_updated_on>
+        <type/>
+    </sys_ux_client_script>
+</record_update>

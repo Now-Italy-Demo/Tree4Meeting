@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="durata_viaggio" table="x_snc_tree4meeting_attendee" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>durata_viaggio</element>
+            <name>x_snc_tree4meeting_attendee</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-31 09:35:59</sys_created_on>
+            <sys_id>685dd446472a8510d06e1d51e36d43e5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>durata_viaggio</sys_name>
+            <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+            <sys_update_name>sys_choice_x_snc_tree4meeting_attendee_durata_viaggio</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-31 09:35:59</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>durata_viaggio</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>meno di un'ora</label>
+            <language>en</language>
+            <name>x_snc_tree4meeting_attendee</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-31 09:35:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a05dd446472a8510d06e1d51e36d43e5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-31 09:35:59</sys_updated_on>
+            <value>meno_di_un_ora</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>durata_viaggio</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>entro le 2 ore</label>
+            <language>en</language>
+            <name>x_snc_tree4meeting_attendee</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-31 09:36:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e05d1846472a8510d06e1d51e36d4304</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-31 09:36:00</sys_updated_on>
+            <value>entro_le_2_ore</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>durata_viaggio</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>entro le 5 ore</label>
+            <language>en</language>
+            <name>x_snc_tree4meeting_attendee</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-31 09:36:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6c5dd446472a8510d06e1d51e36d43e8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-31 09:36:00</sys_updated_on>
+            <value>entro_le_5_ore</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>durata_viaggio</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>più di 5 ore</label>
+            <language>en</language>
+            <name>x_snc_tree4meeting_attendee</name>
+            <sequence>40</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-31 09:36:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>605d1846472a8510d06e1d51e36d4308</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-31 09:36:00</sys_updated_on>
+            <value>pi_di_5_ore</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

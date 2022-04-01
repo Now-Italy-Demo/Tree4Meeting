@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_declarative_action_assignment">
+    <sys_declarative_action_assignment action="INSERT_OR_UPDATE">
+        <action display_value="Create New">adcad24753732300099addeeff7b122a</action>
+        <action_attributes/>
+        <action_name>create-new-uxf-event_registration</action_name>
+        <action_payload>{"route":"record","fields":{"table":"{{table}}","sysId":"-1"}}</action_payload>
+        <action_type>type</action_type>
+        <active>true</active>
+        <button_type>primary</button_type>
+        <client_action display_value="Create New Event Record">d452b0b122a24510705fdb2e0cd320c3</client_action>
+        <client_conditions/>
+        <client_conditions_on_fields/>
+        <client_script/>
+        <confirmation_message/>
+        <confirmation_required>false</confirmation_required>
+        <create_access>true</create_access>
+        <declarative_action_render_mode/>
+        <declarative_action_type>uxf_client_action</declarative_action_type>
+        <delete_access>false</delete_access>
+        <dependency/>
+        <description>Create a new event</description>
+        <design_icon/>
+        <enabled>true</enabled>
+        <field_name/>
+        <field_type>glide_date</field_type>
+        <form_fields_required>false</form_fields_required>
+        <form_position>contexual_sidebar</form_position>
+        <group/>
+        <group_by>false</group_by>
+        <icon>button</icon>
+        <label>Create a new event</label>
+        <model display_value="List">c3547169534723003eddddeeff7b126c</model>
+        <model_conditions table="var__m_sys_declarative_action_model_field_c3547169534723003eddddeeff7b126c">EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </model_conditions>
+        <model_field_required/>
+        <order>300</order>
+        <payload_map/>
+        <read_access>false</read_access>
+        <record_conditions/>
+        <record_selection_required>false</record_selection_required>
+        <required_roles/>
+        <requires_value>false</requires_value>
+        <script_condition/>
+        <server_script/>
+        <specificity>11</specificity>
+        <sys_class_name>sys_declarative_action_assignment</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1852b0b1c0a245104f95200069604ec3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>create-new-uxf-event_registration</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_declarative_action_assignment_1852b0b1c0a245104f95200069604ec3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:57</sys_updated_on>
+        <table>x_snc_tree4meeting_event</table>
+        <tooltip>Create a new event</tooltip>
+        <ui_component/>
+        <view/>
+        <workspace/>
+        <write_access>false</write_access>
+    </sys_declarative_action_assignment>
+    <sys_translated_text action="delete_multiple" query="documentkey=1852b0b1c0a245104f95200069604ec3"/>
+</record_update>

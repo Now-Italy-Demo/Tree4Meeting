@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="d052b0b13aa245106c0b9fdd09f78c59" sys_domain="global" table="x_snc_tree4meeting_attendee" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-30 16:29:59</sys_created_on>
+            <sys_id>5852b0b1f4a245105e4a7ef268444150</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">d052b0b13aa245106c0b9fdd09f78c59</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-30 16:29:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>attendee_name</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-30 16:29:59</sys_created_on>
+            <sys_id>d452b0b1b3a24510817ee358ea3a0350</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">d052b0b13aa245106c0b9fdd09f78c59</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-30 16:29:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-30 16:29:59</sys_created_on>
+            <sys_id>d852b0b1aea24510a860a27f3be06850</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">d052b0b13aa245106c0b9fdd09f78c59</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-30 16:29:59</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>attendee_status</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-30 16:29:59</sys_created_on>
+            <sys_id>1852b0b1f6a24510f7ce3393b97df950</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">d052b0b13aa245106c0b9fdd09f78c59</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-30 16:29:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date_submitted</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-30 16:29:59</sys_created_on>
+            <sys_id>9852b0b18ea24510c1b95998310d2450</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">d052b0b13aa245106c0b9fdd09f78c59</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-30 16:29:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>event_name</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-30 16:29:59</sys_created_on>
+            <sys_id>9452b0b14fa245103f781027fdf03350</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">d052b0b13aa245106c0b9fdd09f78c59</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-30 16:29:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>azienda</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-31 09:35:56</sys_created_on>
+            <sys_id>7f4d5806472a8510d06e1d51e36d4323</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">d052b0b13aa245106c0b9fdd09f78c59</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-31 09:35:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>mezzo_di_trasporto</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-31 09:35:57</sys_created_on>
+            <sys_id>045d5806472a8510d06e1d51e36d4354</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">d052b0b13aa245106c0b9fdd09f78c59</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-31 09:35:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>distanza_percorsa</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-31 09:35:57</sys_created_on>
+            <sys_id>805dd046472a8510d06e1d51e36d4321</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">d052b0b13aa245106c0b9fdd09f78c59</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-31 09:35:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>durata_viaggio</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-31 09:35:58</sys_created_on>
+            <sys_id>485dd446472a8510d06e1d51e36d433e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">d052b0b13aa245106c0b9fdd09f78c59</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-31 09:35:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>consumo_co2_anno</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-31 09:35:58</sys_created_on>
+            <sys_id>585dd446472a8510d06e1d51e36d4393</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">d052b0b13aa245106c0b9fdd09f78c59</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-31 09:35:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>calc_percentuale_co2</element>
+            <position>11</position>
+            <sys_created_by>francesco</sys_created_by>
+            <sys_created_on>2022-03-31 10:16:21</sys_created_on>
+            <sys_id>37862c4e97a685104204fe7fe153aff4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">d052b0b13aa245106c0b9fdd09f78c59</sys_ui_section>
+            <sys_updated_by>francesco</sys_updated_by>
+            <sys_updated_on>2022-03-31 10:16:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>calc_totale_co2</element>
+            <position>12</position>
+            <sys_created_by>francesco</sys_created_by>
+            <sys_created_on>2022-03-31 10:17:00</sys_created_on>
+            <sys_id>0db62c8e97a685104204fe7fe153af04</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">d052b0b13aa245106c0b9fdd09f78c59</sys_ui_section>
+            <sys_updated_by>francesco</sys_updated_by>
+            <sys_updated_on>2022-03-31 10:17:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>calc_pianeti_necessari</element>
+            <position>13</position>
+            <sys_created_by>francesco</sys_created_by>
+            <sys_created_on>2022-03-31 10:19:12</sys_created_on>
+            <sys_id>29376c8e97a685104204fe7fe153af8e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">d052b0b13aa245106c0b9fdd09f78c59</sys_ui_section>
+            <sys_updated_by>francesco</sys_updated_by>
+            <sys_updated_on>2022-03-31 10:19:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>calc_impatto_foresta</element>
+            <position>14</position>
+            <sys_created_by>francesco</sys_created_by>
+            <sys_created_on>2022-03-31 10:19:12</sys_created_on>
+            <sys_id>2137e4ce97a685104204fe7fe153af03</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">d052b0b13aa245106c0b9fdd09f78c59</sys_ui_section>
+            <sys_updated_by>francesco</sys_updated_by>
+            <sys_updated_on>2022-03-31 10:19:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>calc_impatto_energia</element>
+            <position>15</position>
+            <sys_created_by>francesco</sys_created_by>
+            <sys_created_on>2022-03-31 10:19:13</sys_created_on>
+            <sys_id>ad37e4ce97a685104204fe7fe153af18</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">d052b0b13aa245106c0b9fdd09f78c59</sys_ui_section>
+            <sys_updated_by>francesco</sys_updated_by>
+            <sys_updated_on>2022-03-31 10:19:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>calc_impatto_costruzioni</element>
+            <position>16</position>
+            <sys_created_by>francesco</sys_created_by>
+            <sys_created_on>2022-03-31 10:19:13</sys_created_on>
+            <sys_id>3137e4ce97a685104204fe7fe153af42</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">d052b0b13aa245106c0b9fdd09f78c59</sys_ui_section>
+            <sys_updated_by>francesco</sys_updated_by>
+            <sys_updated_on>2022-03-31 10:19:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>calc_impatto_trasporti</element>
+            <position>17</position>
+            <sys_created_by>francesco</sys_created_by>
+            <sys_created_on>2022-03-31 10:19:13</sys_created_on>
+            <sys_id>b537e4ce97a685104204fe7fe153af36</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">d052b0b13aa245106c0b9fdd09f78c59</sys_ui_section>
+            <sys_updated_by>francesco</sys_updated_by>
+            <sys_updated_on>2022-03-31 10:19:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>calc_impatto_servizi</element>
+            <position>18</position>
+            <sys_created_by>francesco</sys_created_by>
+            <sys_created_on>2022-03-31 10:19:13</sys_created_on>
+            <sys_id>7537e4ce97a685104204fe7fe153af17</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">d052b0b13aa245106c0b9fdd09f78c59</sys_ui_section>
+            <sys_updated_by>francesco</sys_updated_by>
+            <sys_updated_on>2022-03-31 10:19:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_snc_tree4meeting_attendee</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-30 16:29:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d052b0b13aa245106c0b9fdd09f78c59</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_tree4meeting_attendee</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+            <sys_update_name>sys_ui_section_d052b0b13aa245106c0b9fdd09f78c59</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-30 16:29:59</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

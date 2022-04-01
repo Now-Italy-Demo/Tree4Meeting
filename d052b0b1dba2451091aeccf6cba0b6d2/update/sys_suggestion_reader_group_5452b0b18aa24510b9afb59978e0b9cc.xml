@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_suggestion_reader_group">
+    <sys_suggestion_reader_group action="INSERT_OR_UPDATE">
+        <click_in_mode>false</click_in_mode>
+        <context_config_id display_value="">9c52b0b1bda245107c70990116101b5d</context_config_id>
+        <limit>5</limit>
+        <order>300</order>
+        <section_header>null</section_header>
+        <suggestion_type>Suggested Query Reader Group for Event Registration Workspace</suggestion_type>
+        <sys_class_name>sys_suggestion_reader_group</sys_class_name>
+        <sys_created_by>jared.prim</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:50</sys_created_on>
+        <sys_id>5452b0b18aa24510b9afb59978e0b9cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Suggested Query Reader Group for Event Registration Workspace</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy>null</sys_policy>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_suggestion_reader_group_5452b0b18aa24510b9afb59978e0b9cc</sys_update_name>
+        <sys_updated_by>jared.prim</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:50</sys_updated_on>
+    </sys_suggestion_reader_group>
+</record_update>

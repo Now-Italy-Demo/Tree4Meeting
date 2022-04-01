@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_applicability">
+    <sys_ux_applicability action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <api_name>x_snc_tree4meeting.Event Registration Admins</api_name>
+        <description>Event Registration Admins</description>
+        <name>Event Registration Admins</name>
+        <roles name="x_snc_tree4meeting.event_reg.admin">1c52b0b1b8a245104c516e8e208cdbd1</roles>
+        <sys_class_name>sys_ux_applicability</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1c52b0b132a24510f302a424e40fab4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Registration Admins</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_ux_applicability_1c52b0b132a24510f302a424e40fab4d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:44</sys_updated_on>
+    </sys_ux_applicability>
+</record_update>

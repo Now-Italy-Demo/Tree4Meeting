@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_write_back_action_item">
+    <sys_sg_write_back_action_item action="INSERT_OR_UPDATE">
+        <description/>
+        <execution_script><![CDATA[(function WriteBackAction(input) {
+	//Type appropriate comment here, and begin script below
+	// 	var attendee = new GlideRecord("x_snc_tree4meeting_attendee");
+	// 	attendee.addQuery("event_name", input.sys_id);
+	// 	attendee.addQuery("attendee_name",  gs.getUserID());
+	// 	attendee.addQuery("attendee_status",  "confirmed");
+	// 	attendee.orderByDesc('date_submitted');
+	// 	attendee.setLimit(1);
+	// 	attendee.query();
+	// 	if (attendee.next()) {
+	// 		attendee.attendee_status = "cancelled";
+	// 		attendee.update();
+	// 	}
+	var eventSysId = '';
+	var eventTable = new GlideRecord('x_snc_tree4meeting_event');
+	if(eventTable.get(input.sys_id)){
+		eventSysId = input.sys_id;
+	}else{
+		var attendeeGr1 = new GlideRecord('x_snc_tree4meeting_attendee');
+		if(attendeeGr1.get(input.sys_id)){
+			eventSysId = attendeeGr1.event_name.sys_id;
+		}
+	}
+	if(eventSysId){
+		var attendeeGr = new GlideRecord('x_snc_tree4meeting_attendee');
+		var orCondition = attendeeGr.addQuery('attendee_status', 'confirmed');
+		orCondition.addOrCondition('attendee_status','on_hold'); 
+		attendeeGr.addQuery('attendee_name', gs.getUserID());
+		attendeeGr.addQuery('event_name',  eventSysId);
+		attendeeGr.orderByDesc('date_submitted');
+		attendeeGr.setLimit(1);
+		attendeeGr.query();
+		if (attendeeGr.next()) {
+			if(attendeeGr.attendee_status == 'confirmed'){
+				attendeeGr.attendee_status = 'cancelled';
+				attendeeGr.update();
+			}else{
+				attendeeGr.deleteRecord();
+			}
+		}
+	}
+
+
+
+})(input);]]></execution_script>
+        <name>Cancel Registration</name>
+        <parameter_screen/>
+        <query_condition/>
+        <sys_class_name>sys_sg_write_back_action_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:56</sys_created_on>
+        <sys_id>9052b0b13fa24510a2e774c5646eb08a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cancel Registration</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_sg_write_back_action_item_9052b0b13fa24510a2e774c5646eb08a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:56</sys_updated_on>
+        <table/>
+        <template/>
+        <type>script</type>
+        <use_current_record_as_condition>true</use_current_record_as_condition>
+        <use_fields_for_ref_lookup>false</use_fields_for_ref_lookup>
+    </sys_sg_write_back_action_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=9052b0b13fa24510a2e774c5646eb08a"/>
+</record_update>

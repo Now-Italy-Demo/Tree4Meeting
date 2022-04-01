@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_datasource">
+    <ais_datasource action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <filter/>
+        <force_late_binding>false</force_late_binding>
+        <name>Event Registration Source</name>
+        <retention_policy/>
+        <source>x_snc_tree4meeting_event</source>
+        <sys_class_name>ais_datasource</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:45</sys_created_on>
+        <sys_id>d852b0b13ea245101265f01fe3990bd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Registration Source</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>ais_datasource_d852b0b13ea245101265f01fe3990bd1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:45</sys_updated_on>
+        <type>internal</type>
+    </ais_datasource>
+</record_update>

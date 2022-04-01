@@ -1,0 +1,3179 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-sandiego-12-22-2021__patch1-03-02-2022_03-17-2022_1811.zip</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description>DigitalHumani Reforestation as a Service integration</description>
+        <ih_action>true</ih_action>
+        <internal_name>digitalhumani_raas</internal_name>
+        <label_cache>[{"name":"{{action.number_of_trees}}","label":"action➛Number of Trees","type":"action","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.projectid}}","label":"action➛ProjectID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.enterpriseid}}","label":"action➛EnterpriseID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9303a2f1-eb9a-454d-ac78-3a4de41ad883].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9303a2f1-eb9a-454d-ac78-3a4de41ad883].data}}","label":"step➛Script step➛data","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a0107e1c-a2cd-4bf3-b1b1-469c914bfb9f].payload}}","label":"step➛Payload Builder step➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[65c68950-8b10-460e-a813-4b16023f21a4].response_body}}","label":"step➛Get Projects➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[acc6d23b-e83d-49e5-be61-5e222fda4c6a].variable}}","label":"step➛JSON Parser step➛variable","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[acc6d23b-e83d-49e5-be61-5e222fda4c6a].root.root_array}}","label":"step➛JSON Parser step➛root➛root_array","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[7fc2a2fe-ad5a-46c5-aed5-7f8658459888].response_body}}","label":"step➛Get Project Details➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationCompanyName_en}}","label":"step➛Parse Project Details➛root➛reforestationCompanyName_en","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationProjectCountry_fr}}","label":"step➛Parse Project Details➛root➛reforestationProjectCountry_fr","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationProjectState_en}}","label":"step➛Parse Project Details➛root➛reforestationProjectState_en","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationProjectDescription_en}}","label":"step➛Parse Project Details➛root➛reforestationProjectDescription_en","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationCompanyWebsite_en}}","label":"step➛Parse Project Details➛root➛reforestationCompanyWebsite_en","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[620f9d25-edcc-44dd-8754-f09e89be4921].response_body}}","label":"step➛Get Enterprise Details➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[2ae1aea0-7eb0-4fa2-b547-a9ddf66f035d].root.name}}","label":"step➛Parse Enterprise Details➛root➛name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2ae1aea0-7eb0-4fa2-b547-a9ddf66f035d].root.created}}","label":"step➛Parse Enterprise Details➛root➛created","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2ae1aea0-7eb0-4fa2-b547-a9ddf66f035d].root.contact.name}}","label":"step➛Parse Enterprise Details➛root➛contact➛name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2ae1aea0-7eb0-4fa2-b547-a9ddf66f035d].root.contact.email}}","label":"step➛Parse Enterprise Details➛root➛contact➛email","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master_snapshot>f41eb979476a4510d06e1d51e36d43c2</master_snapshot>
+        <name>RaaS_Get_Project_Details</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:06:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>67c1b1b5472a4510d06e1d51e36d43a7</sys_id>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_name>RaaS_Get_Project_Details</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_67c1b1b5472a4510d06e1d51e36d43a7</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:25:38</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=67c1b1b5472a4510d06e1d51e36d43a7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=67c1b1b5472a4510d06e1d51e36d43a7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>67c1b1b5472a4510d06e1d51e36d43a7</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:17:15</sys_created_on>
+        <sys_id>8334b5b9472a4510d06e1d51e36d438c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:31:30</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDcf34b5b9f02a45104394af367aeec15f":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDcf34b5b9f02a45104394af367aeec15f.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"b20df2ac-7abc-4cd8-875f-bcf6e9a212b0\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDcf34b5b9f02a45104394af367aeec15f\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <variable display_value="Action Status">0334b5b9472a4510d06e1d51e36d4363</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>67c1b1b5472a4510d06e1d51e36d43a7</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:17:15</sys_created_on>
+        <sys_id>cf34b5b9472a4510d06e1d51e36d438b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:17:15</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">4f34b5b9472a4510d06e1d51e36d4381</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=67c1b1b5472a4510d06e1d51e36d43a7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>companyname</field>
+        <id>67c1b1b5472a4510d06e1d51e36d43a7</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:58:06</sys_created_on>
+        <sys_id>619d3d39476a4510d06e1d51e36d43dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:58:06</sys_updated_on>
+        <table>var__m_sys_hub_action_output_67c1b1b5472a4510d06e1d51e36d43a7</table>
+        <value>{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationCompanyName_en}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>companywebsite</field>
+        <id>67c1b1b5472a4510d06e1d51e36d43a7</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:58:06</sys_created_on>
+        <sys_id>ad9d3d39476a4510d06e1d51e36d43db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:58:06</sys_updated_on>
+        <table>var__m_sys_hub_action_output_67c1b1b5472a4510d06e1d51e36d43a7</table>
+        <value>{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationCompanyWebsite_en}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>countryname</field>
+        <id>67c1b1b5472a4510d06e1d51e36d43a7</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:58:06</sys_created_on>
+        <sys_id>259d3d39476a4510d06e1d51e36d43dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:58:06</sys_updated_on>
+        <table>var__m_sys_hub_action_output_67c1b1b5472a4510d06e1d51e36d43a7</table>
+        <value>{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationProjectState_en}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>projectdescription</field>
+        <id>67c1b1b5472a4510d06e1d51e36d43a7</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:58:06</sys_created_on>
+        <sys_id>e59d3d39476a4510d06e1d51e36d43db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:58:06</sys_updated_on>
+        <table>var__m_sys_hub_action_output_67c1b1b5472a4510d06e1d51e36d43a7</table>
+        <value>{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationProjectDescription_en}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>67c1b1b5472a4510d06e1d51e36d43a7</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:17:15</sys_created_on>
+        <sys_id>4f34b5b9472a4510d06e1d51e36d438b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:17:15</sys_updated_on>
+        <table>var__m_sys_hub_action_output_67c1b1b5472a4510d06e1d51e36d43a7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>67c1b1b5472a4510d06e1d51e36d43a7</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:17:15</sys_created_on>
+        <sys_id>8b34b5b9472a4510d06e1d51e36d438b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:17:15</sys_updated_on>
+        <table>var__m_sys_hub_action_output_67c1b1b5472a4510d06e1d51e36d43a7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=67c1b1b5472a4510d06e1d51e36d43a7^sys_idNOT IN05bc39f5476a4510d06e1d51e36d43e0,ab4c7db5476a4510d06e1d51e36d437e"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="RaaS_Get_Project_Details">67c1b1b5472a4510d06e1d51e36d43a7</action>
+        <cid>592f71fc-e2ad-4acf-a2e5-8d71dfe98b32</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Parse Project Details</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:54:14</sys_created_on>
+        <sys_id>05bc39f5476a4510d06e1d51e36d43e0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:54:15</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=05bc39f5476a4510d06e1d51e36d43e0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>05bc39f5476a4510d06e1d51e36d43e0</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:54:15</sys_created_on>
+        <sys_id>49bc39f5476a4510d06e1d51e36d43ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:54:15</sys_updated_on>
+        <value>structured</value>
+        <variable display_value="Payload view">95d4280787523300f917e55936cb0bfe</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>05bc39f5476a4510d06e1d51e36d43e0</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:54:15</sys_created_on>
+        <sys_id>85bc39f5476a4510d06e1d51e36d43ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:54:15</sys_updated_on>
+        <value>{
+    "reforestationCompanyName_fr": "À déterminer",
+    "reforestationProjectImageURL_en": "https://digitalhumani.com/reforestation-organisations/OneTreePlanted/OneTreePlanted-Where-Most-Needed.jpg",
+    "reforestationCompanyName_en": "To be determined",
+    "reforestationProjectCountry_en": "TBD",
+    "reforestationCompanyAddress_en": "Address will depend of the reforestation organization",
+    "created": "2021-02-26T09:06:00.725Z",
+    "reforestationProjectWebsite_en": "https://DigitalHumani.com/",
+    "name": "Where they are needed most",
+    "reforestationProjectState_fr": "À confirmer",
+    "reforestationProjectCountry_fr": "À confirmer",
+    "reforestationProjectState_en": "TBD",
+    "reforestationProjectWebsite_fr": "https://DigitalHumani.com/",
+    "location_en": "England",
+    "active": true,
+    "updated": "2020-10-10T19:16:40.970Z",
+    "reforestationProjectDescription_fr": "Projet de reforestation où les arbres seront le plus nécessaire",
+    "reforestationProjectDescription_en": "Reforestation project where the trees are needed the most",
+    "reforestationCompanyWebsite_fr": "https://DigitalHumani.com/",
+    "reforestationCompanyWebsite_en": "https://DigitalHumani.com/",
+    "reforestationCompanyAddress_fr": "Adresse dépendra de l'organisme de reforestation",
+    "description": "Where they are needed most",
+    "id": "14442771",
+    "reforestationProjectImageURL_fr": "https://digitalhumani.com/reforestation-organisations/OneTreePlanted/OneTreePlanted-Where-Most-Needed.jpg"
+}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>05bc39f5476a4510d06e1d51e36d43e0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:54:15</sys_created_on>
+        <sys_id>c1bc39f5476a4510d06e1d51e36d43ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:54:15</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"reforestationCompanyName_fr","children":[],"type":"string","jpath":"$.reforestationCompanyName_fr","previewValue":"À déterminer"},{"name":"reforestationProjectImageURL_en","children":[],"type":"string","jpath":"$.reforestationProjectImageURL_en","previewValue":"https://digitalhumani.com/reforestation-organisations/OneTreePlanted/OneTreePlanted-Where-Most-Needed.jpg"},{"name":"reforestationCompanyName_en","children":[],"type":"string","jpath":"$.reforestationCompanyName_en","previewValue":"To be determined"},{"name":"reforestationProjectCountry_en","children":[],"type":"string","jpath":"$.reforestationProjectCountry_en","previewValue":"TBD"},{"name":"reforestationCompanyAddress_en","children":[],"type":"string","jpath":"$.reforestationCompanyAddress_en","previewValue":"Address will depend of the reforestation organization"},{"name":"created","children":[],"type":"string","jpath":"$.created","previewValue":"2021-02-26T09:06:00.725Z"},{"name":"reforestationProjectWebsite_en","children":[],"type":"string","jpath":"$.reforestationProjectWebsite_en","previewValue":"https://DigitalHumani.com/"},{"name":"name","children":[],"type":"string","jpath":"$.name","previewValue":"Where they are needed most"},{"name":"reforestationProjectState_fr","children":[],"type":"string","jpath":"$.reforestationProjectState_fr","previewValue":"À confirmer"},{"name":"reforestationProjectCountry_fr","children":[],"type":"string","jpath":"$.reforestationProjectCountry_fr","previewValue":"À confirmer"},{"name":"reforestationProjectState_en","children":[],"type":"string","jpath":"$.reforestationProjectState_en","previewValue":"TBD"},{"name":"reforestationProjectWebsite_fr","children":[],"type":"string","jpath":"$.reforestationProjectWebsite_fr","previewValue":"https://DigitalHumani.com/"},{"name":"location_en","children":[],"type":"string","jpath":"$.location_en","previewValue":"England"},{"name":"active","children":[],"type":"string","jpath":"$.active","previewValue":"true"},{"name":"updated","children":[],"type":"string","jpath":"$.updated","previewValue":"2020-10-10T19:16:40.970Z"},{"name":"reforestationProjectDescription_fr","children":[],"type":"string","jpath":"$.reforestationProjectDescription_fr","previewValue":"Projet de reforestation où les arbres seront le plus nécessaire"},{"name":"reforestationProjectDescription_en","children":[],"type":"string","jpath":"$.reforestationProjectDescription_en","previewValue":"Reforestation project where the trees are needed the most"},{"name":"reforestationCompanyWebsite_fr","children":[],"type":"string","jpath":"$.reforestationCompanyWebsite_fr","previewValue":"https://DigitalHumani.com/"},{"name":"reforestationCompanyWebsite_en","children":[],"type":"string","jpath":"$.reforestationCompanyWebsite_en","previewValue":"https://DigitalHumani.com/"},{"name":"reforestationCompanyAddress_fr","children":[],"type":"string","jpath":"$.reforestationCompanyAddress_fr","previewValue":"Adresse dépendra de l'organisme de reforestation"},{"name":"description","children":[],"type":"string","jpath":"$.description","previewValue":"Where they are needed most"},{"name":"id","children":[],"type":"string","jpath":"$.id","previewValue":"14442771"},{"name":"reforestationProjectImageURL_fr","children":[],"type":"string","jpath":"$.reforestationProjectImageURL_fr","previewValue":"https://digitalhumani.com/reforestation-organisations/OneTreePlanted/OneTreePlanted-Where-Most-Needed.jpg"}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_05bc39f5476a4510d06e1d51e36d43e0^id=05bc39f5476a4510d06e1d51e36d43e0"/>
+    <sys_element_mapping action="delete_multiple" query="id=05bc39f5476a4510d06e1d51e36d43e0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>payload_view</field>
+        <id>05bc39f5476a4510d06e1d51e36d43e0</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:54:15</sys_created_on>
+        <sys_id>8dbc39f5476a4510d06e1d51e36d43ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:54:15</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>05bc39f5476a4510d06e1d51e36d43e0</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:54:15</sys_created_on>
+        <sys_id>41bc39f5476a4510d06e1d51e36d43ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:54:15</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>05bc39f5476a4510d06e1d51e36d43e0</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:54:15</sys_created_on>
+        <sys_id>09bc39f5476a4510d06e1d51e36d43ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:54:15</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[7fc2a2fe-ad5a-46c5-aed5-7f8658459888].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>05bc39f5476a4510d06e1d51e36d43e0</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:54:15</sys_created_on>
+        <sys_id>c9bc39f5476a4510d06e1d51e36d43ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:54:15</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=05bc39f5476a4510d06e1d51e36d43e0"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=05bc39f5476a4510d06e1d51e36d43e0^sys_idNOT IN4dbc39f5476a4510d06e1d51e36d43e6"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD01bc39f52b6a4510a300969cfd599ce4,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=173c6c6e-2f16-4205-918b-6b9010c9143e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Parse Project Details">05bc39f5476a4510d06e1d51e36d43e0</model>
+        <model_id>05bc39f5476a4510d06e1d51e36d43e0</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_05bc39f5476a4510d06e1d51e36d43e0</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:54:14</sys_created_on>
+        <sys_id>4dbc39f5476a4510d06e1d51e36d43e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:54:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=05bc39f5476a4510d06e1d51e36d43e0"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_05bc39f5476a4510d06e1d51e36d43e0^sys_idNOT IN4dbc39f5476a4510d06e1d51e36d43ea"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_05bc39f5476a4510d06e1d51e36d43e0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:54:15</sys_created_on>
+        <sys_id>4dbc39f5476a4510d06e1d51e36d43ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:54:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="RaaS_Get_Project_Details">67c1b1b5472a4510d06e1d51e36d43a7</action>
+        <cid>7fc2a2fe-ad5a-46c5-aed5-7f8658459888</cid>
+        <error_handling_type>2</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Get Project Details</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:30</sys_created_on>
+        <sys_id>ab4c7db5476a4510d06e1d51e36d437e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:53:08</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ab4c7db5476a4510d06e1d51e36d437e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ab4c7db5476a4510d06e1d51e36d437e</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:31</sys_created_on>
+        <sys_id>234c7db5476a4510d06e1d51e36d43aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:31</sys_updated_on>
+        <value>https://api.sandbox.digitalhumani.com/</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ab4c7db5476a4510d06e1d51e36d437e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:31</sys_created_on>
+        <sys_id>274c7db5476a4510d06e1d51e36d43a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:31</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ab4c7db5476a4510d06e1d51e36d437e</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:31</sys_created_on>
+        <sys_id>2f4c7db5476a4510d06e1d51e36d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:31</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ab4c7db5476a4510d06e1d51e36d437e</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:53:08</sys_created_on>
+        <sys_id>347cb1f5476a4510d06e1d51e36d43bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:53:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Enable Retry Policy">321e31fd87803300a8cc7d5e27cb0b7a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ab4c7db5476a4510d06e1d51e36d437e</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:31</sys_created_on>
+        <sys_id>6f4c7db5476a4510d06e1d51e36d43a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:31</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ab4c7db5476a4510d06e1d51e36d437e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:31</sys_created_on>
+        <sys_id>a74c7db5476a4510d06e1d51e36d43aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:31</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ab4c7db5476a4510d06e1d51e36d437e</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:31</sys_created_on>
+        <sys_id>ab4c7db5476a4510d06e1d51e36d43a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:31</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"X-Api-Key","value":""}]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ab4c7db5476a4510d06e1d51e36d437e</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:49</sys_created_on>
+        <sys_id>d86cfdb5476a4510d06e1d51e36d43f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:49</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ab4c7db5476a4510d06e1d51e36d437e</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:31</sys_created_on>
+        <sys_id>e34c7db5476a4510d06e1d51e36d43aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:31</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ab4c7db5476a4510d06e1d51e36d437e</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:31</sys_created_on>
+        <sys_id>e74c7db5476a4510d06e1d51e36d43a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:31</sys_updated_on>
+        <value>bfe0fd35472a4510d06e1d51e36d4398</value>
+        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_ab4c7db5476a4510d06e1d51e36d437e^id=ab4c7db5476a4510d06e1d51e36d437e"/>
+    <sys_element_mapping action="delete_multiple" query="id=ab4c7db5476a4510d06e1d51e36d437e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>ab4c7db5476a4510d06e1d51e36d437e</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:31</sys_created_on>
+        <sys_id>e74c7db5476a4510d06e1d51e36d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>ab4c7db5476a4510d06e1d51e36d437e</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:31</sys_created_on>
+        <sys_id>274c7db5476a4510d06e1d51e36d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>ab4c7db5476a4510d06e1d51e36d437e</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:31</sys_created_on>
+        <sys_id>634c7db5476a4510d06e1d51e36d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>ab4c7db5476a4510d06e1d51e36d437e</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:31</sys_created_on>
+        <sys_id>2b4c7db5476a4510d06e1d51e36d43a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>ab4c7db5476a4510d06e1d51e36d437e</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:31</sys_created_on>
+        <sys_id>ab4c7db5476a4510d06e1d51e36d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>enable_retry_policy</field>
+        <id>ab4c7db5476a4510d06e1d51e36d437e</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:53:08</sys_created_on>
+        <sys_id>b07cb1f5476a4510d06e1d51e36d43bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:53:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>ab4c7db5476a4510d06e1d51e36d437e</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:31</sys_created_on>
+        <sys_id>af4c7db5476a4510d06e1d51e36d43a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>ab4c7db5476a4510d06e1d51e36d437e</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:31</sys_created_on>
+        <sys_id>674c7db5476a4510d06e1d51e36d43a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>ab4c7db5476a4510d06e1d51e36d437e</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:49</sys_created_on>
+        <sys_id>586cfdb5476a4510d06e1d51e36d43f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:49</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>ab4c7db5476a4510d06e1d51e36d437e</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:31</sys_created_on>
+        <sys_id>eb4c7db5476a4510d06e1d51e36d43a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>project/{{action.projectid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>ab4c7db5476a4510d06e1d51e36d437e</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:31</sys_created_on>
+        <sys_id>af4c7db5476a4510d06e1d51e36d43a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:31</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=ab4c7db5476a4510d06e1d51e36d437e"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=ab4c7db5476a4510d06e1d51e36d437e^sys_idNOT IN274c7db5476a4510d06e1d51e36d439b"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=d5fb7f12-28e0-4394-94ba-f4e0b005d359</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Get Project Details">ab4c7db5476a4510d06e1d51e36d437e</model>
+        <model_id>ab4c7db5476a4510d06e1d51e36d437e</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_ab4c7db5476a4510d06e1d51e36d437e</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:30</sys_created_on>
+        <sys_id>274c7db5476a4510d06e1d51e36d439b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ab4c7db5476a4510d06e1d51e36d437e^sys_idNOT IN674c7db5476a4510d06e1d51e36d43a4"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>headers</input_name>
+        <instance>ab4c7db5476a4510d06e1d51e36d437e</instance>
+        <referenced_table>sys_hub_step_instance</referenced_table>
+        <script>{"name-values-0-value-input":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nreturn gs.getProperty(\u0027x_snc_tree4meeting.digitalhumani_sandbox_apikey\u0027);","savedValue":""}}</script>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:30</sys_created_on>
+        <sys_id>674c7db5476a4510d06e1d51e36d43a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:30</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_ab4c7db5476a4510d06e1d51e36d437e^sys_idNOT IN6b4c7db5476a4510d06e1d51e36d439f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_ab4c7db5476a4510d06e1d51e36d437e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:30</sys_created_on>
+        <sys_id>6b4c7db5476a4510d06e1d51e36d439f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=67c1b1b5472a4510d06e1d51e36d43a7^sys_idNOT INaf4c7db5476a4510d06e1d51e36d4373"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=bafb6fb5-40b7-423f-b28b-d18e3f3bdb13</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>14442771</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>projectid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>ProjectID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="RaaS_Get_Project_Details">67c1b1b5472a4510d06e1d51e36d43a7</model>
+        <model_id>67c1b1b5472a4510d06e1d51e36d43a7</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_67c1b1b5472a4510d06e1d51e36d43a7</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:30</sys_created_on>
+        <sys_id>af4c7db5476a4510d06e1d51e36d4373</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=af4c7db5476a4510d06e1d51e36d4373"/>
+    <sys_hub_action_output action="delete_multiple" query="model=67c1b1b5472a4510d06e1d51e36d43a7^sys_idNOT IN0334b5b9472a4510d06e1d51e36d4363,4f34b5b9472a4510d06e1d51e36d4381,519d3d39476a4510d06e1d51e36d43b9,559d3d39476a4510d06e1d51e36d43be,599d3d39476a4510d06e1d51e36d43c7,dd9d3d39476a4510d06e1d51e36d43c2"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDcf34b5b9f02a45104394af367aeec15f,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=b20df2ac-7abc-4cd8-875f-bcf6e9a212b0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="RaaS_Get_Project_Details">67c1b1b5472a4510d06e1d51e36d43a7</model>
+        <model_id>67c1b1b5472a4510d06e1d51e36d43a7</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_67c1b1b5472a4510d06e1d51e36d43a7</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:17:15</sys_created_on>
+        <sys_id>0334b5b9472a4510d06e1d51e36d4363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:17:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0334b5b9472a4510d06e1d51e36d4363"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0334b5b9472a4510d06e1d51e36d4363"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=8d6029c8-d76e-4f22-a443-98f8258ff7cd,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="RaaS_Get_Project_Details">67c1b1b5472a4510d06e1d51e36d43a7</model>
+        <model_id>67c1b1b5472a4510d06e1d51e36d43a7</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_67c1b1b5472a4510d06e1d51e36d43a7</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:17:15</sys_created_on>
+        <sys_id>4f34b5b9472a4510d06e1d51e36d4381</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:17:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4f34b5b9472a4510d06e1d51e36d4381"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4f34b5b9472a4510d06e1d51e36d4381"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=aecd29ca-0851-411d-9e92-45d9be3d97c4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>companyname</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>CompanyName</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="RaaS_Get_Project_Details">67c1b1b5472a4510d06e1d51e36d43a7</model>
+        <model_id>67c1b1b5472a4510d06e1d51e36d43a7</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_67c1b1b5472a4510d06e1d51e36d43a7</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:58:05</sys_created_on>
+        <sys_id>519d3d39476a4510d06e1d51e36d43b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:58:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=519d3d39476a4510d06e1d51e36d43b9"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=519d3d39476a4510d06e1d51e36d43b9"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=d9529ad9-7ada-4923-8ca2-364d67100fa0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>countryname</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>CountryName</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="RaaS_Get_Project_Details">67c1b1b5472a4510d06e1d51e36d43a7</model>
+        <model_id>67c1b1b5472a4510d06e1d51e36d43a7</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_67c1b1b5472a4510d06e1d51e36d43a7</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:58:05</sys_created_on>
+        <sys_id>559d3d39476a4510d06e1d51e36d43be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:58:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=559d3d39476a4510d06e1d51e36d43be"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=559d3d39476a4510d06e1d51e36d43be"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=33b31ac7-5fec-4b7a-bf84-0a54926f29a6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>companywebsite</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>CompanyWebsite</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="RaaS_Get_Project_Details">67c1b1b5472a4510d06e1d51e36d43a7</model>
+        <model_id>67c1b1b5472a4510d06e1d51e36d43a7</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_67c1b1b5472a4510d06e1d51e36d43a7</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:58:05</sys_created_on>
+        <sys_id>599d3d39476a4510d06e1d51e36d43c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:58:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=599d3d39476a4510d06e1d51e36d43c7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=599d3d39476a4510d06e1d51e36d43c7"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=48144e5a-9aa8-464a-9202-e9ce5f4e3d3f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>projectdescription</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>ProjectDescription</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="RaaS_Get_Project_Details">67c1b1b5472a4510d06e1d51e36d43a7</model>
+        <model_id>67c1b1b5472a4510d06e1d51e36d43a7</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_67c1b1b5472a4510d06e1d51e36d43a7</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:58:05</sys_created_on>
+        <sys_id>dd9d3d39476a4510d06e1d51e36d43c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:58:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dd9d3d39476a4510d06e1d51e36d43c2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=dd9d3d39476a4510d06e1d51e36d43c2"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=67c1b1b5472a4510d06e1d51e36d43a7"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=67c1b1b5472a4510d06e1d51e36d43a7^sys_idNOT IN68937179472a4510d06e1d51e36d4391"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="RaaS_Get_Project_Details">67c1b1b5472a4510d06e1d51e36d43a7</action_type_id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:14:20</sys_created_on>
+        <sys_id>68937179472a4510d06e1d51e36d4391</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:14:20</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=68937179472a4510d06e1d51e36d4391"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_67c1b1b5472a4510d06e1d51e36d43a7^sys_idNOT INa34c7db5476a4510d06e1d51e36d437c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>projectid</element>
+        <help/>
+        <hint/>
+        <label>ProjectID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_67c1b1b5472a4510d06e1d51e36d43a7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:52:30</sys_created_on>
+        <sys_id>a34c7db5476a4510d06e1d51e36d437c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:52:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_67c1b1b5472a4510d06e1d51e36d43a7"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_67c1b1b5472a4510d06e1d51e36d43a7^sys_idNOT IN119d3d39476a4510d06e1d51e36d43c2,8f34b5b9472a4510d06e1d51e36d4380,959d3d39476a4510d06e1d51e36d43bd,999d3d39476a4510d06e1d51e36d43c6,c734b5b9472a4510d06e1d51e36d4388,d99d3d39476a4510d06e1d51e36d43d7"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>countryname</element>
+        <help/>
+        <hint/>
+        <label>CountryName</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_67c1b1b5472a4510d06e1d51e36d43a7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:58:05</sys_created_on>
+        <sys_id>119d3d39476a4510d06e1d51e36d43c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:58:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_67c1b1b5472a4510d06e1d51e36d43a7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:17:15</sys_created_on>
+        <sys_id>8f34b5b9472a4510d06e1d51e36d4380</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:17:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>companyname</element>
+        <help/>
+        <hint/>
+        <label>CompanyName</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_67c1b1b5472a4510d06e1d51e36d43a7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:58:05</sys_created_on>
+        <sys_id>959d3d39476a4510d06e1d51e36d43bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:58:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>projectdescription</element>
+        <help/>
+        <hint/>
+        <label>ProjectDescription</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_67c1b1b5472a4510d06e1d51e36d43a7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:58:05</sys_created_on>
+        <sys_id>999d3d39476a4510d06e1d51e36d43c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:58:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_67c1b1b5472a4510d06e1d51e36d43a7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:17:15</sys_created_on>
+        <sys_id>c734b5b9472a4510d06e1d51e36d4388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:17:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>companywebsite</element>
+        <help/>
+        <hint/>
+        <label>CompanyWebsite</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_67c1b1b5472a4510d06e1d51e36d43a7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 21:58:05</sys_created_on>
+        <sys_id>d99d3d39476a4510d06e1d51e36d43d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 21:58:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_67c1b1b5472a4510d06e1d51e36d43a7"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=67c1b1b5472a4510d06e1d51e36d43a7^sys_idNOT INf91e3d79476a4510d06e1d51e36d433e"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="RaaS_Get_Project_Details">67c1b1b5472a4510d06e1d51e36d43a7</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"f91e3d79476a4510d06e1d51e36d433e","name":"plan","plan_signature":null}}</plan>
+        <snapshot>78e3caf147aa4510d06e1d51e36d43e8</snapshot>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f91e3d79476a4510d06e1d51e36d433e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:25:39</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>DigitalHumani Reforestation as a Service integration</description>
+        <internal_name>get_project_details</internal_name>
+        <label_cache>[{"name":"{{action.number_of_trees}}","label":"action➛Number of Trees","type":"action","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.projectid}}","label":"action➛ProjectID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.enterpriseid}}","label":"action➛EnterpriseID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9303a2f1-eb9a-454d-ac78-3a4de41ad883].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9303a2f1-eb9a-454d-ac78-3a4de41ad883].data}}","label":"step➛Script step➛data","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a0107e1c-a2cd-4bf3-b1b1-469c914bfb9f].payload}}","label":"step➛Payload Builder step➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[65c68950-8b10-460e-a813-4b16023f21a4].response_body}}","label":"step➛Get Projects➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[acc6d23b-e83d-49e5-be61-5e222fda4c6a].variable}}","label":"step➛JSON Parser step➛variable","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[acc6d23b-e83d-49e5-be61-5e222fda4c6a].root.root_array}}","label":"step➛JSON Parser step➛root➛root_array","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[7fc2a2fe-ad5a-46c5-aed5-7f8658459888].response_body}}","label":"step➛Get Project Details➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationCompanyName_en}}","label":"step➛Parse Project Details➛root➛reforestationCompanyName_en","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationProjectCountry_fr}}","label":"step➛Parse Project Details➛root➛reforestationProjectCountry_fr","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationProjectState_en}}","label":"step➛Parse Project Details➛root➛reforestationProjectState_en","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationProjectDescription_en}}","label":"step➛Parse Project Details➛root➛reforestationProjectDescription_en","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationCompanyWebsite_en}}","label":"step➛Parse Project Details➛root➛reforestationCompanyWebsite_en","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[620f9d25-edcc-44dd-8754-f09e89be4921].response_body}}","label":"step➛Get Enterprise Details➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[2ae1aea0-7eb0-4fa2-b547-a9ddf66f035d].root.name}}","label":"step➛Parse Enterprise Details➛root➛name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2ae1aea0-7eb0-4fa2-b547-a9ddf66f035d].root.created}}","label":"step➛Parse Enterprise Details➛root➛created","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2ae1aea0-7eb0-4fa2-b547-a9ddf66f035d].root.contact.name}}","label":"step➛Parse Enterprise Details➛root➛contact➛name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2ae1aea0-7eb0-4fa2-b547-a9ddf66f035d].root.contact.email}}","label":"step➛Parse Enterprise Details➛root➛contact➛email","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>RaaS_Get_Project_Details</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="RaaS_Get_Project_Details">67c1b1b5472a4510d06e1d51e36d43a7</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f41eb979476a4510d06e1d51e36d43c2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:25:37</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=f41eb979476a4510d06e1d51e36d43c2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f41eb979476a4510d06e1d51e36d43c2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>f41eb979476a4510d06e1d51e36d43c2</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:16</sys_created_on>
+        <sys_id>191ef979476a4510d06e1d51e36d436c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:16</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">011ef979476a4510d06e1d51e36d4304</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>f41eb979476a4510d06e1d51e36d43c2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:16</sys_created_on>
+        <sys_id>d91ef979476a4510d06e1d51e36d436c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:16</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDc91eb979706a4510a2aaf1e8a0ff72fb":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDc91eb979706a4510a2aaf1e8a0ff72fb.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"b20df2ac-7abc-4cd8-875f-bcf6e9a212b0\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDc91eb979706a4510a2aaf1e8a0ff72fb\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <variable display_value="Action Status">811eb979476a4510d06e1d51e36d43fe</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f41eb979476a4510d06e1d51e36d43c2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>companyname</field>
+        <id>f41eb979476a4510d06e1d51e36d43c2</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:16</sys_created_on>
+        <sys_id>5d1ef979476a4510d06e1d51e36d436b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:16</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f41eb979476a4510d06e1d51e36d43c2</table>
+        <value>{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationCompanyName_en}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>companywebsite</field>
+        <id>f41eb979476a4510d06e1d51e36d43c2</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:16</sys_created_on>
+        <sys_id>991ef979476a4510d06e1d51e36d436b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:16</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f41eb979476a4510d06e1d51e36d43c2</table>
+        <value>{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationCompanyWebsite_en}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>countryname</field>
+        <id>f41eb979476a4510d06e1d51e36d43c2</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:16</sys_created_on>
+        <sys_id>d11ef979476a4510d06e1d51e36d436c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:16</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f41eb979476a4510d06e1d51e36d43c2</table>
+        <value>{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationProjectState_en}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>projectdescription</field>
+        <id>f41eb979476a4510d06e1d51e36d43c2</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:16</sys_created_on>
+        <sys_id>d51ef979476a4510d06e1d51e36d436b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:16</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f41eb979476a4510d06e1d51e36d43c2</table>
+        <value>{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationProjectDescription_en}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>f41eb979476a4510d06e1d51e36d43c2</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:16</sys_created_on>
+        <sys_id>951ef979476a4510d06e1d51e36d436c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:16</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f41eb979476a4510d06e1d51e36d43c2</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>f41eb979476a4510d06e1d51e36d43c2</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:16</sys_created_on>
+        <sys_id>111ef979476a4510d06e1d51e36d436c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:16</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f41eb979476a4510d06e1d51e36d43c2</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=f41eb979476a4510d06e1d51e36d43c2^sys_idNOT IN7c1eb979476a4510d06e1d51e36d43cf,8d1eb979476a4510d06e1d51e36d43eb"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="RaaS_Get_Project_Details">f41eb979476a4510d06e1d51e36d43c2</action>
+        <cid>7fc2a2fe-ad5a-46c5-aed5-7f8658459888</cid>
+        <error_handling_type>2</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Get Project Details</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:14</sys_created_on>
+        <sys_id>7c1eb979476a4510d06e1d51e36d43cf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7c1eb979476a4510d06e1d51e36d43cf"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7c1eb979476a4510d06e1d51e36d43cf</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>011eb979476a4510d06e1d51e36d43e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"X-Api-Key","value":""}]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7c1eb979476a4510d06e1d51e36d43cf</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>0d1eb979476a4510d06e1d51e36d43e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7c1eb979476a4510d06e1d51e36d43cf</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>491eb979476a4510d06e1d51e36d43e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7c1eb979476a4510d06e1d51e36d43cf</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>4d1eb979476a4510d06e1d51e36d43e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <value>bfe0fd35472a4510d06e1d51e36d4398</value>
+        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7c1eb979476a4510d06e1d51e36d43cf</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>851eb979476a4510d06e1d51e36d43e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <value>https://api.sandbox.digitalhumani.com/</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7c1eb979476a4510d06e1d51e36d43cf</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>891eb979476a4510d06e1d51e36d43e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7c1eb979476a4510d06e1d51e36d43cf</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>c11eb979476a4510d06e1d51e36d43e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7c1eb979476a4510d06e1d51e36d43cf</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>c51eb979476a4510d06e1d51e36d43e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7c1eb979476a4510d06e1d51e36d43cf</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>cd1eb979476a4510d06e1d51e36d43e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Enable Retry Policy">321e31fd87803300a8cc7d5e27cb0b7a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7c1eb979476a4510d06e1d51e36d43cf</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>cd1eb979476a4510d06e1d51e36d43e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_7c1eb979476a4510d06e1d51e36d43cf^id=7c1eb979476a4510d06e1d51e36d43cf"/>
+    <sys_element_mapping action="delete_multiple" query="id=7c1eb979476a4510d06e1d51e36d43cf"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>7c1eb979476a4510d06e1d51e36d43cf</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>c51eb979476a4510d06e1d51e36d43e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>7c1eb979476a4510d06e1d51e36d43cf</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>051eb979476a4510d06e1d51e36d43e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>7c1eb979476a4510d06e1d51e36d43cf</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>411eb979476a4510d06e1d51e36d43e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>7c1eb979476a4510d06e1d51e36d43cf</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>091eb979476a4510d06e1d51e36d43e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>7c1eb979476a4510d06e1d51e36d43cf</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>4d1eb979476a4510d06e1d51e36d43e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>enable_retry_policy</field>
+        <id>7c1eb979476a4510d06e1d51e36d43cf</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>c91eb979476a4510d06e1d51e36d43e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>7c1eb979476a4510d06e1d51e36d43cf</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>8d1eb979476a4510d06e1d51e36d43e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>7c1eb979476a4510d06e1d51e36d43cf</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>451eb979476a4510d06e1d51e36d43e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>7c1eb979476a4510d06e1d51e36d43cf</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>891eb979476a4510d06e1d51e36d43e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>7c1eb979476a4510d06e1d51e36d43cf</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>c91eb979476a4510d06e1d51e36d43e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>project/{{action.projectid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>7c1eb979476a4510d06e1d51e36d43cf</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>811eb979476a4510d06e1d51e36d43e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=7c1eb979476a4510d06e1d51e36d43cf"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=7c1eb979476a4510d06e1d51e36d43cf^sys_idNOT IN701eb979476a4510d06e1d51e36d43d7"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=d5fb7f12-28e0-4394-94ba-f4e0b005d359</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Get Project Details">7c1eb979476a4510d06e1d51e36d43cf</model>
+        <model_id>7c1eb979476a4510d06e1d51e36d43cf</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_7c1eb979476a4510d06e1d51e36d43cf</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>701eb979476a4510d06e1d51e36d43d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7c1eb979476a4510d06e1d51e36d43cf^sys_idNOT IN811eb979476a4510d06e1d51e36d43e0"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>headers</input_name>
+        <instance>7c1eb979476a4510d06e1d51e36d43cf</instance>
+        <referenced_table>sys_hub_step_instance</referenced_table>
+        <script>{"name-values-0-value-input":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nreturn gs.getProperty(\u0027x_snc_tree4meeting.digitalhumani_sandbox_apikey\u0027);","savedValue":""}}</script>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>811eb979476a4510d06e1d51e36d43e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_7c1eb979476a4510d06e1d51e36d43cf^sys_idNOT IN091eb979476a4510d06e1d51e36d43db"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_7c1eb979476a4510d06e1d51e36d43cf</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>091eb979476a4510d06e1d51e36d43db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="RaaS_Get_Project_Details">f41eb979476a4510d06e1d51e36d43c2</action>
+        <cid>592f71fc-e2ad-4acf-a2e5-8d71dfe98b32</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Parse Project Details</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>8d1eb979476a4510d06e1d51e36d43eb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8d1eb979476a4510d06e1d51e36d43eb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>8d1eb979476a4510d06e1d51e36d43eb</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>011eb979476a4510d06e1d51e36d43f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <value>{
+    "reforestationCompanyName_fr": "À déterminer",
+    "reforestationProjectImageURL_en": "https://digitalhumani.com/reforestation-organisations/OneTreePlanted/OneTreePlanted-Where-Most-Needed.jpg",
+    "reforestationCompanyName_en": "To be determined",
+    "reforestationProjectCountry_en": "TBD",
+    "reforestationCompanyAddress_en": "Address will depend of the reforestation organization",
+    "created": "2021-02-26T09:06:00.725Z",
+    "reforestationProjectWebsite_en": "https://DigitalHumani.com/",
+    "name": "Where they are needed most",
+    "reforestationProjectState_fr": "À confirmer",
+    "reforestationProjectCountry_fr": "À confirmer",
+    "reforestationProjectState_en": "TBD",
+    "reforestationProjectWebsite_fr": "https://DigitalHumani.com/",
+    "location_en": "England",
+    "active": true,
+    "updated": "2020-10-10T19:16:40.970Z",
+    "reforestationProjectDescription_fr": "Projet de reforestation où les arbres seront le plus nécessaire",
+    "reforestationProjectDescription_en": "Reforestation project where the trees are needed the most",
+    "reforestationCompanyWebsite_fr": "https://DigitalHumani.com/",
+    "reforestationCompanyWebsite_en": "https://DigitalHumani.com/",
+    "reforestationCompanyAddress_fr": "Adresse dépendra de l'organisme de reforestation",
+    "description": "Where they are needed most",
+    "id": "14442771",
+    "reforestationProjectImageURL_fr": "https://digitalhumani.com/reforestation-organisations/OneTreePlanted/OneTreePlanted-Where-Most-Needed.jpg"
+}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>8d1eb979476a4510d06e1d51e36d43eb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>4d1eb979476a4510d06e1d51e36d43f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"reforestationCompanyName_fr","children":[],"type":"string","jpath":"$.reforestationCompanyName_fr","previewValue":"À déterminer"},{"name":"reforestationProjectImageURL_en","children":[],"type":"string","jpath":"$.reforestationProjectImageURL_en","previewValue":"https://digitalhumani.com/reforestation-organisations/OneTreePlanted/OneTreePlanted-Where-Most-Needed.jpg"},{"name":"reforestationCompanyName_en","children":[],"type":"string","jpath":"$.reforestationCompanyName_en","previewValue":"To be determined"},{"name":"reforestationProjectCountry_en","children":[],"type":"string","jpath":"$.reforestationProjectCountry_en","previewValue":"TBD"},{"name":"reforestationCompanyAddress_en","children":[],"type":"string","jpath":"$.reforestationCompanyAddress_en","previewValue":"Address will depend of the reforestation organization"},{"name":"created","children":[],"type":"string","jpath":"$.created","previewValue":"2021-02-26T09:06:00.725Z"},{"name":"reforestationProjectWebsite_en","children":[],"type":"string","jpath":"$.reforestationProjectWebsite_en","previewValue":"https://DigitalHumani.com/"},{"name":"name","children":[],"type":"string","jpath":"$.name","previewValue":"Where they are needed most"},{"name":"reforestationProjectState_fr","children":[],"type":"string","jpath":"$.reforestationProjectState_fr","previewValue":"À confirmer"},{"name":"reforestationProjectCountry_fr","children":[],"type":"string","jpath":"$.reforestationProjectCountry_fr","previewValue":"À confirmer"},{"name":"reforestationProjectState_en","children":[],"type":"string","jpath":"$.reforestationProjectState_en","previewValue":"TBD"},{"name":"reforestationProjectWebsite_fr","children":[],"type":"string","jpath":"$.reforestationProjectWebsite_fr","previewValue":"https://DigitalHumani.com/"},{"name":"location_en","children":[],"type":"string","jpath":"$.location_en","previewValue":"England"},{"name":"active","children":[],"type":"string","jpath":"$.active","previewValue":"true"},{"name":"updated","children":[],"type":"string","jpath":"$.updated","previewValue":"2020-10-10T19:16:40.970Z"},{"name":"reforestationProjectDescription_fr","children":[],"type":"string","jpath":"$.reforestationProjectDescription_fr","previewValue":"Projet de reforestation où les arbres seront le plus nécessaire"},{"name":"reforestationProjectDescription_en","children":[],"type":"string","jpath":"$.reforestationProjectDescription_en","previewValue":"Reforestation project where the trees are needed the most"},{"name":"reforestationCompanyWebsite_fr","children":[],"type":"string","jpath":"$.reforestationCompanyWebsite_fr","previewValue":"https://DigitalHumani.com/"},{"name":"reforestationCompanyWebsite_en","children":[],"type":"string","jpath":"$.reforestationCompanyWebsite_en","previewValue":"https://DigitalHumani.com/"},{"name":"reforestationCompanyAddress_fr","children":[],"type":"string","jpath":"$.reforestationCompanyAddress_fr","previewValue":"Adresse dépendra de l'organisme de reforestation"},{"name":"description","children":[],"type":"string","jpath":"$.description","previewValue":"Where they are needed most"},{"name":"id","children":[],"type":"string","jpath":"$.id","previewValue":"14442771"},{"name":"reforestationProjectImageURL_fr","children":[],"type":"string","jpath":"$.reforestationProjectImageURL_fr","previewValue":"https://digitalhumani.com/reforestation-organisations/OneTreePlanted/OneTreePlanted-Where-Most-Needed.jpg"}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>8d1eb979476a4510d06e1d51e36d43eb</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>c11eb979476a4510d06e1d51e36d43f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <value>structured</value>
+        <variable display_value="Payload view">95d4280787523300f917e55936cb0bfe</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_8d1eb979476a4510d06e1d51e36d43eb^id=8d1eb979476a4510d06e1d51e36d43eb"/>
+    <sys_element_mapping action="delete_multiple" query="id=8d1eb979476a4510d06e1d51e36d43eb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>payload_view</field>
+        <id>8d1eb979476a4510d06e1d51e36d43eb</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>091eb979476a4510d06e1d51e36d43f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>8d1eb979476a4510d06e1d51e36d43eb</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>c91eb979476a4510d06e1d51e36d43f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>8d1eb979476a4510d06e1d51e36d43eb</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>811eb979476a4510d06e1d51e36d43f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[7fc2a2fe-ad5a-46c5-aed5-7f8658459888].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>8d1eb979476a4510d06e1d51e36d43eb</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>451eb979476a4510d06e1d51e36d43f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=8d1eb979476a4510d06e1d51e36d43eb"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=8d1eb979476a4510d06e1d51e36d43eb^sys_idNOT INc51eb979476a4510d06e1d51e36d43f1"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD491eb979e56a45100f8c8c96dfcdb1ee,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=173c6c6e-2f16-4205-918b-6b9010c9143e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Parse Project Details">8d1eb979476a4510d06e1d51e36d43eb</model>
+        <model_id>8d1eb979476a4510d06e1d51e36d43eb</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_8d1eb979476a4510d06e1d51e36d43eb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>c51eb979476a4510d06e1d51e36d43f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8d1eb979476a4510d06e1d51e36d43eb"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_8d1eb979476a4510d06e1d51e36d43eb^sys_idNOT INc51eb979476a4510d06e1d51e36d43f5"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_8d1eb979476a4510d06e1d51e36d43eb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>c51eb979476a4510d06e1d51e36d43f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=f41eb979476a4510d06e1d51e36d43c2^sys_idNOT IN7c1eb979476a4510d06e1d51e36d43c5"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=bafb6fb5-40b7-423f-b28b-d18e3f3bdb13</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>14442771</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>projectid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>ProjectID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="RaaS_Get_Project_Details">f41eb979476a4510d06e1d51e36d43c2</model>
+        <model_id>f41eb979476a4510d06e1d51e36d43c2</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_f41eb979476a4510d06e1d51e36d43c2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:14</sys_created_on>
+        <sys_id>7c1eb979476a4510d06e1d51e36d43c5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7c1eb979476a4510d06e1d51e36d43c5"/>
+    <sys_hub_action_output action="delete_multiple" query="model=f41eb979476a4510d06e1d51e36d43c2^sys_idNOT IN011ef979476a4510d06e1d51e36d4304,091ef979476a4510d06e1d51e36d430b,591ef979476a4510d06e1d51e36d4357,811eb979476a4510d06e1d51e36d43fe,811ef979476a4510d06e1d51e36d4310,cd1ef979476a4510d06e1d51e36d4352"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=8d6029c8-d76e-4f22-a443-98f8258ff7cd,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="RaaS_Get_Project_Details">f41eb979476a4510d06e1d51e36d43c2</model>
+        <model_id>f41eb979476a4510d06e1d51e36d43c2</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_f41eb979476a4510d06e1d51e36d43c2</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>011ef979476a4510d06e1d51e36d4304</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=011ef979476a4510d06e1d51e36d4304"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=011ef979476a4510d06e1d51e36d4304"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=aecd29ca-0851-411d-9e92-45d9be3d97c4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>companyname</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>CompanyName</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="RaaS_Get_Project_Details">f41eb979476a4510d06e1d51e36d43c2</model>
+        <model_id>f41eb979476a4510d06e1d51e36d43c2</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_f41eb979476a4510d06e1d51e36d43c2</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>091ef979476a4510d06e1d51e36d430b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=091ef979476a4510d06e1d51e36d430b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=091ef979476a4510d06e1d51e36d430b"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=33b31ac7-5fec-4b7a-bf84-0a54926f29a6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>companywebsite</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>CompanyWebsite</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="RaaS_Get_Project_Details">f41eb979476a4510d06e1d51e36d43c2</model>
+        <model_id>f41eb979476a4510d06e1d51e36d43c2</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_f41eb979476a4510d06e1d51e36d43c2</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:16</sys_created_on>
+        <sys_id>591ef979476a4510d06e1d51e36d4357</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=591ef979476a4510d06e1d51e36d4357"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=591ef979476a4510d06e1d51e36d4357"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDc91eb979706a4510a2aaf1e8a0ff72fb,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=b20df2ac-7abc-4cd8-875f-bcf6e9a212b0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="RaaS_Get_Project_Details">f41eb979476a4510d06e1d51e36d43c2</model>
+        <model_id>f41eb979476a4510d06e1d51e36d43c2</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_f41eb979476a4510d06e1d51e36d43c2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>811eb979476a4510d06e1d51e36d43fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=811eb979476a4510d06e1d51e36d43fe"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=811eb979476a4510d06e1d51e36d43fe"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=d9529ad9-7ada-4923-8ca2-364d67100fa0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>countryname</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>CountryName</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="RaaS_Get_Project_Details">f41eb979476a4510d06e1d51e36d43c2</model>
+        <model_id>f41eb979476a4510d06e1d51e36d43c2</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_f41eb979476a4510d06e1d51e36d43c2</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:16</sys_created_on>
+        <sys_id>811ef979476a4510d06e1d51e36d4310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=811ef979476a4510d06e1d51e36d4310"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=811ef979476a4510d06e1d51e36d4310"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=48144e5a-9aa8-464a-9202-e9ce5f4e3d3f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>projectdescription</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>ProjectDescription</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="RaaS_Get_Project_Details">f41eb979476a4510d06e1d51e36d43c2</model>
+        <model_id>f41eb979476a4510d06e1d51e36d43c2</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_f41eb979476a4510d06e1d51e36d43c2</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:16</sys_created_on>
+        <sys_id>cd1ef979476a4510d06e1d51e36d4352</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cd1ef979476a4510d06e1d51e36d4352"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cd1ef979476a4510d06e1d51e36d4352"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f41eb979476a4510d06e1d51e36d43c2"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=f41eb979476a4510d06e1d51e36d43c2^sys_idNOT INd91ef979476a4510d06e1d51e36d436f"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="RaaS_Get_Project_Details">f41eb979476a4510d06e1d51e36d43c2</action_type_id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:16</sys_created_on>
+        <sys_id>d91ef979476a4510d06e1d51e36d436f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:16</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=d91ef979476a4510d06e1d51e36d436f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_f41eb979476a4510d06e1d51e36d43c2^sys_idNOT IN781eb979476a4510d06e1d51e36d43cd"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>projectid</element>
+        <help/>
+        <hint/>
+        <label>ProjectID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_f41eb979476a4510d06e1d51e36d43c2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:14</sys_created_on>
+        <sys_id>781eb979476a4510d06e1d51e36d43cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_f41eb979476a4510d06e1d51e36d43c2"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_f41eb979476a4510d06e1d51e36d43c2^sys_idNOT IN011ef979476a4510d06e1d51e36d4352,151ef979476a4510d06e1d51e36d435b,411ef979476a4510d06e1d51e36d4303,491ef979476a4510d06e1d51e36d430a,991ef979476a4510d06e1d51e36d4356,c11ef979476a4510d06e1d51e36d430f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>countryname</element>
+        <help/>
+        <hint/>
+        <label>CountryName</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f41eb979476a4510d06e1d51e36d43c2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:16</sys_created_on>
+        <sys_id>011ef979476a4510d06e1d51e36d4352</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>companywebsite</element>
+        <help/>
+        <hint/>
+        <label>CompanyWebsite</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f41eb979476a4510d06e1d51e36d43c2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:16</sys_created_on>
+        <sys_id>151ef979476a4510d06e1d51e36d435b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f41eb979476a4510d06e1d51e36d43c2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>411ef979476a4510d06e1d51e36d4303</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f41eb979476a4510d06e1d51e36d43c2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>491ef979476a4510d06e1d51e36d430a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>projectdescription</element>
+        <help/>
+        <hint/>
+        <label>ProjectDescription</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f41eb979476a4510d06e1d51e36d43c2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:16</sys_created_on>
+        <sys_id>991ef979476a4510d06e1d51e36d4356</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>companyname</element>
+        <help/>
+        <hint/>
+        <label>CompanyName</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f41eb979476a4510d06e1d51e36d43c2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-03-30 22:00:15</sys_created_on>
+        <sys_id>c11ef979476a4510d06e1d51e36d430f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-03-30 22:00:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_f41eb979476a4510d06e1d51e36d43c2"/>
+    <sys_hub_action_type_definition action="update">
+        <sys_id>67c1b1b5472a4510d06e1d51e36d43a7</sys_id>
+        <latest_snapshot>f41eb979476a4510d06e1d51e36d43c2</latest_snapshot>
+    </sys_hub_action_type_definition>
+</record_update>

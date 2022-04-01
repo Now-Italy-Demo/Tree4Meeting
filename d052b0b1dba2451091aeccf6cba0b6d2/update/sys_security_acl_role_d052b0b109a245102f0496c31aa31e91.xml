@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:42</sys_created_on>
+        <sys_id>d052b0b109a245102f0496c31aa31e91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1c52b0b147a24510d06e1d51e36d4317.</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_security_acl display_value="1c52b0b147a24510d06e1d51e36d4317">d052b0b152a245109a9025178ac04e95</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_d052b0b109a245102f0496c31aa31e91</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:42</sys_updated_on>
+        <sys_user_role display_value="x_snc_tree4meeting.event_reg.admin" name="x_snc_tree4meeting.event_reg.admin">1c52b0b1b8a245104c516e8e208cdbd1</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

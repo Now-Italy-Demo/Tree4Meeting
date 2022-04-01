@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="calc_percentuale_co2" label="Percentuale co2" language="en" table="x_snc_tree4meeting_attendee">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>calc_percentuale_co2</element>
+            <help/>
+            <hint/>
+            <label>Percentuale co2</label>
+            <language>en</language>
+            <name>x_snc_tree4meeting_attendee</name>
+            <plural>Percentuale co2s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>francesco</sys_created_by>
+            <sys_created_on>2022-03-31 10:16:22</sys_created_on>
+            <sys_id>bb86288e97a685104204fe7fe153af18</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Percentuale co2</sys_name>
+            <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_tree4meeting_attendee_calc_percentuale_co2_en</sys_update_name>
+            <sys_updated_by>francesco</sys_updated_by>
+            <sys_updated_on>2022-03-31 10:16:22</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

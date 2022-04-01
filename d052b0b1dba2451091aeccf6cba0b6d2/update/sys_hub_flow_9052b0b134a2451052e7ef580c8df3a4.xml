@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-sandiego-12-22-2021__patch1-03-02-2022_03-17-2022_1811.zip</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Set event state to expired and attendees to event ended after the event ends.</description>
+        <internal_name>event_registration_expired_events</internal_name>
+        <label_cache>[{"name":"45ea2e05-2653-48bd-a59e-1094b592bbc4.table_name","label":"3➛Event Table","reference":"x_snc_event_reg_event","reference_display":"Event","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"45ea2e05-2653-48bd-a59e-1094b592bbc4.record","label":"3➛Event Record","reference":"x_snc_event_reg_event","reference_display":"Event","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"958d7c0a-a2ef-4341-aa6f-c9d7723d966d.item","label":"2➛Event Record","reference":"x_snc_event_reg_event","reference_display":"Event","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"94140244-e686-4724-aa11-a800e7c2c930.table_name","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"94140244-e686-4724-aa11-a800e7c2c930.record","label":"2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0d0dd584-de1f-4b82-a1ac-05e00ae0d3e7.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0d0dd584-de1f-4b82-a1ac-05e00ae0d3e7.Table","label":"1➛Event Table","reference":"x_snc_event_reg_event","reference_display":"Event","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0d0dd584-de1f-4b82-a1ac-05e00ae0d3e7.Records","label":"1➛Event Records","reference":"x_snc_event_reg_event","reference_display":"Event","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4db827e1-6ee6-4ca5-910f-4fadf40532e0.context","label":"4➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
+        <master_snapshot>5052b0b120a2451058236490556f36a4</master_snapshot>
+        <name>Event Registration expired events</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>dc52b0b14aa2451068d409f51ac39fa3</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9052b0b134a2451052e7ef580c8df3a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Registration expired events</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_hub_flow_9052b0b134a2451052e7ef580c8df3a4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=9052b0b134a2451052e7ef580c8df3a4"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9052b0b134a2451052e7ef580c8df3a4"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <run_period/>
+        <run_start>2021-03-26 13:53:02</run_start>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dc52b0b14aa2451068d409f51ac39fa3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <time>1970-01-01 10:00:00</time>
+        <timer_type>11</timer_type>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:dc52b0b14aa2451068d409f51ac39fa3^sys_idNOT IN9c52b0b108a245109db41915fa2a26a3"/>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>Trigger:dc52b0b14aa2451068d409f51ac39fa3</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="">maint</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2021-03-26 13:53:02</run_start>
+        <run_time>1970-01-01 10:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('dc52b0b14aa2451068d409f51ac39fa3');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>9c52b0b108a245109db41915fa2a26a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">dc52b0b14aa2451068d409f51ac39fa3</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=9052b0b134a2451052e7ef580c8df3a4"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=9052b0b134a2451052e7ef580c8df3a4^sys_idNOT INd052b0b1d9a2451060aa12c60cff8fa4"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment>Run this flow daily in the early morning</comment>
+        <display_text/>
+        <flow display_value="Event Registration expired events">9052b0b134a2451052e7ef580c8df3a4</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>d052b0b1d9a2451060aa12c60cff8fa4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d052b0b1d9a2451060aa12c60cff8fa4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>d052b0b1d9a2451060aa12c60cff8fa4</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>1052b0b1b2a245100654aa30c53092a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <value>1970-01-01 02:00:00</value>
+        <variable display_value="Time">3ad4edc0c32222002841b63b12d3aee5</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_89142dc0c32222002841b63b12d3ae8a^id=d052b0b1d9a2451060aa12c60cff8fa4"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9052b0b134a2451052e7ef580c8df3a4"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9052b0b134a2451052e7ef580c8df3a4^sys_idNOT IN5c52b0b159a24510ecc4bf59420879a3"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9052b0b134a2451052e7ef580c8df3a4</id>
+        <name>Event Registration expired events</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>5c52b0b159a24510ecc4bf59420879a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=5c52b0b159a24510ecc4bf59420879a3"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=9052b0b134a2451052e7ef580c8df3a4"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=9052b0b134a2451052e7ef580c8df3a4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9052b0b134a2451052e7ef580c8df3a4"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=9052b0b134a2451052e7ef580c8df3a4^sys_idNOT IN5852b0b15fa24510d7d8e57df767eaa3,d852b0b1a8a2451006bb1cecef29e5a3"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>Set the event state to expired</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Event Registration expired events">9052b0b134a2451052e7ef580c8df3a4</flow>
+        <order>3</order>
+        <parent_ui_id>958d7c0a-a2ef-4341-aa6f-c9d7723d966d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>5852b0b15fa24510d7d8e57df767eaa3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-03-31 09:00:03</sys_updated_on>
+        <ui_id>45ea2e05-2653-48bd-a59e-1094b592bbc4</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5852b0b15fa24510d7d8e57df767eaa3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5852b0b15fa24510d7d8e57df767eaa3</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>1852b0b1aaa24510dc476fe73ac823a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <value>x_snc_tree4meeting_event</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5852b0b15fa24510d7d8e57df767eaa3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>d452b0b1e2a24510aa05c88d9d6632a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <value>state=20</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5852b0b15fa24510d7d8e57df767eaa3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>5852b0b15fa24510d7d8e57df767eaa3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>1452b0b164a24510d029a7b54381fea3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{958d7c0a-a2ef-4341-aa6f-c9d7723d966d.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5852b0b15fa24510d7d8e57df767eaa3"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5852b0b15fa24510d7d8e57df767eaa3"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment>Find the events that ended prior to when the flow executes</comment>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Event Registration expired events">9052b0b134a2451052e7ef580c8df3a4</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>d852b0b1a8a2451006bb1cecef29e5a3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-03-31 09:00:03</sys_updated_on>
+        <ui_id>0d0dd584-de1f-4b82-a1ac-05e00ae0d3e7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d852b0b1a8a2451006bb1cecef29e5a3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d852b0b1a8a2451006bb1cecef29e5a3</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>1c52b0b195a245101f95e4e79c11eea3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <value>x_snc_tree4meeting_event</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d852b0b1a8a2451006bb1cecef29e5a3</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>9852b0b1cea24510c498cbb613ef80a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <value>stateIN1,2^date_toRELATIVELT@minute@ago@1</value>
+        <variable display_value="Conditions">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=d852b0b1a8a2451006bb1cecef29e5a3"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d852b0b1a8a2451006bb1cecef29e5a3"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d852b0b1a8a2451006bb1cecef29e5a3"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=9052b0b134a2451052e7ef580c8df3a4^sys_idNOT IN5452b0b142a24510aab564607dabc9a3"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Registration expired events">9052b0b134a2451052e7ef580c8df3a4</flow>
+        <inputs/>
+        <inputs/>
+        <order>4</order>
+        <parent_ui_id>958d7c0a-a2ef-4341-aa6f-c9d7723d966d</parent_ui_id>
+        <subflow display_value="Update Event Registration attendee records">1052b0b185a2451023022d1dfaf3faa6</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>5452b0b142a24510aab564607dabc9a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <ui_id>4db827e1-6ee6-4ca5-910f-4fadf40532e0</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5452b0b142a24510aab564607dabc9a3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>5452b0b142a24510aab564607dabc9a3</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>9452b0b117a24510798675056604b2a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">d052b0b1aca24510e7ef8cf44baab3a3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5452b0b142a24510aab564607dabc9a3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>event_record</field>
+        <id>5452b0b142a24510aab564607dabc9a3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>9052b0b1b7a245101df2a3fa5b39fba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_1052b0b185a2451023022d1dfaf3faa6</table>
+        <value>{{958d7c0a-a2ef-4341-aa6f-c9d7723d966d.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_5452b0b142a24510aab564607dabc9a3^id=5452b0b142a24510aab564607dabc9a3"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=5452b0b142a24510aab564607dabc9a3^sys_idNOT INd052b0b1aca24510e7ef8cf44baab3a3"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">5452b0b142a24510aab564607dabc9a3</model>
+        <model_id>ec153fbe3c032010f877f65c5aad338f</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_5452b0b142a24510aab564607dabc9a3</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>d052b0b1aca24510e7ef8cf44baab3a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5452b0b142a24510aab564607dabc9a3"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=9052b0b134a2451052e7ef580c8df3a4^sys_idNOT IN5052b0b1d9a24510b62bd8f0ef05e5a3"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">1052b0b179a245107c1c2bd91949a1a3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Event Registration expired events">9052b0b134a2451052e7ef580c8df3a4</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>5052b0b1d9a24510b62bd8f0ef05e5a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <ui_id>958d7c0a-a2ef-4341-aa6f-c9d7723d966d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5052b0b1d9a24510b62bd8f0ef05e5a3"/>
+    <sys_element_mapping action="delete_multiple" query="id=5052b0b1d9a24510b62bd8f0ef05e5a3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>5052b0b1d9a24510b62bd8f0ef05e5a3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>dc52b0b17ea245103f94e4bb49872aa2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{0d0dd584-de1f-4b82-a1ac-05e00ae0d3e7.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5052b0b1d9a24510b62bd8f0ef05e5a3"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5052b0b1d9a24510b62bd8f0ef05e5a3"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9052b0b134a2451052e7ef580c8df3a4"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=9052b0b134a2451052e7ef580c8df3a4"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_9052b0b134a2451052e7ef580c8df3a4"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9052b0b134a2451052e7ef580c8df3a4"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_9052b0b134a2451052e7ef580c8df3a4"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9052b0b134a2451052e7ef580c8df3a4"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=9052b0b134a2451052e7ef580c8df3a4^sys_idNOT IN9c52b0b1c7a245102193c3c641e41ca2"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"9c52b0b1c7a245102193c3c641e41ca2","name":"plan","plan_signature":null}}</plan>
+        <plan_id>9052b0b134a2451052e7ef580c8df3a4</plan_id>
+        <snapshot>82155c82976685104204fe7fe153af26</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9c52b0b1c7a245102193c3c641e41ca2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <trigger display_value="">dc52b0b14aa2451068d409f51ac39fa3</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=9052b0b134a2451052e7ef580c8df3a4"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Set event state to expired and attendees to event ended after the event ends.</description>
+        <internal_name>event_registration_expired_events</internal_name>
+        <label_cache>[{"name":"45ea2e05-2653-48bd-a59e-1094b592bbc4.table_name","label":"3➛Event Table","reference":"x_snc_event_reg_event","reference_display":"Event","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"45ea2e05-2653-48bd-a59e-1094b592bbc4.record","label":"3➛Event Record","reference":"x_snc_event_reg_event","reference_display":"Event","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"958d7c0a-a2ef-4341-aa6f-c9d7723d966d.item","label":"2➛Event Record","reference":"x_snc_event_reg_event","reference_display":"Event","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"94140244-e686-4724-aa11-a800e7c2c930.table_name","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"94140244-e686-4724-aa11-a800e7c2c930.record","label":"2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0d0dd584-de1f-4b82-a1ac-05e00ae0d3e7.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0d0dd584-de1f-4b82-a1ac-05e00ae0d3e7.Table","label":"1➛Event Table","reference":"x_snc_event_reg_event","reference_display":"Event","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0d0dd584-de1f-4b82-a1ac-05e00ae0d3e7.Records","label":"1➛Event Records","reference":"x_snc_event_reg_event","reference_display":"Event","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4db827e1-6ee6-4ca5-910f-4fadf40532e0.context","label":"4➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Event Registration expired events</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Event Registration expired events">9052b0b134a2451052e7ef580c8df3a4</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5052b0b120a2451058236490556f36a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=5052b0b120a2451058236490556f36a4"/>
+    <sys_variable_value action="delete_multiple" query="document_key=5052b0b120a2451058236490556f36a4"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=5052b0b120a2451058236490556f36a4^sys_idNOT IN9452b0b1f0a24510b0ed1049442f4ea2"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment>Run this flow daily in the early morning</comment>
+        <display_text/>
+        <flow display_value="Event Registration expired events">5052b0b120a2451058236490556f36a4</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>9452b0b1f0a24510b0ed1049442f4ea2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9452b0b1f0a24510b0ed1049442f4ea2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>9452b0b1f0a24510b0ed1049442f4ea2</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>1852b0b1e4a24510e0dfc9e77a442aa2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <value>1970-01-01 02:00:00</value>
+        <variable display_value="Time">3ad4edc0c32222002841b63b12d3aee5</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_89142dc0c32222002841b63b12d3ae8a^id=9452b0b1f0a24510b0ed1049442f4ea2"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=5052b0b120a2451058236490556f36a4"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=5052b0b120a2451058236490556f36a4^sys_idNOT IN1c52b0b1e4a2451051825730366beaa2"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>5052b0b120a2451058236490556f36a4</id>
+        <name>Event Registration expired events</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>1c52b0b1e4a2451051825730366beaa2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=1c52b0b1e4a2451051825730366beaa2"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=5052b0b120a2451058236490556f36a4"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=5052b0b120a2451058236490556f36a4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5052b0b120a2451058236490556f36a4"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=5052b0b120a2451058236490556f36a4^sys_idNOT IN5452b0b1a6a245100256306124d993a2,9852b0b1a5a24510372f73f9c4c252a2"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment>Set the event state to expired</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Event Registration expired events">5052b0b120a2451058236490556f36a4</flow>
+        <order>3</order>
+        <parent_ui_id>958d7c0a-a2ef-4341-aa6f-c9d7723d966d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>5452b0b1a6a245100256306124d993a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <ui_id>45ea2e05-2653-48bd-a59e-1094b592bbc4</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5452b0b1a6a245100256306124d993a2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5452b0b1a6a245100256306124d993a2</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>5c52b0b1bca24510ad029049faa08ea2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <value>x_snc_tree4meeting_event</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5452b0b1a6a245100256306124d993a2</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>d852b0b193a2451022c47f559003e4a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <value>state=20</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5452b0b1a6a245100256306124d993a2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>5452b0b1a6a245100256306124d993a2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>d452b0b1eba24510222b99e0639973a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{958d7c0a-a2ef-4341-aa6f-c9d7723d966d.item}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5452b0b1a6a245100256306124d993a2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5452b0b1a6a245100256306124d993a2"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment>Find the events that ended prior to when the flow executes</comment>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Event Registration expired events">5052b0b120a2451058236490556f36a4</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>9852b0b1a5a24510372f73f9c4c252a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <ui_id>0d0dd584-de1f-4b82-a1ac-05e00ae0d3e7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9852b0b1a5a24510372f73f9c4c252a2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9852b0b1a5a24510372f73f9c4c252a2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>5852b0b14ba24510e0ac398e218743a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <value>stateIN1,2^date_toRELATIVELT@minute@ago@1</value>
+        <variable display_value="Conditions">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9852b0b1a5a24510372f73f9c4c252a2</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>9052b0b18ea245102f1937acf30f7fa2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <value>x_snc_tree4meeting_event</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=9852b0b1a5a24510372f73f9c4c252a2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9852b0b1a5a24510372f73f9c4c252a2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9852b0b1a5a24510372f73f9c4c252a2"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=5052b0b120a2451058236490556f36a4^sys_idNOT IN1452b0b1fca24510bcc8ff4397b7cea2"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Event Registration expired events">5052b0b120a2451058236490556f36a4</flow>
+        <inputs/>
+        <inputs/>
+        <order>4</order>
+        <parent_ui_id>958d7c0a-a2ef-4341-aa6f-c9d7723d966d</parent_ui_id>
+        <subflow display_value="Update Event Registration attendee records">1052b0b185a2451023022d1dfaf3faa6</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>1452b0b1fca24510bcc8ff4397b7cea2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <ui_id>4db827e1-6ee6-4ca5-910f-4fadf40532e0</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1452b0b1fca24510bcc8ff4397b7cea2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>1452b0b1fca24510bcc8ff4397b7cea2</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>d052b0b14aa24510b0dbc0882dc865a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">5052b0b1b3a2451072d3039d6dce0fa2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=1452b0b1fca24510bcc8ff4397b7cea2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>event_record</field>
+        <id>1452b0b1fca24510bcc8ff4397b7cea2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>dc52b0b138a245106f14a291231a3aa1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_1052b0b185a2451023022d1dfaf3faa6</table>
+        <value>{{958d7c0a-a2ef-4341-aa6f-c9d7723d966d.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_1452b0b1fca24510bcc8ff4397b7cea2^id=1452b0b1fca24510bcc8ff4397b7cea2"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=1452b0b1fca24510bcc8ff4397b7cea2^sys_idNOT IN5052b0b1b3a2451072d3039d6dce0fa2"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">1452b0b1fca24510bcc8ff4397b7cea2</model>
+        <model_id>f1eb77363c432010f877f65c5aad337b</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_1452b0b1fca24510bcc8ff4397b7cea2</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>5052b0b1b3a2451072d3039d6dce0fa2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1452b0b1fca24510bcc8ff4397b7cea2"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=5052b0b120a2451058236490556f36a4^sys_idNOT IN9c52b0b1a7a24510148b566f82de65a1"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">1052b0b179a245107c1c2bd91949a1a3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Event Registration expired events">5052b0b120a2451058236490556f36a4</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>9c52b0b1a7a24510148b566f82de65a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <ui_id>958d7c0a-a2ef-4341-aa6f-c9d7723d966d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=9c52b0b1a7a24510148b566f82de65a1"/>
+    <sys_element_mapping action="delete_multiple" query="id=9c52b0b1a7a24510148b566f82de65a1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>9c52b0b1a7a24510148b566f82de65a1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-30 16:29:32</sys_created_on>
+        <sys_id>1052b0b1f2a2451036736708ad3178a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-30 16:29:32</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{0d0dd584-de1f-4b82-a1ac-05e00ae0d3e7.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9c52b0b1a7a24510148b566f82de65a1"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9c52b0b1a7a24510148b566f82de65a1"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=5052b0b120a2451058236490556f36a4"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=5052b0b120a2451058236490556f36a4"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_5052b0b120a2451058236490556f36a4"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_5052b0b120a2451058236490556f36a4"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_5052b0b120a2451058236490556f36a4"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_5052b0b120a2451058236490556f36a4"/>
+    <sys_hub_flow action="update">
+        <sys_id>9052b0b134a2451052e7ef580c8df3a4</sys_id>
+        <latest_snapshot>5052b0b120a2451058236490556f36a4</latest_snapshot>
+    </sys_hub_flow>
+</record_update>
