@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_snc_tree4meeting_compensazione" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>alberi_piantati</element>
+            <list_id display_value="x_snc_tree4meeting_compensazione" element="NULL" name="x_snc_tree4meeting_compensazione" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9155097a47aac910d06e1d51e36d4386</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>antonio</sys_created_by>
+            <sys_created_on>2022-04-02 20:26:15</sys_created_on>
+            <sys_id>d955097a47aac910d06e1d51e36d4387</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>antonio</sys_updated_by>
+            <sys_updated_on>2022-04-02 20:26:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>data_piantumazione</element>
+            <list_id display_value="x_snc_tree4meeting_compensazione" element="NULL" name="x_snc_tree4meeting_compensazione" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9155097a47aac910d06e1d51e36d4386</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>antonio</sys_created_by>
+            <sys_created_on>2022-04-02 20:26:15</sys_created_on>
+            <sys_id>d155097a47aac910d06e1d51e36d4388</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>antonio</sys_updated_by>
+            <sys_updated_on>2022-04-02 20:26:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>impatto_totale_co2</element>
+            <list_id display_value="x_snc_tree4meeting_compensazione" element="NULL" name="x_snc_tree4meeting_compensazione" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9155097a47aac910d06e1d51e36d4386</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>antonio</sys_created_by>
+            <sys_created_on>2022-04-02 20:26:15</sys_created_on>
+            <sys_id>d555097a47aac910d06e1d51e36d4388</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>antonio</sys_updated_by>
+            <sys_updated_on>2022-04-02 20:26:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>nome_evento</element>
+            <list_id display_value="x_snc_tree4meeting_compensazione" element="NULL" name="x_snc_tree4meeting_compensazione" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9155097a47aac910d06e1d51e36d4386</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>antonio</sys_created_by>
+            <sys_created_on>2022-04-02 20:26:15</sys_created_on>
+            <sys_id>d955097a47aac910d06e1d51e36d4388</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>antonio</sys_updated_by>
+            <sys_updated_on>2022-04-02 20:26:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>uuid_piantumazione</element>
+            <list_id display_value="x_snc_tree4meeting_compensazione" element="NULL" name="x_snc_tree4meeting_compensazione" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">9155097a47aac910d06e1d51e36d4386</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>antonio</sys_created_by>
+            <sys_created_on>2022-04-02 20:26:15</sys_created_on>
+            <sys_id>dd55097a47aac910d06e1d51e36d4388</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>antonio</sys_updated_by>
+            <sys_updated_on>2022-04-02 20:26:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_snc_tree4meeting_compensazione</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>antonio</sys_created_by>
+            <sys_created_on>2022-04-02 20:26:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9155097a47aac910d06e1d51e36d4386</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_tree4meeting_compensazione</sys_name>
+            <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+            <sys_update_name>sys_ui_list_x_snc_tree4meeting_compensazione_null</sys_update_name>
+            <sys_updated_by>antonio</sys_updated_by>
+            <sys_updated_on>2022-04-02 20:26:15</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

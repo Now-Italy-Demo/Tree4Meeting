@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" label="Partecipante" max_length="40" name="x_snc_tree4meeting_attendee" sizeclass="15" text_index="true" type="collection">
+    <element audit="true" label="Partecipante" max_length="40" name="x_snc_tree4meeting_attendee" sizeclass="28" text_index="true" type="collection">
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" default="javascript: gs.getUserID();" label="Nome partecipante" mandatory="true" max_length="32" name="attendee_name" reference="sys_user" type="reference"/>
         <element label="Note partecipante" max_length="4000" name="attendee_notes" type="journal_input"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="pending_registration" label="Stato partecipante" mandatory="true" max_length="40" name="attendee_status" read_only="true" type="choice">
@@ -25,39 +25,71 @@
         <element default="0" label="Pianeti necessari" max_length="20" name="calc_pianeti_necessari" type="decimal"/>
         <element default="0" label="Totale CO2" max_length="20" name="calc_totale_co2" type="decimal"/>
         <element default="0" label="Consumo (CO2/anno)" max_length="40" name="consumo_co2_anno" type="decimal"/>
+        <element label="Consumo mezzo" max_length="38" name="consumo_mezzo" type="decimal"/>
         <element default="javascript:new GlideDateTime().getDisplayValue()" label="Data registrazione" mandatory="true" max_length="40" name="date_submitted" read_only="true" type="glide_date_time"/>
-        <element choice="3" label="Distanza percorsa" max_length="40" name="distanza_percorsa" type="choice">
+        <element label="distanza int" max_length="38" name="distanza_int" type="decimal"/>
+        <element choice="1" default="0" label="Distanza percorsa" max_length="40" name="distanza_percorsa" type="choice">
             <choice>
-                <element inactive_on_update="false" label="5km" sequence="10" value="km"/>
-                <element inactive_on_update="false" label="10km" sequence="20" value="km"/>
-                <element inactive_on_update="false" label="30km" sequence="30" value="km"/>
-                <element inactive_on_update="false" label="50km" sequence="40" value="km"/>
-                <element inactive_on_update="false" label="100km" sequence="50" value="km"/>
-                <element inactive_on_update="false" label="200km" sequence="60" value="km"/>
-                <element inactive_on_update="false" label="Oltre 200km" sequence="70" value="oltre_200km"/>
+                <element inactive_on_update="false" label="5km" sequence="0" value="5"/>
+                <element inactive_on_update="false" label="20km" sequence="1" value="20"/>
+                <element inactive_on_update="false" label="50km" sequence="2" value="50"/>
+                <element inactive_on_update="false" label="100km" sequence="3" value="100"/>
+                <element inactive_on_update="false" label="Oltre i 100km" sequence="4" value="200"/>
+                <element inactive_on_update="false" label="Nulla" sequence="5" value="0"/>
             </choice>
         </element>
-        <element choice="3" label="Durata viaggio" max_length="40" name="durata_viaggio" type="choice">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="0" label="Distanza ritorno" max_length="40" name="distanza_ritorno" type="choice">
             <choice>
-                <element inactive_on_update="false" label="meno di un'ora" sequence="10" value="meno_di_un_ora"/>
-                <element inactive_on_update="false" label="entro le 2 ore" sequence="20" value="entro_le_2_ore"/>
-                <element inactive_on_update="false" label="entro le 5 ore" sequence="30" value="entro_le_5_ore"/>
-                <element inactive_on_update="false" label="più di 5 ore" sequence="40" value="pi_di_5_ore"/>
+                <element inactive_on_update="false" label="5km" sequence="0" value="5"/>
+                <element inactive_on_update="false" label="20km" sequence="1" value="20"/>
+                <element inactive_on_update="false" label="50km" sequence="2" value="50"/>
+                <element inactive_on_update="false" label="100km" sequence="3" value="100"/>
+                <element inactive_on_update="false" label="Oltre i 100km" sequence="4" value="200"/>
+                <element inactive_on_update="false" label="Nulla" sequence="5" value="0"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Durata ritorno" max_length="40" name="durata_ritorno" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Meno di un'ora" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Entro le 2 ore" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Entro le 3 ore" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Più di 3 ore" sequence="3" value="5"/>
+                <element inactive_on_update="false" label="Nulla" sequence="4" value="0"/>
+            </choice>
+        </element>
+        <element choice="1" default="0" label="Durata viaggio" max_length="40" name="durata_viaggio" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Meno di un'ora" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Entro le 2 ore" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Entro le 3 ore" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Più di 3 ore" sequence="3" value="5"/>
+                <element inactive_on_update="false" label="Nulla" sequence="4" value="0"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Nome incontro" mandatory="true" max_length="32" name="event_name" reference="x_snc_tree4meeting_event" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" label="Mezzo di ritorno" max_length="40" name="mezzo_di_ritorno" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Treno/Metro" sequence="0" value="treno_metro"/>
+                <element inactive_on_update="false" label="Aereo" sequence="1" value="aereo"/>
+                <element inactive_on_update="false" label="Veicolo elettrico" sequence="2" value="veicolo_elettrico"/>
+                <element inactive_on_update="false" label="Veicolo a combustione" sequence="3" value="veicolo_a_combustione"/>
+                <element inactive_on_update="false" label="Bicicletta" sequence="4" value="bicicletta"/>
+                <element inactive_on_update="false" label="Piedi" sequence="5" value="piedi"/>
+            </choice>
+        </element>
         <element choice="3" label="Mezzo di trasporto" max_length="40" name="mezzo_di_trasporto" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Treno/Metro" sequence="10" value="treno_metro"/>
-                <element inactive_on_update="false" label="Aereo" sequence="20" value="aereo"/>
-                <element inactive_on_update="false" label="Veicolo elettrico" sequence="30" value="veicolo_elettrico"/>
-                <element inactive_on_update="false" label="Bicicletta" sequence="40" value="bicicletta"/>
-                <element inactive_on_update="false" label="Veicolo a combustione" sequence="50" value="veicolo_a_combustione"/>
-                <element inactive_on_update="false" label="Piedi" sequence="60" value="piedi"/>
+                <element inactive_on_update="false" label="Treno/Metro" sequence="0" value="treno_metro"/>
+                <element inactive_on_update="false" label="Aereo" sequence="1" value="aereo"/>
+                <element inactive_on_update="false" label="Veicolo elettrico" sequence="2" value="veicolo_elettrico"/>
+                <element inactive_on_update="false" label="Veicolo a combustione" sequence="3" value="veicolo_a_combustione"/>
+                <element inactive_on_update="false" label="Bicicletta" sequence="4" value="bicicletta"/>
+                <element inactive_on_update="false" label="Piedi" sequence="5" value="piedi"/>
             </choice>
         </element>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element label="Note organizzatore" max_length="4000" name="organizer_notes" type="journal_input"/>
+        <element label="Stesso mezzo per il ritorno?" max_length="40" name="stesso_mezzo_per_il_ritorno" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
         <index name="index">
             <element name="azienda"/>

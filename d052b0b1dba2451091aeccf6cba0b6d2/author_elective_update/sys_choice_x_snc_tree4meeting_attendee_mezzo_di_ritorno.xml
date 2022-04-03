@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="mezzo_di_ritorno" table="x_snc_tree4meeting_attendee" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>mezzo_di_ritorno</element>
+            <name>x_snc_tree4meeting_attendee</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 09:02:32</sys_created_on>
+            <sys_id>af627ffa47aa0d10d06e1d51e36d4331</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>mezzo_di_ritorno</sys_name>
+            <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+            <sys_update_name>sys_choice_x_snc_tree4meeting_attendee_mezzo_di_ritorno</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 09:02:32</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>mezzo_di_ritorno</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Treno/Metro</label>
+            <language>en</language>
+            <name>x_snc_tree4meeting_attendee</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 09:02:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6b627ffa47aa0d10d06e1d51e36d4331</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 09:02:32</sys_updated_on>
+            <value>treno_metro</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>mezzo_di_ritorno</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Aereo</label>
+            <language>en</language>
+            <name>x_snc_tree4meeting_attendee</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 09:02:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7f627ffa47aa0d10d06e1d51e36d437e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 09:02:32</sys_updated_on>
+            <value>aereo</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>mezzo_di_ritorno</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Veicolo elettrico</label>
+            <language>en</language>
+            <name>x_snc_tree4meeting_attendee</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 09:02:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fb627ffa47aa0d10d06e1d51e36d4380</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 09:02:32</sys_updated_on>
+            <value>veicolo_elettrico</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>mezzo_di_ritorno</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Veicolo a combustione</label>
+            <language>en</language>
+            <name>x_snc_tree4meeting_attendee</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 09:02:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7b627ffa47aa0d10d06e1d51e36d4382</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 09:02:32</sys_updated_on>
+            <value>veicolo_a_combustione</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>mezzo_di_ritorno</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Bicicletta</label>
+            <language>en</language>
+            <name>x_snc_tree4meeting_attendee</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 09:02:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f7627ffa47aa0d10d06e1d51e36d4384</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 09:02:32</sys_updated_on>
+            <value>bicicletta</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>mezzo_di_ritorno</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Piedi</label>
+            <language>en</language>
+            <name>x_snc_tree4meeting_attendee</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 09:02:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>77627ffa47aa0d10d06e1d51e36d4386</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 09:02:32</sys_updated_on>
+            <value>piedi</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

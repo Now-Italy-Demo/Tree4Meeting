@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope, $element) {
+	/* widget controller */
+	var c = this;
+
+	$element.find('.new-hire-card').css("background", c.data.background);
+	$element.find('.instance-heading').css("color", c.data.font_color);
+	$element.find('.donut-text').css("color", c.data.font_color);
+	$element.find('.donut-value').css("color", c.data.stroke_color);
+	$element.find('td').css("color", c.data.font_color);
+	$element.find('th').css("color", c.data.font_color);
+	$element.find('.symbol').css("color", c.data.stroke_color);
+
+
+
+	$('.count').each(function() {
+		$(this).prop('counter', 0).animate({
+			counter: c.data.kpi
+		}, {
+			duration: 1000,
+			easing: 'swing',
+			step: function(now) {
+				$(this).text(Math.ceil(now));
+			}
+		});
+	});
+	
+
+
+
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.new-hire-card{&#13;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(23, 40 ,52 , 8%);&#13;
+  min-height: 20rem;&#13;
+  background-color: #ffffff;&#13;
+  margin-bottom: 1rem;&#13;
+  border-radius: .6rem;&#13;
+  padding: 3rem;&#13;
+  margin-top: 3rem;&#13;
+  padding-bottom: 0rem;&#13;
+}&#13;
+&#13;
+.card-title {&#13;
+  font-weight: 600;&#13;
+  font-size: 2rem;&#13;
+  z-index:1;&#13;
+}&#13;
+&#13;
+&#13;
+.graph-container{&#13;
+  display:flex;&#13;
+}&#13;
+&#13;
+.semi-donut{&#13;
+  text-align: -webkit-center;&#13;
+  margin-top:22px;&#13;
+}&#13;
+&#13;
+td a{&#13;
+	color:$text-color;&#13;
+}&#13;
+&#13;
+// ===================Semi Donut Chart model-2========================&#13;
+&#13;
+.semi-donut-model-2{&#13;
+  width: 300px;&#13;
+  height: 150px;&#13;
+  position: relative;&#13;
+  text-align: center;&#13;
+  color: #fff;&#13;
+  font-size: 50px;&#13;
+  font-weight: 600;&#13;
+  border-radius: 150px 150px 0 0;&#13;
+  overflow: hidden;&#13;
+  color:red;&#13;
+  display: flex;&#13;
+  align-items: flex-end;&#13;
+  justify-content: center;&#13;
+  box-sizing : border-box;&#13;
+  --fill: $success ;&#13;
+  &amp;:before, &amp;:after{&#13;
+    content: '';&#13;
+    width: 300px;&#13;
+    height: 150px;&#13;
+    border:15px solid var(--fill);&#13;
+    border-top: none;&#13;
+    position: absolute;&#13;
+    transform-origin :50%  0% 0;&#13;
+    border-radius: 0 0 300px 300px ;&#13;
+    box-sizing : border-box;&#13;
+    left: 0;&#13;
+    top: 100%;&#13;
+  }&#13;
+  &amp;:before {&#13;
+    border-color:rgba(0,0,0,.15);&#13;
+    transform: rotate(180deg);&#13;
+  }&#13;
+  &amp;:after{&#13;
+    z-index: 3;&#13;
+    animation : 1s fillGraphAnimation ease-in;&#13;
+    transform: rotate( calc( 1deg * ( var(--percentage) * 1.8 ) ) );&#13;
+  }&#13;
+  &amp;:hover{&#13;
+    &amp;:after{&#13;
+      opacity: .8;&#13;
+      cursor: pointer;&#13;
+    }&#13;
+  }&#13;
+}&#13;
+&#13;
+.donut-label{&#13;
+  font-family: sans-serif;&#13;
+  text-align: center;&#13;
+  margin-top: -66px;&#13;
+  padding: 0px 90px;&#13;
+}&#13;
+&#13;
+.donut-text{&#13;
+  font-size:15px;&#13;
+  margin-bottom:-8px;&#13;
+}&#13;
+&#13;
+.donut-value{&#13;
+  font-size: 70px;&#13;
+}&#13;
+&#13;
+.symbol{&#13;
+  font-size:42px;&#13;
+}&#13;
+&#13;
+@keyframes fillAnimation{&#13;
+  0%{transform : rotate(-45deg);}&#13;
+  50%{transform: rotate(135deg);}&#13;
+}&#13;
+&#13;
+@keyframes fillGraphAnimation{&#13;
+  0%{transform: rotate(0deg);}&#13;
+  50%{transform: rotate(180deg);}&#13;
+}&#13;
+&#13;
+/* ********************* CSS For List * ********************** */&#13;
+.new-hire-list{&#13;
+  margin-top:35px;&#13;
+}&#13;
+&#13;
+td, th{&#13;
+  border:none !important;&#13;
+  font-family: sans-serif;&#13;
+  vertical-align: middle !important;&#13;
+  font-size:1.4rem;&#13;
+}&#13;
+&#13;
+.avatar{&#13;
+  height: 38px;&#13;
+  width: 38px;&#13;
+  border-radius: 50%;&#13;
+  padding: 4px;&#13;
+  /* margin-top: 0px; */&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>t4m_new_hire_process</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>T4M - New Hire Progress</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+
+	data.url = "";
+	data.closedTasks = 4;
+	data.totalTasks = 6;
+
+	var gr = new GlideRecord('sn_hr_core_case');
+	gr.addEncodedQuery('opened_for=d6904a73db564b00ae3e9646db96193d^subject_person=7b6dbf91db7f23008116ffb41d9619d0^hr_service=64fa4c53534222003066a5f4a11c0875');
+	gr.orderByDesc('sys_created_on');
+	gr.query();
+	if(gr.next()){
+		data.url = "?id=hrm_ticket_page&table=sn_hr_core_case&sys_id="+gr.getUniqueValue();
+	}
+
+	var task = new GlideRecord('sn_hr_core_task');
+	task.addEncodedQuery('assigned_to=7b6dbf91db7f23008116ffb41d9619d0');
+	task.query();
+	if(task.getRowCount() > 0)
+	data.totalTasks = task.getRowCount();
+
+	var closedTask = new GlideRecord('sn_hr_core_task');
+	closedTask.addEncodedQuery('assigned_to=7b6dbf91db7f23008116ffb41d9619d0^state=4');
+	closedTask.query();
+	if(closedTask.getRowCount() > 0)
+	data.closedTasks = closedTask.getRowCount();
+
+
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-04-02 17:16:53</sys_created_on>
+        <sys_id>abf91cba9722c9104204fe7fe153af89</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>T4M - New Hire Progress</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sp_widget_abf91cba9722c9104204fe7fe153af89</sys_update_name>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-04-02 17:17:13</sys_updated_on>
+        <template><![CDATA[<div class = "new-hire-card" id= "new-hire-card">
+  <div class = "row">
+    <div class = " col-md-6 col-lg-6">
+      <div class="card-title">
+        T4M - New Hire Progress
+      </div>
+      <div class = "semi-donut">
+        <div class="semi-donut-model-2 margin "
+             style="--percentage : 75; ">  
+
+        </div>
+        <div class = "donut-label col-md-12 col-lg-12">
+          <div class = "donut-text">
+
+            Completion Status %
+          </div>
+          <div class = "count donut-value">75</div>
+        </div>  
+      </div>   
+    </div>
+
+    <div class = "col-md-6 col-lg-6 ">
+      <div class="table-responsive">
+        <table class = "table table-condensed new-hire-list">
+          <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Progress</th>
+            <th>Past Due</th>
+          </tr>
+          <tr>
+            <td><img src = "james.png" class = "avatar"> </td>
+            <td>	James Cory</td>
+            <td>20/24</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td><img src = "susan.png" class = "avatar"> </td>
+            <td>Alex Sanders</td>
+            <td>6/10</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td><img src = "emily.png" class = "avatar"> </td>
+            <td>	Emily Scollan</td>
+            <td>No Tasks</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td><img src = "sam.png" class = "avatar"> </td>
+            <td><a href = "{{data.url}}">Nick Newman</a></td>
+            <td>{{data.closedTasks}}/{{data.totalTasks}}</td>
+            <td>1</td>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+]]></template>
+    </sp_widget>
+</record_update>

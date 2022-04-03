@@ -19,7 +19,7 @@
         <dynamic_ref_qual/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field/>
+        <field>stesso_mezzo_per_il_ritorno</field>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
@@ -36,11 +36,11 @@
         <macro/>
         <macroponent/>
         <mandatory>true</mandatory>
-        <map_to_field>false</map_to_field>
+        <map_to_field>true</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>tornerai_indietro_con_lo_stesso_mezzo_di_trasporto</name>
-        <order>700</order>
+        <order>900</order>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
@@ -68,14 +68,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-03-31 13:35:53</sys_created_on>
         <sys_id>a814d1c647a2c510d06e1d51e36d4371</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Tornerai indietro con lo stesso mezzo di trasporto?</sys_name>
         <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
         <sys_update_name>item_option_new_a814d1c647a2c510d06e1d51e36d4371</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-31 13:41:54</sys_updated_on>
+        <sys_updated_on>2022-04-03 09:27:34</sys_updated_on>
         <table/>
         <tooltip/>
         <type>1</type>

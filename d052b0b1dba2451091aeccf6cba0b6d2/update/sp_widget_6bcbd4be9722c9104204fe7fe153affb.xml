@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope) {
+	/* widget controller */
+	var c = this;
+
+	google.charts.load("current", {packages:["corechart"]});
+	google.charts.setOnLoadCallback(drawChart);
+	function drawChart() {
+		var data = google.visualization.arrayToDataTable([
+			['Task', 'Hours per Day'],
+			['Non inquinante',    50],
+			['Molto inquinante',  22]
+		]);
+
+		var options = {
+			pieHole: 0.5 ,
+			'width': 200,
+			'height': 200,
+			'chartArea': {'width': '90%', 'height': '90%'},
+			'legend': {'position': 'none'},
+			'pieSliceText': 'none',
+			colors: ['#7bd808', '#ff8c71']
+		//	colors: [c.data.success,c.data.warning,c.data.danger]
+
+		};
+
+		var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+		chart.draw(data, options);
+	}
+
+
+
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.card {
+  min-height: 35rem;
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+  border-radius: .6rem;
+  padding: 3rem;
+  margin-top: 3rem;
+  box-shadow:0 0.4rem 0.8rem 0 rgba(23, 40, 52 , 8%)
+
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 2rem;
+  //  position: absolute;
+  z-index: 1;
+}
+
+
+#donutchart{
+  text-align: -webkit-center;
+  margin-top:2rem;
+}
+
+.donut-caption{
+  font-size: 1rem;
+}
+
+.value{
+  text-align: center;
+  margin-top: -123px;
+  position: relative;
+}
+
+.legends{
+  bottom: 35px;
+  text-align:center;
+	left:0;
+  right:0;
+}
+
+.ready{
+  color: #7bd808;
+}
+.notReady{
+  color: #ff8c71;
+}
+
+.fa-circle{
+  margin-left:20px;
+  margin-right:5px;
+}
+
+
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>t4m_return_to_workplace</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>T4M - Return to Workplace</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	var gr = new GlideRecord('sn_ex_sp_pro_customers');
+	gr.addEncodedQuery('u_active=true');
+	gr.orderByDesc('sys_updated_on');
+	gr.query();
+	if(gr.next()){
+		data.success = gr.getValue('u_success');
+		data.warning = gr.getValue('u_warning');
+		data.danger = gr.getValue('u_danger');
+		data.info = gr.getValue('u_info');
+	}
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-04-02 17:24:49</sys_created_on>
+        <sys_id>6bcbd4be9722c9104204fe7fe153affb</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>T4M - Return to Workplace</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sp_widget_6bcbd4be9722c9104204fe7fe153affb</sys_update_name>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-04-03 14:47:54</sys_updated_on>
+        <template><![CDATA[<div class = "card" id = "return-to-workplace">
+  <div class="card-title">
+    Distribuzione mezzi di trasporto
+  </div>
+
+  <div id="donutchart" ></div>
+  
+  <div class = "legends">
+    <i class="fa fa-circle ready"></i>Non inquinante <i class="fa fa-circle notReady"></i> Mezzo inquinante
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="stesso_mezzo_per_il_ritorno" label="Stesso mezzo per il ritorno?" language="en" table="x_snc_tree4meeting_attendee">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>stesso_mezzo_per_il_ritorno</element>
+            <help/>
+            <hint/>
+            <label>Stesso mezzo per il ritorno?</label>
+            <language>en</language>
+            <name>x_snc_tree4meeting_attendee</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 09:05:01</sys_created_on>
+            <sys_id>80037f3e47aa0d10d06e1d51e36d4381</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>Stesso mezzo per il ritorno?</sys_name>
+            <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_tree4meeting_attendee_stesso_mezzo_per_il_ritorno_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 09:05:02</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

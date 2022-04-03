@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="mezzo_di_ritorno" label="Mezzo di ritorno" language="en" table="x_snc_tree4meeting_attendee">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>mezzo_di_ritorno</element>
+            <help/>
+            <hint/>
+            <label>Mezzo di ritorno</label>
+            <language>en</language>
+            <name>x_snc_tree4meeting_attendee</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 09:01:38</sys_created_on>
+            <sys_id>6232f7fa47aa0d10d06e1d51e36d43ad</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_name>Mezzo di ritorno</sys_name>
+            <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_tree4meeting_attendee_mezzo_di_ritorno_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 09:02:32</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

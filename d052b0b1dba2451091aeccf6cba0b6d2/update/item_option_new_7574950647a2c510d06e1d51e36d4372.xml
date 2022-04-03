@@ -5,8 +5,8 @@
         <cat_item display_value="Calcola il tuo carbon footprint">f88fa806472e8510d06e1d51e36d43d2</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
-        <choice_field/>
-        <choice_table/>
+        <choice_field>mezzo_di_ritorno</choice_field>
+        <choice_table>x_snc_tree4meeting_attendee</choice_table>
         <create_roles/>
         <default_html_value/>
         <default_value/>
@@ -19,28 +19,28 @@
         <dynamic_ref_qual/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field/>
+        <field>mezzo_di_ritorno</field>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
         <hidden>true</hidden>
-        <include_none>true</include_none>
+        <include_none>false</include_none>
         <instructions/>
         <layout>normal</layout>
         <list_table/>
         <lookup_label/>
         <lookup_price/>
         <lookup_table/>
-        <lookup_unique>false</lookup_unique>
+        <lookup_unique>true</lookup_unique>
         <lookup_value/>
         <macro/>
         <macroponent/>
         <mandatory>false</mandatory>
-        <map_to_field>false</map_to_field>
+        <map_to_field>true</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>con_quale_mezzo_tornerai_indietro</name>
-        <order>800</order>
+        <name>mezzo_di_ritorno</name>
+        <order>1000</order>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
@@ -53,8 +53,8 @@
         <record/>
         <record_producer_table>x_snc_tree4meeting_attendee</record_producer_table>
         <reference/>
-        <reference_qual>undefined</reference_qual>
-        <reference_qual_condition>undefined</reference_qual_condition>
+        <reference_qual/>
+        <reference_qual_condition/>
         <rich_text/>
         <roles_to_use_also_request_for/>
         <save_script/>
@@ -68,14 +68,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-03-31 13:38:28</sys_created_on>
         <sys_id>7574950647a2c510d06e1d51e36d4372</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Con quale mezzo tornerai indietro?</sys_name>
         <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
         <sys_update_name>item_option_new_7574950647a2c510d06e1d51e36d4372</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-04-01 08:58:00</sys_updated_on>
+        <sys_updated_on>2022-04-03 09:27:34</sys_updated_on>
         <table/>
         <tooltip/>
         <type>5</type>

@@ -24,57 +24,37 @@
             <label>5km</label>
             <language>en</language>
             <name>x_snc_tree4meeting_attendee</name>
-            <sequence>10</sequence>
+            <sequence>0</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-31 09:35:59</sys_created_on>
+            <sys_created_on>2022-04-01 14:01:12</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>d85dd446472a8510d06e1d51e36d43b6</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>8b93ea5a47e24910d06e1d51e36d43f5</sys_id>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-31 09:35:59</sys_updated_on>
-            <value>km</value>
+            <sys_updated_on>2022-04-03 10:36:54</sys_updated_on>
+            <value>5</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>distanza_percorsa</element>
             <hint/>
             <inactive>false</inactive>
-            <label>10km</label>
+            <label>20km</label>
             <language>en</language>
             <name>x_snc_tree4meeting_attendee</name>
-            <sequence>20</sequence>
+            <sequence>1</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-31 09:35:59</sys_created_on>
+            <sys_created_on>2022-04-01 14:01:12</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>985dd446472a8510d06e1d51e36d43c0</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>0793ea5a47e24910d06e1d51e36d43f7</sys_id>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-31 09:35:59</sys_updated_on>
-            <value>km</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>distanza_percorsa</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>30km</label>
-            <language>en</language>
-            <name>x_snc_tree4meeting_attendee</name>
-            <sequence>30</sequence>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-31 09:35:59</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>6c5dd446472a8510d06e1d51e36d43c6</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-31 09:35:59</sys_updated_on>
-            <value>km</value>
+            <sys_updated_on>2022-04-03 10:36:59</sys_updated_on>
+            <value>20</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -84,17 +64,17 @@
             <label>50km</label>
             <language>en</language>
             <name>x_snc_tree4meeting_attendee</name>
-            <sequence>40</sequence>
+            <sequence>2</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-31 09:35:59</sys_created_on>
+            <sys_created_on>2022-04-01 14:01:12</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>a45dd446472a8510d06e1d51e36d43dd</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>8793ea5a47e24910d06e1d51e36d43f8</sys_id>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-31 09:35:59</sys_updated_on>
-            <value>km</value>
+            <sys_updated_on>2022-04-03 10:37:01</sys_updated_on>
+            <value>50</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -104,57 +84,57 @@
             <label>100km</label>
             <language>en</language>
             <name>x_snc_tree4meeting_attendee</name>
-            <sequence>50</sequence>
+            <sequence>3</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-31 09:35:59</sys_created_on>
+            <sys_created_on>2022-04-01 14:01:12</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>e85dd446472a8510d06e1d51e36d43ca</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>0b93ea5a47e24910d06e1d51e36d43f9</sys_id>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-31 09:35:59</sys_updated_on>
-            <value>km</value>
+            <sys_updated_on>2022-04-03 10:37:04</sys_updated_on>
+            <value>100</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>distanza_percorsa</element>
             <hint/>
             <inactive>false</inactive>
-            <label>200km</label>
+            <label>Oltre i 100km</label>
             <language>en</language>
             <name>x_snc_tree4meeting_attendee</name>
-            <sequence>60</sequence>
+            <sequence>4</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-31 09:35:59</sys_created_on>
+            <sys_created_on>2022-04-01 14:01:12</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>245dd446472a8510d06e1d51e36d43e1</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>8b93ea5a47e24910d06e1d51e36d43fa</sys_id>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-31 09:35:59</sys_updated_on>
-            <value>km</value>
+            <sys_updated_on>2022-04-03 10:37:07</sys_updated_on>
+            <value>200</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>distanza_percorsa</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Oltre 200km</label>
+            <label>Nulla</label>
             <language>en</language>
             <name>x_snc_tree4meeting_attendee</name>
-            <sequence>70</sequence>
+            <sequence>5</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-31 09:35:59</sys_created_on>
+            <sys_created_on>2022-04-01 15:48:46</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>685dd446472a8510d06e1d51e36d43ce</sys_id>
+            <sys_id>cf3c369247a64910d06e1d51e36d433a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-31 09:35:59</sys_updated_on>
-            <value>oltre_200km</value>
+            <sys_updated_on>2022-04-01 15:48:46</sys_updated_on>
+            <value>0</value>
         </sys_choice>
     </sys_choice>
 </record_update>

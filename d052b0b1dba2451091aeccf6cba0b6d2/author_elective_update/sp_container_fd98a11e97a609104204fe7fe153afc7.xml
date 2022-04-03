@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>T4M Manager Center - Container 3</name>
+        <order>3</order>
+        <sp_page display_value="tree4meeting_managet_center">7998edda97a609104204fe7fe153af94</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-04-01 09:43:20</sys_created_on>
+        <sys_id>fd98a11e97a609104204fe7fe153afc7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>T4M Manager Center - Container 3</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sp_container_fd98a11e97a609104204fe7fe153afc7</sys_update_name>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-04-01 09:43:37</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</application>
+        <file_path/>
+        <instance_id>c9d8446ddbc245500ae3ac44d49619bc</instance_id>
+        <instance_name>digitalex</instance_name>
+        <name>sp_container_fd98a11e97a609104204fe7fe153afc7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>T4M Manager Center - Container 3</name><order>3</order><sp_page display_value="tree4meeting_managet_center">7998edda97a609104204fe7fe153af94</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>francesco</sys_created_by><sys_created_on>2022-04-01 09:43:20</sys_created_on><sys_id>fd98a11e97a609104204fe7fe153afc7</sys_id><sys_mod_count>1</sys_mod_count><sys_name>T4M Manager Center - Container 3</sys_name><sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package><sys_policy/><sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope><sys_update_name>sp_container_fd98a11e97a609104204fe7fe153afc7</sys_update_name><sys_updated_by>francesco</sys_updated_by><sys_updated_on>2022-04-01 09:43:37</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>-1875579328</payload_hash>
+        <record_name>T4M Manager Center - Container 3</record_name>
+        <reverted_from/>
+        <source>3b76aa1e972e09104204fe7fe153afb6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-04-01 14:39:57</sys_created_on>
+        <sys_id>3a7cee96976e09104204fe7fe153af0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17fe591955d0000001</sys_recorded_at>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-04-01 14:39:57</sys_updated_on>
+        <type>Container</type>
+        <update_guid>327cee96456e09104d7c59c1b0f60d0c</update_guid>
+        <update_guid_history>327cee96456e09104d7c59c1b0f60d0c:-1875579328,c6a8251e1ea609101b0a31c1168275e7:-1721292364,3598a11ee2a60910f1347ff80790e0c9:-1917507234</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="T4M Manager Center - Container 3">adacead6976e09104204fe7fe153af45</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-04-01 14:40:41</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>0d7b26422d9d4da48a1f93741f483da4</sys_id>
+        <sys_metadata>fd98a11e97a609104204fe7fe153afc7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>T4M Manager Center - Container 3</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_scope_delete display_value="">54abed2950fa4d7e91db49e53ca19f84</sys_scope_delete>
+        <sys_update_name>sp_container_fd98a11e97a609104204fe7fe153afc7</sys_update_name>
+        <sys_update_version display_value="sp_container_fd98a11e97a609104204fe7fe153afc7">3a7cee96976e09104204fe7fe153af0c</sys_update_version>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-04-01 14:40:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

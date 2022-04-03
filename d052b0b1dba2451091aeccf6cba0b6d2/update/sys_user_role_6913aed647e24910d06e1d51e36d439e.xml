@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <encryption_context/>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_snc_tree4meeting.raas_alberi_piantati_user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>raas_alberi_piantati_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 13:58:54</sys_created_on>
+        <sys_id>6913aed647e24910d06e1d51e36d439e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_tree4meeting.raas_alberi_piantati_user</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_user_role_6913aed647e24910d06e1d51e36d439e</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 13:58:54</sys_updated_on>
+    </sys_user_role>
+</record_update>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="T4M - New Hire Progress">abf91cba9722c9104204fe7fe153af89</child>
+        <cloned>2022-04-02 17:16:53</cloned>
+        <last_validated>2022-04-02 17:16:53</last_validated>
+        <parent display_value="EC - New Hire Progress">3f6941951b4af81012985240604bcbd5</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function($scope, $element) {
+	/* widget controller */
+	var c = this;
+
+	$element.find('.new-hire-card').css("background", c.data.background);
+	$element.find('.instance-heading').css("color", c.data.font_color);
+	$element.find('.donut-text').css("color", c.data.font_color);
+	$element.find('.donut-value').css("color", c.data.stroke_color);
+	$element.find('td').css("color", c.data.font_color);
+	$element.find('th').css("color", c.data.font_color);
+	$element.find('.symbol').css("color", c.data.stroke_color);
+
+
+
+	$('.count').each(function() {
+		$(this).prop('counter', 0).animate({
+			counter: c.data.kpi
+		}, {
+			duration: 1000,
+			easing: 'swing',
+			step: function(now) {
+				$(this).text(Math.ceil(now));
+			}
+		});
+	});
+	
+
+
+
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;
+.new-hire-card{
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(23, 40 ,52 , 8%);
+  min-height: 20rem;
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+  border-radius: .6rem;
+  padding: 3rem;
+  margin-top: 3rem;
+  padding-bottom: 0rem;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 2rem;
+  z-index:1;
+}
+
+
+.graph-container{
+  display:flex;
+}
+
+.semi-donut{
+  text-align: -webkit-center;
+  margin-top:22px;
+}
+
+td a{
+	color:$text-color;
+}
+
+// ===================Semi Donut Chart model-2========================
+
+.semi-donut-model-2{
+  width: 300px;
+  height: 150px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  border-radius: 150px 150px 0 0;
+  overflow: hidden;
+  color:red;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-sizing : border-box;
+  --fill: $success ;
+  &amp;amp;:before, &amp;amp;:after{
+    content: '';
+    width: 300px;
+    height: 150px;
+    border:15px solid var(--fill);
+    border-top: none;
+    position: absolute;
+    transform-origin :50%  0% 0;
+    border-radius: 0 0 300px 300px ;
+    box-sizing : border-box;
+    left: 0;
+    top: 100%;
+  }
+  &amp;amp;:before {
+    border-color:rgba(0,0,0,.15);
+    transform: rotate(180deg);
+  }
+  &amp;amp;:after{
+    z-index: 3;
+    animation : 1s fillGraphAnimation ease-in;
+    transform: rotate( calc( 1deg * ( var(--percentage) * 1.8 ) ) );
+  }
+  &amp;amp;:hover{
+    &amp;amp;:after{
+      opacity: .8;
+      cursor: pointer;
+    }
+  }
+}
+
+.donut-label{
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: -66px;
+  padding: 0px 90px;
+}
+
+.donut-text{
+  font-size:15px;
+  margin-bottom:-8px;
+}
+
+.donut-value{
+  font-size: 70px;
+}
+
+.symbol{
+  font-size:42px;
+}
+
+@keyframes fillAnimation{
+  0%{transform : rotate(-45deg);}
+  50%{transform: rotate(135deg);}
+}
+
+@keyframes fillGraphAnimation{
+  0%{transform: rotate(0deg);}
+  50%{transform: rotate(180deg);}
+}
+
+/* ********************* CSS For List * ********************** */
+.new-hire-list{
+  margin-top:35px;
+}
+
+td, th{
+  border:none !important;
+  font-family: sans-serif;
+  vertical-align: middle !important;
+  font-size:1.4rem;
+}
+
+.avatar{
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  padding: 4px;
+  /* margin-top: 0px; */
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;new-hire-progress&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;EC - New Hire Progress&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+
+	data.url = "";
+	data.closedTasks = 4;
+	data.totalTasks = 6;
+
+	var gr = new GlideRecord('sn_hr_core_case');
+	gr.addEncodedQuery('opened_for=d6904a73db564b00ae3e9646db96193d^subject_person=7b6dbf91db7f23008116ffb41d9619d0^hr_service=64fa4c53534222003066a5f4a11c0875');
+	gr.orderByDesc('sys_created_on');
+	gr.query();
+	if(gr.next()){
+		data.url = "?id=hrm_ticket_page&amp;table=sn_hr_core_case&amp;sys_id="+gr.getUniqueValue();
+	}
+
+	var task = new GlideRecord('sn_hr_core_task');
+	task.addEncodedQuery('assigned_to=7b6dbf91db7f23008116ffb41d9619d0');
+	task.query();
+	if(task.getRowCount() &gt; 0)
+	data.totalTasks = task.getRowCount();
+
+	var closedTask = new GlideRecord('sn_hr_core_task');
+	closedTask.addEncodedQuery('assigned_to=7b6dbf91db7f23008116ffb41d9619d0^state=4');
+	closedTask.query();
+	if(closedTask.getRowCount() &gt; 0)
+	data.closedTasks = closedTask.getRowCount();
+
+
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-17 12:12:01&lt;/sys_created_on&gt;&lt;sys_id&gt;3f6941951b4af81012985240604bcbd5&lt;/sys_id&gt;&lt;sys_mod_count&gt;41&lt;/sys_mod_count&gt;&lt;sys_name&gt;EC - New Hire Progress&lt;/sys_name&gt;&lt;sys_package display_value="Employee Center Pro" source="sn_ex_sp_pro"&gt;236addd4d75048c1a5f250d73c064976&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Employee Center Pro"&gt;236addd4d75048c1a5f250d73c064976&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_3f6941951b4af81012985240604bcbd5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-26 14:31:39&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class = "new-hire-card" id= "new-hire-card"&gt;
+  &lt;div class = "row"&gt;
+    &lt;div class = " col-md-6 col-lg-6"&gt;
+      &lt;div class="card-title"&gt;
+        New Hire Progress
+      &lt;/div&gt;
+      &lt;div class = "semi-donut"&gt;
+        &lt;div class="semi-donut-model-2 margin "
+             style="--percentage : 75; "&gt;  
+
+        &lt;/div&gt;
+        &lt;div class = "donut-label col-md-12 col-lg-12"&gt;
+          &lt;div class = "donut-text"&gt;
+
+            Completion Status %
+          &lt;/div&gt;
+          &lt;div class = "count donut-value"&gt;75&lt;/div&gt;
+        &lt;/div&gt;  
+      &lt;/div&gt;   
+    &lt;/div&gt;
+
+    &lt;div class = "col-md-6 col-lg-6 "&gt;
+      &lt;div class="table-responsive"&gt;
+        &lt;table class = "table table-condensed new-hire-list"&gt;
+          &lt;tr&gt;
+            &lt;th&gt;&lt;/th&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Progress&lt;/th&gt;
+            &lt;th&gt;Past Due&lt;/th&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;img src = "james.png" class = "avatar"&gt; &lt;/td&gt;
+            &lt;td&gt;	James Cory&lt;/td&gt;
+            &lt;td&gt;20/24&lt;/td&gt;
+            &lt;td&gt;2&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;img src = "susan.png" class = "avatar"&gt; &lt;/td&gt;
+            &lt;td&gt;Alex Sanders&lt;/td&gt;
+            &lt;td&gt;6/10&lt;/td&gt;
+            &lt;td&gt;2&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;img src = "emily.png" class = "avatar"&gt; &lt;/td&gt;
+            &lt;td&gt;	Emily Scollan&lt;/td&gt;
+            &lt;td&gt;No Tasks&lt;/td&gt;
+            &lt;td&gt;5&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;img src = "sam.png" class = "avatar"&gt; &lt;/td&gt;
+            &lt;td&gt;&lt;a href = "{{data.url}}"&gt;Nick Newman&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;{{data.closedTasks}}/{{data.totalTasks}}&lt;/td&gt;
+            &lt;td&gt;1&lt;/td&gt;
+          &lt;/tr&gt;
+
+        &lt;/table&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-04-02 17:16:53</sys_created_on>
+        <sys_id>27f91cba9722c9104204fe7fe153af8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>abf91cba9722c9104204fe7fe153af89</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_27f91cba9722c9104204fe7fe153af8c</sys_update_name>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-04-02 17:16:53</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>

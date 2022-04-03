@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="T4M - Employment Engagement Score">16a9d0ba9722c9104204fe7fe153af50</child>
+        <cloned>2022-04-02 17:15:27</cloned>
+        <last_validated>2022-04-02 17:15:27</last_validated>
+        <parent display_value="EC - Employment Engagement Score">ee2c84911b06f81012985240604bcb3e</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function() {
+	/* widget controller */
+	
+	var c = this;
+	
+	google.charts.load("current", {packages:['corechart']});
+	google.charts.setOnLoadCallback(drawChart);
+	function drawChart() {
+
+		var data = google.visualization.arrayToDataTable([
+			['Months','Engaged', 'Passive', 'Disengaged' ],
+			['Jan', 56, 28, 16],
+			['Feb', 61, 25, 14],
+			['March', 64, 24, 12],
+			['April', 71, 18, 11],
+			['May', 76, 14, 10]
+		]);
+
+
+		var view = new google.visualization.DataView(data);
+		view.setColumns([0, 1,2,3]);
+
+		var options_stacked = {
+			isStacked: true,
+			height: 400,
+			width:700,
+			legend: {position: 'none'},
+			vAxis: {minValue: 0},
+			series: {
+				0:{color:c.data.success},
+				1:{color:c.data.warning},
+				2:{color:c.data.danger}
+			}
+		};
+
+
+		var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+		chart.draw(view, options_stacked);
+	}
+
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.card{
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(23, 40 ,52 , 8%);
+  min-height: 20rem;
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+  border-radius: .6rem;
+  padding: 3rem;
+  margin-top: 3rem;
+}
+.card-title {
+  font-weight: 600;
+  font-size: 2rem;
+  position: absolute;
+  z-index:1;
+}
+
+
+.engaged{
+  color:$success;
+}
+.passive{
+  color:$warning;
+}
+.disengaged{
+  color:$danger;
+}
+
+.fa-circle{
+  margin-left:20px;
+  margin-right:5px;
+}
+
+.legends{
+  margin-top: -10px;
+  bottom: 2rem;
+  z-index: 1000000;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;employment_engagement_score&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;EC - Employment Engagement Score&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+
+	var gr = new GlideRecord('sn_ex_sp_pro_customers');
+	gr.addEncodedQuery('u_active=true');
+	gr.orderByDesc('sys_updated_on');
+	gr.query();
+	if(gr.next()){
+		data.success = gr.getValue('u_success');
+		data.warning = gr.getValue('u_warning');
+		data.danger = gr.getValue('u_danger');
+	}
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-17 07:43:34&lt;/sys_created_on&gt;&lt;sys_id&gt;ee2c84911b06f81012985240604bcb3e&lt;/sys_id&gt;&lt;sys_mod_count&gt;131&lt;/sys_mod_count&gt;&lt;sys_name&gt;EC - Employment Engagement Score&lt;/sys_name&gt;&lt;sys_package display_value="Employee Center Pro" source="sn_ex_sp_pro"&gt;236addd4d75048c1a5f250d73c064976&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Employee Center Pro"&gt;236addd4d75048c1a5f250d73c064976&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_ee2c84911b06f81012985240604bcb3e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-26 07:56:35&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class = "card" id = "engagement_score"&gt;
+  &lt;div class="card-title"&gt;
+    Employment Engagement Score
+  &lt;/div&gt;
+  &lt;div id="columnchart_values" &gt;&lt;/div&gt;
+
+  &lt;div class = "text-center legends"&gt;
+   &lt;i class = "fa fa-circle engaged"&gt;&lt;/i&gt;Engaged   &lt;i class = "fa fa-circle passive"&gt;&lt;/i&gt; Passive  &lt;i class = "fa fa-circle disengaged"&gt;&lt;/i&gt;Disengaged
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-04-02 17:15:27</sys_created_on>
+        <sys_id>96a9d0ba9722c9104204fe7fe153af57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>16a9d0ba9722c9104204fe7fe153af50</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_96a9d0ba9722c9104204fe7fe153af57</sys_update_name>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-04-02 17:15:27</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>

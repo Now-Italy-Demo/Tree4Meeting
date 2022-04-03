@@ -8,10 +8,10 @@
         <derived>true</derived>
         <field/>
         <label>Event Registration Profile Default Spell Check Dictionary</label>
-        <last_derived>2022-03-31 17:26:56</last_derived>
+        <last_derived>2022-04-03 18:26:57</last_derived>
         <locale>en</locale>
         <name>x_snc_tree4meeting_event_registration_pr</name>
-        <publish_id>0063b489-0d2a-4ba6-8db3-853767f3048a</publish_id>
+        <publish_id>75b9cae8-17f5-416a-a3a1-fe092fc5fa09</publish_id>
         <punctuation_sensitive>false</punctuation_sensitive>
         <state>PUBLISHED</state>
         <sys_class_name>ais_dictionary</sys_class_name>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+	console.log(c.data.impatto_kg_co2);
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.card {
+  min-height: 20rem;
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+  border-radius: .6rem;
+  padding: 3rem;
+  margin-top: 3rem;
+  box-shadow:0 0.4rem 0.8rem 0 rgba(23, 40, 52 , 8%)
+
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 2rem;
+  //  position: absolute;
+  z-index: 1;
+}
+
+.number{
+  font-size: 7rem;
+  margin-top: 1rem;
+}
+.green{
+  color:$success;
+}
+
+.unit{
+  font-size: 1.5rem;
+  margin-left: -12px;
+}
+
+.caption{
+  font-size:1.4rem;
+}
+
+.response{
+    font-size: 2rem;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>t4m_new_hire_satisfaction</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>T4M - New Hire Satisfaction</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	data.impatto_kg_co2 = 0;
+
+	//var gr = new GlideRecord('x_snc_tree4meeting_attendee');
+	//gr.query('event_name=e85a2d4e4726c510d06e1d51e36d4305');
+	//gr.groupBy('mezzo_di_trasporto');
+	//gr.orderByDesc('sys_updated_on');
+	//gr.query();
+	
+	//while(gr.next()){
+		//data.partecipante.push(gr)
+	//}
+	
+	var agg = new GlideRecord('x_snc_tree4meeting_st_impatto_ambientale_eventi');
+	agg.query();
+
+	if (agg.next()) {
+			var impatto_kg_co2 = agg.getValue('impatto_kg_co2');
+			data.impatto_kg_co2 = Number(impatto_kg_co2).toFixed(2);
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-04-02 17:20:37</sys_created_on>
+        <sys_id>82dad83e9722c9104204fe7fe153af3e</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>T4M - New Hire Satisfaction</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sp_widget_82dad83e9722c9104204fe7fe153af3e</sys_update_name>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-04-03 14:21:24</sys_updated_on>
+        <template><![CDATA[<div class = "card" id = "team-capacity">
+ <div class="card-title">
+  Consumo totale CO2
+ </div>
+  
+  <div class = "number green">
+    {{c.data.impatto_kg_co2}}<span class = "unit"> KG</span>
+  </div>
+   <div class = "desc">
+   Partecipare a questo evento ha consumato mediamente {{c.data.tons_co2}} tonnellate di CO2
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

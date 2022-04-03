@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Mezzi di trasporto" section_id="9b454803476e0d10d06e1d51e36d43fd" sys_domain="global" table="x_snc_tree4meeting_attendee" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>mezzo_di_trasporto</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 10:24:59</sys_created_on>
+            <sys_id>a3458803476e0d10d06e1d51e36d4366</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Mezzi di trasporto" display_value="Mezzi di trasporto" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">9b454803476e0d10d06e1d51e36d43fd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 10:24:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>consumo_mezzo</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 10:24:59</sys_created_on>
+            <sys_id>a7458803476e0d10d06e1d51e36d4366</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Mezzi di trasporto" display_value="Mezzi di trasporto" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">9b454803476e0d10d06e1d51e36d43fd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 10:24:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>distanza_percorsa</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 10:24:59</sys_created_on>
+            <sys_id>ab458803476e0d10d06e1d51e36d4366</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Mezzi di trasporto" display_value="Mezzi di trasporto" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">9b454803476e0d10d06e1d51e36d43fd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 10:24:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>durata_viaggio</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 10:24:59</sys_created_on>
+            <sys_id>af458803476e0d10d06e1d51e36d4366</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Mezzi di trasporto" display_value="Mezzi di trasporto" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">9b454803476e0d10d06e1d51e36d43fd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 10:24:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 10:24:59</sys_created_on>
+            <sys_id>a3458803476e0d10d06e1d51e36d4367</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Mezzi di trasporto" display_value="Mezzi di trasporto" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">9b454803476e0d10d06e1d51e36d43fd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 10:24:59</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>stesso_mezzo_per_il_ritorno</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 10:24:59</sys_created_on>
+            <sys_id>a7458803476e0d10d06e1d51e36d4367</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Mezzi di trasporto" display_value="Mezzi di trasporto" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">9b454803476e0d10d06e1d51e36d43fd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 10:24:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>mezzo_di_ritorno</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 10:24:59</sys_created_on>
+            <sys_id>ab458803476e0d10d06e1d51e36d4367</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Mezzi di trasporto" display_value="Mezzi di trasporto" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">9b454803476e0d10d06e1d51e36d43fd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 10:24:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>distanza_ritorno</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 10:24:59</sys_created_on>
+            <sys_id>af458803476e0d10d06e1d51e36d4367</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Mezzi di trasporto" display_value="Mezzi di trasporto" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">9b454803476e0d10d06e1d51e36d43fd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 10:24:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>durata_ritorno</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 10:24:59</sys_created_on>
+            <sys_id>a3458803476e0d10d06e1d51e36d4368</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Mezzi di trasporto" display_value="Mezzi di trasporto" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">9b454803476e0d10d06e1d51e36d43fd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 10:24:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Mezzi di trasporto</caption>
+            <header>false</header>
+            <name>x_snc_tree4meeting_attendee</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 10:24:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9b454803476e0d10d06e1d51e36d43fd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_tree4meeting_attendee</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+            <sys_update_name>sys_ui_section_9b454803476e0d10d06e1d51e36d43fd</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 10:24:58</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

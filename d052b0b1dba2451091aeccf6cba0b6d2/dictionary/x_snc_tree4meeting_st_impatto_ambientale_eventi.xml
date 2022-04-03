@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Impatto Ambientale Eventi" max_length="40" name="x_snc_tree4meeting_st_impatto_ambientale_eventi" sizeclass="0" type="collection">
+        <element label="Alberi Necessari" max_length="40" name="alberi_necessari" type="integer"/>
+        <element label="Compensato" max_length="40" name="compensato" type="boolean"/>
+        <element label="Impatto Kg CO2" max_length="20" name="impatto_kg_co2" type="decimal"/>
+        <element label="Nome Evento" max_length="40" name="nome_evento" type="string"/>
+    </element>
+</database>

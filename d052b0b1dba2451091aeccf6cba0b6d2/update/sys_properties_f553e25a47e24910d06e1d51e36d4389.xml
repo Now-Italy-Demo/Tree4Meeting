@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_snc_tree4meeting.digitalhumani_user</name>
+        <read_roles/>
+        <suffix>digitalhumani_user</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 14:00:25</sys_created_on>
+        <sys_id>f553e25a47e24910d06e1d51e36d4389</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_snc_tree4meeting.digitalhumani_user</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_properties_f553e25a47e24910d06e1d51e36d4389</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-02 13:36:45</sys_updated_on>
+        <type>string</type>
+        <value>test_user</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=f553e25a47e24910d06e1d51e36d4389"/>
+</record_update>

@@ -17,16 +17,44 @@
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 10:24:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>db458803476e0d10d06e1d51e36d4327</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_tree4meeting_attendee" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">1052b0b13da2451000332aae047c0d59</sys_ui_form>
+            <sys_ui_section caption="Mezzi di trasporto" display_value="Mezzi di trasporto" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">9b454803476e0d10d06e1d51e36d43fd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 10:24:58</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 10:24:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1f458803476e0d10d06e1d51e36d432b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_tree4meeting_attendee" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">1052b0b13da2451000332aae047c0d59</sys_ui_form>
+            <sys_ui_section caption="Consumo" display_value="Consumo" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">df458803476e0d10d06e1d51e36d4323</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 10:24:59</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
             <sys_created_on>2022-03-30 16:29:31</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>9052b0b111a245108ddee0685cf3ee59</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_snc_tree4meeting_attendee" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">1052b0b13da2451000332aae047c0d59</sys_ui_form>
             <sys_ui_section caption="Notes" display_value="Notes" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">1c52b0b1d8a2451038cfeed0be253858</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-30 16:29:31</sys_updated_on>
+            <sys_updated_on>2022-04-03 10:24:59</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_snc_tree4meeting_attendee</name>

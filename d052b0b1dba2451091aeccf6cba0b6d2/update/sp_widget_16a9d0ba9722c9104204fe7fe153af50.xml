@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+	/* widget controller */
+	
+	var c = this;
+	
+	google.charts.load("current", {packages:['corechart']});
+	google.charts.setOnLoadCallback(drawChart);
+	function drawChart() {
+		
+		var dataTable = []
+	dataTable.push(['Type','Frequency'])
+			
+	Object.keys(c.data.mezzi_di_trasporto).forEach(function(el){
+		dataTable.push([el, c.data.mezzi_di_trasporto[el]])
+	})
+	
+	console.log(dataTable);
+
+		var data = google.visualization.arrayToDataTable(dataTable);
+
+
+		var view = new google.visualization.DataView(data);
+		view.setColumns([0, 1]);
+
+		var options_stacked = {
+			isStacked: true,
+			height: 400,
+			width:700,
+			legend: {position: 'none'},
+			vAxis: {minValue: 0},
+			series: {
+				0: "#9bea41"
+			}
+		};
+
+
+		var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+		chart.draw(view, options_stacked);
+	}
+
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.card{&#13;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(23, 40 ,52 , 8%);&#13;
+  min-height: 20rem;&#13;
+  background-color: #ffffff;&#13;
+  margin-bottom: 1rem;&#13;
+  border-radius: .6rem;&#13;
+  padding: 3rem;&#13;
+  margin-top: 3rem;&#13;
+}&#13;
+.card-title {&#13;
+  font-weight: 600;&#13;
+  font-size: 2rem;&#13;
+  position: absolute;&#13;
+  z-index:1;&#13;
+}&#13;
+&#13;
+&#13;
+.engaged{&#13;
+  color:$success;&#13;
+}&#13;
+.passive{&#13;
+  color:$warning;&#13;
+}&#13;
+.disengaged{&#13;
+  color:$danger;&#13;
+}&#13;
+&#13;
+.fa-circle{&#13;
+  margin-left:20px;&#13;
+  margin-right:5px;&#13;
+}&#13;
+&#13;
+.legends{&#13;
+  margin-top: -10px;&#13;
+  bottom: 2rem;&#13;
+  z-index: 1000000;&#13;
+  position: relative;&#13;
+  left: 0;&#13;
+  right: 0;&#13;
+}&#13;
+&#13;
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>t4m_employee_engagement_score</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>T4M - Employment Engagement Score</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	
+	data.mezzi_di_trasporto = {
+		"Treno/Metro": 0,
+		"Aereo": 0,
+		"Veicolo elettrico":0,
+		"Veicolo a combustione":0,
+		"Bicicletta":0,
+		"Piedi":0
+	};
+
+	
+	var agg = new GlideAggregate('x_snc_tree4meeting_attendee');
+	agg.addAggregate("COUNT", "mezzo_di_trasporto");
+	agg.addQuery('event_name=e85a2d4e4726c510d06e1d51e36d4305');
+	agg.query();
+
+	while (agg.next()) {
+			var frequenzaMezzo = agg.getAggregate('COUNT', 'mezzo_di_trasporto');
+			var mezzo = agg.getDisplayValue('mezzo_di_trasporto');
+			data.mezzi_di_trasporto[mezzo] = Number(frequenzaMezzo)
+	}
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-04-02 17:15:27</sys_created_on>
+        <sys_id>16a9d0ba9722c9104204fe7fe153af50</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>T4M - Employment Engagement Score</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sp_widget_16a9d0ba9722c9104204fe7fe153af50</sys_update_name>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-04-02 22:16:01</sys_updated_on>
+        <template><![CDATA[<div class = "card" id = "engagement_score">
+  <div class="card-title">
+    Frequenza Mezzi di Trasporto
+  </div>
+  <div id="columnchart_values" ></div>
+
+  <!-- <div class = "text-center legends">
+   <i class = "fa fa-circle engaged"></i>Engaged   <i class = "fa fa-circle passive"></i> Passive  <i class = "fa fa-circle disengaged"></i>Disengaged
+  </div> -->
+</div>]]></template>
+    </sp_widget>
+</record_update>

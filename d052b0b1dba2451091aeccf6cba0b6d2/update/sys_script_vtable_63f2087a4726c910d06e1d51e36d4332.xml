@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_vtable">
+    <sys_script_vtable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>true</advanced>
+        <cache_isolation_level>USER</cache_isolation_level>
+        <cache_strategy>CACHE_BY_QUERY</cache_strategy>
+        <cache_ttl>5</cache_ttl>
+        <name>Impatto Ambientale Eventi</name>
+        <script><![CDATA[(function executeQuery(v_table, v_query) {
+    
+	var gr = new GlideRecord('x_snc_tree4meeting_event');
+	gr.query();
+	while(gr.next()){
+
+		var grp = new GlideRecord('x_snc_tree4meeting_attendee');
+		grp.addQuery('event_name', gr.sys_id);
+		grp.query();
+		var co2 = 0;
+		while(grp.next()){
+			co2 = co2 + grp.calc_totale_co2;
+		}
+		var alberi = Math.floor( co2 / 12.5 );
+		v_table.addRow( { nome_evento: gr.event_name, impatto_kg_co2: co2, alberi_necessari: alberi } );
+
+}
+	
+	// Main API:
+    //    v_table.addRow({ ... }) - adds a row to the result set
+    
+    // There are also query helper methods
+    //    v_query.getEncodedQuery() - returns encoded querystring
+    //    v_query.getCondition(field) - returns encoded querystring for the given field (includes field name, operator, and value)
+    //    v_query.getParameter(field) - returns parameter for the given field (only includes value for equality conditions)
+    //    v_query.isGet() - returns whether the query is a single get by sys_id
+    //    v_query.getSysId() - returns parameter for sys_id field
+    //    v_query.isTextSearch() - returns whether the query contains a text query parameter
+    //    v_query.getTextSearch() - returns text search query parameter (internal field name 123TEXTQUERY321)
+    //    v_query.getFirstRowWanted() - returns the first row to include
+    //    v_query.getLastRowWanted() - returns the last row to include
+  
+    // Note: You must define sys_id for each row so that forms and lists for this table work properly
+     
+    // Your code goes here
+    // v_table.addRow({...})
+  })(v_table, v_query);]]></script>
+        <sys_class_name>sys_script_vtable</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-02 15:36:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>63f2087a4726c910d06e1d51e36d4332</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Impatto Ambientale Eventi</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_script_vtable_63f2087a4726c910d06e1d51e36d4332</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-03 09:58:42</sys_updated_on>
+        <table>x_snc_tree4meeting_st_impatto_ambientale_eventi</table>
+    </sys_script_vtable>
+</record_update>

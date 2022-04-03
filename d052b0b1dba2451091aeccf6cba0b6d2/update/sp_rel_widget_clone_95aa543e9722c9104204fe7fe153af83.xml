@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="Copy of T4M - Vaccination Status">d5aa5cfa9722c9104204fe7fe153af3e</child>
+        <cloned>2022-04-02 17:19:29</cloned>
+        <last_validated>2022-04-02 17:19:29</last_validated>
+        <parent display_value="EC - Vaccination Status">542491151b8af81012985240604bcb4c</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function($scope) {
+	/* widget controller */
+	var c = this;
+	
+
+
+	google.charts.load("current", {packages:["corechart"]});
+	google.charts.setOnLoadCallback(drawChart);
+	function drawChart() {
+		var data = google.visualization.arrayToDataTable([
+			['Task', 'Vaccination Status'],
+			['Vaccinated',    54],
+			['Scheduled',     28],
+			['Not scheduled',  18],
+			['Did not disclosed',  17]
+		]);
+
+		var options = {
+			'width': 200,
+			'height': 200,
+			'chartArea': {'width': '90%', 'height': '90%'},
+			'legend': {'position': 'none'},
+			'pieSliceText': 'none',
+			colors: [c.data.success,c.data.warning,c.data.danger,c.data.info]
+
+		};
+
+		var chart = new google.visualization.PieChart(document.getElementById('donutchart-vaccination-status'));
+		chart.draw(data, options);
+	}
+
+
+
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.card {
+  min-height: 35rem;
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+  border-radius: .6rem;
+  padding: 3rem 2rem;
+  margin-top: 3rem;
+  box-shadow:0 0.4rem 0.8rem 0 rgba(23, 40, 52 , 8%)
+
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 2rem;
+  //  position: absolute;
+  z-index: 1;
+}
+
+
+#donutchart-vaccination-status{
+//  text-align: -webkit-center;
+  margin-top:2rem;
+}
+
+.donut-caption{
+  font-size: 1rem;
+}
+
+.value{
+  text-align: center;
+  margin-top: -123px;
+  position: relative;
+}
+
+.legends{
+  text-align: left;
+  left: 0;
+  right: 0;
+  margin-top:4rem;
+}
+
+
+
+.right{}
+
+
+.legend-item{
+	margin-top:15px;
+}
+
+.vaccinated{
+color: $success;
+}
+
+.scheduled{
+color:$warning;
+}
+
+.not-scheduled{
+  color:$danger;
+}
+
+.not-disclose{
+  color:$info;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;ec_vaccination_status&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;EC - Vaccination Status&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+
+	var gr = new GlideRecord('sn_ex_sp_pro_customers');
+	gr.addEncodedQuery('u_active=true');
+	gr.orderByDesc('sys_updated_on');
+	gr.query();
+	if(gr.next()){
+		data.success = gr.getValue('u_success');
+		data.warning = gr.getValue('u_warning');
+		data.danger = gr.getValue('u_danger');
+		data.info = gr.getValue('u_info');
+	}
+
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-17 12:57:28&lt;/sys_created_on&gt;&lt;sys_id&gt;542491151b8af81012985240604bcb4c&lt;/sys_id&gt;&lt;sys_mod_count&gt;140&lt;/sys_mod_count&gt;&lt;sys_name&gt;EC - Vaccination Status&lt;/sys_name&gt;&lt;sys_package display_value="Employee Center Pro" source="sn_ex_sp_pro"&gt;236addd4d75048c1a5f250d73c064976&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Employee Center Pro"&gt;236addd4d75048c1a5f250d73c064976&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_542491151b8af81012985240604bcb4c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-26 07:56:53&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class = "card" id = "vaccination-status"&gt;
+  &lt;div class="card-title"&gt;
+    Vaccination Status
+  &lt;/div&gt;
+
+  &lt;div class = "row legend-item"&gt;
+    &lt;div id="donutchart-vaccination-status" class = "col-md-7" &gt;&lt;/div&gt;
+    &lt;div class = "legends col-md-5"&gt;
+      &lt;div class = "row"&gt;
+        &lt;div class = "col-md-1"&gt;
+          &lt;i class = "fa fa-square vaccinated"&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class = "col-md-9"&gt;Vaccinated
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+
+      &lt;div class = "row legend-item"&gt;
+        &lt;div class = "col-md-1"&gt;
+          &lt;i class = "fa fa-square scheduled"&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class = "col-md-9"&gt;Scheduled
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class = "row legend-item"&gt;
+        &lt;div class = "col-md-1"&gt;
+          &lt;i class = "fa fa-square not-scheduled"&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class = "col-md-9"&gt;Not scheduled
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class = "row legend-item"&gt;
+        &lt;div class = "col-md-1"&gt;
+          &lt;i class = "fa fa-square not-disclose"&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class = "col-md-9"&gt;Did not disclose
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-04-02 17:19:45</sys_created_on>
+        <sys_id>95aa543e9722c9104204fe7fe153af83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>d5aa5cfa9722c9104204fe7fe153af3e</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_95aa543e9722c9104204fe7fe153af83</sys_update_name>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-04-02 17:19:45</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>

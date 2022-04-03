@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="RaaS_Alberi_Piantati" max_length="40" name="x_snc_tree4meeting_st_raas_alberi_piantati" sizeclass="0" type="collection">
+        <element default="javascript:gs.getProperty('x_snc_tree4meeting.digitalhumani_enterpriseid');" label="EnterpriseID" max_length="40" name="enterpriseid" type="string"/>
+        <element label="Trees" max_length="40" name="trees" type="integer"/>
+        <element default="javascript:gs.getProperty('x_snc_tree4meeting.digitalhumani_user');" label="User" max_length="40" name="user" type="string"/>
+    </element>
+</database>

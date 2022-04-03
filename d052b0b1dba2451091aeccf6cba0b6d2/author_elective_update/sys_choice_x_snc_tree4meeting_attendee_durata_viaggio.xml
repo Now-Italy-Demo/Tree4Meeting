@@ -21,80 +21,100 @@
             <element>durata_viaggio</element>
             <hint/>
             <inactive>false</inactive>
-            <label>meno di un'ora</label>
+            <label>Meno di un'ora</label>
             <language>en</language>
             <name>x_snc_tree4meeting_attendee</name>
-            <sequence>10</sequence>
+            <sequence>0</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-31 09:35:59</sys_created_on>
+            <sys_created_on>2022-04-01 13:58:02</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>a05dd446472a8510d06e1d51e36d43e5</sys_id>
+            <sys_id>74e2661a47e24910d06e1d51e36d4352</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-31 09:35:59</sys_updated_on>
-            <value>meno_di_un_ora</value>
+            <sys_updated_on>2022-04-01 13:58:02</sys_updated_on>
+            <value>1</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>durata_viaggio</element>
             <hint/>
             <inactive>false</inactive>
-            <label>entro le 2 ore</label>
+            <label>Entro le 2 ore</label>
             <language>en</language>
             <name>x_snc_tree4meeting_attendee</name>
-            <sequence>20</sequence>
+            <sequence>1</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-31 09:36:00</sys_created_on>
+            <sys_created_on>2022-04-01 13:58:02</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>e05d1846472a8510d06e1d51e36d4304</sys_id>
+            <sys_id>f4e2661a47e24910d06e1d51e36d4353</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-31 09:36:00</sys_updated_on>
-            <value>entro_le_2_ore</value>
+            <sys_updated_on>2022-04-01 13:58:02</sys_updated_on>
+            <value>2</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>durata_viaggio</element>
             <hint/>
             <inactive>false</inactive>
-            <label>entro le 5 ore</label>
+            <label>Entro le 3 ore</label>
             <language>en</language>
             <name>x_snc_tree4meeting_attendee</name>
-            <sequence>30</sequence>
+            <sequence>2</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-31 09:36:00</sys_created_on>
+            <sys_created_on>2022-04-01 13:58:02</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>6c5dd446472a8510d06e1d51e36d43e8</sys_id>
+            <sys_id>78e2661a47e24910d06e1d51e36d4354</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-31 09:36:00</sys_updated_on>
-            <value>entro_le_5_ore</value>
+            <sys_updated_on>2022-04-01 13:58:02</sys_updated_on>
+            <value>3</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>durata_viaggio</element>
             <hint/>
             <inactive>false</inactive>
-            <label>più di 5 ore</label>
+            <label>Più di 3 ore</label>
             <language>en</language>
             <name>x_snc_tree4meeting_attendee</name>
-            <sequence>40</sequence>
+            <sequence>3</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-31 09:36:00</sys_created_on>
+            <sys_created_on>2022-04-01 13:58:02</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>605d1846472a8510d06e1d51e36d4308</sys_id>
+            <sys_id>f8e2661a47e24910d06e1d51e36d4355</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-03-31 09:36:00</sys_updated_on>
-            <value>pi_di_5_ore</value>
+            <sys_updated_on>2022-04-01 13:58:02</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>durata_viaggio</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Nulla</label>
+            <language>en</language>
+            <name>x_snc_tree4meeting_attendee</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-01 15:48:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8b3c369247a64910d06e1d51e36d435d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-01 15:48:46</sys_updated_on>
+            <value>0</value>
         </sys_choice>
     </sys_choice>
 </record_update>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="T4M - Manager Center Banner">b05b1c3e9722c9104204fe7fe153af1b</child>
+        <cloned>2022-04-02 17:22:42</cloned>
+        <last_validated>2022-04-02 17:22:42</last_validated>
+        <parent display_value="EC - Manager Center Banner">a7452b481b16f850211eea46624bcb73</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.mc-banner{
+  color: white;
+  padding: 14rem 19rem;
+  position:absolute;
+}
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;EC - Manager Center Banner&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-26 12:35:26&lt;/sys_created_on&gt;&lt;sys_id&gt;a7452b481b16f850211eea46624bcb73&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;EC - Manager Center Banner&lt;/sys_name&gt;&lt;sys_package display_value="Employee Center Pro" source="sn_ex_sp_pro"&gt;236addd4d75048c1a5f250d73c064976&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Employee Center Pro"&gt;236addd4d75048c1a5f250d73c064976&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_a7452b481b16f850211eea46624bcb73&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-26 13:05:29&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class = "mc-banner"&gt;
+  &lt;h1&gt;Manager Center&lt;/h1&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-04-02 17:22:42</sys_created_on>
+        <sys_id>b85bd87e9722c9104204fe7fe153af9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>b05b1c3e9722c9104204fe7fe153af1b</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_b85bd87e9722c9104204fe7fe153af9d</sys_update_name>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-04-02 17:22:42</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>

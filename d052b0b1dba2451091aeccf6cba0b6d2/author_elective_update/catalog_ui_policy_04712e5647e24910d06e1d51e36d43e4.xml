@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_ui_policy">
+    <catalog_ui_policy action="DELETE">
+        <active>true</active>
+        <applies_catalog>false</applies_catalog>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>true</applies_target_record>
+        <applies_to>item</applies_to>
+        <catalog_conditions>IO:8b9155c247a2c510d06e1d51e36d4371=aereo^EQ</catalog_conditions>
+        <catalog_item display_value="Calcola il tuo carbon footprint">f88fa806472e8510d06e1d51e36d43d2</catalog_item>
+        <conditions/>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>false</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+
+}]]></script_true>
+        <set_values/>
+        <short_description>Calcola l'impatto della durata del volo aereo</short_description>
+        <sys_class_name>catalog_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-01 13:52:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>04712e5647e24910d06e1d51e36d43e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Calcola l'impatto della durata del volo aereo</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>catalog_ui_policy_04712e5647e24910d06e1d51e36d43e4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-01 13:52:46</sys_updated_on>
+        <table/>
+        <ui_type>0</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_ui_policy>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</application>
+        <file_path/>
+        <instance_id>c9d8446ddbc245500ae3ac44d49619bc</instance_id>
+        <instance_name>digitalex</instance_name>
+        <name>catalog_ui_policy_04712e5647e24910d06e1d51e36d43e4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="catalog_ui_policy"&gt;&lt;catalog_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_catalog&gt;false&lt;/applies_catalog&gt;&lt;applies_req_item&gt;false&lt;/applies_req_item&gt;&lt;applies_sc_task&gt;false&lt;/applies_sc_task&gt;&lt;applies_target_record&gt;true&lt;/applies_target_record&gt;&lt;applies_to&gt;item&lt;/applies_to&gt;&lt;catalog_conditions&gt;IO:8b9155c247a2c510d06e1d51e36d4371=aereo^EQ&lt;/catalog_conditions&gt;&lt;catalog_item display_value="Calcola il tuo carbon footprint"&gt;f88fa806472e8510d06e1d51e36d43d2&lt;/catalog_item&gt;&lt;conditions/&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;100&lt;/order&gt;&lt;reverse_if_false&gt;true&lt;/reverse_if_false&gt;&lt;run_scripts&gt;false&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;Calcola l'impatto della durata del volo aereo&lt;/short_description&gt;&lt;sys_class_name&gt;catalog_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-04-01 13:52:46&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;04712e5647e24910d06e1d51e36d43e4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Calcola l'impatto della durata del volo aereo&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting"&gt;d052b0b1dba2451091aeccf6cba0b6d2&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Tree4Meeting"&gt;d052b0b1dba2451091aeccf6cba0b6d2&lt;/sys_scope&gt;&lt;sys_update_name&gt;catalog_ui_policy_04712e5647e24910d06e1d51e36d43e4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-04-01 13:52:46&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;variable_set/&gt;&lt;view/&gt;&lt;/catalog_ui_policy&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1911579292</payload_hash>
+        <record_name>Calcola l'impatto della durata del volo aereo</record_name>
+        <reverted_from/>
+        <source>85f41ade97aa09104204fe7fe153af62</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-01 13:52:46</sys_created_on>
+        <sys_id>a7a1a29647e24910d06e1d51e36d43ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17fe566617f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-01 13:52:46</sys_updated_on>
+        <type>Catalog UI Policy</type>
+        <update_guid>afa1a296e9e24910573637de53b44ce9</update_guid>
+        <update_guid_history>afa1a296e9e24910573637de53b44ce9:-1911579292</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Calcola l'impatto della durata del volo aereo">20c1669647e24910d06e1d51e36d437e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-01 13:53:06</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy">catalog_ui_policy</sys_db_object>
+        <sys_id>192d3017c25843e086685c8d6ccef289</sys_id>
+        <sys_metadata>04712e5647e24910d06e1d51e36d43e4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Calcola l'impatto della durata del volo aereo</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_scope_delete display_value="">54abed2950fa4d7e91db49e53ca19f84</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_04712e5647e24910d06e1d51e36d43e4</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_04712e5647e24910d06e1d51e36d43e4">a7a1a29647e24910d06e1d51e36d43ea</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-01 13:53:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

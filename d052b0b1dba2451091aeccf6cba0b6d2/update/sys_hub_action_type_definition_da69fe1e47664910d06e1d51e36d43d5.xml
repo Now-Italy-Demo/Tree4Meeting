@@ -1,0 +1,3513 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-sandiego-12-22-2021__patch1-03-02-2022_03-17-2022_1811.zip</compiler_build>
+        <copied_from>9fae8446972685104204fe7fe153af06</copied_from>
+        <copied_from_name>CFC Calculate</copied_from_name>
+        <description/>
+        <ih_action>true</ih_action>
+        <internal_name>cfc_calculate_direct</internal_name>
+        <label_cache>[{"name":"{{action.token}}","label":"action➛token","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"4391f8c7-e116-4a51-bb57-315355d4a9c0"}},{"name":"{{action.userdata}}","label":"action➛userData","type":"action","ref":"","reference_display":"Partecipante","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"reference","uiUniqueId":"3dab525c-b66d-488d-b1a5-fa6698d1fd2a"}},{"name":"{{action.userdata.distanza_percorsa}}","label":"action➛userData➛Distanza percorsa","type":"action","ref":"","reference_display":"Distanza percorsa","base_type":"choice","parent_table_name":"x_snc_tree4meeting_attendee","column_name":"distanza_percorsa","choices":[{"reference":false,"image":"","rawLabel":"-- None --","missing":false,"label":"-- None --","used":false,"value":"","selected":false},{"reference":false,"image":"","rawLabel":"5km","missing":false,"used":false,"label":"5km","value":"3","parameters":{"name":"x_snc_tree4meeting_attendee"},"selected":false},{"reference":false,"image":"","rawLabel":"20km","missing":false,"used":false,"label":"20km","value":"12","parameters":{"name":"x_snc_tree4meeting_attendee"},"selected":false},{"reference":false,"image":"","rawLabel":"50km","missing":false,"used":false,"label":"50km","value":"31","parameters":{"name":"x_snc_tree4meeting_attendee"},"selected":false},{"reference":false,"image":"","rawLabel":"100km","missing":false,"used":false,"label":"100km","value":"62","parameters":{"name":"x_snc_tree4meeting_attendee"},"selected":false},{"reference":false,"image":"","rawLabel":"Oltre i 100km","missing":false,"used":false,"label":"Oltre i 100km","value":"125","parameters":{"name":"x_snc_tree4meeting_attendee"},"selected":false}],"attributes":{}},{"name":"{{action.userdata.consumo_mezzo}}","label":"action➛userData➛Consumo mezzo","type":"action","ref":"","reference_display":"Consumo mezzo","base_type":"decimal","parent_table_name":"x_snc_tree4meeting_attendee","column_name":"consumo_mezzo","choices":null,"attributes":{}},{"name":"{{action.userdata.durata_viaggio}}","label":"action➛userData➛Durata viaggio","type":"action","ref":"","reference_display":"Durata viaggio","base_type":"choice","parent_table_name":"x_snc_tree4meeting_attendee","column_name":"durata_viaggio","choices":[{"reference":false,"image":"","rawLabel":"-- None --","missing":false,"label":"-- None --","used":false,"value":"","selected":false},{"reference":false,"image":"","rawLabel":"Meno di un'ora","missing":false,"used":false,"label":"Meno di un'ora","value":"1","parameters":{"name":"x_snc_tree4meeting_attendee"},"selected":false},{"reference":false,"image":"","rawLabel":"Entro le 2 ore","missing":false,"used":false,"label":"Entro le 2 ore","value":"2","parameters":{"name":"x_snc_tree4meeting_attendee"},"selected":false},{"reference":false,"image":"","rawLabel":"Entro le 3 ore","missing":false,"used":false,"label":"Entro le 3 ore","value":"3","parameters":{"name":"x_snc_tree4meeting_attendee"},"selected":false},{"reference":false,"image":"","rawLabel":"Più di 3 ore","missing":false,"used":false,"label":"Più di 3 ore","value":"5","parameters":{"name":"x_snc_tree4meeting_attendee"},"selected":false}],"attributes":{}},{"name":"{{action.distanza_percorsa}}","label":"action➛Distanza Percorsa","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"distanza_percorsa","choices":[],"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"0afca282-6b59-441c-bd6d-2e2f78f506e6"}},{"name":"{{action.durata_viaggio}}","label":"action➛Durata Viaggio","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[],"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"3afeaf8f-2752-4732-a7e7-0952e9ba7217"}},{"name":"{{action.consumo_mezzo}}","label":"action➛Consumo Mezzo","type":"action","ref":"","reference_display":"","base_type":"decimal","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"d8096516-2363-45e3-9b7a-2421668234ff"}},{"name":"{{step[2ae7bad8-6170-4d32-8d95-427b90a10456].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[9303a2f1-eb9a-454d-ac78-3a4de41ad883].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9303a2f1-eb9a-454d-ac78-3a4de41ad883].data}}","label":"step➛Script step➛data","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a0107e1c-a2cd-4bf3-b1b1-469c914bfb9f].payload}}","label":"step➛Payload Builder step➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[65c68950-8b10-460e-a813-4b16023f21a4].response_body}}","label":"step➛Get Projects➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[acc6d23b-e83d-49e5-be61-5e222fda4c6a].variable}}","label":"step➛JSON Parser step➛variable","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[acc6d23b-e83d-49e5-be61-5e222fda4c6a].root.root_array}}","label":"step➛JSON Parser step➛root➛root_array","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[7fc2a2fe-ad5a-46c5-aed5-7f8658459888].response_body}}","label":"step➛Get Project Details➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationCompanyName_en}}","label":"step➛Parse Project Details➛root➛reforestationCompanyName_en","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationProjectCountry_fr}}","label":"step➛Parse Project Details➛root➛reforestationProjectCountry_fr","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationProjectState_en}}","label":"step➛Parse Project Details➛root➛reforestationProjectState_en","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationProjectDescription_en}}","label":"step➛Parse Project Details➛root➛reforestationProjectDescription_en","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationCompanyWebsite_en}}","label":"step➛Parse Project Details➛root➛reforestationCompanyWebsite_en","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[620f9d25-edcc-44dd-8754-f09e89be4921].response_body}}","label":"step➛Get Enterprise Details➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[2ae1aea0-7eb0-4fa2-b547-a9ddf66f035d].root.name}}","label":"step➛Parse Enterprise Details➛root➛name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2ae1aea0-7eb0-4fa2-b547-a9ddf66f035d].root.created}}","label":"step➛Parse Enterprise Details➛root➛created","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2ae1aea0-7eb0-4fa2-b547-a9ddf66f035d].root.contact.name}}","label":"step➛Parse Enterprise Details➛root➛contact➛name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2ae1aea0-7eb0-4fa2-b547-a9ddf66f035d].root.contact.email}}","label":"step➛Parse Enterprise Details➛root➛contact➛email","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[dbd28190-a281-47d6-a015-9b5de142266c].payload}}","label":"step➛Payload Builder step➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[43c03dcb-b582-4a5c-b7c5-3943b51d1fa9].response_body}}","label":"step➛Plant Tree➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[0e48f511-a5f9-4a0d-b099-78929685cd47].root.uuid}}","label":"step➛JSON Parser step➛root➛uuid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0e48f511-a5f9-4a0d-b099-78929685cd47].root.created}}","label":"step➛JSON Parser step➛root➛created","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[d382bc7f-8242-43b1-94a1-ed0bdf5eca2e].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[d382bc7f-8242-43b1-94a1-ed0bdf5eca2e].distanza}}","label":"step➛Script step➛distanza","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[85d21fad-c467-4f3f-b797-2c3a869291b5].root.data.tonsCarbon}}","label":"step➛JSON Parser step➛root➛data➛tonsCarbon","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[85d21fad-c467-4f3f-b797-2c3a869291b5].root.data.carbonPercent}}","label":"step➛JSON Parser step➛root➛data➛carbonPercent","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[85d21fad-c467-4f3f-b797-2c3a869291b5].root.data.total}}","label":"step➛JSON Parser step➛root➛data➛total","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master_snapshot>5498031a47e64910d06e1d51e36d431a</master_snapshot>
+        <name>CFC Calculate Direct</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>da69fe1e47664910d06e1d51e36d43d5</sys_id>
+        <sys_mod_count>57</sys_mod_count>
+        <sys_name>CFC Calculate Direct</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_da69fe1e47664910d06e1d51e36d43d5</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:56</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=da69fe1e47664910d06e1d51e36d43d5"/>
+    <sys_variable_value action="delete_multiple" query="document_key=da69fe1e47664910d06e1d51e36d43d5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>da69fe1e47664910d06e1d51e36d43d5</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:05:21</sys_created_on>
+        <sys_id>30cd03d2472a4910d06e1d51e36d4340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:21</sys_updated_on>
+        <value/>
+        <variable display_value="CO2">bccd03d2472a4910d06e1d51e36d431c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>da69fe1e47664910d06e1d51e36d43d5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:28</sys_created_on>
+        <sys_id>3669325e47664910d06e1d51e36d435f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:37:20</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDa669325efe664910cc69b0a1e86ffd42":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDa669325efe664910cc69b0a1e86ffd42.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"bfc5eb04-b7ef-482d-9290-515dce0180f5\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDa669325efe664910cc69b0a1e86ffd42\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <variable display_value="Action Status">2e69325e47664910d06e1d51e36d4345</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>da69fe1e47664910d06e1d51e36d43d5</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:28</sys_created_on>
+        <sys_id>7269325e47664910d06e1d51e36d435f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:28</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">2269325e47664910d06e1d51e36d434c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>da69fe1e47664910d06e1d51e36d43d5</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:05:21</sys_created_on>
+        <sys_id>f0cd03d2472a4910d06e1d51e36d4340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:21</sys_updated_on>
+        <value/>
+        <variable display_value="Ettari equivalenti">f4cd03d2472a4910d06e1d51e36d4337</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>da69fe1e47664910d06e1d51e36d43d5</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:05:21</sys_created_on>
+        <sys_id>f4cd03d2472a4910d06e1d51e36d433f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:21</sys_updated_on>
+        <value/>
+        <variable display_value="Percentuale CO2">38cd03d2472a4910d06e1d51e36d432a</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=da69fe1e47664910d06e1d51e36d43d5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>co2</field>
+        <id>da69fe1e47664910d06e1d51e36d43d5</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:25:44</sys_created_on>
+        <sys_id>ecb44b5247e64910d06e1d51e36d433c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:25:44</sys_updated_on>
+        <table>var__m_sys_hub_action_output_da69fe1e47664910d06e1d51e36d43d5</table>
+        <value>{{step[85d21fad-c467-4f3f-b797-2c3a869291b5].root.data.tonsCarbon}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>data</field>
+        <id>da69fe1e47664910d06e1d51e36d43d5</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:28</sys_created_on>
+        <sys_id>7a69325e47664910d06e1d51e36d435e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:28</sys_updated_on>
+        <table>var__m_sys_hub_action_output_da69fe1e47664910d06e1d51e36d43d5</table>
+        <value>{{step[2ae7bad8-6170-4d32-8d95-427b90a10456].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ettari_equivalenti</field>
+        <id>da69fe1e47664910d06e1d51e36d43d5</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:25:44</sys_created_on>
+        <sys_id>2cb44b5247e64910d06e1d51e36d433c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:25:44</sys_updated_on>
+        <table>var__m_sys_hub_action_output_da69fe1e47664910d06e1d51e36d43d5</table>
+        <value>{{step[85d21fad-c467-4f3f-b797-2c3a869291b5].root.data.total}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>percentuale_co2</field>
+        <id>da69fe1e47664910d06e1d51e36d43d5</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:25:44</sys_created_on>
+        <sys_id>64b44b5247e64910d06e1d51e36d433c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:25:44</sys_updated_on>
+        <table>var__m_sys_hub_action_output_da69fe1e47664910d06e1d51e36d43d5</table>
+        <value>{{step[85d21fad-c467-4f3f-b797-2c3a869291b5].root.data.carbonPercent}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>da69fe1e47664910d06e1d51e36d43d5</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:28</sys_created_on>
+        <sys_id>fe69325e47664910d06e1d51e36d435e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:28</sys_updated_on>
+        <table>var__m_sys_hub_action_output_da69fe1e47664910d06e1d51e36d43d5</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>da69fe1e47664910d06e1d51e36d43d5</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:28</sys_created_on>
+        <sys_id>3e69325e47664910d06e1d51e36d435e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:28</sys_updated_on>
+        <table>var__m_sys_hub_action_output_da69fe1e47664910d06e1d51e36d43d5</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=da69fe1e47664910d06e1d51e36d43d5^sys_idNOT IN60d3c31247e64910d06e1d51e36d43b3,ee69325e47664910d06e1d51e36d4320"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="CFC Calculate Direct">da69fe1e47664910d06e1d51e36d43d5</action>
+        <cid>85d21fad-c467-4f3f-b797-2c3a869291b5</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:21:56</sys_created_on>
+        <sys_id>60d3c31247e64910d06e1d51e36d43b3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:21:56</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=60d3c31247e64910d06e1d51e36d43b3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>60d3c31247e64910d06e1d51e36d43b3</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:21:56</sys_created_on>
+        <sys_id>bcd3c31247e64910d06e1d51e36d43c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:21:56</sys_updated_on>
+        <value>structured</value>
+        <variable display_value="Payload view">95d4280787523300f917e55936cb0bfe</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>60d3c31247e64910d06e1d51e36d43b3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:21:56</sys_created_on>
+        <sys_id>f0d3c31247e64910d06e1d51e36d43c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:21:56</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"data","children":[{"name":"countryCode","children":[],"type":"string","jpath":"$.data.countryCode","previewValue":"62"},{"name":"date","children":[],"type":"string","jpath":"$.data.date","previewValue":"2022-05-24T00:00:00.000+00:00"},{"name":"tonsCarbon","children":[],"type":"string","jpath":"$.data.tonsCarbon","previewValue":"6.372991752683887"},{"name":"earth","children":[],"type":"string","jpath":"$.data.earth","previewValue":"2.548045129028097"},{"name":"carbonPercent","children":[],"type":"string","jpath":"$.data.carbonPercent","previewValue":"52.78577179431888"},{"name":"total","children":[],"type":"string","jpath":"$.data.total","previewValue":"4.153313560315798"},{"name":"crop","children":[],"type":"string","jpath":"$.data.crop","previewValue":"1.1425489053559215"},{"name":"graz","children":[],"type":"string","jpath":"$.data.graz","previewValue":"0.09788397176045374"},{"name":"forest","children":[],"type":"string","jpath":"$.data.forest","previewValue":"0.4714176363210534"},{"name":"fish","children":[],"type":"string","jpath":"$.data.fish","previewValue":"0.10283951269678336"},{"name":"energy","children":[],"type":"string","jpath":"$.data.energy","previewValue":"2.1923586178507977"},{"name":"built","children":[],"type":"string","jpath":"$.data.built","previewValue":"0.14626491633078892"},{"name":"food","children":[],"type":"string","jpath":"$.data.food","previewValue":"1.343432567282014"},{"name":"housing","children":[],"type":"string","jpath":"$.data.housing","previewValue":"0.6371938216080403"},{"name":"transport","children":[],"type":"string","jpath":"$.data.transport","previewValue":"0.6348432526495201"},{"name":"goods","children":[],"type":"string","jpath":"$.data.goods","previewValue":"1.0248019353075495"},{"name":"services","children":[],"type":"string","jpath":"$.data.services","previewValue":"0.5130419834686724"}],"type":"object","jpath":"$.data","previewValue":""},{"name":"status","children":[{"name":"message","children":[],"type":"string","jpath":"$.status.message","previewValue":""},{"name":"code","children":[],"type":"string","jpath":"$.status.code","previewValue":"200"},{"name":"status","children":[],"type":"string","jpath":"$.status.status","previewValue":"200 OK"}],"type":"object","jpath":"$.status","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>60d3c31247e64910d06e1d51e36d43b3</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:21:56</sys_created_on>
+        <sys_id>f8d3c31247e64910d06e1d51e36d43c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:21:56</sys_updated_on>
+        <value>{"data":{"countryCode":62,"date":"2022-05-24T00:00:00.000+00:00","tonsCarbon":6.372991752683887,"earth":2.548045129028097,"carbonPercent":52.78577179431888,"total":4.153313560315798,"crop":1.1425489053559215,"graz":0.09788397176045374,"forest":0.4714176363210534,"fish":0.10283951269678336,"energy":2.1923586178507977,"built":0.14626491633078892,"food":1.343432567282014,"housing":0.6371938216080403,"transport":0.6348432526495201,"goods":1.0248019353075495,"services":0.5130419834686724},"status":{"message":"","code":200,"status":"200 OK"}}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_60d3c31247e64910d06e1d51e36d43b3^id=60d3c31247e64910d06e1d51e36d43b3"/>
+    <sys_element_mapping action="delete_multiple" query="id=60d3c31247e64910d06e1d51e36d43b3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>payload_view</field>
+        <id>60d3c31247e64910d06e1d51e36d43b3</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:21:56</sys_created_on>
+        <sys_id>bcd3c31247e64910d06e1d51e36d43c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:21:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>60d3c31247e64910d06e1d51e36d43b3</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:21:56</sys_created_on>
+        <sys_id>70d3c31247e64910d06e1d51e36d43c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:21:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>60d3c31247e64910d06e1d51e36d43b3</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:21:56</sys_created_on>
+        <sys_id>34d3c31247e64910d06e1d51e36d43c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:21:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[2ae7bad8-6170-4d32-8d95-427b90a10456].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>60d3c31247e64910d06e1d51e36d43b3</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:21:56</sys_created_on>
+        <sys_id>f8d3c31247e64910d06e1d51e36d43c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:21:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=60d3c31247e64910d06e1d51e36d43b3"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=60d3c31247e64910d06e1d51e36d43b3^sys_idNOT IN74d3c31247e64910d06e1d51e36d43ba"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDe0d3c312c5e64910c9371ba5dac864b7,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=953824a6-dd8b-4b42-8aab-01cdc71fac93</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">60d3c31247e64910d06e1d51e36d43b3</model>
+        <model_id>60d3c31247e64910d06e1d51e36d43b3</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_60d3c31247e64910d06e1d51e36d43b3</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:21:56</sys_created_on>
+        <sys_id>74d3c31247e64910d06e1d51e36d43ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:21:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=60d3c31247e64910d06e1d51e36d43b3"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_60d3c31247e64910d06e1d51e36d43b3^sys_idNOT IN30d3c31247e64910d06e1d51e36d43bf"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_60d3c31247e64910d06e1d51e36d43b3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:21:56</sys_created_on>
+        <sys_id>30d3c31247e64910d06e1d51e36d43bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:21:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="CFC Calculate Direct">da69fe1e47664910d06e1d51e36d43d5</action>
+        <cid>2ae7bad8-6170-4d32-8d95-427b90a10456</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:27</sys_created_on>
+        <sys_id>ee69325e47664910d06e1d51e36d4320</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:15:54</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ee69325e47664910d06e1d51e36d4320"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ee69325e47664910d06e1d51e36d4320</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:27</sys_created_on>
+        <sys_id>2269325e47664910d06e1d51e36d433e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:38:21</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ee69325e47664910d06e1d51e36d4320</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:27</sys_created_on>
+        <sys_id>2e69325e47664910d06e1d51e36d433e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:27</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ee69325e47664910d06e1d51e36d4320</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:38:47</sys_created_on>
+        <sys_id>30f9be5e47664910d06e1d51e36d43e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:38:47</sys_updated_on>
+        <value>https://api.footprintcalculator.org/v2/calculate</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ee69325e47664910d06e1d51e36d4320</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:27</sys_created_on>
+        <sys_id>6a69325e47664910d06e1d51e36d433e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:27</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ee69325e47664910d06e1d51e36d4320</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:27</sys_created_on>
+        <sys_id>6e69325e47664910d06e1d51e36d433d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:27</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ee69325e47664910d06e1d51e36d4320</document_key>
+        <order>45</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:39:06</sys_created_on>
+        <sys_id>9d0a329e47664910d06e1d51e36d4371</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:15:54</sys_updated_on>
+        <value/>
+        <variable display_value="Request Body[Text]">6c6073f1c71003007b237f48cb97633b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ee69325e47664910d06e1d51e36d4320</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:27</sys_created_on>
+        <sys_id>a269325e47664910d06e1d51e36d433d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:27</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ee69325e47664910d06e1d51e36d4320</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:27</sys_created_on>
+        <sys_id>a669325e47664910d06e1d51e36d433e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:27</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ee69325e47664910d06e1d51e36d4320</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:27</sys_created_on>
+        <sys_id>aa69325e47664910d06e1d51e36d433d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:27</sys_updated_on>
+        <value>post</value>
+        <variable display_value="HTTP Method">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ee69325e47664910d06e1d51e36d4320</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:27</sys_created_on>
+        <sys_id>e269325e47664910d06e1d51e36d433e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:27</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ee69325e47664910d06e1d51e36d4320"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>ee69325e47664910d06e1d51e36d4320</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:27</sys_created_on>
+        <sys_id>aa69325e47664910d06e1d51e36d433c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:27</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>ee69325e47664910d06e1d51e36d4320</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:27</sys_created_on>
+        <sys_id>e669325e47664910d06e1d51e36d433c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:38:47</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>body</field>
+        <id>ee69325e47664910d06e1d51e36d4320</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:27</sys_created_on>
+        <sys_id>6269325e47664910d06e1d51e36d433b</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:15:54</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{
+    "country": 62,
+    "source": "result1",
+    "answers": [
+        {
+            "questionid": 25,
+            "value": {{action.distanza_percorsa}}
+        },
+        {
+            "questionid": 26,
+            "value": 0
+        },
+        {
+            "questionid": 27,
+            "value": {{action.consumo_mezzo}}
+        },
+        {
+            "questionid": 28,
+            "value": {{action.consumo_mezzo}}
+        },
+        {
+            "questionid": 29,
+            "value": 0
+        },
+        {
+            "questionid": 30,
+            "value": {{action.distanza_percorsa}}
+        },
+        {
+            "questionid": 31,
+            "value": {{action.distanza_percorsa}}
+        },
+        {
+            "questionid": 32,
+            "value": 0
+        },
+        {
+            "questionid": 33,
+            "value": {{action.durata_viaggio}}
+        }
+    ]
+}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>ee69325e47664910d06e1d51e36d4320</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:27</sys_created_on>
+        <sys_id>2669325e47664910d06e1d51e36d433c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:27</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>ee69325e47664910d06e1d51e36d4320</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:27</sys_created_on>
+        <sys_id>ae69325e47664910d06e1d51e36d433b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:27</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>ee69325e47664910d06e1d51e36d4320</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:27</sys_created_on>
+        <sys_id>2269325e47664910d06e1d51e36d433d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:27</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>ee69325e47664910d06e1d51e36d4320</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:27</sys_created_on>
+        <sys_id>6269325e47664910d06e1d51e36d433c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:39:42</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"Authorization","value":"Bearer  {{action.token}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"Content-Type","value":"application/json","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>ee69325e47664910d06e1d51e36d4320</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:27</sys_created_on>
+        <sys_id>2a69325e47664910d06e1d51e36d433b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:27</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>http_method</field>
+        <id>ee69325e47664910d06e1d51e36d4320</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:27</sys_created_on>
+        <sys_id>ea69325e47664910d06e1d51e36d433b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:27</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>ee69325e47664910d06e1d51e36d4320</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:27</sys_created_on>
+        <sys_id>6e69325e47664910d06e1d51e36d433c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:27</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=ee69325e47664910d06e1d51e36d4320"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=ee69325e47664910d06e1d51e36d4320"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ee69325e47664910d06e1d51e36d4320"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_ee69325e47664910d06e1d51e36d4320"/>
+    <sys_hub_action_input action="delete_multiple" query="model=da69fe1e47664910d06e1d51e36d43d5^sys_idNOT IN60ac0b12472a4910d06e1d51e36d43a4,6dfb8b9e47e64910d06e1d51e36d4339,aa69325e47664910d06e1d51e36d4302,e0cdcf92472a4910d06e1d51e36d439b"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=3afeaf8f-2752-4732-a7e7-0952e9ba7217</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>durata_viaggio</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Durata Viaggio</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="CFC Calculate Direct">da69fe1e47664910d06e1d51e36d43d5</model>
+        <model_id>da69fe1e47664910d06e1d51e36d43d5</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_da69fe1e47664910d06e1d51e36d43d5</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:00:25</sys_created_on>
+        <sys_id>60ac0b12472a4910d06e1d51e36d43a4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:00:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=60ac0b12472a4910d06e1d51e36d43a4"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=0afca282-6b59-441c-bd6d-2e2f78f506e6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field>distanza_percorsa</choice_field>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>distanza_percorsa</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Distanza Percorsa</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="CFC Calculate Direct">da69fe1e47664910d06e1d51e36d43d5</model>
+        <model_id>da69fe1e47664910d06e1d51e36d43d5</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_da69fe1e47664910d06e1d51e36d43d5</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:57:30</sys_created_on>
+        <sys_id>6dfb8b9e47e64910d06e1d51e36d4339</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:57:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6dfb8b9e47e64910d06e1d51e36d4339"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=4391f8c7-e116-4a51-bb57-315355d4a9c0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbmZvQGZvb3RwcmludGNhbGN1bGF0b3Iub3JnIiwiaWF0IjoxNjQ4ODI3MzQyLCJleHAiOjE2NDg5MTM3NDIsImF1dGhzIjpbIkdVRVNUIl19.ZHE2PUMuClUAInl9aEEHnjioKr66Oi4dRwwX5tTiXONMYsJOOTKLaOTs7JCZ6HZ8ckA_Q8eEQJVKx1MAV1CFwA</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>token</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="CFC Calculate Direct">da69fe1e47664910d06e1d51e36d43d5</model>
+        <model_id>da69fe1e47664910d06e1d51e36d43d5</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_da69fe1e47664910d06e1d51e36d43d5</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:27</sys_created_on>
+        <sys_id>aa69325e47664910d06e1d51e36d4302</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:37:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=aa69325e47664910d06e1d51e36d4302"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=decimal,uiTypeLabel=Decimal,uiUniqueId=d8096516-2363-45e3-9b7a-2421668234ff</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>consumo_mezzo</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Decimal">decimal</internal_type>
+        <label>Consumo Mezzo</label>
+        <mandatory>false</mandatory>
+        <max_length>15</max_length>
+        <model display_value="CFC Calculate Direct">da69fe1e47664910d06e1d51e36d43d5</model>
+        <model_id>da69fe1e47664910d06e1d51e36d43d5</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_da69fe1e47664910d06e1d51e36d43d5</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:05:20</sys_created_on>
+        <sys_id>e0cdcf92472a4910d06e1d51e36d439b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e0cdcf92472a4910d06e1d51e36d439b"/>
+    <sys_hub_action_output action="delete_multiple" query="model=da69fe1e47664910d06e1d51e36d43d5^sys_idNOT IN2269325e47664910d06e1d51e36d434c,2e69325e47664910d06e1d51e36d4345,38cd03d2472a4910d06e1d51e36d432a,bccd03d2472a4910d06e1d51e36d431c,f4cd03d2472a4910d06e1d51e36d4337"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=6ffe8937-4fd4-437b-be0a-8ca027d19667,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="CFC Calculate Direct">da69fe1e47664910d06e1d51e36d43d5</model>
+        <model_id>da69fe1e47664910d06e1d51e36d43d5</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_da69fe1e47664910d06e1d51e36d43d5</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:28</sys_created_on>
+        <sys_id>2269325e47664910d06e1d51e36d434c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2269325e47664910d06e1d51e36d434c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2269325e47664910d06e1d51e36d434c"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDa669325efe664910cc69b0a1e86ffd42,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=bfc5eb04-b7ef-482d-9290-515dce0180f5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="CFC Calculate Direct">da69fe1e47664910d06e1d51e36d43d5</model>
+        <model_id>da69fe1e47664910d06e1d51e36d43d5</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_da69fe1e47664910d06e1d51e36d43d5</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:28</sys_created_on>
+        <sys_id>2e69325e47664910d06e1d51e36d4345</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2e69325e47664910d06e1d51e36d4345"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2e69325e47664910d06e1d51e36d4345"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=percent_complete,uiTypeLabel=Percent Complete,uiUniqueId=0ef86d14-03ac-4a55-bb4e-9bec43884a8c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>percentuale_co2</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">percent_complete</internal_type>
+        <label>Percentuale CO2</label>
+        <mandatory>false</mandatory>
+        <max_length>15</max_length>
+        <model display_value="CFC Calculate Direct">da69fe1e47664910d06e1d51e36d43d5</model>
+        <model_id>da69fe1e47664910d06e1d51e36d43d5</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_da69fe1e47664910d06e1d51e36d43d5</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:05:21</sys_created_on>
+        <sys_id>38cd03d2472a4910d06e1d51e36d432a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=38cd03d2472a4910d06e1d51e36d432a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=38cd03d2472a4910d06e1d51e36d432a"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=decimal,uiTypeLabel=Decimal,uiUniqueId=7e53599a-ab47-4320-bfc1-4b1b5e82c7c0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>co2</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Decimal">decimal</internal_type>
+        <label>CO2</label>
+        <mandatory>false</mandatory>
+        <max_length>15</max_length>
+        <model display_value="CFC Calculate Direct">da69fe1e47664910d06e1d51e36d43d5</model>
+        <model_id>da69fe1e47664910d06e1d51e36d43d5</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_da69fe1e47664910d06e1d51e36d43d5</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:05:21</sys_created_on>
+        <sys_id>bccd03d2472a4910d06e1d51e36d431c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bccd03d2472a4910d06e1d51e36d431c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bccd03d2472a4910d06e1d51e36d431c"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=decimal,uiTypeLabel=Decimal,uiUniqueId=2684327c-6950-4342-aed9-d81ca47a662c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ettari_equivalenti</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Decimal">decimal</internal_type>
+        <label>Ettari equivalenti</label>
+        <mandatory>false</mandatory>
+        <max_length>15</max_length>
+        <model display_value="CFC Calculate Direct">da69fe1e47664910d06e1d51e36d43d5</model>
+        <model_id>da69fe1e47664910d06e1d51e36d43d5</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_da69fe1e47664910d06e1d51e36d43d5</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:05:21</sys_created_on>
+        <sys_id>f4cd03d2472a4910d06e1d51e36d4337</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f4cd03d2472a4910d06e1d51e36d4337"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f4cd03d2472a4910d06e1d51e36d4337"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=da69fe1e47664910d06e1d51e36d43d5"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=da69fe1e47664910d06e1d51e36d43d5^sys_idNOT IN7669325e47664910d06e1d51e36d4361"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="CFC Calculate Direct">da69fe1e47664910d06e1d51e36d43d5</action_type_id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:28</sys_created_on>
+        <sys_id>7669325e47664910d06e1d51e36d4361</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:28</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=7669325e47664910d06e1d51e36d4361"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_da69fe1e47664910d06e1d51e36d43d5^sys_idNOT IN20ac0b12472a4910d06e1d51e36d43ab,2269325e47664910d06e1d51e36d430b,28cdcf92472a4910d06e1d51e36d439f,f1fb8b9e47e64910d06e1d51e36d4340"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>durata_viaggio</element>
+        <help/>
+        <hint/>
+        <label>Durata Viaggio</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_da69fe1e47664910d06e1d51e36d43d5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:00:26</sys_created_on>
+        <sys_id>20ac0b12472a4910d06e1d51e36d43ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:00:26</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>token</element>
+        <help/>
+        <hint/>
+        <label>token</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_da69fe1e47664910d06e1d51e36d43d5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:27</sys_created_on>
+        <sys_id>2269325e47664910d06e1d51e36d430b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>consumo_mezzo</element>
+        <help/>
+        <hint/>
+        <label>Consumo Mezzo</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_da69fe1e47664910d06e1d51e36d43d5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:05:20</sys_created_on>
+        <sys_id>28cdcf92472a4910d06e1d51e36d439f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>distanza_percorsa</element>
+        <help/>
+        <hint/>
+        <label>Distanza Percorsa</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_da69fe1e47664910d06e1d51e36d43d5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:57:30</sys_created_on>
+        <sys_id>f1fb8b9e47e64910d06e1d51e36d4340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:57:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_da69fe1e47664910d06e1d51e36d43d5^sys_idNOT IN0f0ccf9e47e64910d06e1d51e36d431f,c8bc8b12472a4910d06e1d51e36d43e4"/>
+    <sys_choice field="distanza_percorsa" table="var__m_sys_hub_action_input_da69fe1e47664910d06e1d51e36d43d5">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>distanza_percorsa</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_da69fe1e47664910d06e1d51e36d43d5</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>antonio</sys_created_by>
+            <sys_created_on>2022-04-01 16:57:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0f0ccf9e47e64910d06e1d51e36d431f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>antonio</sys_updated_by>
+            <sys_updated_on>2022-04-01 16:57:52</sys_updated_on>
+            <value/>
+        </sys_choice>
+    </sys_choice>
+    <sys_choice field="durata_viaggio" table="var__m_sys_hub_action_input_da69fe1e47664910d06e1d51e36d43d5">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>durata_viaggio</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_da69fe1e47664910d06e1d51e36d43d5</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>antonio</sys_created_by>
+            <sys_created_on>2022-04-01 17:00:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c8bc8b12472a4910d06e1d51e36d43e4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>antonio</sys_updated_by>
+            <sys_updated_on>2022-04-01 17:00:40</sys_updated_on>
+            <value/>
+        </sys_choice>
+    </sys_choice>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_da69fe1e47664910d06e1d51e36d43d5^sys_idNOT IN34cd03d2472a4910d06e1d51e36d433b,6269325e47664910d06e1d51e36d434b,74cd03d2472a4910d06e1d51e36d432e,b4cd03d2472a4910d06e1d51e36d4321,ea69325e47664910d06e1d51e36d4352"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ettari_equivalenti</element>
+        <help/>
+        <hint/>
+        <label>Ettari equivalenti</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_da69fe1e47664910d06e1d51e36d43d5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:05:21</sys_created_on>
+        <sys_id>34cd03d2472a4910d06e1d51e36d433b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_da69fe1e47664910d06e1d51e36d43d5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:28</sys_created_on>
+        <sys_id>6269325e47664910d06e1d51e36d434b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>percentuale_co2</element>
+        <help/>
+        <hint/>
+        <label>Percentuale CO2</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_da69fe1e47664910d06e1d51e36d43d5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:05:21</sys_created_on>
+        <sys_id>74cd03d2472a4910d06e1d51e36d432e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>co2</element>
+        <help/>
+        <hint/>
+        <label>CO2</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_da69fe1e47664910d06e1d51e36d43d5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:05:21</sys_created_on>
+        <sys_id>b4cd03d2472a4910d06e1d51e36d4321</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_da69fe1e47664910d06e1d51e36d43d5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 15:36:28</sys_created_on>
+        <sys_id>ea69325e47664910d06e1d51e36d4352</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 15:36:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_da69fe1e47664910d06e1d51e36d43d5"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=da69fe1e47664910d06e1d51e36d43d5^sys_idNOT IN0d98431a47e64910d06e1d51e36d4344"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="CFC Calculate Direct">da69fe1e47664910d06e1d51e36d43d5</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"0d98431a47e64910d06e1d51e36d4344","name":"plan","plan_signature":null}}</plan>
+        <snapshot>15ed47d2472a4910d06e1d51e36d431e</snapshot>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0d98431a47e64910d06e1d51e36d4344</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:58</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>cfc_calculate_direct</internal_name>
+        <label_cache>[{"name":"{{action.token}}","label":"action➛token","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"4391f8c7-e116-4a51-bb57-315355d4a9c0"}},{"name":"{{action.userdata}}","label":"action➛userData","type":"action","ref":"","reference_display":"Partecipante","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"reference","uiUniqueId":"3dab525c-b66d-488d-b1a5-fa6698d1fd2a"}},{"name":"{{action.userdata.distanza_percorsa}}","label":"action➛userData➛Distanza percorsa","type":"action","ref":"","reference_display":"Distanza percorsa","base_type":"choice","parent_table_name":"x_snc_tree4meeting_attendee","column_name":"distanza_percorsa","choices":[{"reference":false,"image":"","rawLabel":"-- None --","missing":false,"label":"-- None --","used":false,"value":"","selected":false},{"reference":false,"image":"","rawLabel":"5km","missing":false,"used":false,"label":"5km","value":"3","parameters":{"name":"x_snc_tree4meeting_attendee"},"selected":false},{"reference":false,"image":"","rawLabel":"20km","missing":false,"used":false,"label":"20km","value":"12","parameters":{"name":"x_snc_tree4meeting_attendee"},"selected":false},{"reference":false,"image":"","rawLabel":"50km","missing":false,"used":false,"label":"50km","value":"31","parameters":{"name":"x_snc_tree4meeting_attendee"},"selected":false},{"reference":false,"image":"","rawLabel":"100km","missing":false,"used":false,"label":"100km","value":"62","parameters":{"name":"x_snc_tree4meeting_attendee"},"selected":false},{"reference":false,"image":"","rawLabel":"Oltre i 100km","missing":false,"used":false,"label":"Oltre i 100km","value":"125","parameters":{"name":"x_snc_tree4meeting_attendee"},"selected":false}],"attributes":{}},{"name":"{{action.userdata.consumo_mezzo}}","label":"action➛userData➛Consumo mezzo","type":"action","ref":"","reference_display":"Consumo mezzo","base_type":"decimal","parent_table_name":"x_snc_tree4meeting_attendee","column_name":"consumo_mezzo","choices":null,"attributes":{}},{"name":"{{action.userdata.durata_viaggio}}","label":"action➛userData➛Durata viaggio","type":"action","ref":"","reference_display":"Durata viaggio","base_type":"choice","parent_table_name":"x_snc_tree4meeting_attendee","column_name":"durata_viaggio","choices":[{"reference":false,"image":"","rawLabel":"-- None --","missing":false,"label":"-- None --","used":false,"value":"","selected":false},{"reference":false,"image":"","rawLabel":"Meno di un'ora","missing":false,"used":false,"label":"Meno di un'ora","value":"1","parameters":{"name":"x_snc_tree4meeting_attendee"},"selected":false},{"reference":false,"image":"","rawLabel":"Entro le 2 ore","missing":false,"used":false,"label":"Entro le 2 ore","value":"2","parameters":{"name":"x_snc_tree4meeting_attendee"},"selected":false},{"reference":false,"image":"","rawLabel":"Entro le 3 ore","missing":false,"used":false,"label":"Entro le 3 ore","value":"3","parameters":{"name":"x_snc_tree4meeting_attendee"},"selected":false},{"reference":false,"image":"","rawLabel":"Più di 3 ore","missing":false,"used":false,"label":"Più di 3 ore","value":"5","parameters":{"name":"x_snc_tree4meeting_attendee"},"selected":false}],"attributes":{}},{"name":"{{action.distanza_percorsa}}","label":"action➛Distanza Percorsa","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"distanza_percorsa","choices":[],"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"0afca282-6b59-441c-bd6d-2e2f78f506e6"}},{"name":"{{action.durata_viaggio}}","label":"action➛Durata Viaggio","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[],"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"3afeaf8f-2752-4732-a7e7-0952e9ba7217"}},{"name":"{{action.consumo_mezzo}}","label":"action➛Consumo Mezzo","type":"action","ref":"","reference_display":"","base_type":"decimal","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"d8096516-2363-45e3-9b7a-2421668234ff"}},{"name":"{{step[2ae7bad8-6170-4d32-8d95-427b90a10456].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[9303a2f1-eb9a-454d-ac78-3a4de41ad883].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9303a2f1-eb9a-454d-ac78-3a4de41ad883].data}}","label":"step➛Script step➛data","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a0107e1c-a2cd-4bf3-b1b1-469c914bfb9f].payload}}","label":"step➛Payload Builder step➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[65c68950-8b10-460e-a813-4b16023f21a4].response_body}}","label":"step➛Get Projects➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[acc6d23b-e83d-49e5-be61-5e222fda4c6a].variable}}","label":"step➛JSON Parser step➛variable","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[acc6d23b-e83d-49e5-be61-5e222fda4c6a].root.root_array}}","label":"step➛JSON Parser step➛root➛root_array","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[7fc2a2fe-ad5a-46c5-aed5-7f8658459888].response_body}}","label":"step➛Get Project Details➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationCompanyName_en}}","label":"step➛Parse Project Details➛root➛reforestationCompanyName_en","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationProjectCountry_fr}}","label":"step➛Parse Project Details➛root➛reforestationProjectCountry_fr","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationProjectState_en}}","label":"step➛Parse Project Details➛root➛reforestationProjectState_en","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationProjectDescription_en}}","label":"step➛Parse Project Details➛root➛reforestationProjectDescription_en","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[592f71fc-e2ad-4acf-a2e5-8d71dfe98b32].root.reforestationCompanyWebsite_en}}","label":"step➛Parse Project Details➛root➛reforestationCompanyWebsite_en","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[620f9d25-edcc-44dd-8754-f09e89be4921].response_body}}","label":"step➛Get Enterprise Details➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[2ae1aea0-7eb0-4fa2-b547-a9ddf66f035d].root.name}}","label":"step➛Parse Enterprise Details➛root➛name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2ae1aea0-7eb0-4fa2-b547-a9ddf66f035d].root.created}}","label":"step➛Parse Enterprise Details➛root➛created","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2ae1aea0-7eb0-4fa2-b547-a9ddf66f035d].root.contact.name}}","label":"step➛Parse Enterprise Details➛root➛contact➛name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2ae1aea0-7eb0-4fa2-b547-a9ddf66f035d].root.contact.email}}","label":"step➛Parse Enterprise Details➛root➛contact➛email","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[dbd28190-a281-47d6-a015-9b5de142266c].payload}}","label":"step➛Payload Builder step➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[43c03dcb-b582-4a5c-b7c5-3943b51d1fa9].response_body}}","label":"step➛Plant Tree➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[0e48f511-a5f9-4a0d-b099-78929685cd47].root.uuid}}","label":"step➛JSON Parser step➛root➛uuid","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[0e48f511-a5f9-4a0d-b099-78929685cd47].root.created}}","label":"step➛JSON Parser step➛root➛created","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[d382bc7f-8242-43b1-94a1-ed0bdf5eca2e].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[d382bc7f-8242-43b1-94a1-ed0bdf5eca2e].distanza}}","label":"step➛Script step➛distanza","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[85d21fad-c467-4f3f-b797-2c3a869291b5].root.data.tonsCarbon}}","label":"step➛JSON Parser step➛root➛data➛tonsCarbon","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[85d21fad-c467-4f3f-b797-2c3a869291b5].root.data.carbonPercent}}","label":"step➛JSON Parser step➛root➛data➛carbonPercent","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[85d21fad-c467-4f3f-b797-2c3a869291b5].root.data.total}}","label":"step➛JSON Parser step➛root➛data➛total","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>CFC Calculate Direct</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="CFC Calculate Direct">da69fe1e47664910d06e1d51e36d43d5</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5498031a47e64910d06e1d51e36d431a</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:55</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=5498031a47e64910d06e1d51e36d431a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=5498031a47e64910d06e1d51e36d431a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>5498031a47e64910d06e1d51e36d431a</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:05:56</sys_created_on>
+        <sys_id>05ed47d2472a4910d06e1d51e36d431b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:56</sys_updated_on>
+        <value/>
+        <variable display_value="CO2">09ed07d2472a4910d06e1d51e36d43e0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>5498031a47e64910d06e1d51e36d431a</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:05:56</sys_created_on>
+        <sys_id>41ed47d2472a4910d06e1d51e36d431b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:56</sys_updated_on>
+        <value/>
+        <variable display_value="Percentuale CO2">c5ed07d2472a4910d06e1d51e36d43ed</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>5498031a47e64910d06e1d51e36d431a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:41</sys_created_on>
+        <sys_id>b098031a47e64910d06e1d51e36d43a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:41</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD2498031a68e64910d1d431fd81191074":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD2498031a68e64910d1d431fd81191074.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"bfc5eb04-b7ef-482d-9290-515dce0180f5\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD2498031a68e64910d1d431fd81191074\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <variable display_value="Action Status">e898031a47e64910d06e1d51e36d4376</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>5498031a47e64910d06e1d51e36d431a</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:05:56</sys_created_on>
+        <sys_id>c5ed47d2472a4910d06e1d51e36d431b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:56</sys_updated_on>
+        <value/>
+        <variable display_value="Ettari equivalenti">4ded47d2472a4910d06e1d51e36d4306</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>5498031a47e64910d06e1d51e36d431a</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:41</sys_created_on>
+        <sys_id>fc98031a47e64910d06e1d51e36d43a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:41</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">6898031a47e64910d06e1d51e36d437c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5498031a47e64910d06e1d51e36d431a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>co2</field>
+        <id>5498031a47e64910d06e1d51e36d431a</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:41</sys_created_on>
+        <sys_id>7c98031a47e64910d06e1d51e36d43a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:41</sys_updated_on>
+        <table>var__m_sys_hub_action_output_5498031a47e64910d06e1d51e36d431a</table>
+        <value>{{step[85d21fad-c467-4f3f-b797-2c3a869291b5].root.data.tonsCarbon}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ettari_equivalenti</field>
+        <id>5498031a47e64910d06e1d51e36d431a</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:41</sys_created_on>
+        <sys_id>3498031a47e64910d06e1d51e36d43a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:41</sys_updated_on>
+        <table>var__m_sys_hub_action_output_5498031a47e64910d06e1d51e36d431a</table>
+        <value>{{step[85d21fad-c467-4f3f-b797-2c3a869291b5].root.data.total}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>percentuale_co2</field>
+        <id>5498031a47e64910d06e1d51e36d431a</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:41</sys_created_on>
+        <sys_id>7098031a47e64910d06e1d51e36d43a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:41</sys_updated_on>
+        <table>var__m_sys_hub_action_output_5498031a47e64910d06e1d51e36d431a</table>
+        <value>{{step[85d21fad-c467-4f3f-b797-2c3a869291b5].root.data.carbonPercent}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>5498031a47e64910d06e1d51e36d431a</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:41</sys_created_on>
+        <sys_id>b898031a47e64910d06e1d51e36d43a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:41</sys_updated_on>
+        <table>var__m_sys_hub_action_output_5498031a47e64910d06e1d51e36d431a</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>5498031a47e64910d06e1d51e36d431a</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:41</sys_created_on>
+        <sys_id>f498031a47e64910d06e1d51e36d43a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:41</sys_updated_on>
+        <table>var__m_sys_hub_action_output_5498031a47e64910d06e1d51e36d431a</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=5498031a47e64910d06e1d51e36d431a^sys_idNOT IN6898031a47e64910d06e1d51e36d434f,a098031a47e64910d06e1d51e36d4364"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="CFC Calculate Direct">5498031a47e64910d06e1d51e36d431a</action>
+        <cid>2ae7bad8-6170-4d32-8d95-427b90a10456</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>6898031a47e64910d06e1d51e36d434f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:40</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6898031a47e64910d06e1d51e36d434f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6898031a47e64910d06e1d51e36d434f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>2898031a47e64910d06e1d51e36d4360</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:40</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6898031a47e64910d06e1d51e36d434f</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>2c98031a47e64910d06e1d51e36d435f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:40</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6898031a47e64910d06e1d51e36d434f</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>6498031a47e64910d06e1d51e36d4360</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:40</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6898031a47e64910d06e1d51e36d434f</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>6898031a47e64910d06e1d51e36d435f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:40</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6898031a47e64910d06e1d51e36d434f</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>a098031a47e64910d06e1d51e36d4360</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:40</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6898031a47e64910d06e1d51e36d434f</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>a498031a47e64910d06e1d51e36d435f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:40</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6898031a47e64910d06e1d51e36d434f</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>e098031a47e64910d06e1d51e36d435f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:40</sys_updated_on>
+        <value>post</value>
+        <variable display_value="HTTP Method">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6898031a47e64910d06e1d51e36d434f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>e898031a47e64910d06e1d51e36d435e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:40</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6898031a47e64910d06e1d51e36d434f</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>ec98031a47e64910d06e1d51e36d435f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:40</sys_updated_on>
+        <value>https://api.footprintcalculator.org/v2/calculate</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6898031a47e64910d06e1d51e36d434f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>6898031a47e64910d06e1d51e36d434f</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>e098031a47e64910d06e1d51e36d435e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>6898031a47e64910d06e1d51e36d434f</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>2098031a47e64910d06e1d51e36d435e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>body</field>
+        <id>6898031a47e64910d06e1d51e36d434f</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>a898031a47e64910d06e1d51e36d435c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{
+    "country": 62,
+    "source": "result1",
+    "answers": [
+        {
+            "questionid": 25,
+            "value": {{action.distanza_percorsa}}
+        },
+        {
+            "questionid": 26,
+            "value": 0
+        },
+        {
+            "questionid": 27,
+            "value": {{action.consumo_mezzo}}
+        },
+        {
+            "questionid": 28,
+            "value": {{action.consumo_mezzo}}
+        },
+        {
+            "questionid": 29,
+            "value": 0
+        },
+        {
+            "questionid": 30,
+            "value": {{action.distanza_percorsa}}
+        },
+        {
+            "questionid": 31,
+            "value": {{action.distanza_percorsa}}
+        },
+        {
+            "questionid": 32,
+            "value": 0
+        },
+        {
+            "questionid": 33,
+            "value": {{action.durata_viaggio}}
+        }
+    ]
+}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>6898031a47e64910d06e1d51e36d434f</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>6c98031a47e64910d06e1d51e36d435d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>6898031a47e64910d06e1d51e36d434f</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>e498031a47e64910d06e1d51e36d435d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>6898031a47e64910d06e1d51e36d434f</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>6898031a47e64910d06e1d51e36d435e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>6898031a47e64910d06e1d51e36d434f</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>a898031a47e64910d06e1d51e36d435d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"Authorization","value":"Bearer  {{action.token}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"Content-Type","value":"application/json","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>6898031a47e64910d06e1d51e36d434f</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>6098031a47e64910d06e1d51e36d435d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>http_method</field>
+        <id>6898031a47e64910d06e1d51e36d434f</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>2498031a47e64910d06e1d51e36d435d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>6898031a47e64910d06e1d51e36d434f</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>a498031a47e64910d06e1d51e36d435e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=6898031a47e64910d06e1d51e36d434f"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=6898031a47e64910d06e1d51e36d434f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6898031a47e64910d06e1d51e36d434f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_6898031a47e64910d06e1d51e36d434f"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="CFC Calculate Direct">5498031a47e64910d06e1d51e36d431a</action>
+        <cid>85d21fad-c467-4f3f-b797-2c3a869291b5</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>a098031a47e64910d06e1d51e36d4364</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:41</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a098031a47e64910d06e1d51e36d4364"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a098031a47e64910d06e1d51e36d4364</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:41</sys_created_on>
+        <sys_id>2c98031a47e64910d06e1d51e36d4371</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:41</sys_updated_on>
+        <value>structured</value>
+        <variable display_value="Payload view">95d4280787523300f917e55936cb0bfe</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a098031a47e64910d06e1d51e36d4364</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:41</sys_created_on>
+        <sys_id>6898031a47e64910d06e1d51e36d4371</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:41</sys_updated_on>
+        <value>{"data":{"countryCode":62,"date":"2022-05-24T00:00:00.000+00:00","tonsCarbon":6.372991752683887,"earth":2.548045129028097,"carbonPercent":52.78577179431888,"total":4.153313560315798,"crop":1.1425489053559215,"graz":0.09788397176045374,"forest":0.4714176363210534,"fish":0.10283951269678336,"energy":2.1923586178507977,"built":0.14626491633078892,"food":1.343432567282014,"housing":0.6371938216080403,"transport":0.6348432526495201,"goods":1.0248019353075495,"services":0.5130419834686724},"status":{"message":"","code":200,"status":"200 OK"}}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a098031a47e64910d06e1d51e36d4364</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:41</sys_created_on>
+        <sys_id>a498031a47e64910d06e1d51e36d4371</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:41</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"data","children":[{"name":"countryCode","children":[],"type":"string","jpath":"$.data.countryCode","previewValue":"62"},{"name":"date","children":[],"type":"string","jpath":"$.data.date","previewValue":"2022-05-24T00:00:00.000+00:00"},{"name":"tonsCarbon","children":[],"type":"string","jpath":"$.data.tonsCarbon","previewValue":"6.372991752683887"},{"name":"earth","children":[],"type":"string","jpath":"$.data.earth","previewValue":"2.548045129028097"},{"name":"carbonPercent","children":[],"type":"string","jpath":"$.data.carbonPercent","previewValue":"52.78577179431888"},{"name":"total","children":[],"type":"string","jpath":"$.data.total","previewValue":"4.153313560315798"},{"name":"crop","children":[],"type":"string","jpath":"$.data.crop","previewValue":"1.1425489053559215"},{"name":"graz","children":[],"type":"string","jpath":"$.data.graz","previewValue":"0.09788397176045374"},{"name":"forest","children":[],"type":"string","jpath":"$.data.forest","previewValue":"0.4714176363210534"},{"name":"fish","children":[],"type":"string","jpath":"$.data.fish","previewValue":"0.10283951269678336"},{"name":"energy","children":[],"type":"string","jpath":"$.data.energy","previewValue":"2.1923586178507977"},{"name":"built","children":[],"type":"string","jpath":"$.data.built","previewValue":"0.14626491633078892"},{"name":"food","children":[],"type":"string","jpath":"$.data.food","previewValue":"1.343432567282014"},{"name":"housing","children":[],"type":"string","jpath":"$.data.housing","previewValue":"0.6371938216080403"},{"name":"transport","children":[],"type":"string","jpath":"$.data.transport","previewValue":"0.6348432526495201"},{"name":"goods","children":[],"type":"string","jpath":"$.data.goods","previewValue":"1.0248019353075495"},{"name":"services","children":[],"type":"string","jpath":"$.data.services","previewValue":"0.5130419834686724"}],"type":"object","jpath":"$.data","previewValue":""},{"name":"status","children":[{"name":"message","children":[],"type":"string","jpath":"$.status.message","previewValue":""},{"name":"code","children":[],"type":"string","jpath":"$.status.code","previewValue":"200"},{"name":"status","children":[],"type":"string","jpath":"$.status.status","previewValue":"200 OK"}],"type":"object","jpath":"$.status","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_a098031a47e64910d06e1d51e36d4364^id=a098031a47e64910d06e1d51e36d4364"/>
+    <sys_element_mapping action="delete_multiple" query="id=a098031a47e64910d06e1d51e36d4364"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>payload_view</field>
+        <id>a098031a47e64910d06e1d51e36d4364</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:41</sys_created_on>
+        <sys_id>6098031a47e64910d06e1d51e36d4371</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>a098031a47e64910d06e1d51e36d4364</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:41</sys_created_on>
+        <sys_id>2498031a47e64910d06e1d51e36d4371</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>a098031a47e64910d06e1d51e36d4364</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:41</sys_created_on>
+        <sys_id>e898031a47e64910d06e1d51e36d4370</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[2ae7bad8-6170-4d32-8d95-427b90a10456].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>a098031a47e64910d06e1d51e36d4364</id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:41</sys_created_on>
+        <sys_id>ac98031a47e64910d06e1d51e36d4370</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=a098031a47e64910d06e1d51e36d4364"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=a098031a47e64910d06e1d51e36d4364^sys_idNOT IN6898031a47e64910d06e1d51e36d4369"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD2c98031ae6e64910d3aef83bf4745b66,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=953824a6-dd8b-4b42-8aab-01cdc71fac93</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">a098031a47e64910d06e1d51e36d4364</model>
+        <model_id>a098031a47e64910d06e1d51e36d4364</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_a098031a47e64910d06e1d51e36d4364</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>6898031a47e64910d06e1d51e36d4369</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a098031a47e64910d06e1d51e36d4364"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_a098031a47e64910d06e1d51e36d4364^sys_idNOT IN2098031a47e64910d06e1d51e36d436e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_a098031a47e64910d06e1d51e36d4364</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:41</sys_created_on>
+        <sys_id>2098031a47e64910d06e1d51e36d436e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=5498031a47e64910d06e1d51e36d431a^sys_idNOT IN2cbccb12472a4910d06e1d51e36d43c2,4ded07d2472a4910d06e1d51e36d43b5,5c98031a47e64910d06e1d51e36d431d,a30ccf9e47e64910d06e1d51e36d43ef"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=3afeaf8f-2752-4732-a7e7-0952e9ba7217</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>durata_viaggio</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Durata Viaggio</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="CFC Calculate Direct">5498031a47e64910d06e1d51e36d431a</model>
+        <model_id>5498031a47e64910d06e1d51e36d431a</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_5498031a47e64910d06e1d51e36d431a</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:00:42</sys_created_on>
+        <sys_id>2cbccb12472a4910d06e1d51e36d43c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:00:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2cbccb12472a4910d06e1d51e36d43c2"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=decimal,uiTypeLabel=Decimal,uiUniqueId=d8096516-2363-45e3-9b7a-2421668234ff</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>consumo_mezzo</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Decimal">decimal</internal_type>
+        <label>Consumo Mezzo</label>
+        <mandatory>false</mandatory>
+        <max_length>15</max_length>
+        <model display_value="CFC Calculate Direct">5498031a47e64910d06e1d51e36d431a</model>
+        <model_id>5498031a47e64910d06e1d51e36d431a</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_5498031a47e64910d06e1d51e36d431a</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:05:55</sys_created_on>
+        <sys_id>4ded07d2472a4910d06e1d51e36d43b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4ded07d2472a4910d06e1d51e36d43b5"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=4391f8c7-e116-4a51-bb57-315355d4a9c0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbmZvQGZvb3RwcmludGNhbGN1bGF0b3Iub3JnIiwiaWF0IjoxNjQ4ODI3MzQyLCJleHAiOjE2NDg5MTM3NDIsImF1dGhzIjpbIkdVRVNUIl19.ZHE2PUMuClUAInl9aEEHnjioKr66Oi4dRwwX5tTiXONMYsJOOTKLaOTs7JCZ6HZ8ckA_Q8eEQJVKx1MAV1CFwA</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>token</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="CFC Calculate Direct">5498031a47e64910d06e1d51e36d431a</model>
+        <model_id>5498031a47e64910d06e1d51e36d431a</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_5498031a47e64910d06e1d51e36d431a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>5c98031a47e64910d06e1d51e36d431d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5c98031a47e64910d06e1d51e36d431d"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=0afca282-6b59-441c-bd6d-2e2f78f506e6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field>distanza_percorsa</choice_field>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>distanza_percorsa</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Distanza Percorsa</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="CFC Calculate Direct">5498031a47e64910d06e1d51e36d431a</model>
+        <model_id>5498031a47e64910d06e1d51e36d431a</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_5498031a47e64910d06e1d51e36d431a</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:57:54</sys_created_on>
+        <sys_id>a30ccf9e47e64910d06e1d51e36d43ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:57:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a30ccf9e47e64910d06e1d51e36d43ef"/>
+    <sys_hub_action_output action="delete_multiple" query="model=5498031a47e64910d06e1d51e36d431a^sys_idNOT IN09ed07d2472a4910d06e1d51e36d43e0,4ded47d2472a4910d06e1d51e36d4306,6898031a47e64910d06e1d51e36d437c,c5ed07d2472a4910d06e1d51e36d43ed,e898031a47e64910d06e1d51e36d4376"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=decimal,uiTypeLabel=Decimal,uiUniqueId=7e53599a-ab47-4320-bfc1-4b1b5e82c7c0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>co2</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Decimal">decimal</internal_type>
+        <label>CO2</label>
+        <mandatory>false</mandatory>
+        <max_length>15</max_length>
+        <model display_value="CFC Calculate Direct">5498031a47e64910d06e1d51e36d431a</model>
+        <model_id>5498031a47e64910d06e1d51e36d431a</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_5498031a47e64910d06e1d51e36d431a</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:05:55</sys_created_on>
+        <sys_id>09ed07d2472a4910d06e1d51e36d43e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=09ed07d2472a4910d06e1d51e36d43e0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=09ed07d2472a4910d06e1d51e36d43e0"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=decimal,uiTypeLabel=Decimal,uiUniqueId=2684327c-6950-4342-aed9-d81ca47a662c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ettari_equivalenti</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Decimal">decimal</internal_type>
+        <label>Ettari equivalenti</label>
+        <mandatory>false</mandatory>
+        <max_length>15</max_length>
+        <model display_value="CFC Calculate Direct">5498031a47e64910d06e1d51e36d431a</model>
+        <model_id>5498031a47e64910d06e1d51e36d431a</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_5498031a47e64910d06e1d51e36d431a</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:05:56</sys_created_on>
+        <sys_id>4ded47d2472a4910d06e1d51e36d4306</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4ded47d2472a4910d06e1d51e36d4306"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4ded47d2472a4910d06e1d51e36d4306"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=6ffe8937-4fd4-437b-be0a-8ca027d19667,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="CFC Calculate Direct">5498031a47e64910d06e1d51e36d431a</model>
+        <model_id>5498031a47e64910d06e1d51e36d431a</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_5498031a47e64910d06e1d51e36d431a</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:41</sys_created_on>
+        <sys_id>6898031a47e64910d06e1d51e36d437c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6898031a47e64910d06e1d51e36d437c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6898031a47e64910d06e1d51e36d437c"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=percent_complete,uiTypeLabel=Percent Complete,uiUniqueId=0ef86d14-03ac-4a55-bb4e-9bec43884a8c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>percentuale_co2</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">percent_complete</internal_type>
+        <label>Percentuale CO2</label>
+        <mandatory>false</mandatory>
+        <max_length>15</max_length>
+        <model display_value="CFC Calculate Direct">5498031a47e64910d06e1d51e36d431a</model>
+        <model_id>5498031a47e64910d06e1d51e36d431a</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_5498031a47e64910d06e1d51e36d431a</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:05:55</sys_created_on>
+        <sys_id>c5ed07d2472a4910d06e1d51e36d43ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c5ed07d2472a4910d06e1d51e36d43ed"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c5ed07d2472a4910d06e1d51e36d43ed"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FD2498031a68e64910d1d431fd81191074,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=bfc5eb04-b7ef-482d-9290-515dce0180f5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="CFC Calculate Direct">5498031a47e64910d06e1d51e36d431a</model>
+        <model_id>5498031a47e64910d06e1d51e36d431a</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_5498031a47e64910d06e1d51e36d431a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:41</sys_created_on>
+        <sys_id>e898031a47e64910d06e1d51e36d4376</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e898031a47e64910d06e1d51e36d4376"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e898031a47e64910d06e1d51e36d4376"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=5498031a47e64910d06e1d51e36d431a"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=5498031a47e64910d06e1d51e36d431a^sys_idNOT IN7c98031a47e64910d06e1d51e36d43a4"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="CFC Calculate Direct">5498031a47e64910d06e1d51e36d431a</action_type_id>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:41</sys_created_on>
+        <sys_id>7c98031a47e64910d06e1d51e36d43a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:41</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=7c98031a47e64910d06e1d51e36d43a4"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_5498031a47e64910d06e1d51e36d431a^sys_idNOT IN1098031a47e64910d06e1d51e36d4326,20bccb12472a4910d06e1d51e36d43c8,49ed07d2472a4910d06e1d51e36d43b9,e30ccf9e47e64910d06e1d51e36d43f4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>token</element>
+        <help/>
+        <hint/>
+        <label>token</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_5498031a47e64910d06e1d51e36d431a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:40</sys_created_on>
+        <sys_id>1098031a47e64910d06e1d51e36d4326</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>durata_viaggio</element>
+        <help/>
+        <hint/>
+        <label>Durata Viaggio</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_5498031a47e64910d06e1d51e36d431a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:00:42</sys_created_on>
+        <sys_id>20bccb12472a4910d06e1d51e36d43c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:00:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>consumo_mezzo</element>
+        <help/>
+        <hint/>
+        <label>Consumo Mezzo</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_5498031a47e64910d06e1d51e36d431a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:05:55</sys_created_on>
+        <sys_id>49ed07d2472a4910d06e1d51e36d43b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>distanza_percorsa</element>
+        <help/>
+        <hint/>
+        <label>Distanza Percorsa</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_5498031a47e64910d06e1d51e36d431a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:57:54</sys_created_on>
+        <sys_id>e30ccf9e47e64910d06e1d51e36d43f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:57:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_5498031a47e64910d06e1d51e36d431a^sys_idNOT INaf0ccf9e47e64910d06e1d51e36d43f1,28bccb12472a4910d06e1d51e36d43c5"/>
+    <sys_choice field="distanza_percorsa" table="var__m_sys_hub_action_input_5498031a47e64910d06e1d51e36d431a">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>distanza_percorsa</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_5498031a47e64910d06e1d51e36d431a</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>antonio</sys_created_by>
+            <sys_created_on>2022-04-01 16:57:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>af0ccf9e47e64910d06e1d51e36d43f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>antonio</sys_updated_by>
+            <sys_updated_on>2022-04-01 16:57:54</sys_updated_on>
+            <value/>
+        </sys_choice>
+    </sys_choice>
+    <sys_choice field="durata_viaggio" table="var__m_sys_hub_action_input_5498031a47e64910d06e1d51e36d431a">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>durata_viaggio</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_5498031a47e64910d06e1d51e36d431a</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>antonio</sys_created_by>
+            <sys_created_on>2022-04-01 17:00:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>28bccb12472a4910d06e1d51e36d43c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>antonio</sys_updated_by>
+            <sys_updated_on>2022-04-01 17:00:42</sys_updated_on>
+            <value/>
+        </sys_choice>
+    </sys_choice>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_5498031a47e64910d06e1d51e36d431a^sys_idNOT IN41ed47d2472a4910d06e1d51e36d4317,45ed07d2472a4910d06e1d51e36d43e4,6898031a47e64910d06e1d51e36d438f,a898031a47e64910d06e1d51e36d437b,c9ed07d2472a4910d06e1d51e36d43fd"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ettari_equivalenti</element>
+        <help/>
+        <hint/>
+        <label>Ettari equivalenti</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_5498031a47e64910d06e1d51e36d431a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:05:56</sys_created_on>
+        <sys_id>41ed47d2472a4910d06e1d51e36d4317</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>co2</element>
+        <help/>
+        <hint/>
+        <label>CO2</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_5498031a47e64910d06e1d51e36d431a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:05:55</sys_created_on>
+        <sys_id>45ed07d2472a4910d06e1d51e36d43e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_5498031a47e64910d06e1d51e36d431a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:41</sys_created_on>
+        <sys_id>6898031a47e64910d06e1d51e36d438f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_5498031a47e64910d06e1d51e36d431a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 16:42:41</sys_created_on>
+        <sys_id>a898031a47e64910d06e1d51e36d437b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 16:42:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>percentuale_co2</element>
+        <help/>
+        <hint/>
+        <label>Percentuale CO2</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_5498031a47e64910d06e1d51e36d431a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 17:05:55</sys_created_on>
+        <sys_id>c9ed07d2472a4910d06e1d51e36d43fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 17:05:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_5498031a47e64910d06e1d51e36d431a"/>
+    <sys_hub_action_type_definition action="update">
+        <sys_id>da69fe1e47664910d06e1d51e36d43d5</sys_id>
+        <latest_snapshot>5498031a47e64910d06e1d51e36d431a</latest_snapshot>
+    </sys_hub_action_type_definition>
+</record_update>

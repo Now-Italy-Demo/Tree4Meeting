@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Emissioni" max_length="40" name="x_snc_tree4meeting_emissioni" sizeclass="6" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Azione" max_length="40" name="azione" type="string"/>
+        <element label="Footprint (kg di CO2)" max_length="38" name="footprint" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+    </element>
+</database>

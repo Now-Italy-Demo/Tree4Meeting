@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Consumo" section_id="df458803476e0d10d06e1d51e36d4323" sys_domain="global" table="x_snc_tree4meeting_attendee" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>calc_totale_co2</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 10:24:59</sys_created_on>
+            <sys_id>23458803476e0d10d06e1d51e36d4370</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Consumo" display_value="Consumo" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">df458803476e0d10d06e1d51e36d4323</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 10:24:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 10:24:59</sys_created_on>
+            <sys_id>27458803476e0d10d06e1d51e36d4370</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Consumo" display_value="Consumo" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">df458803476e0d10d06e1d51e36d4323</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 10:24:59</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>calc_percentuale_co2</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 10:24:59</sys_created_on>
+            <sys_id>2b458803476e0d10d06e1d51e36d4370</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Consumo" display_value="Consumo" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">df458803476e0d10d06e1d51e36d4323</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 10:24:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>consumo_co2_anno</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 10:24:59</sys_created_on>
+            <sys_id>2f458803476e0d10d06e1d51e36d4370</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Consumo" display_value="Consumo" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">df458803476e0d10d06e1d51e36d4323</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 10:24:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>calc_pianeti_necessari</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 10:24:59</sys_created_on>
+            <sys_id>23458803476e0d10d06e1d51e36d4371</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Consumo" display_value="Consumo" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">df458803476e0d10d06e1d51e36d4323</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 10:24:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>calc_impatto_foresta</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 10:24:59</sys_created_on>
+            <sys_id>27458803476e0d10d06e1d51e36d4371</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Consumo" display_value="Consumo" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">df458803476e0d10d06e1d51e36d4323</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 10:24:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>calc_impatto_energia</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 10:24:59</sys_created_on>
+            <sys_id>2b458803476e0d10d06e1d51e36d4371</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Consumo" display_value="Consumo" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">df458803476e0d10d06e1d51e36d4323</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 10:24:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>calc_impatto_costruzioni</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 10:24:59</sys_created_on>
+            <sys_id>2f458803476e0d10d06e1d51e36d4371</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Consumo" display_value="Consumo" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">df458803476e0d10d06e1d51e36d4323</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 10:24:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>calc_impatto_trasporti</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 10:24:59</sys_created_on>
+            <sys_id>23458803476e0d10d06e1d51e36d4372</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Consumo" display_value="Consumo" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">df458803476e0d10d06e1d51e36d4323</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 10:24:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>calc_impatto_servizi</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 10:24:59</sys_created_on>
+            <sys_id>27458803476e0d10d06e1d51e36d4372</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Consumo" display_value="Consumo" name="x_snc_tree4meeting_attendee" sys_domain="global" view="Default view">df458803476e0d10d06e1d51e36d4323</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 10:24:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Consumo</caption>
+            <header>false</header>
+            <name>x_snc_tree4meeting_attendee</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-03 10:24:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>df458803476e0d10d06e1d51e36d4323</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_tree4meeting_attendee</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+            <sys_update_name>sys_ui_section_df458803476e0d10d06e1d51e36d4323</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-03 10:24:58</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

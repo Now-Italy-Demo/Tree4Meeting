@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 13:58:54</sys_created_on>
+        <sys_id>2d13ea1a47e24910d06e1d51e36d43fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_tree4meeting_st_raas_alberi_piantati.x_snc_tree4meeting.raas_alberi_piantati_user</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_security_acl display_value="x_snc_tree4meeting_st_raas_alberi_piantati">2d13ea1a47e24910d06e1d51e36d43fa</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_2d13ea1a47e24910d06e1d51e36d43fe</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-01 13:58:54</sys_updated_on>
+        <sys_user_role display_value="x_snc_tree4meeting.raas_alberi_piantati_user" name="x_snc_tree4meeting.raas_alberi_piantati_user">6913aed647e24910d06e1d51e36d439e</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

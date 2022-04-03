@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>GET</http_method>
+        <name>GET</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+	var gr = new GlideRecord('x_snc_tree4meeting_event');
+	gr.query();
+	var count = 0;
+	while(gr.next()){
+
+		var grp = new GlideRecord('x_snc_tree4meeting_compensazione');
+		grp.addQuery('nome_evento', gr.event_name);
+		grp.query();
+		var exists = false; 
+		while(grp.next()){
+			exists = true;
+		}
+		if( !exists ) {
+			var gr_comp = new GlideRecord('x_snc_tree4meeting_compensazione');
+			gr_comp.initialize(); 
+			gr_comp.nome_evento = gr.event_name; 
+			gr_comp.insert();
+			count++;
+		}
+
+	}
+	
+	return { 'inserted': count };
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_snc_tree4meeting/compensazione</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/</relative_path>
+        <request_example/>
+        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>false</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-03 13:32:13</sys_created_on>
+        <sys_id>24cd68cf47224d10d06e1d51e36d431e</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>GET</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_ws_operation_24cd68cf47224d10d06e1d51e36d431e</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-03 13:49:14</sys_updated_on>
+        <web_service_definition display_value="Compensazione">257ce44f47224d10d06e1d51e36d43b2</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

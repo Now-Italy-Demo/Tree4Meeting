@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Compensazione" max_length="40" name="x_snc_tree4meeting_compensazione" sizeclass="1" type="collection">
+        <element default="0" label="Alberi piantati" max_length="40" name="alberi_piantati" type="integer"/>
+        <element label="Completato" max_length="40" name="completato" type="boolean"/>
+        <element label="Data Piantumazione" max_length="40" name="data_piantumazione" type="glide_date_time"/>
+        <element default="0" label="Impatto Totale CO2" max_length="20" name="impatto_totale_co2" type="decimal"/>
+        <element default="javascript:gs.getProperty('x_snc_tree4meeting.digitalhumani_user');" label="Nome Evento" max_length="40" name="nome_evento" type="string"/>
+        <element label="UUID Piantumazione" max_length="40" name="uuid_piantumazione" type="string"/>
+    </element>
+</database>

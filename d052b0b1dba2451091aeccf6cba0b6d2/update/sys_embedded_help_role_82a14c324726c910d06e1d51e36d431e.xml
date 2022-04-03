@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_snc_tree4meeting.compensazione_user" name="x_snc_tree4meeting.compensazione_user">82a14c324726c910d06e1d51e36d431b</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-02 15:30:34</sys_created_on>
+        <sys_id>82a14c324726c910d06e1d51e36d431e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>82a14c324726c910d06e1d51e36d431b</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_embedded_help_role_82a14c324726c910d06e1d51e36d431e</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-02 15:30:34</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="T4M - Our ESG Impact ">006a58fa9722c9104204fe7fe153af78</child>
+        <cloned>2022-04-02 17:18:34</cloned>
+        <last_validated>2022-04-02 17:18:34</last_validated>
+        <parent display_value="EC - Our ESG Impact ">4db6d0cd1b8e781012985240604bcbf5</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function($scope) {
+
+
+
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.card{
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(23, 40, 52 , 8%);
+  min-height: 20rem;
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+  border-radius: .6rem;
+  padding: 3rem;
+  margin-top: 3rem;
+}
+
+.card-title{
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+.column-title{
+  font-weight:600;
+  font-size:1.6rem;
+  margin-bottom:1rem;
+}
+
+.column-height{
+//  min-height: 51.2rem;
+}
+
+.value{
+  font-size:4rem;
+  margin-top: 1.5rem;
+}
+
+.mini-graph{
+  margin-bottom: -10px;
+}
+.graph{
+  margin-top: 3.3rem;
+}
+
+
+.val-caption{
+  font-size:1.4rem;
+  color: $text-secondary;
+}
+
+.val-unit{
+  font-size:1.4rem;
+  margin-left: -8px;
+  color: $success;
+}
+
+.description{
+  font-size:1.4rem;
+  text-align:justify;
+  margin:20px 0px;
+}
+
+.progress{
+  height: 1.5rem;
+}
+
+.esg{
+  margin-bottom: 4px;
+}
+
+.progress-bar{
+  background-color:$success;
+}
+
+.btn-esg{
+	color: $success;
+  margin-top:2rem;
+}
+
+#esgchart{
+  text-align: -webkit-center;
+  margin-top:2rem;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;esg-impact&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;EC - Our ESG Impact &lt;/name&gt;&lt;option_schema&gt;[{"name":"currency","section":"other","default_value":"USD","label":"Currency","type":"string"},{"name":"symbol","section":"other","default_value":"$","label":"Symbol","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	
+	data.currency = "USD";
+	data.symbol = "$";
+
+	if(options.currency){
+		data.currency = options.currency
+	}
+	if(options.symbol){
+		data.symbol = options.symbol;
+	}
+
+
+
+
+	var gr = new GlideRecord('sn_ex_sp_pro_customers');
+	gr.addEncodedQuery('u_active=true');
+	gr.orderByDesc('sys_updated_on');
+	gr.query();
+	if(gr.next()){
+		data.success = gr.getValue('u_success');
+		data.warning = gr.getValue('u_warning');
+		data.danger = gr.getValue('u_danger');
+		data.info = gr.getValue('u_info');
+	}
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-16 13:51:03&lt;/sys_created_on&gt;&lt;sys_id&gt;4db6d0cd1b8e781012985240604bcbf5&lt;/sys_id&gt;&lt;sys_mod_count&gt;127&lt;/sys_mod_count&gt;&lt;sys_name&gt;EC - Our ESG Impact &lt;/sys_name&gt;&lt;sys_package display_value="Employee Center Pro" source="sn_ex_sp_pro"&gt;236addd4d75048c1a5f250d73c064976&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Employee Center Pro"&gt;236addd4d75048c1a5f250d73c064976&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_4db6d0cd1b8e781012985240604bcbf5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-27 08:33:27&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div id = "esg-impact"&gt;
+  &lt;div class = "card"&gt;
+    &lt;div class = "card-title"&gt;
+      Our Impact
+    &lt;/div&gt;
+    &lt;div class = "row"&gt;
+      &lt;div class = "col-md-4 column-height"&gt;
+        &lt;div class = 'column-title'&gt;
+          Organization ESG profile
+        &lt;/div&gt;
+        &lt;div class = "value"&gt;
+          81/100
+        &lt;/div&gt;
+        &lt;div class= "val-caption"&gt;
+          Organization ESG Score
+        &lt;/div&gt;
+        &lt;div class = "graph"&gt;
+          &lt;div class= "esg"&gt;
+            Environmental Impact
+          &lt;/div&gt;
+          &lt;div class="progress"&gt;
+            &lt;div class="progress-bar" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100" style="width:84%"&gt;
+              &lt;span class="sr-only"&gt;84% Complete&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class= "esg"&gt;
+            Social Impact
+          &lt;/div&gt;
+          &lt;div class="progress"&gt;
+            &lt;div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"&gt;
+              &lt;span class="sr-only"&gt;75% Complete&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+
+          &lt;div class= "esg"&gt;
+            Governance Impact
+          &lt;/div&gt;
+          &lt;div class="progress"&gt;
+            &lt;div class="progress-bar" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100" style="width:84%"&gt;
+              &lt;span class="sr-only"&gt;84% Complete&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt; 
+
+
+
+
+
+      &lt;div class = "col-md-4 column-height"&gt;
+        &lt;div class = 'column-title'&gt;
+          Volunteer time
+        &lt;/div&gt;
+        &lt;div class = "value"&gt;
+          20&lt;span class = "val-unit"&gt;hrs&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class = "mini-graph"&gt;
+          &lt;div class="progress"&gt;
+            &lt;div class="progress-bar" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width:33%"&gt;
+              &lt;span class="sr-only"&gt;33% Complete&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class= "val-caption"&gt;
+          20 hrs/60 hrs paid volunteer time used
+        &lt;/div&gt;
+        &lt;div class = "value"&gt;
+          130&lt;span class = "val-unit"&gt;hrs&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class = "mini-graph"&gt;
+          &lt;div class="progress"&gt;
+            &lt;div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width:15%"&gt;
+              &lt;span class="sr-only"&gt;15% Complete&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class= "val-caption"&gt;
+          130 hrs/900 hrs paid volunteer time used by my team
+        &lt;/div&gt;
+
+        &lt;div&gt;
+          &lt;button class = "btn btn-default btn-esg"&gt;Log volunteer time &lt;/button&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+
+      &lt;div class = "col-md-4 column-height"&gt;
+        &lt;div class = 'column-title'&gt;
+          Charity Donation
+        &lt;/div&gt;
+        &lt;div class = "value"&gt;
+          240&lt;span class = "val-unit"&gt;.00 {{data.currency}}&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class = "mini-graph"&gt;
+          &lt;div class="progress"&gt;
+            &lt;div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%"&gt;
+              &lt;span class="sr-only"&gt;40% Complete&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class= "val-caption"&gt;
+          {{data.symbol}}240 / {{data.symbol}}600 company matched donation 
+        &lt;/div&gt;
+        &lt;div class = "value"&gt;
+          890&lt;span class = "val-unit"&gt;.00 {{data.currency}}&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class = "mini-graph"&gt;
+          &lt;div class="progress"&gt;
+            &lt;div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width:35%"&gt;
+              &lt;span class="sr-only"&gt;35% Complete&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class= "val-caption"&gt;
+          {{data.symbol}}890 / {{data.symbol}}2500 company matched donation made by team 
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;button class = "btn btn-default btn-esg"&gt;Request a match &lt;/button&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-04-02 17:18:34</sys_created_on>
+        <sys_id>046a58fa9722c9104204fe7fe153af7d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>006a58fa9722c9104204fe7fe153af78</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_046a58fa9722c9104204fe7fe153af7d</sys_update_name>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-04-02 17:18:34</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>

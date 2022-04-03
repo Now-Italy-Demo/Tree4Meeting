@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_vtable">
+    <sys_script_vtable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>true</advanced>
+        <cache_isolation_level>USER</cache_isolation_level>
+        <cache_strategy>CACHE_BY_QUERY</cache_strategy>
+        <cache_ttl>5</cache_ttl>
+        <name>RaaS_Alberi_Piantati</name>
+        <script><![CDATA[(function executeQuery(v_table, v_query) {
+    // Main API:
+    //    v_table.addRow({ ... }) - adds a row to the result set
+    try {
+        var inputs = {};
+
+        inputs['enterpriseid'] = gs.getProperty('x_snc_tree4meeting.digitalhumani_enterpriseid');
+        inputs['user'] = gs.getProperty('x_snc_tree4meeting.digitalhumani_user');
+
+        // Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+        var timeout = 5000; //timeout in ms
+        var outputs = sn_fd.FlowAPI.executeAction('x_snc_tree4meeting.get_trees_by_user', inputs, timeout);
+
+        var row = {};
+
+        row['enterpriseid'] = inputs['enterpriseid'];
+        row['user'] = inputs['user'];
+        row['trees'] = outputs['trees'];
+
+        v_table.addRow(row);
+
+    } catch (ex) {
+        var message = ex.getMessage();
+        gs.error(message);
+    }
+    /*
+    
+    try {
+    	var sm = new sn_ws.RESTMessageV2("RaaS_Get_Trees","GET");
+    	sm.setRequestHeader("X-Api-Key",gs.getProperty('x_snc_tree4meeting.digitalhumani_sandbox_apikey'));
+    	sm.setStringParameter("enterpriseId", gs.getProperty('x_snc_tree4meeting.digitalhumani_enterpriseid'));
+    	sm.setStringParameter("user", gs.getProperty('x_snc_tree4meeting.digitalhumani_user'));
+    	var response = sm.execute();
+    	
+    	// if REST call ends up in an error, set the last error message which shows up
+    	// at the bottom of the list view
+    	if (response.haveError()) {
+    			v_query.setLastErrorMessage(response.getErrorMessage());
+    			// can use gs.error() or gs.addErrorMessage() while debugging
+    			// gs.debug() messages visible in session debugger
+    			// gs.debug(response.getErrorMessage());
+    			return;
+    	}
+
+    	var responseBody = response.getBody();
+    	var responseObject = JSON.parse(responseBody);
+    	var row = {};
+    	
+    	row['enterpriseid'] = gs.getProperty('x_snc_tree4meeting.digitalhumani_enterpriseid');
+    	row['user'] = gs.getProperty('x_snc_tree4meeting.digitalhumani_user');
+    	row['trees'] = responseObject.count;
+    	
+    	v_table.addRow(row); 
+    	
+    }
+    catch (ex) {
+    	v_query.setLastErrorMessage(ex.message);
+    		// gs.debug(ex.message);
+    		return;	
+    }
+    
+    */
+
+
+
+    // There are also query helper methods
+    //    v_query.getEncodedQuery() - returns encoded querystring
+    //    v_query.getCondition(field) - returns encoded querystring for the given field (includes field name, operator, and value)
+    //    v_query.getParameter(field) - returns parameter for the given field (only includes value for equality conditions)
+    //    v_query.isGet() - returns whether the query is a single get by sys_id
+    //    v_query.getSysId() - returns parameter for sys_id field
+    //    v_query.isTextSearch() - returns whether the query contains a text query parameter
+    //    v_query.getTextSearch() - returns text search query parameter (internal field name 123TEXTQUERY321)
+    //    v_query.getFirstRowWanted() - returns the first row to include
+    //    v_query.getLastRowWanted() - returns the last row to include
+
+    // Note: You must define sys_id for each row so that forms and lists for this table work properly
+
+    // Your code goes here
+    // v_table.addRow({...})
+})(v_table, v_query);]]></script>
+        <sys_class_name>sys_script_vtable</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-01 14:19:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f697661247264910d06e1d51e36d438a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>RaaS_Alberi_Piantati</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_script_vtable_f697661247264910d06e1d51e36d438a</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-03 16:43:18</sys_updated_on>
+        <table>x_snc_tree4meeting_st_raas_alberi_piantati</table>
+    </sys_script_vtable>
+</record_update>

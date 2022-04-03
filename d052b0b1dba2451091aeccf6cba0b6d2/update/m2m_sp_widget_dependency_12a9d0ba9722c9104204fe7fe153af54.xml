@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency">
+    <m2m_sp_widget_dependency action="INSERT_OR_UPDATE">
+        <sp_dependency display_value="Google charts">5df218d91b06f81012985240604bcb43</sp_dependency>
+        <sp_widget display_value="T4M - Employment Engagement Score">16a9d0ba9722c9104204fe7fe153af50</sp_widget>
+        <sys_class_name>m2m_sp_widget_dependency</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-04-02 17:15:27</sys_created_on>
+        <sys_id>12a9d0ba9722c9104204fe7fe153af54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Google charts.Copy of EC - Employment Engagement Score</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>m2m_sp_widget_dependency_12a9d0ba9722c9104204fe7fe153af54</sys_update_name>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-04-02 17:15:27</sys_updated_on>
+    </m2m_sp_widget_dependency>
+</record_update>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="T4M - Return to Workplace">6bcbd4be9722c9104204fe7fe153affb</child>
+        <cloned>2022-04-02 17:24:49</cloned>
+        <last_validated>2022-04-02 17:24:49</last_validated>
+        <parent display_value="EC - Return to Workplace">6a1786551b42301012985240604bcbf3</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function($scope) {
+	/* widget controller */
+	var c = this;
+
+	google.charts.load("current", {packages:["corechart"]});
+	google.charts.setOnLoadCallback(drawChart);
+	function drawChart() {
+		var data = google.visualization.arrayToDataTable([
+			['Task', 'Hours per Day'],
+			['Ready',    54],
+			['Maybe',     28],
+			['No Ready',  18]
+		]);
+
+		var options = {
+			pieHole: 0.4 ,
+			'width': 200,
+			'height': 200,
+			'chartArea': {'width': '90%', 'height': '90%'},
+			'legend': {'position': 'none'},
+			'pieSliceText': 'none',
+		//	colors: ['#4fc2c2', '#ffc54d', '#ff8c71']
+			colors: [c.data.success,c.data.warning,c.data.danger]
+
+		};
+
+		var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+		chart.draw(data, options);
+	}
+
+
+
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.card {
+  min-height: 35rem;
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+  border-radius: .6rem;
+  padding: 3rem;
+  margin-top: 3rem;
+  box-shadow:0 0.4rem 0.8rem 0 rgba(23, 40, 52 , 8%)
+
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 2rem;
+  //  position: absolute;
+  z-index: 1;
+}
+
+
+#donutchart{
+  text-align: -webkit-center;
+  margin-top:2rem;
+}
+
+.donut-caption{
+  font-size: 1rem;
+}
+
+.value{
+  text-align: center;
+  margin-top: -123px;
+  position: relative;
+}
+
+.legends{
+  position: absolute;
+  bottom: 35px;
+  text-align:center;
+	left:0;
+  right:0;
+}
+
+.ready{
+  color:$success;
+}
+.maybe{
+  color:$warning;
+}
+.notReady{
+  color:$danger;
+}
+
+.fa-circle{
+  margin-left:20px;
+  margin-right:5px;
+}
+
+
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;ec_-_return_to_workplace&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;EC - Return to Workplace&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	var gr = new GlideRecord('sn_ex_sp_pro_customers');
+	gr.addEncodedQuery('u_active=true');
+	gr.orderByDesc('sys_updated_on');
+	gr.query();
+	if(gr.next()){
+		data.success = gr.getValue('u_success');
+		data.warning = gr.getValue('u_warning');
+		data.danger = gr.getValue('u_danger');
+		data.info = gr.getValue('u_info');
+	}
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-17 16:40:10&lt;/sys_created_on&gt;&lt;sys_id&gt;6a1786551b42301012985240604bcbf3&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;EC - Return to Workplace&lt;/sys_name&gt;&lt;sys_package display_value="Employee Center Pro" source="sn_ex_sp_pro"&gt;236addd4d75048c1a5f250d73c064976&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Employee Center Pro"&gt;236addd4d75048c1a5f250d73c064976&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_6a1786551b42301012985240604bcbf3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-26 07:56:56&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class = "card" id = "return-to-workplace"&gt;
+  &lt;div class="card-title"&gt;
+    Return to workplace feedback
+  &lt;/div&gt;
+
+  &lt;div id="donutchart" &gt;&lt;/div&gt;
+  &lt;div class = "value"&gt;
+    &lt;div&gt;
+      54%
+    &lt;/div&gt;
+    &lt;div class = "donut-caption"&gt;
+      Ready to work
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class = "legends"&gt;
+    &lt;i class="fa fa-circle ready"&gt;&lt;/i&gt;Ready &lt;i class="fa fa-circle maybe"&gt;&lt;/i&gt; Maybe  &lt;i class="fa fa-circle notReady"&gt;&lt;/i&gt; Not Ready
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-04-02 17:24:49</sys_created_on>
+        <sys_id>e3cbd4be9722c9104204fe7fe153affe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>6bcbd4be9722c9104204fe7fe153affb</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_e3cbd4be9722c9104204fe7fe153affe</sys_update_name>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-04-02 17:24:49</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope) {
+	/* widget controller */
+	var c = this;
+	
+
+
+	google.charts.load("current", {packages:["corechart"]});
+	google.charts.setOnLoadCallback(drawChart);
+	function drawChart() {
+		var data = google.visualization.arrayToDataTable([
+			['Task', 'Vaccination Status'],
+			['Vaccinated',    54],
+			['Scheduled',     28],
+			['Not scheduled',  18],
+			['Did not disclosed',  17]
+		]);
+
+		var options = {
+			'width': 200,
+			'height': 200,
+			'chartArea': {'width': '90%', 'height': '90%'},
+			'legend': {'position': 'none'},
+			'pieSliceText': 'none',
+			colors: [c.data.success,c.data.warning,c.data.danger,c.data.info]
+
+		};
+
+		var chart = new google.visualization.PieChart(document.getElementById('donutchart-vaccination-status'));
+		chart.draw(data, options);
+	}
+
+
+
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.card {&#13;
+  min-height: 35rem;&#13;
+  background-color: #ffffff;&#13;
+  margin-bottom: 1rem;&#13;
+  border-radius: .6rem;&#13;
+  padding: 3rem 2rem;&#13;
+  margin-top: 3rem;&#13;
+  box-shadow:0 0.4rem 0.8rem 0 rgba(23, 40, 52 , 8%)&#13;
+&#13;
+}&#13;
+&#13;
+.card-title {&#13;
+  font-weight: 600;&#13;
+  font-size: 2rem;&#13;
+  //  position: absolute;&#13;
+  z-index: 1;&#13;
+}&#13;
+&#13;
+&#13;
+#donutchart-vaccination-status{&#13;
+//  text-align: -webkit-center;&#13;
+  margin-top:2rem;&#13;
+}&#13;
+&#13;
+.donut-caption{&#13;
+  font-size: 1rem;&#13;
+}&#13;
+&#13;
+.value{&#13;
+  text-align: center;&#13;
+  margin-top: -123px;&#13;
+  position: relative;&#13;
+}&#13;
+&#13;
+.legends{&#13;
+  text-align: left;&#13;
+  left: 0;&#13;
+  right: 0;&#13;
+  margin-top:4rem;&#13;
+}&#13;
+&#13;
+&#13;
+&#13;
+.right{}&#13;
+&#13;
+&#13;
+.legend-item{&#13;
+	margin-top:15px;&#13;
+}&#13;
+&#13;
+.vaccinated{&#13;
+color: $success;&#13;
+}&#13;
+&#13;
+.scheduled{&#13;
+color:$warning;&#13;
+}&#13;
+&#13;
+.not-scheduled{&#13;
+  color:$danger;&#13;
+}&#13;
+&#13;
+.not-disclose{&#13;
+  color:$info;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Copy of T4M - Vaccination Status</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+
+	var gr = new GlideRecord('sn_ex_sp_pro_customers');
+	gr.addEncodedQuery('u_active=true');
+	gr.orderByDesc('sys_updated_on');
+	gr.query();
+	if(gr.next()){
+		data.success = gr.getValue('u_success');
+		data.warning = gr.getValue('u_warning');
+		data.danger = gr.getValue('u_danger');
+		data.info = gr.getValue('u_info');
+	}
+
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-04-02 17:19:45</sys_created_on>
+        <sys_id>d5aa5cfa9722c9104204fe7fe153af3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of T4M - Vaccination Status</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sp_widget_d5aa5cfa9722c9104204fe7fe153af3e</sys_update_name>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-04-02 17:19:45</sys_updated_on>
+        <template><![CDATA[<div class = "card" id = "vaccination-status">
+  <div class="card-title">
+    Vaccination Status
+  </div>
+
+  <div class = "row legend-item">
+    <div id="donutchart-vaccination-status" class = "col-md-7" ></div>
+    <div class = "legends col-md-5">
+      <div class = "row">
+        <div class = "col-md-1">
+          <i class = "fa fa-square vaccinated"></i>
+        </div>
+        <div class = "col-md-9">Vaccinated
+        </div>
+      </div>
+
+
+      <div class = "row legend-item">
+        <div class = "col-md-1">
+          <i class = "fa fa-square scheduled"></i>
+        </div>
+        <div class = "col-md-9">Scheduled
+        </div>
+      </div>
+
+      <div class = "row legend-item">
+        <div class = "col-md-1">
+          <i class = "fa fa-square not-scheduled"></i>
+        </div>
+        <div class = "col-md-9">Not scheduled
+        </div>
+      </div>
+
+      <div class = "row legend-item">
+        <div class = "col-md-1">
+          <i class = "fa fa-square not-disclose"></i>
+        </div>
+        <div class = "col-md-9">Did not disclose
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

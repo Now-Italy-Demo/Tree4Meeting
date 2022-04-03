@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="uuid_piantumazione" label="UUID Piantumazione" language="en" table="x_snc_tree4meeting_compensazione">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>uuid_piantumazione</element>
+            <help/>
+            <hint/>
+            <label>UUID Piantumazione</label>
+            <language>en</language>
+            <name>x_snc_tree4meeting_compensazione</name>
+            <plural>UUID Piantumaziones</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>antonio</sys_created_by>
+            <sys_created_on>2022-04-02 15:30:35</sys_created_on>
+            <sys_id>9aa144f64726c910d06e1d51e36d43d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>UUID Piantumazione</sys_name>
+            <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_tree4meeting_compensazione_uuid_piantumazione_en</sys_update_name>
+            <sys_updated_by>antonio</sys_updated_by>
+            <sys_updated_on>2022-04-02 15:30:35</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

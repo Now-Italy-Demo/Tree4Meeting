@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>read</operation>
+        <source_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-04-02 17:16:36</sys_created_on>
+        <sys_id>03e99cba9722c9104204fe7fe153af57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_ex_sp_pro_customers</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_scope_privilege_03e99cba9722c9104204fe7fe153af57</sys_update_name>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-04-02 17:16:36</sys_updated_on>
+        <target_name>sn_ex_sp_pro_customers</target_name>
+        <target_scope display_value="Employee Center Pro">236addd4d75048c1a5f250d73c064976</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+</record_update>

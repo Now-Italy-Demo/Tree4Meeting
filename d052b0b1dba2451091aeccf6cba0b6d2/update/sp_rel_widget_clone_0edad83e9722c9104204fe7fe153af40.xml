@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="T4M - New Hire Satisfaction">82dad83e9722c9104204fe7fe153af3e</child>
+        <cloned>2022-04-02 17:20:37</cloned>
+        <last_validated>2022-04-02 17:20:37</last_validated>
+        <parent display_value="EC - New Hire Satisfaction">077940901b1af850211eea46624bcbef</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.card {
+  min-height: 20rem;
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+  border-radius: .6rem;
+  padding: 3rem;
+  margin-top: 3rem;
+  box-shadow:0 0.4rem 0.8rem 0 rgba(23, 40, 52 , 8%)
+
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 2rem;
+  //  position: absolute;
+  z-index: 1;
+}
+
+.number{
+  font-size: 7rem;
+  margin-top: 1rem;
+}
+.green{
+  color:$success;
+}
+
+.unit{
+  font-size: 3rem;
+  margin-left: -12px;
+}
+
+.caption{
+  font-size:1.4rem;
+}
+
+.response{
+    font-size: 2rem;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;ec_-_new_hire_satisfaction&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;EC - New Hire Satisfaction&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-26 15:13:06&lt;/sys_created_on&gt;&lt;sys_id&gt;077940901b1af850211eea46624bcbef&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;EC - New Hire Satisfaction&lt;/sys_name&gt;&lt;sys_package display_value="Employee Center Pro" source="sn_ex_sp_pro"&gt;236addd4d75048c1a5f250d73c064976&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Employee Center Pro"&gt;236addd4d75048c1a5f250d73c064976&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_077940901b1af850211eea46624bcbef&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-26 15:17:25&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class = "card" id = "team-capacity"&gt;
+ &lt;div class="card-title"&gt;
+  New Hire Satisfaction Score
+ &lt;/div&gt;
+  
+  &lt;div class = "number green"&gt;
+    4.8&lt;span class = "unit"&gt;/5&lt;/span&gt;
+  &lt;/div&gt;
+   &lt;div class = "caption"&gt;
+    &lt;span class= "green response"&gt; 91% &lt;/span&gt; - Response Rate
+  &lt;/div&gt;
+   &lt;div class = "desc"&gt;
+   Above data has been collected over last 30 days
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>francesco</sys_created_by>
+        <sys_created_on>2022-04-02 17:20:37</sys_created_on>
+        <sys_id>0edad83e9722c9104204fe7fe153af40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>82dad83e9722c9104204fe7fe153af3e</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_0edad83e9722c9104204fe7fe153af40</sys_update_name>
+        <sys_updated_by>francesco</sys_updated_by>
+        <sys_updated_on>2022-04-02 17:20:37</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>
