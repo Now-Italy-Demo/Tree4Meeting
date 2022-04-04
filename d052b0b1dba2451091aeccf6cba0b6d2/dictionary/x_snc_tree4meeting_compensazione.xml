@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Compensazione" max_length="40" name="x_snc_tree4meeting_compensazione" sizeclass="1" type="collection">
+    <element label="Compensazione" max_length="40" name="x_snc_tree4meeting_compensazione" sizeclass="0" type="collection">
         <element default="0" label="Alberi piantati" max_length="40" name="alberi_piantati" type="integer"/>
         <element label="Completato" max_length="40" name="completato" type="boolean"/>
         <element label="Data Piantumazione" max_length="40" name="data_piantumazione" type="glide_date_time"/>
