@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="mezzo_di_trasporto" label="Mezzo di trasporto" language="it" table="x_snc_tree4meeting_attendee">
+    <sys_documentation element="attendee_name" label="Nome partecipante" language="it" table="x_snc_tree4meeting_attendee">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>mezzo_di_trasporto</element>
+            <element>attendee_name</element>
             <help/>
             <hint/>
-            <label>Mezzo di trasporto</label>
+            <label>Nome partecipante</label>
             <language>it</language>
             <name>x_snc_tree4meeting_attendee</name>
-            <plural>Mezzo di trasportos</plural>
+            <plural>Nome partecipantes</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-03-31 13:38:14</sys_created_on>
-            <sys_id>81c4550a47a2c510d06e1d51e36d4309</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_name>Mezzo di trasporto</sys_name>
+            <sys_created_on>2022-04-04 08:26:50</sys_created_on>
+            <sys_id>6ad3f413476a8d10d06e1d51e36d4347</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>Nome partecipante</sys_name>
             <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
             <sys_policy/>
             <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
-            <sys_update_name>sys_documentation_x_snc_tree4meeting_attendee_mezzo_di_trasporto_it</sys_update_name>
+            <sys_update_name>sys_documentation_x_snc_tree4meeting_attendee_attendee_name_it</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-04-04 10:39:43</sys_updated_on>
+            <sys_updated_on>2022-04-04 12:56:01</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

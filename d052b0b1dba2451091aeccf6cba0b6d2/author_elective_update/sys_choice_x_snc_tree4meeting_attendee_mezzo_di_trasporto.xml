@@ -81,20 +81,40 @@
             <element>mezzo_di_trasporto</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Veicolo a combustione</label>
+            <label>Veicolo ibrido</label>
             <language>en</language>
             <name>x_snc_tree4meeting_attendee</name>
             <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-04 10:43:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0c131197472e8d10d06e1d51e36d4336</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-04 10:43:27</sys_updated_on>
+            <value>veicolo_ibrido</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>mezzo_di_trasporto</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Veicolo tradizionale</label>
+            <language>en</language>
+            <name>x_snc_tree4meeting_attendee</name>
+            <sequence>4</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2022-04-01 13:45:44</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>6810e2d247e24910d06e1d51e36d439b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-04-01 13:45:44</sys_updated_on>
-            <value>veicolo_a_combustione</value>
+            <sys_updated_on>2022-04-04 10:43:49</sys_updated_on>
+            <value>veicolo_tradizionale</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -104,16 +124,16 @@
             <label>Bicicletta</label>
             <language>en</language>
             <name>x_snc_tree4meeting_attendee</name>
-            <sequence>4</sequence>
+            <sequence>5</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2022-04-01 13:45:44</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>e810e2d247e24910d06e1d51e36d439c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-04-01 13:45:44</sys_updated_on>
+            <sys_updated_on>2022-04-04 10:43:32</sys_updated_on>
             <value>bicicletta</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -124,16 +144,16 @@
             <label>Piedi</label>
             <language>en</language>
             <name>x_snc_tree4meeting_attendee</name>
-            <sequence>5</sequence>
+            <sequence>6</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2022-04-01 13:45:44</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>6c10e2d247e24910d06e1d51e36d439d</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-04-01 13:45:44</sys_updated_on>
+            <sys_updated_on>2022-04-04 10:43:34</sys_updated_on>
             <value>piedi</value>
         </sys_choice>
     </sys_choice>

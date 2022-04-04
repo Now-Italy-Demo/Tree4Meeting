@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function() {
+        <client_script><![CDATA[api.controller=function($scope, spUtil) {
 	/* widget controller */
 	
 	var c = this;
 	
 	google.charts.load("current", {packages:['corechart']});
 	google.charts.setOnLoadCallback(drawChart);
+	
 	function drawChart() {
 		
 		var dataTable = []
-	dataTable.push(['Type','Frequency'])
-			
-	Object.keys(c.data.mezzi_di_trasporto).forEach(function(el){
-		dataTable.push([el, c.data.mezzi_di_trasporto[el]])
-	})
-	
-	console.log(dataTable);
+		dataTable.push(['Type','Frequency'])
+
+		Object.keys(c.data.mezzi_di_trasporto).forEach(function(el){
+			dataTable.push([el, c.data.mezzi_di_trasporto[el]])
+		})
+
 
 		var data = google.visualization.arrayToDataTable(dataTable);
 
@@ -40,6 +40,11 @@
 		var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
 		chart.draw(view, options_stacked);
 	}
+	
+	setInterval(function(){
+		spUtil.update($scope);
+		drawChart()
+	}, 5000);
 
 };]]></client_script>
         <controller_as>c</controller_as>
@@ -112,6 +117,11 @@
 		"Bicicletta":0,
 		"Piedi":0
 	};
+	data.isAdmin = false;
+	
+	if (gs.hasRole("admin")){
+		data.isAdmin= true;
+	}
 
 	
 	var agg = new GlideAggregate('x_snc_tree4meeting_attendee');
@@ -131,15 +141,15 @@
         <sys_created_by>francesco</sys_created_by>
         <sys_created_on>2022-04-02 17:15:27</sys_created_on>
         <sys_id>16a9d0ba9722c9104204fe7fe153af50</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>T4M - Employment Engagement Score</sys_name>
         <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
         <sys_update_name>sp_widget_16a9d0ba9722c9104204fe7fe153af50</sys_update_name>
         <sys_updated_by>francesco</sys_updated_by>
-        <sys_updated_on>2022-04-02 22:16:01</sys_updated_on>
-        <template><![CDATA[<div class = "card" id = "engagement_score">
+        <sys_updated_on>2022-04-04 09:46:53</sys_updated_on>
+        <template><![CDATA[<div class = "card" id = "engagement_score" ng-if="c.data.isAdmin">
   <div class="card-title">
     Frequenza Mezzi di Trasporto
   </div>

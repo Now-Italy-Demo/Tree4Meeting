@@ -3,7 +3,19 @@
         <category>custom</category>
         <client_script><![CDATA[api.controller=function($scope) {
 
-
+	var c = this;
+	var resetURL = "";
+	
+	c.reset = function(){
+		console.log("reset")				
+		$.get(resetURL, function(data){
+			console.log(data)
+		});
+	}
+	
+	c.test = function(){
+		console.log("test")				
+	}
 
 };]]></client_script>
         <controller_as>c</controller_as>
@@ -105,6 +117,12 @@
 	
 	data.currency = "USD";
 	data.symbol = "$";
+	
+	data.isAdmin = false;
+	
+	if (gs.hasRole("admin")){
+		data.isAdmin= true;
+	}
 
 	if(options.currency){
 		data.currency = options.currency
@@ -112,9 +130,6 @@
 	if(options.symbol){
 		data.symbol = options.symbol;
 	}
-
-
-
 
 	var gr = new GlideRecord('sn_ex_sp_pro_customers');
 	gr.addEncodedQuery('u_active=true');
@@ -133,15 +148,17 @@
         <sys_created_by>francesco</sys_created_by>
         <sys_created_on>2022-04-02 17:18:34</sys_created_on>
         <sys_id>006a58fa9722c9104204fe7fe153af78</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>T4M - Our ESG Impact </sys_name>
         <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
         <sys_update_name>sp_widget_006a58fa9722c9104204fe7fe153af78</sys_update_name>
         <sys_updated_by>francesco</sys_updated_by>
-        <sys_updated_on>2022-04-03 14:21:03</sys_updated_on>
-        <template><![CDATA[<div id = "esg-impact">
+        <sys_updated_on>2022-04-04 09:57:55</sys_updated_on>
+        <template><![CDATA[<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<div id = "esg-impact" ng-if="c.data.isAdmin">
   <div class = "card">
     <div class = "card-title">
       Altre iniziative ESG
@@ -225,7 +242,7 @@
         </div>
 
         <div>
-          <button class = "btn btn-default btn-esg">Log volunteer time </button>
+          <button class = "btn btn-default btn-esg" ng-click="c.test()">Log volunteer time </button>
         </div>
 
       </div>
@@ -262,7 +279,7 @@
           {{data.symbol}}890 / {{data.symbol}}2500 company matched donation made by team 
         </div>
         <div>
-          <button class = "btn btn-default btn-esg">Request a match </button>
+          <button class = "btn btn-default btn-esg" ng-click="c.reset()">Request a match </button>
         </div>
 
       </div>

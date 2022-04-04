@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
     <question_choice action="INSERT_OR_UPDATE">
-        <inactive>false</inactive>
+        <inactive>true</inactive>
         <order>200</order>
         <published_ref/>
         <question display_value="Con quale mezzo tornerai indietro?">7574950647a2c510d06e1d51e36d4372</question>
@@ -8,14 +8,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-03-31 13:38:28</sys_created_on>
         <sys_id>10d4d50a47a2c510d06e1d51e36d433c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Aereo</sys_name>
         <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
         <sys_update_name>question_choice_10d4d50a47a2c510d06e1d51e36d433c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-31 13:38:28</sys_updated_on>
+        <sys_updated_on>2022-04-04 12:52:11</sys_updated_on>
         <text>Aereo</text>
         <value>aereo</value>
     </question_choice>

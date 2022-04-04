@@ -90,14 +90,14 @@ producer.portal_redirect = "https://digitalex.service-now.com/tree4meeting/?id=t
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-03-31 10:55:28</sys_created_on>
         <sys_id>f88fa806472e8510d06e1d51e36d43d2</sys_id>
-        <sys_mod_count>64</sys_mod_count>
+        <sys_mod_count>92</sys_mod_count>
         <sys_name>Calcola il tuo carbon footprint</sys_name>
         <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
         <sys_update_name>sc_cat_item_producer_f88fa806472e8510d06e1d51e36d43d2</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-04-01 08:58:22</sys_updated_on>
+        <sys_updated_on>2022-04-04 13:48:50</sys_updated_on>
         <table_name>x_snc_tree4meeting_attendee</table_name>
         <taxonomy_topic/>
         <template/>

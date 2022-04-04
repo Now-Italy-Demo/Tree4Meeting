@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" label="Partecipante" max_length="40" name="x_snc_tree4meeting_attendee" sizeclass="28" text_index="true" type="collection">
-        <element attributes="edge_encryption_enabled=true,encode_utf8=false" default="javascript: gs.getUserID();" label="Nome partecipante" mandatory="true" max_length="32" name="attendee_name" reference="sys_user" type="reference"/>
+    <element audit="true" label="Partecipante" max_length="40" name="x_snc_tree4meeting_attendee" sizeclass="9" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" default="Anonimo" label="Nome partecipante" mandatory="true" max_length="40" name="attendee_name" type="string"/>
         <element label="Note partecipante" max_length="4000" name="attendee_notes" type="journal_input"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="pending_registration" label="Stato partecipante" mandatory="true" max_length="40" name="attendee_status" read_only="true" type="choice">
             <choice>
@@ -15,7 +15,7 @@
                 <element inactive_on_update="false" label="Not submitted" sequence="8" value="not_submitted"/>
             </choice>
         </element>
-        <element label="Azienda" max_length="32" name="azienda" reference="core_company" type="reference"/>
+        <element label="Azienda" max_length="40" name="azienda" type="string"/>
         <element default="0" label="Impatto Costruzioni" max_length="20" name="calc_impatto_costruzioni" type="decimal"/>
         <element default="0" label="Impatto Energia" max_length="20" name="calc_impatto_energia" type="decimal"/>
         <element default="0" label="Impatto Foresta" max_length="20" name="calc_impatto_foresta" type="decimal"/>
@@ -72,9 +72,10 @@
                 <element inactive_on_update="false" label="Treno/Metro" sequence="0" value="treno_metro"/>
                 <element inactive_on_update="false" label="Aereo" sequence="1" value="aereo"/>
                 <element inactive_on_update="false" label="Veicolo elettrico" sequence="2" value="veicolo_elettrico"/>
-                <element inactive_on_update="false" label="Veicolo a combustione" sequence="3" value="veicolo_a_combustione"/>
-                <element inactive_on_update="false" label="Bicicletta" sequence="4" value="bicicletta"/>
-                <element inactive_on_update="false" label="Piedi" sequence="5" value="piedi"/>
+                <element inactive_on_update="false" label="Veicolo ibrido" sequence="3" value="veicolo_ibrido"/>
+                <element inactive_on_update="false" label="Veicolo tradizionale" sequence="4" value="veicolo_tradizionale"/>
+                <element inactive_on_update="false" label="Bicicletta" sequence="5" value="bicicletta"/>
+                <element inactive_on_update="false" label="Piedi" sequence="6" value="piedi"/>
             </choice>
         </element>
         <element choice="3" label="Mezzo di trasporto" max_length="40" name="mezzo_di_trasporto" type="choice">
@@ -82,9 +83,10 @@
                 <element inactive_on_update="false" label="Treno/Metro" sequence="0" value="treno_metro"/>
                 <element inactive_on_update="false" label="Aereo" sequence="1" value="aereo"/>
                 <element inactive_on_update="false" label="Veicolo elettrico" sequence="2" value="veicolo_elettrico"/>
-                <element inactive_on_update="false" label="Veicolo a combustione" sequence="3" value="veicolo_a_combustione"/>
-                <element inactive_on_update="false" label="Bicicletta" sequence="4" value="bicicletta"/>
-                <element inactive_on_update="false" label="Piedi" sequence="5" value="piedi"/>
+                <element inactive_on_update="false" label="Veicolo ibrido" sequence="3" value="veicolo_ibrido"/>
+                <element inactive_on_update="false" label="Veicolo tradizionale" sequence="4" value="veicolo_tradizionale"/>
+                <element inactive_on_update="false" label="Bicicletta" sequence="5" value="bicicletta"/>
+                <element inactive_on_update="false" label="Piedi" sequence="6" value="piedi"/>
             </choice>
         </element>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>

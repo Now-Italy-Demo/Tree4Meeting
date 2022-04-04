@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function() {
+        <client_script><![CDATA[api.controller=function($scope, spUtil) {
   /* widget controller */
   var c = this;
-	console.log(c.data);
 	
 	c.plantTree = function(){
 		console.log("logging")
@@ -14,6 +13,10 @@
 			console.log(data)
 		});
 	}
+	
+	setInterval(function(){
+		spUtil.update($scope);
+	}, 5000);
 };
 ]]></client_script>
         <controller_as>c</controller_as>
@@ -35,15 +38,32 @@
   z-index: 1;
 }
 
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+}
+
 .number{
   font-size: 7rem;
   margin-top: 1rem;
 }
+
+.spacer {
+  flex-grow: 1;
+}
+
 .green{
   color:$success;
 }
 .red{
   color:$danger;
+}
+
+.digitalhumani{
+  width: 150px;
+  height: 150px;
 }
 
 .unit{
@@ -63,7 +83,7 @@
         <description/>
         <docs/>
         <field_list/>
-        <has_preview>false</has_preview>
+        <has_preview>true</has_preview>
         <id>t4m_tree_compensation</id>
         <internal>false</internal>
         <link><![CDATA[function link(scope, element, attrs, controller) {
@@ -107,14 +127,14 @@
         <sys_created_by>francesco</sys_created_by>
         <sys_created_on>2022-04-02 17:19:04</sys_created_on>
         <sys_id>277a103e9722c9104204fe7fe153af05</sys_id>
-        <sys_mod_count>60</sys_mod_count>
+        <sys_mod_count>76</sys_mod_count>
         <sys_name>T4M - Tree Compensation</sys_name>
         <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
         <sys_update_name>sp_widget_277a103e9722c9104204fe7fe153af05</sys_update_name>
         <sys_updated_by>francesco</sys_updated_by>
-        <sys_updated_on>2022-04-03 14:14:10</sys_updated_on>
+        <sys_updated_on>2022-04-04 09:55:28</sys_updated_on>
         <template><![CDATA[<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 <div class = "card" id="team-capacity">
@@ -122,23 +142,32 @@
   		Tree Compensation 
 	</div>
   
-  <div ng-if="c.data.needCompensation">
-    <div class = "number red">
-      {{c.data.treeNumber}} <span class = "unit">alberi </span>
+  <div class="container">
+    <div ng-if="c.data.needCompensation">
+      <div class = "number red">
+        {{c.data.treeNumber}} <span class = "unit">alberi </span>
+      </div>
+      <div class = "desc">
+        Sono necessari per compensare questo evento
+      </div>
     </div>
-    <div class = "desc">
-      Sono necessari per compensare questo evento
+
+    <div ng-if="!c.data.needCompensation">
+      <div class = "number green">
+        {{c.data.treeNumber}} <span class = "unit">alberi </span> 
+      </div>
+      <div class = "desc">
+        Sono stati piantati per compensare questo evento
+      </div>
+    </div>
+    
+    <div class="spacer"></div>
+    
+    <div ng-if="!c.data.needCompensation">
+      <img class="digitalhumani" src="https://avatars.githubusercontent.com/u/51418438?s=280&v=4"/>
     </div>
   </div>
-  <div ng-if="!c.data.needCompensation">
-    <div class = "number green">
-      {{c.data.treeNumber}} <span class = "unit">alberi </span>
-    </div>
-    <div class = "desc">
-      Sono stati piantati per compensare questo evento
-    </div>
-  </div>
-	
+  
   
   <div class="plant-tree-button" ng-if="c.data.isAdmin">
 		<a class="btn btn-primary" ng-click="c.plantTree()" ng-disabled="!c.data.needCompensation">Compensa evento <i class="fa fa-tree"></i></a>

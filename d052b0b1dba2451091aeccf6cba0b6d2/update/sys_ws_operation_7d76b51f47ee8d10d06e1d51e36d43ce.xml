@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>GET</http_method>
+        <name>CleanAll</name>
+        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    var gr_comp = new GlideRecord('x_snc_tree4meeting_compensazione');
+    gr_comp.query();
+
+    var comp_status = 'none';
+    while (gr_comp.next()) {
+        gr_comp.deleteRecord();
+        comp_status = 'deleted';
+    }
+
+    var gr_part = new GlideRecord('x_snc_tree4meeting_attendee');
+    gr_part.query();
+
+    var part_status = 'none';
+    while (gr_part.next()) {
+        gr_part.deleteRecord();
+        part_status = 'deleted';
+    }
+
+    return {
+        'Compensation: ': comp_status,
+        'Participants: ': part_status
+    };
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_snc_tree4meeting/compensazione/cleanall</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/cleanall</relative_path>
+        <request_example/>
+        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>false</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>antonio</sys_created_by>
+        <sys_created_on>2022-04-04 13:25:06</sys_created_on>
+        <sys_id>7d76b51f47ee8d10d06e1d51e36d43ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CleanAll</sys_name>
+        <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
+        <sys_update_name>sys_ws_operation_7d76b51f47ee8d10d06e1d51e36d43ce</sys_update_name>
+        <sys_updated_by>antonio</sys_updated_by>
+        <sys_updated_on>2022-04-04 13:25:06</sys_updated_on>
+        <web_service_definition display_value="Compensazione">257ce44f47224d10d06e1d51e36d43b2</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

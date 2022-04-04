@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function($scope) {
+        <client_script><![CDATA[api.controller=function($scope, spUtil) {
 	/* widget controller */
 	var c = this;
 	
@@ -10,27 +10,13 @@
 	
 	function drawChart() {
 		var dataTable = []
-	dataTable.push(['Task', 'Mezzo'])
-			
-	Object.keys(c.data.mezzi_di_trasporto).forEach(function(el){
-		dataTable.push([el, c.data.mezzi_di_trasporto[el]])
-	})
-	
-	console.log(dataTable);
-	
-	
-		var data = google.visualization.arrayToDataTable(dataTable);
+		dataTable.push(['Task', 'Mezzo'])
 
-		/*
-		var data = google.visualization.arrayToDataTable([
-          ['Task', 'Mezzo'],
-          ['Work',     1],
-          ['Eat',      1],
-          ['Commute',  1],
-          ['Watch TV', 1],
-          ['Sleep',    1]
-        ]);
-		*/
+		Object.keys(c.data.mezzi_di_trasporto).forEach(function(el){
+			dataTable.push([el, c.data.mezzi_di_trasporto[el]])
+		})
+
+		var data = google.visualization.arrayToDataTable(dataTable);
 		
 		var options = {
 			chartArea: {'width': '90%', 'height': '90%'},
@@ -41,10 +27,12 @@
 
 		var chart = new google.visualization.PieChart(document.getElementById('donutchart-vaccination-status'));
 		chart.draw(data, options);
-		
-			console.log(dataTable);
-
 	}
+	
+	setInterval(function(){
+		spUtil.update($scope);
+		drawChart()
+	}, 5000);
 
 };]]></client_script>
         <controller_as>c</controller_as>
@@ -176,14 +164,14 @@ color: #FFC54D;
         <sys_created_by>francesco</sys_created_by>
         <sys_created_on>2022-04-02 17:20:10</sys_created_on>
         <sys_id>a3bad43e9722c9104204fe7fe153af5d</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_name>T4M - Vaccination Status</sys_name>
         <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
         <sys_update_name>sp_widget_a3bad43e9722c9104204fe7fe153af5d</sys_update_name>
         <sys_updated_by>francesco</sys_updated_by>
-        <sys_updated_on>2022-04-02 21:43:38</sys_updated_on>
+        <sys_updated_on>2022-04-04 08:40:05</sys_updated_on>
         <template><![CDATA[<div class = "card" id = "vaccination-status">
   <div class="card-title">
     Mezzi di trasporto utilizzati
