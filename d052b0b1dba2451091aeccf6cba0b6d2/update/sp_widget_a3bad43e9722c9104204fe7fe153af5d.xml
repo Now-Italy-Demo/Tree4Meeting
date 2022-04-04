@@ -132,7 +132,7 @@ color: #FFC54D;
 		"Treno/Metro": 0,
 		"Aereo": 0,
 		"Veicolo elettrico":0,
-		"Veicolo a combustione":0,
+		"Veicolo tradizionale":0,
 		"Bicicletta":0,
 		"Piedi":0
 	};
@@ -158,20 +158,32 @@ color: #FFC54D;
 			data.mezzi_di_trasporto[mezzo] = Number(frequenzaMezzo)
 	}
 	
+	
+	var q2 = new GlideAggregate('x_snc_tree4meeting_attendee');
+	q2.addAggregate("COUNT", "mezzo_di_ritorno");
+	q2.addQuery('event_name=e85a2d4e4726c510d06e1d51e36d4305');
+	q2.query();
+	while (q2.next()) {
+			var frequenzaMezzoRitorno = q2.getAggregate('COUNT', 'mezzo_di_ritorno');
+			var m2 = q2.getDisplayValue('mezzo_di_ritorno');
+		
+			data.mezzi_di_trasporto[m2] += Number(frequenzaMezzoRitorno)
+	}
+	
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>francesco</sys_created_by>
         <sys_created_on>2022-04-02 17:20:10</sys_created_on>
         <sys_id>a3bad43e9722c9104204fe7fe153af5d</sys_id>
-        <sys_mod_count>62</sys_mod_count>
+        <sys_mod_count>64</sys_mod_count>
         <sys_name>T4M - Vaccination Status</sys_name>
         <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
         <sys_update_name>sp_widget_a3bad43e9722c9104204fe7fe153af5d</sys_update_name>
         <sys_updated_by>francesco</sys_updated_by>
-        <sys_updated_on>2022-04-04 08:40:05</sys_updated_on>
+        <sys_updated_on>2022-04-04 18:07:53</sys_updated_on>
         <template><![CDATA[<div class = "card" id = "vaccination-status">
   <div class="card-title">
     Mezzi di trasporto utilizzati
@@ -210,7 +222,7 @@ color: #FFC54D;
         <div class = "col-md-1">
           <i class = "fa fa-square veicolocombustione"></i>
         </div>
-        <div class = "col-md-9">Veicolo a combustione
+        <div class = "col-md-9">Veicolo tradizionale
         </div>
       </div>
 

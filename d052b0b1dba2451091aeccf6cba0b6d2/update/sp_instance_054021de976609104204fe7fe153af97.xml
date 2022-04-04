@@ -18,20 +18,20 @@
         <sys_created_by>francesco</sys_created_by>
         <sys_created_on>2022-04-01 09:06:57</sys_created_on>
         <sys_id>054021de976609104204fe7fe153af97</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>Jumbo</sys_name>
         <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
         <sys_update_name>sp_instance_054021de976609104204fe7fe153af97</sys_update_name>
         <sys_updated_by>francesco</sys_updated_by>
-        <sys_updated_on>2022-04-04 09:53:25</sys_updated_on>
+        <sys_updated_on>2022-04-04 16:17:57</sys_updated_on>
         <title>Jumbo</title>
         <url/>
         <widget_parameters><![CDATA[{
 	"html": {
-		"value": "<div id=\"main\" class=\"jumbotron\"><h1 class=\"display-4\">Grazie mille!</h1><p class=\"lead\">Con questo piccolo gesto hai fatto.... <strong>TANTO!</strong></p><hr class=\"my-4\"><p class=\"lead\"><a class=\"btn btn-primary btn-lg\" href=\"https://digitalex.service-now.com/tree4meeting/?id=tree4meeting_manager_center\" data-mce-href=\"https://digitalex.service-now.com/tree4meeting/?id=tree4meeting_manager_center\">Scopri l'impatto!</a></p></div>",
-		"displayValue": "<div id=\"main\" class=\"jumbotron\">\n<h1 class=\"display-4\">Grazie mille!</h1>\n<p class=\"lead\">Con questo piccolo gesto hai fatto.... <strong>TANTO!</strong></p>\n<hr class=\"my-4\" />\n<p class=\"lead\"><a class=\"btn btn-primary btn-lg\" href=\"https://digitalex.service-now.com/tree4meeting/?id=tree4meeting_manager_center\">Scopri l'impatto!</a></p>\n</div>"
+		"value": "<div id=\"main\" class=\"jumbotron\"><h1 class=\"display-4\">Grazie mille!</h1><p class=\"lead\">Con questo piccolo gesto hai fatto.... <strong>TANTO!</strong></p><hr class=\"my-4\"><!--<p class=\"lead\"><a class=\"btn btn-primary btn-lg\" href=\"https://digitalex.service-now.com/tree4meeting/?id=tree4meeting_manager_center\">Scopri l'impatto!</a></p>--></div>",
+		"displayValue": "<div id=\"main\" class=\"jumbotron\">\n<h1 class=\"display-4\">Grazie mille!</h1>\n<p class=\"lead\">Con questo piccolo gesto hai fatto.... <strong>TANTO!</strong></p>\n<hr class=\"my-4\" /><!--<p class=\"lead\"><a class=\"btn btn-primary btn-lg\" href=\"https://digitalex.service-now.com/tree4meeting/?id=tree4meeting_manager_center\">Scopri l'impatto!</a></p>--></div>"
 	}
 }]]></widget_parameters>
     </sp_instance>

@@ -93,25 +93,25 @@
         <sys_created_by>francesco</sys_created_by>
         <sys_created_on>2022-04-02 17:20:37</sys_created_on>
         <sys_id>82dad83e9722c9104204fe7fe153af3e</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>T4M - New Hire Satisfaction</sys_name>
         <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
         <sys_update_name>sp_widget_82dad83e9722c9104204fe7fe153af3e</sys_update_name>
         <sys_updated_by>francesco</sys_updated_by>
-        <sys_updated_on>2022-04-04 08:37:36</sys_updated_on>
+        <sys_updated_on>2022-04-04 16:12:25</sys_updated_on>
         <template><![CDATA[<div class = "card" id = "team-capacity">
  <div class="card-title">
-  Consumo totale CO2
+  Emissioni totali CO2
  </div>
   
   <div class = "number green">
     {{c.data.impatto_kg_co2}}<span class = "unit"> KG</span>
   </div>
-   <div class = "desc">
+   <!--<div class = "desc" >
    Partecipare a questo evento ha consumato mediamente {{c.data.tons_co2}} tonnellate di CO2
-  </div>
+  </div>-->
 </div>]]></template>
     </sp_widget>
 </record_update>

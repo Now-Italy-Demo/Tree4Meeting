@@ -9,11 +9,11 @@
 	google.charts.load("current", {packages:["corechart"]});
 	google.charts.setOnLoadCallback(drawChart);
 	
-	function drawChart() {		
+	function drawChart() {	
 		Object.keys(c.data.mezzi_di_trasporto).forEach(function(single) {
 			switch(single){
 				case "Aereo":
-				case "Veicolo a combustione":
+				case "Veicolo tradizionale":
 					bad += c.data.mezzi_di_trasporto[single]
 					break;
 				default:
@@ -129,7 +129,7 @@
 		"Treno/Metro": 0,
 		"Aereo": 0,
 		"Veicolo elettrico":0,
-		"Veicolo a combustione":0,
+		"Veicolo tradizionale":0,
 		"Bicicletta":0,
 		"Piedi":0
 	};
@@ -148,27 +148,37 @@
 	agg.addAggregate("COUNT", "mezzo_di_trasporto");
 	agg.addQuery('event_name=e85a2d4e4726c510d06e1d51e36d4305');
 	agg.query();
-
 	while (agg.next()) {
-			var frequenzaMezzo = agg.getAggregate('COUNT', 'mezzo_di_trasporto');
+			var frequenzaMezzoAndata = agg.getAggregate('COUNT', 'mezzo_di_trasporto');
 			var mezzo = agg.getDisplayValue('mezzo_di_trasporto');
-			data.mezzi_di_trasporto[mezzo] = Number(frequenzaMezzo)
+			data.mezzi_di_trasporto[mezzo] += Number(frequenzaMezzoAndata)
 	}
 	
+	
+	var q2 = new GlideAggregate('x_snc_tree4meeting_attendee');
+	q2.addAggregate("COUNT", "mezzo_di_ritorno");
+	q2.addQuery('event_name=e85a2d4e4726c510d06e1d51e36d4305');
+	q2.query();
+	while (q2.next()) {
+			var frequenzaMezzoRitorno = q2.getAggregate('COUNT', 'mezzo_di_ritorno');
+			var m2 = q2.getDisplayValue('mezzo_di_ritorno');
+		
+			data.mezzi_di_trasporto[m2] += Number(frequenzaMezzoRitorno)
+	}
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>francesco</sys_created_by>
         <sys_created_on>2022-04-02 17:24:49</sys_created_on>
         <sys_id>6bcbd4be9722c9104204fe7fe153affb</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>T4M - Return to Workplace</sys_name>
         <sys_package display_value="Tree4Meeting" source="x_snc_tree4meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tree4Meeting">d052b0b1dba2451091aeccf6cba0b6d2</sys_scope>
         <sys_update_name>sp_widget_6bcbd4be9722c9104204fe7fe153affb</sys_update_name>
         <sys_updated_by>francesco</sys_updated_by>
-        <sys_updated_on>2022-04-04 08:39:02</sys_updated_on>
+        <sys_updated_on>2022-04-04 18:08:52</sys_updated_on>
         <template><![CDATA[<div class = "card" id = "return-to-workplace">
   <div class="card-title">
     Distribuzione mezzi di trasporto
